@@ -354,6 +354,8 @@
     
     }
 
+  }  
+
   /**
    * Porfolio isotope and filter
    */
