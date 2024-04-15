@@ -48,7 +48,8 @@
   <section id="hero" class="d-flex flex-column align-items-center justify-content-center">
     <h1>LODyssey of Poor Things</h1>
     <h2>Navigating Inspiration and Influence</h2>
-    <a href="#about" class="btn-get-started scrollto"><i class="bi bi-chevron-double-down"></i></a>
+     <!-- FOR THE BUTTON ADD A ID AL STUDY OF THE DOMAIN AND LINK IT IN THE HREF BELOW -->
+    <a href="#pageBody" class="btn-get-started scrollto"><i class="bi bi-chevron-double-down"></i></a>
   </section>
   <!-- End Hero -->
 
@@ -92,7 +93,7 @@
     </div>
   </header><!-- End Header -->
 
-<body>
+<body id="pageBody">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
@@ -123,7 +124,10 @@
         <div class="card-body">
           <h5 class="card-title">Poor Things: Episodes from the Early Life of Archibald McCandless M.D., Scottish Public Health Officer</h5>
           <p class="card-text">The book written by Alasdair Gray, from which the film 'Poor Things' is an adaptation. Published in 1992, Gray's novel is a gothic and satirical revisiting of Mary Shelley's Frankenstein story, set in Victorian-era Scotland.</p>
-          <a href="">Learn more</a>
+          <a href="https://openlibrary.org/books/OL1735096M/Poor_things">Learn more</a>
+          <a href="tei.xml">TEI</a>
+          <!-- WRONG -->
+
         </div>
       </div>
     </div>
@@ -148,7 +152,7 @@
         <div class="card-body">
           <h5 class="card-title">The Garden of Earthly Delights</h5>
           <p class="card-text">Hieronymus Bosch's painting serves as a guiding influence, shaping both the visual aesthetics and thematic essence of the film.</p>
-          <a href="">Learn More</a>
+          <a href="https://www.museodelprado.es/en/the-collection/art-work/the-garden-of-earthly-delights-triptych/02388242-6d6a-4e9e-a992-e1311eab3609">Learn More</a>
         </div>
       </div>
     </div>
@@ -158,7 +162,7 @@
         <div class="card-body">
           <h5 class="card-title">Soundtrack</h5>
           <p class="card-text">Fendrix, the composer behind "Poor Things," blends live recordings with synthesized effects, fashioning a unique digital soundworld that explores human life and mortality's mystique.</p>
-          <a href="">Learn More</a>
+          <a href="https://genius.com/albums/Jerskin-fendrix/Poor-things-original-motion-picture-soundtrack">Learn More</a>
         </div>
       </div>
     </div>
@@ -291,7 +295,7 @@
           </tr>
           <tr>
             <td>Poor Things</td>
-            <td>Book (novel)</td>
+            <td>Text</td>
             <td>Wikidata</td>
             <td>DublinCore ?</td>
           </tr>
@@ -321,7 +325,7 @@
           </tr>
           <tr>
             <td>Poor Things</td>
-            <td>Soundtrack</td>
+            <td>Audio</td>
             <td>Wikidata</td>
             <td>Music Ontology</td>
           </tr>
@@ -379,116 +383,131 @@
             </div>
           </div>
       
-          <div class="d-flex justify-content-center">
-            <button onclick="myFunction('who')" type="button" class="btn btn-outline-dark m-2" id="who-btn">Who</button>
-            <button onclick="myFunction('what') type="button" class="btn btn-outline-dark m-2" id="what-btn">What</button>
-            <button onclick="myFunction('where') type="button" class="btn btn-outline-dark m-2" id="where-btn">Where</button>
-            <button onclick="myFunction('when') type="button" class="btn btn-outline-dark m-2" id="when-btn">When</button>
-          </div>
-          <div class="swiper-wrapper align-items-center">
-
-          <table id="1" class="minimalistBlack">
-            <thead>
-              <tr>
-                <th>Property</th>
-                <th>Dublin Core</th>
-                <th>CDWA</th>
-                <th>Schema.org</th>
-                <th>Marc/Marc21</th>
-                <th>CCO</th>
-                <th>CIDOC-CRM</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Creator</td>
-                <td>dcterms:creator</td>
-                <td>Creator Description<br>Creator Identity<br>Creator Role</td>
-                <td>creator</td>
-                <td>100 - Main Entry - Personal Name</td>
-                <td>Creator display<br>Creator Extent</td>
-                <td>E39 Creator<br>P94 has created (was created by)<br>P14 carried out by (performed)</td>
-              </tr>
-            </tbody>
-          </table>
-      
-          <table id="2" class="minimalistBlack">
-            <thead>
-              <tr>
-                <th>Property</th>
-                <th>Dublin Core</th>
-                <th>CDWA</th>
-                <th>Schema.org</th>
-                <th>Marc/Marc21</th>
-                <th>CCO</th>
-                <th>CIDOC-CRM</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Title</td>
-                <td>dcterms:title</td>
-                <td>Title</td>
-                <td>name</td>
-                <td>245 - Title Statement</td>
-                <td>Title display<br>Title Extent</td>
-                <td>E35 Title<br>P102 has title (is title of)</td>
-              </tr>
-            </tbody>
-          </table>
-      
-          <table id="3" class="minimalistBlack d-none">
-            <thead>
-              <tr>
-                <th>Property</th>
-                <th>Dublin Core</th>
-                <th>CDWA</th>
-                <th>Schema.org</th>
-                <th>Marc/Marc21</th>
-                <th>CCO</th>
-                <th>CIDOC-CRM</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Location</td>
-                <td>dcterms:spatial</td>
-                <td>Location</td>
-                <td>location</td>
-                <td>752 - Added Entry - Geographic Name</td>
-                <td>Location display<br>Location Extent</td>
-                <td>E53 Place<br>P89 falls within (contains)</td>
-              </tr>
-            </tbody>
-          </table>
-      
-          <table id="4" class="minimalistBlack d-none">
-            <thead>
-              <tr>
-                <th>Property</th>
-                <th>Dublin Core</th>
-                <th>CDWA</th>
-                <th>Schema.org</th>
-                <th>Marc/Marc21</th>
-                <th>CCO</th>
-                <th>CIDOC-CRM</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Date</td>
-                <td>dcterms:date</td>
-                <td>Date</td>
-                <td>datePublished</td>
-                <td>260 - Publication, Distribution, etc. (Imprint)</td>
-                <td>Date display<br>Date Extent</td>
-                <td>E50 Date<br>P4 has time-span (is time-span of)</td>
-              </tr>
-            </tbody>
-          </table>
-
+          <div  style="text-align: center;">
+  
+            <button onclick="myFunction('who')" class="btn btn-outline-dark" >WHO</button>
+          
+            <button onclick="myFunction('what')" class="btn btn-outline-dark" >WHAT</button>
+            
+            <button onclick="myFunction('when')" class="btn btn-outline-dark" >WHEN</button>
+          
+            <button onclick="myFunction('where')" class="btn btn-outline-dark">WHERE</button>
         </div>
-      </div>
+        <div class="swiper-wrapper align-items-center">
+            <table id="1">
+              <thead>
+              <tr>
+                <th>Property</th>
+                <th>Dublin Core</th>
+                <th>CDWA</th>
+                <th>Schema.org</th>
+                <th>Marc/Marc21</th>
+                <th>CCO</th>
+                <th>CIDOC-CRM</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+              <td>Creator</td><td>dcterms:creator</td><td>Creator Description<br>Creator Identity<br>Creator Role</td><td>creator</td><td>100 - Main Entry - Personal Name</td><td>Creator display<br>Creator Extent</td><td>E39 Creator<br>P94 has created (was created by)<br>P14 carried out by (performed)</td></tr>
+              <tr>
+              <td>Contributor</td><td>dcterms:contributor</td><td>Creator Description<br>Creator Identity<br>Creator Role</td><td>contributor</td><td>511 - Participant or Performer</td><td>Role</td><td>N/A</td></tr>
+              <tr>
+              <td>Ownership</td><td>dcterms:provenance</td><td>Owner/Agent<br>Owner/Agent Role</td><td>N/A</td><td>600 - Subject Added Entry - Personal Name</td><td>N/A</td><td>P52 has current owner (is current owner of)<br>P51 has former or current owner (is former or current owner of)</td></tr>
+              <tr>
+              <td>Publisher</td><td>dcterms:publisher</td><td>Creator Description<br>Creator Identity<br>Creator Role</td><td>publisher</td><td>710 - Added Entry - Corporate Name</td><td>N/A</td><td>N/A</td></tr>
+              </tbody>
+              </tr>
+            </table>
+        
+            <table id="2">
+              <thead>
+              <tr>
+                <th>Property</th>
+                <th>Dublin Core</th>
+                <th>CDWA</th>
+                <th>Schema.org</th>
+                <th>Marc/Marc21</th>
+                <th>CCO</th>
+                <th>CIDOC-CRM</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+              <td>Rights</td><td>dcterms:rights</td><td>Copyright Statement<br>Copyright Holder Name</td><td>license</td><td>561 - Ownership and Custodial History</td><td>N/A</td><td>E30 Right</td></tr>
+              <tr>
+              <td>Title Variant</td><td>dcterms:alternative</td><td>Preference</td><td>alternateName</td><td>246 - Variation form of title</td><td>Title Type</td><td>N/A</td></tr>
+              <tr>
+              <td>Title</td><td>dcterms:title</td><td>Title Text</td><td>name</td><td>240 - Uniform Title</td><td>Title</td><td>E35 Title<br>P102 has title (is title of)</td></tr>
+              <tr>
+              <td>Type</td><td>dcterms:type</td><td>Classification Term</td><td>category</td><td>336 - Content Type</td><td>Type</td><td>E55 Type</td></tr>
+              <tr>
+              <td>Subject</td><td>dcterms:subject</td><td>Subject Display</td><td>about</td><td>072 - Subject Category Code</td><td>Subject</td><td>P129 is about (is subject of)<br>P104 is subject to (applies to)</td></tr>
+              <tr>
+              <td>Physical Description</td><td>dcterms:medium</td><td>Dimensions Type<br>Dimensions Description</td><td>materialExtent</td><td>300 - Physical Description</td><td>Measurements display<br>Materials and Techniques display<br>Physical Description</td><td>E16 Measurement<br>E54 Dimension</td></tr>
+              <tr>
+              <td>Language</td><td>dcterms:language</td><td>Inscription Language</td><td>inLanguage</td><td>377 - Associated Language</td><td>Language</td><td>E56 Language<br>P72 has language (is language of)<br>P43 has dimension (is dimension of)</td></tr>
+              <tr>
+              <td>Identifier</td><td>dcterms:identifier</td><td>Repository Numbers<br>Number Type</td><td>identifier</td><td>003 - Control Number Identifier</td><td>N/A</td><td>E42 Identifier<br>P35 has identified (was identified by)</td></tr>
+              <tr>
+              <td>Format</td><td>dcterms:format</td><td>Format/Size</td><td>encodingFormat</td><td>006 - Fixed-Length Data Elements</td><td>Format</td><td>E26 Physical Feature</td></tr>
+              <tr>
+              <td>Event</td><td>dcterms:event</td><td>Historical/Cultural Events</td><td>event</td><td>N/A</td><td>Event</td><td>E5 Event</td></tr>
+              <tr>
+              <td>Description</td><td>dcterms:description</td><td>Descriptive Note Text<br>Abstract Description</td><td>description</td><td>300 - Physical Description</td><td>Description</td><td>N/A</td></tr>
+              </tbody>
+              </tr>
+            </table>
+        
+            <table id="3">
+              <thead>
+              <tr>
+                <th>Property</th>
+                <th>Dublin Core</th>
+                <th>CDWA</th>
+                <th>Schema.org</th>
+                <th>Marc/Marc21</th>
+                <th>CCO</th>
+                <th>CIDOC-CRM</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+              <td>Location</td><td>dcterms:spatial</td><td>Place Qualifier</td><td>spatial</td><td>852 - Location</td><td>Place/Location</td><td>E53 Place<br>E94 Space Primitive</td></tr>
+              <tr>
+              <td>Creation Location</td><td>N/A</td><td>Creation Place/Original Location<br>Place Qualifier</td><td>locationCreated</td><td>260 - Publication, Distribution, etc. (Imprint)</td><td>Creation Location</td><td>P168 place is defined by (defines place)</td></tr>
+              <tr>
+              <td>Collection</td><td>dcterms:isPartOf</td><td>Work Broader Context</td><td>isPartOf</td><td>830 - Series Added Entry - Uniform Title</td><td>N/A</td><td>E78 Curated Holding</td></tr>
+              <tr>
+              <td>Depicted Location</td><td>dcterms:subject</td><td>Current Location Description</td><td>contentLocation</td><td>850 - Holding Institution</td><td>Current Location display</td><td>P74 has current or former residence (is current or former residence of)</td></tr>
+              </tbody>
+              </tr>
+            </table>
+        
+            <table id="4">
+              <thead>
+              <tr>
+                <th>Property</th>
+                <th>Dublin Core</th>
+                <th>CDWA</th>
+                <th>Schema.org</th>
+                <th>Marc/Marc21</th>
+                <th>CCO</th>
+                <th>CIDOC-CRM</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+              <td>Creation Date</td><td>dcterms:created</td><td>Creation Date<br>Date Qualifier</td><td>dateCreated</td><td>388 - Time Period of Creation</td><td>Display Date<br>Earliest Date<br>Latest Date<br>Date Qualifier</td><td>E4 Period<br>E52 Time-Span</td></tr>
+              <tr>
+              <td>Publication Date</td><td>dcterms:created</td><td>Creation Date<br>Date Qualifier</td><td>datePublished</td><td>362 - Dates of Publication and/or Sequential Designation</td><td>Display Date<br>Earliest Date<br>Latest Date<br>Date Qualifier</td><td>E4 Period<br>E52 Time-Span</td></tr>
+              </tbody>
+              </tr>
+            </table>
+           </div>
+           <p></p>
+           <div class="swiper-pagination"></div>
+          
+        </div>
 
       <div class="container">
         <div class="row">
