@@ -387,7 +387,7 @@
   /**
    * Initiate portfolio lightbox 
    */
-  const portfolioLightbox = lightbox({
+  const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
   });
 
