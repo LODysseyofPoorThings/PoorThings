@@ -135,7 +135,7 @@
     }
   }, true)
 
-  /** PER IL BOTTONE ALL'INIZIO MA NON FUNZIONAAAA
+  /**
    * Scrool with ofset on links with a class name .scrollto
    */
   on('click', '.scrollto', function(e) {
@@ -164,43 +164,195 @@
     }
   });
 
-// MODAL IMAGES
-// Get the modal
-var modal = document.getElementById("myModal");
 
-<<<<<<< Updated upstream
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-=======
-//  MODAL IMAGE ZOOM
-
->>>>>>> Stashed changes
 
   /**PROBABILEMNTE IL RESTO è INUTLIE-- QUI INIZIO PER IL WHO WHAT WHERE WHEN che non funziona*/
-  /var triggerTabList = [].slice.call(document.querySelectorAll('id=1'))
-  triggerTabList.forEach(function (triggerEl) {
-    var tabTrigger = new bootstrap.Tab(triggerEl)
+
+  function myFunction(inp) {
+    if (inp == 'what')
+    {
+      
+      document.getElementById("1").style.display = "none";
+      document.getElementById("2").style.display = "table";
+      // document.getElementById("2").classList.add("align-items-center")
+      document.getElementById("3").style.display = "none";
+      document.getElementById("4").style.display = "none";
+    
+    }
+    if (inp == 'who')
+    {
+      document.getElementById("1").style.display = "table";
+      document.getElementById("2").style.display = "none";
+      document.getElementById("3").style.display = "none";
+      document.getElementById("4").style.display = "none";
+    
+    }
+    if (inp == 'where')
+    {
+      document.getElementById("1").style.display = "none";
+      document.getElementById("2").style.display = "none";
+      document.getElementById("3").style.display = "table";
+      document.getElementById("4").style.display = "none";
+    
+    }
+    if (inp == 'when')
+    {
+      document.getElementById("1").style.display = "none";
+      document.getElementById("2").style.display = "none";
+      document.getElementById("3").style.display = "none";
+      document.getElementById("4").style.display = "table";
+    
+    }
+  // For all the triples
+    if (inp == 'item1')
+    {
+      document.getElementById("item1").style.display = "table";
+      document.getElementById("item2").style.display = "none";
+      document.getElementById("item3").style.display = "none";
+      document.getElementById("item4").style.display = "none";
+      document.getElementById("item5").style.display = "none";
+      document.getElementById("item6").style.display = "none";
+      document.getElementById("item7").style.display = "none";
+      document.getElementById("item8").style.display = "none";
+      document.getElementById("item9").style.display = "none";
+      document.getElementById("item10").style.display = "none";
+    
+    }
   
-    triggerEl.addEventListener('click', function (event) {
-      event.preventDefault()
-      tabTrigger.show()
-    })
-  })
+    if (inp == 'item2')
+    {
+      document.getElementById("item1").style.display = "none";
+      document.getElementById("item2").style.display = "table";
+      document.getElementById("item3").style.display = "none";
+      document.getElementById("item4").style.display = "none";
+      document.getElementById("item5").style.display = "none";
+      document.getElementById("item6").style.display = "none";
+      document.getElementById("item7").style.display = "none";
+      document.getElementById("item8").style.display = "none";
+      document.getElementById("item9").style.display = "none";
+      document.getElementById("item10").style.display = "none";
+    
+    }
+  
+    if (inp == 'item3')
+    {
+      document.getElementById("item1").style.display = "none";
+      document.getElementById("item2").style.display = "none";
+      document.getElementById("item3").style.display = "table";
+      document.getElementById("item4").style.display = "none";
+      document.getElementById("item5").style.display = "none";
+      document.getElementById("item6").style.display = "none";
+      document.getElementById("item7").style.display = "none";
+      document.getElementById("item8").style.display = "none";
+      document.getElementById("item9").style.display = "none";
+      document.getElementById("item10").style.display = "none";
+    
+    }
+  
+    if (inp == 'item4')
+    {
+      document.getElementById("item1").style.display = "none";
+      document.getElementById("item2").style.display = "none";
+      document.getElementById("item3").style.display = "none";
+      document.getElementById("item4").style.display = "table";
+      document.getElementById("item5").style.display = "none";
+      document.getElementById("item6").style.display = "none";
+      document.getElementById("item7").style.display = "none";
+      document.getElementById("item8").style.display = "none";
+      document.getElementById("item9").style.display = "none";
+      document.getElementById("item10").style.display = "none";
+    
+    }
+  
+    if (inp == 'item5')
+    {
+      document.getElementById("item1").style.display = "none";
+      document.getElementById("item2").style.display = "none";
+      document.getElementById("item3").style.display = "none";
+      document.getElementById("item4").style.display = "none";
+      document.getElementById("item5").style.display = "table";
+      document.getElementById("item6").style.display = "none";
+      document.getElementById("item7").style.display = "none";
+      document.getElementById("item8").style.display = "none";
+      document.getElementById("item9").style.display = "none";
+      document.getElementById("item10").style.display = "none";
+    
+    }
+  
+    if (inp == 'item6')
+    {
+      document.getElementById("item1").style.display = "none";
+      document.getElementById("item2").style.display = "none";
+      document.getElementById("item3").style.display = "none";
+      document.getElementById("item4").style.display = "none";
+      document.getElementById("item5").style.display = "none";
+      document.getElementById("item6").style.display = "table";
+      document.getElementById("item7").style.display = "none";
+      document.getElementById("item8").style.display = "none";
+      document.getElementById("item9").style.display = "none";
+      document.getElementById("item10").style.display = "none";
+    
+    }
+  
+    if (inp == 'item7')
+    {
+      document.getElementById("item1").style.display = "none";
+      document.getElementById("item2").style.display = "none";
+      document.getElementById("item3").style.display = "none";
+      document.getElementById("item4").style.display = "none";
+      document.getElementById("item5").style.display = "none";
+      document.getElementById("item6").style.display = "none";
+      document.getElementById("item7").style.display = "table";
+      document.getElementById("item8").style.display = "none";
+      document.getElementById("item9").style.display = "none";
+      document.getElementById("item10").style.display = "none";
+    
+    }
+  
+    if (inp == 'item8')
+    {
+      document.getElementById("item1").style.display = "none";
+      document.getElementById("item2").style.display = "none";
+      document.getElementById("item3").style.display = "none";
+      document.getElementById("item4").style.display = "none";
+      document.getElementById("item5").style.display = "none";
+      document.getElementById("item6").style.display = "none";
+      document.getElementById("item7").style.display = "none";
+      document.getElementById("item8").style.display = "table";
+      document.getElementById("item9").style.display = "none";
+      document.getElementById("item10").style.display = "none";
+    
+    }
+  
+    if (inp == 'item9')
+    {
+      document.getElementById("item1").style.display = "none";
+      document.getElementById("item2").style.display = "none";
+      document.getElementById("item3").style.display = "none";
+      document.getElementById("item4").style.display = "none";
+      document.getElementById("item5").style.display = "none";
+      document.getElementById("item6").style.display = "none";
+      document.getElementById("item7").style.display = "none";
+      document.getElementById("item8").style.display = "none";
+      document.getElementById("item9").style.display = "table";
+      document.getElementById("item10").style.display = "none";
+    
+    }
+  
+    if (inp == 'item10')
+    {
+      document.getElementById("item1").style.display = "none";
+      document.getElementById("item2").style.display = "none";
+      document.getElementById("item3").style.display = "none";
+      document.getElementById("item4").style.display = "none";
+      document.getElementById("item5").style.display = "none";
+      document.getElementById("item6").style.display = "none";
+      document.getElementById("item7").style.display = "none";
+      document.getElementById("item8").style.display = "none";
+      document.getElementById("item9").style.display = "none";
+      document.getElementById("item10").style.display = "table";
+    
+    }
 
   }  
 
@@ -235,7 +387,7 @@ span.onclick = function() {
   /**
    * Initiate portfolio lightbox 
    */
-  const portfolioLightbox = Lightbox({
+  const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
   });
 
