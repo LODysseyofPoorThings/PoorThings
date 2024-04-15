@@ -387,7 +387,7 @@
   /**
    * Initiate portfolio lightbox 
    */
-  const portfolioLightbox = Lightbox({
+  const portfolioLightbox = lightbox({
     selector: '.portfolio-lightbox'
   });
 
