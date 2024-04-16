@@ -23,9 +23,8 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Links to Bootstrap5 css and java-->
+  <!-- Links to Bootstrap5 css-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -236,15 +235,24 @@
               Regarding "Poor Things," the selected items play a pivotal role in authentically narrating its story. Our conceptual map aims to depict the gathered data in natural language, illustrating the extracted information and the connections between them. Purple nodes in the graph denote the selected items, while orange nodes highlight significant events and individuals associated with the main subject.
             CHANGE COLOR NAMES</p>
           </div> 
-          <div class="col-12 center-image"> 
-            <img id="myImg" src="assets/img/conceptual-map.png" class="img-fluid" style="width:100%;max-width:500px" alt="Conceptual Map">
+          <div class="col-12 center-image">
+            <div class="img-magnifier-container">
+              <img id="myImg" src="assets/img/conceptual-map.png" class="img-fluid" style="width:100%; height: 800px;" alt="Conceptual Map">
+              <script>
+                /* Initiate Magnify Function
+                with the id of the image, and the strength of the magnifier glass:*/
+                magnify("myImg", 3);
+              </script>
+            </div>
               <!-- image png has xmind logo + cehck class-->
               <!-- Modal to zoom image-->
+            <!-- MODAL
             <div id="myModal" class="modal" class="img-magnifier-container">
                 <span class="close">&times;</span>
                 <img class="modal-content" id="img01">
                 <div id="caption"></div>
             </div>
+          -->  
           </div>
         </div>
       </div>
@@ -381,10 +389,13 @@
           </div>
       
           <div class="d-flex justify-content-center">
-            <button onclick="myFunction('who')" type="button" class="btn btn-outline-dark m-2" id="who-btn">Who</button>
-            <button onclick="myFunction('what') type="button" class="btn btn-outline-dark m-2" id="what-btn">What</button>
-            <button onclick="myFunction('where') type="button" class="btn btn-outline-dark m-2" id="where-btn">Where</button>
-            <button onclick="myFunction('when') type="button" class="btn btn-outline-dark m-2" id="when-btn">When</button>
+            <button onclick="myFunction('who')" class="btn btn-outline-dark" >WHO</button>
+
+            <button onclick="myFunction('what')" class="btn btn-outline-dark" >WHAT</button>
+            
+            <button onclick="myFunction('when')" class="btn btn-outline-dark" >WHEN</button>
+          
+            <button onclick="myFunction('where')" class="btn btn-outline-dark">WHERE</button>
           </div>
           <div class="swiper-wrapper align-items-center">
 
@@ -438,7 +449,7 @@
             </tbody>
           </table>
       
-          <table id="3" class="minimalistBlack d-none">
+          <table id="3" class="minimalistBlack">
             <thead>
               <tr>
                 <th>Property</th>
@@ -463,7 +474,7 @@
             </tbody>
           </table>
       
-          <table id="4" class="minimalistBlack d-none">
+          <table id="4" class="minimalistBlack">
             <thead>
               <tr>
                 <th>Property</th>
@@ -608,6 +619,9 @@
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
+  <!-- Link Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
