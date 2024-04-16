@@ -237,22 +237,9 @@
           </div> 
           <div class="col-12 center-image">
             <div class="img-magnifier-container">
-              <img id="myImg" src="assets/img/conceptual-map.png" class="img-fluid" style="width:100%; height: 800px;" alt="Conceptual Map">
-              <script>
-                /* Initiate Magnify Function
-                with the id of the image, and the strength of the magnifier glass:*/
-                magnify("myImg", 3);
-              </script>
+              <img id="myImg" class="imageZoom" src="assets/img/map_with_white_background.png" class="img-fluid" style="width:100%; height: 800px;" alt="Conceptual Map">
             </div>
               <!-- image png has xmind logo + cehck class-->
-              <!-- Modal to zoom image-->
-            <!-- MODAL
-            <div id="myModal" class="modal" class="img-magnifier-container">
-                <span class="close">&times;</span>
-                <img class="modal-content" id="img01">
-                <div id="caption"></div>
-            </div>
-          -->  
           </div>
         </div>
       </div>
@@ -264,8 +251,12 @@
             <p class="section-text">
               In this second model, we aim to present the data and relationships from the conceptual map in a more abstracted manner. Here, individuals, dates, subjects, places, and other elements are represented as entities, while the connections between them are depicted as relationships.
             </p>
-            <img src="assets/img/bella-baxter.png" class="card-img-top" alt="a random image">
-              <!-- image png has xmind logo + check class + add right image -->
+            <div class="col-12 center-image">
+              <div class="img-magnifier-container">
+                <img id="bella" class="imageZoom" src="assets/img/bella-baxter.png" class="img-fluid" style="width:100%; height: 800px;" alt="Conceptual Map">
+              </div>
+                <!-- image png has xmind logo + cehck class-->
+            </div>
           </div>
         </div>
       </div>
@@ -624,5 +615,12 @@
   
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  
+  <script>
+    /* Initiate Magnify Function
+    with the id of the image, and the strength of the magnifier glass:*/
+    magnify("imageZoom", 2);
+  </script>
+
 
 </body>
