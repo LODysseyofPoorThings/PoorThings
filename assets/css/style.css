@@ -388,6 +388,33 @@ h6 {
   }
 }
 
+
+/*--------------------------------------------------------------
+# title knowledge section
+--------------------------------------------------------------*/
+.title-with-hr {
+  text-align: center;
+  margin: 3rem 0;
+  position: relative;
+}
+
+.title-with-hr:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: #d43076;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title-with-hr h2 {
+  padding: 0 0.5rem;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
 /*--------------------------------------------------------------
 # study of the domain text
 --------------------------------------------------------------*/

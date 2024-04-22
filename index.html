@@ -65,23 +65,23 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#studyofthedomain">Study of the domain</a></li>
-          <li class="dropdown"><a href="#"><span>Knowledge Organization</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#knowledgeorganization"><span>Knowledge Organization</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Conceptual Map</a></li>
-              <li><a href="#">E/R Model</a></li>
-              <li><a href="#">Metadata Analysis</a></li>
-              <li><a href="#">Metadata Alignment</a></li>
-              <li><a href="#">Theoretical Model</a></li>
-              <li><a href="#">Enhanced E/R Model</a></li>
-              <li><a href="#">Conceptual Model</a></li>
+              <li><a href="#conceptualmap">Conceptual Map</a></li>
+              <li><a href="#ermodel">E/R Model</a></li>
+              <li><a href="#metadataanalysis">Metadata Analysis</a></li>
+              <li><a href="#metadataalignment">Metadata Alignment</a></li>
+              <li><a href="#theoreticalmodel">Theoretical Model</a></li>
+              <li><a href="#enhancedermodel">Enhanced E/R Model</a></li>
+              <li><a href="#conceptualmodel">Conceptual Model</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href="#"><span>Knowledge Representation</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#knowledgerepresentation"><span>Knowledge Representation</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Items Description</a></li>
-              <li><a href="#">URI Production</a></li>
-              <li><a href="#">RDF Production</a></li>
-              <li><a href="#">RDF Visualization</a></li>
+              <li><a href="#itemsdescription">Items Description</a></li>
+              <li><a href="#uriproduction">URI Production</a></li>
+              <li><a href="#rdfproduction">RDF Production</a></li>
+              <li><a href="#rdfvisualization">RDF Visualization</a></li>
             </ul>
           </li>          
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
@@ -91,7 +91,9 @@
     </div>
   </header><!-- End Header -->
 
+
 <body>
+  <section id="studyofthedomain">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
@@ -224,9 +226,12 @@
 </div>
 
 
-          <!--QUI INIZIA KNOW ORG add title-->
+<section id="knowledgeorganization">
+  <hr class="custom-hr">
+  <h2 class="custom-title">KNOWLEDGE ORGANIZATION</h2>
+  <hr class="custom-hr">
 
-
+    <section id="conceptualmap">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
@@ -244,6 +249,7 @@
         </div>
       </div>
 
+    <section id="ermodel">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
@@ -261,7 +267,7 @@
         </div>
       </div>
 
-
+    <section id="metadataanalysis">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
@@ -347,6 +353,7 @@
       </table>
       </div>
 
+      <section id="metadataalignment">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
@@ -362,7 +369,7 @@
             <p>Regarding the standards, where we could not find the metadata alignement we wrote <i>N/A</i> on the table below.</p>
           </div>
         </div>
-      
+
         <div class="container">
           <div class="row">
             <div class="col-12 text-center">
@@ -493,6 +500,7 @@
         </div>
       </div>
 
+    <section id="theoreticalmodel">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
@@ -511,7 +519,7 @@
       </div>
 
   
-
+    <section id="enhancedermodel">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
@@ -525,7 +533,7 @@
         </div>
       </div>
 
-
+    <section id="conceptualmodel">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
@@ -541,6 +549,12 @@
       
     <!--QUI INIZIA KNOW REPresentation add title and link it to the navbar!!!!-->
 
+    <section id="knowledgerepresentation">
+    <hr class="custom-hr">
+    <h2 class="custom-title">KNOWLEDGE REPRESENTATION</h2>
+    <hr class="custom-hr">
+
+    <section id="itemsdescription">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -582,36 +596,16 @@
           <th>Object</th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-          <td>Creator</td>
-          <td>dcterms:creator</td>
-          <td>Creator Description<br>Creator Identity<br>Creator Role</td>
-          <td>creator</td>
-          <td>100 - Main Entry - Personal Name</td>
-          <td>Creator display<br>Creator Extent</td>
-          <td>E39 Creator<br>P94 has created (was created by)<br>P14 carried out by (performed)</td>
-        </tr>
-      </tbody>
+    
     </table>
 
     <table id="2" class="minimalistBlack">
-      <thead>
-        <tr>
-          <th>Subject</th>
-          <th>Predicate</th>
-          <th>Object</th>
-        </tr>
-      </thead>
-      <tbody>
+    
         <tr>
           <td>Title</td>
           <td>dcterms:title</td>
           <td>Title</td>
-          <td>name</td>
-          <td>245 - Title Statement</td>
-          <td>Title display<br>Title Extent</td>
-          <td>E35 Title<br>P102 has title (is title of)</td>
+  
         </tr>
       </tbody>
     </table>
@@ -663,7 +657,7 @@
 
 
 
-
+<section id="uriproduction">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -675,6 +669,7 @@
       </div>
     </div>
 
+  <section id="rdfproduction">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -686,6 +681,7 @@
       </div>
     </div>
 
+  <section id="rdfvisualization">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -699,7 +695,7 @@
       </div>
     </div>
     
-
+  <section id="team">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
