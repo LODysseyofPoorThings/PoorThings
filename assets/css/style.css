@@ -332,9 +332,20 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
+  background: rgba(255, 255, 255, 0.5); /* Adjust the alpha value (last parameter) to change the transparency */
   background: url("../img/header.jpg") top center;
   background-size: cover;
   padding: 0 15px;
+}
+
+.lod {
+  margin: -200px 0 10px 0;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 85px;
+  color: #3a2827
+
+  ;
 }
 
 #hero h1 {
@@ -347,7 +358,7 @@ h6 {
   ;
 }
 
-#hero h2 {
+#hero h3 {
   color: #d49995
   ;
   margin-bottom: 10px;
@@ -356,12 +367,20 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 
+
+@keyframes btnMovement {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
 #hero .btn-get-started {
   font-size: 50px;
   transition: 0.5s;
   color: #d49995
   ;
   height: 75px;
+  animation: btnMovement 0.8s infinite; /* Adjust the animation duration as needed */
 }
 
 #hero .btn-get-started:hover {
