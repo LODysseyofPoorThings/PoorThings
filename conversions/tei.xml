@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Poor Things: Episodes from the Early Life of Archibald Mccandless M.d. Scottish Public Health Officer.</title>
+            <author>Gray, Alasdair (1934-2019)</author>
+            <respStmt>
+               <resp>Encoded by, </resp>
+               <persName>the 3 mary shelleys</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>Electronic edition</edition>
+        </editionStmt>
+        <extent>13,8 Mb</extent>
+         <publicationStmt>
+            <publisher>
+               <orgName>Bloomsbury Publishing Plc</orgName>
+            </publisher>
+            <address>
+               <addrLine>50 Bedford Square, London WC1B 3DP</addrLine>
+            </address>
+            <idno type="ISBN">978 1 4088 5632 1</idno>
+            <availability>
+               <p>All rights reserved to Bloosmsbury Publishing Plc</p>
+            </availability>
+            <date>2014</date>
+         </publicationStmt>
+         <sourceDesc>
+          <biblStruct xml:lang="en">
+
+              <!-- controlla se monogr va bene perche prima era bibl -->
+
+            <monogr>
+                <title level=a>Poor Things</title>
+                <title level=b>Episodes from the Early Life of Archibald Mccandless M.d. Scottish Public Health Officer.</title>
+                <author>Alasdair Gray</author>
+                <date>1992</date>
+                <imprint>
+                    <pubPlace>London</pubPlace>
+                    <publisher>Bloomsbury Publishing Plc</publisher>
+                </imprint>
+            </monogr>
+         </sourceDesc>
+        <encodingDesc>
+          <projectDesc>
+          <p>This text has been used for a project in Information Science and Cultural Heritage for the Digital Humanities and Digital Knowledge degree program at the University of Bologna.</p>
+          <editorialDecl>
+          <p>Our editorial intention is solely for encoding purposes, and we have not made any alterations. We selected an excerpt from the 14th chapter of this edition for the purpose of the exam.</p>
+          </editorialDecl>
+          </projectDesc>
+      </fileDesc>
+
+
+
+
+    <div n=14 type=Bella>
+    <div type=letter>
+    
+
+  <profileDesc>
+    <particDesc>
+        <!-- Organization information -->
+        <listOrg>
+            <org><!-- Org data here --></org>
+        </listOrg>
+        
+        <!-- Fictional characters -->
+        <listPerson type="fictional">
+            <person xml:id="bella">
+                <persName>Bella Baxter</persName>
+                <note>District Attorney for <placeName>Manhattan</placeName> in seasons 1 to 10 of <title>Law and Order</title>.</note>
+            </person>
+            <person xml:id="god">
+                <persName>Dr. Godwin Baxter</persName>
+                <occupation>doctor/surgeon</occupation>
+                <note>
+                    <choice>
+                        <abbr>NYPD</abbr>
+                        <expan>New York Police Department</expan>
+                    </choice> Detective regularly appearing in seasons 1 to 5 of <title>Law and Order</title> and seasons 5 to 7 of <title>Law and Order: Criminal Intent</title>.
+                </note>
+            </person>
+            <person xml:id="wedder">
+                <persName>Duncan Wedderburn</persName>
+                <occupation>lawyer</occupation>
+                <note>Executive Assistant District Attorney for <placeName>Manhattan</placeName> in seasons 1 to 4 of <title>Law and Order</title>.</note>
+            </person>
+            <person xml:id="candle">
+                <persName>Archibald McCandless</persName>
+                <occupation>god's assistant</occupation>
+                <note>Executive Assistant District Attorney for <placeName>Manhattan</placeName> in seasons 1 to 4 of <title>Law and Order</title>.</note>
+            </person>
+        </listPerson>
+    </particDesc>
+</profileDesc>
+
+
+
+
+  </teiHeader>
+  <text xml:lang="en">
+      <body>
+      <figure>
+         <graphic href="assets/img/illustration.png"/>   ??????? uri
+            <figDesc>Description of the image goes here.</figDesc>
+      </figure>
+
+         <opener>
+            <dateline>
+               <placeName>From Glasgow to Odessa</placeName>
+               <date when="2016-08-05">January 01, 2017</date>
+            </dateline>
+
+
+            style="font-style: italic"
+
+
+            <salute>Dear <persName ref="god.xml#JF">God</persName>,</salute>
+         </opener>
+         <div>
+          <l>I am writing to you from the sea,<space unit="tab"/></l>
+          <l>I had no peace to write before</l>
+          <l>we are afloat upon this <emph>blue blue</emph> sea.</l>
+          <l>Wedder is snug in bunk and glad at last</l>
+          <l>not to be <emph>do do doing</emph> all the time<pc rend="emdash">—</pc></l>
+          <l>the <emph>silly</emph> chap has done some <emph>silly</emph> things.</l>
+          <l>How Auld Lang Syne seems that soft warm bright night</l>
+          <l>when I bade you good-bye, chloroformed Candle,</l>
+          <l>then skipped down ladder into Wedder’s arms.</l>
+          <l>Swift as the wind we <seg type="onomatopoeia">sped</seg>in cab to train</l>
+          <l>and curtained carriage where we  <seg rend="anadiplosis"> <emph>wed </seg>wed wed,</emph></l> !!!!!!!!!!!!!!111
+          <l>went wedding all the way to London town</l>
+          <l>and booked into <rs type="hotel">Saint Pancras's Hotel.</rs></l>
+          <l>And yet poor Duncan wanted marriage too!</l>
+          <l>He did not get it. Please tell </name>Candle</name> so.</l>
+          <l>You never wedded, God, so may not know</l>
+          <l enjamb="y">eight hours of it takes much more out of men</l>
+          <l>than they can give without a lot of rest.</l>
+         <l>Next day was all my own. I saw some sights,</l>
+         <l>then waked my Wedder with a good high tea.</l>
+         <l>"Where have you been?"</l>
+         <l>I told.</l>
+         <l>"Who did you meet?"</l>
+         <l>"No one." "Do you expect me to believe</l>
+         <l enjamb="y">you walked all day and never saw a man?"</l>
+         <l>"No—I saw crowds of men but spoke to none,</l>
+         <l>except a policeman in Regent’s Park</l>
+         <l>from whom I asked the way to Drury Lane."</l>
+         <l>"Of course!" he said. "It would be the police!</l>
+         <l>They’re very tall and handsome are they not?</l>
+         <l>Guards officers are strong and handsome too.</l>
+         <l>They prowl the parks for girls who won’t say no.</l>
+         <l>Perhaps your policeman was in the Guards.</l>
+         <l>The uniforms are very similar."</l>
+         <l>"Have you gone daft?" I asked him. "What is wrong?"</l>
+         <l>"I’m not the only man you ever loved—</l>
+         <l>admit you have had hundreds before me!"</l>
+         <l>"Not hundreds—no. I never counted them,</l>
+         <l>but half a hundred might be about right."</l>
+         <l>He gasped, gaped, groaned, writhed, sobbed</l>
+         <l>and tore his hair</l>
+         <l>then asked for details. That is how I learned</l>
+         <l enjamb="y">he did not think that kissing hands is love.</l>
+         <l>Love (Wedder thinks) only deserves the name</l>
+          <l>when men insert their middle footless leg.</l>
+        <l>“If that is so Dear Wedder, rest assured</l>
+        <l>you are the only man I ever loved.”</l>
+        <l>“Liar cheat whore!” he screamed. “I am no fool!</l>
+        <l>You are no virgin! Who deflowered you first?”</l>
+        <l>It took a while to find out what he meant.</l>
+        <l>It seems that women who have not been wed</l>
+        <l>by wedders like my Wedder all possess</l>
+        <l>a slip of skin across the loving groove</l>
+        <l>where Wedderburns poke their peninsula.</l>
+        <l>This slip of skin he never found on me.</l>
+        <l>“And how do you explain the scar?” he asked,</l>
+        <l>referring to a thin white line which starts</l>
+        <l>among the curls above my loving groove</l>
+        <l>and, like the Greenwich line of longitude,</l>
+        <l>divides in two the belly Solomon</l>
+        <l>has somewhere likened to a heap of wheat.</l>
+        <l>“Surely all women’s stomachs have that line.”</l>
+        <l>“No no!” says Wedder. “Only pregnant ones</l>
+        <l>who’ve been cut open to let babies out.”</l>
+        <l>“That must have been B.C.B.K.,” I said,</l>
+        <l>“the time Before they Cracked poor Bella’s Knob.”</l>
+        <l>I let him feel that crack which rings my skull</l>
+        <l>just underneath the hair. He sighed and said,</l>
+        <l>“I told you everything—my inmost thoughts,</l>
+        <l>childhood and darkest deeds “Why did you not</l>
+         <l>“speak of your past? Or rather, lack of past.”</l>
+        <l>“You never gave me time before tonight</l>
+        <l>to tell you anything, you talked so much.</l>
+        <l>I thought you did not want to know my past,</l>
+        <l>my thoughts and hopes and anything of me</l>
+         <l>not obviously useful when we wed.”</l>
+        <l>“You’re right—I am a fiend! I ought to die!”</l>
+        <l>he yelled, then punched his head, burst into tears,</l>
+        <l>pulled off his trousers, wed me very quick.</l>
+        <l>I soothed him, babied him (he is a baby)</l>
+        <l>and got him wedding at a proper speed.</l>
+        <l>Yes, wed he can and does, but little Candle,</l>
+        <l>if you are reading this do not feel sad.</l>
+        <l>Women need Wedderburns but love much more</l>
+        <l>their faithful kindly man who waits at home.</l>
+        
+          <l>I had a baby once. God, is that true?</l>
+        <l>If it is true what has become of her?</l>
+        <l>For I am somehow sure she is a girl.</l>
+        <l>This is a thought too big for Bell to think.</l>
+        <l>I must grow into it by slow degrees.</l>
+
+      <l>God, do you read the change there is in me?</l>
+        <l>I am not quite as selfish as I was.</l>
+        <l>I felt for Candle though he is not here</l>
+        <l>and tried to comfort him. I start to fear</l>
+        <l>the feeling that will grow if I think much</l>
+        <l>about the little daughter I have lost.</l>
+        <l>Strange how the baby-minded Wedderburn</l>
+        <l>has taught this cracked and empty-headed Bell</l>
+        <l>to be more feelingful for other folk.</l>
+        <l>He managed it by making me his nurse</l>
+        <l>when we reached Switzerland. I’ll tell you how.</l>
+
+        <l>The jealousy which he had shown in London</l>
+        <l>did not depart when we reached Amsterdam.</l>
+        <l>The only time we were not arm-in-arm</l>
+        <l>was when he left me in a waiting-room</l>
+        <l>to see a doctor for his lethargy—</l>
+        <l>that’s what he called the tiredness that he felt,</l>
+        <l>which was quite natural. We all need rest,</l>
+        <l>and time to sit and look and dream and think.</l>
+        <l>The doctor’s pills let him dispense with rest.</l>
+        <l>We rushed through racecourses and boxing-clubs,</l>
+        <l>cathedrals, café-dansants, music-halls.</l>
+        <l>His face was white, his eyes grew huge and shone.</l>
+        <l>“I am no weakling, Bell!” he cried. “On! On!”</l>
+
+        <l>Thank you, dear God, for teaching me to sleep</l>
+        <l>by simply sitting down and shutting eyes.</l>
+        <l>In omnibuses, trains, cabs, trams and boats</l>
+        <l>this came in handy, but was not enough—</l>
+        <l>I had to find some other way to sleep.</l>
+        <l>The second night abroad we went to see</l>
+        <l>an opera by Wagner. It was long,</l>
+        <l>and Wedder, every time I shut my eyes,</l>
+        <l>nudged me and hissed, “Wake up and concentrate!”</l>
+        <l>This taught me how to sleep with open eyes.</l>
+        <l>Soon I could also do it standing up</l>
+        <l>and rushing arm-in-arm from place to place.</l>
+        <l>I think I answered questions in my sleep—</l>
+        <l>the only answer he required was, “Yes dear.”</l>
+        <l>I always wakened up in our hotels,</l>
+        <l>offices where I sent you telegrams</l>
+        <l>(while Wedder telegrammed to his mama)</l>
+  <l>in restaurants, because I like my food,</l>
+  <l>but nowhere else except the Frankfort zoo</l>
+  <l>and German betting-shop I will describe.</l>
+  <l>I think it was the smell which wakened me.</l>
+
+
+  <l>This place (just like the zoo) stank of despair,</l>
+  <l>and fearful hope, also of stale obsession</l>
+  <l>which seemed a mixture of the first two stinks.</l>
+  <l>My fancy nose perhaps exaggerated—</l>
+  <l>I opened eyes upon a brilliant room.</l>
+  <l>Do you remember taking me to see</l>
+  <l>the Glasgow Stock Exchange? It looked like that.</l>
+  <l>Around me fluted columns, cream and gold,</l>
+  <l>held up a vaulted ceiling, blue and white,</l>
+  <l>from which hung shining crystal chandeliers</l>
+  <l>which lit up all the business underneath—</l>
+  <l>six tables where smart people played roulette.</l>
+  <l>Against the walls were sofas, scarlet plush,</l>
+  <l>where more smart people sat, and one was me.</l>
+
+   <l>And Wedderburn was standing by my side,</l>
+  <l>and gazing at the table nearest us,</l>
+  <l>and muttering, “I see. I see. I see.”</l>
+  <l>I thought that he was talking in his sleep</l>
+  <l>with open eyes, as I had done. I said,</l>
+  <l>(gentle but firm) “Let’s go to our hotel,</l>
+  <l>dear Duncan. I will put you into bed.”</l>
+  <l>He stared at me, then slowly shook his head.</l>
+  <l>“Not yet. Not yet. I have a thing to do.</l>
+  <l>I know you inwardly despise my brain—</l>
+  <l>think it a mere appendage to my prick</l>
+  <l>and less efficient than my testicles.</l>
+  <l>I tell you Bella, that this brain now grasps</l>
+  <l>a mighty FACT which other men call CHANCE</l>
+  <l>because they cannot grasp it. Now I see</l>
+  <l>that GOD, FATE, DESTINY, like LUCK and</l>
+  <l>CHANCE</l>
+  <l>are noises glorifying IGNORANCE</l>
+  <l>under the label of a solemn name.</l>
+  <l>Up, woman, and attend me to the game!”</l>
+  <l>The people at the table turned to stare</l>
+  <l>as we approached. One offered him a chair.</l>
+  <l>He murmured thanks, and into it he slid.</l>
+  <l>I stood behind to watch, as he had bid.</l>
+
+
+  <l>Dear God I am tired. It is late. Writing like Shakespeare is hard work for a woman with a cracked head who cannot spell properly, though I notice my writing is getting</l>
+  <l>smaller. Tomorrow we stop at Athens. Do you remember taking me there ages ago by way of Zagreb and Sarajevo? I hope they have mended the Parthenon. Now I will creep to Wedder’s side and say</l>
+  <l>what led to his collapse another day, ending this entry with a line of stars.</l>
+
+  <p>
+  <hi rend="inline">*</hi>
+  <hi rend="inline">*</hi>
+  <hi rend="inline">*</hi>
+  <hi rend="inline">*</hi>
+  <hi rend="inline">*</hi>
+  <hi rend="inline">*</hi>
+  <hi rend="inline">*</hi>
+  <hi rend="inline">*</hi>
+  <hi rend="inline">*</hi>
+   <hi rend="inline">*</hi>
+  <hi rend="inline">*</hi>
+  <hi rend="inline">*</hi>
+  <hi rend="inline">*</hi>
+  <hi rend="inline">*</hi>
+  </p>
+
+
+      </div>
+    </body>
+
+
+         <closer>
+            <!-- groups together 
+               salute and signed -->
+            <salute>
+               Sincerely,
+            </salute>
+            <signed>
+               <orgName ref="#TAPAS">the TAPAS Project</orgName>
+            </signed>
+         </closer>
+         <postscript>
+            <label>P.S.</label>
+            <p>Be sure to check out the TAPAS Learn guide: <ref target="http://tapasproject.org/tapas-learn/letters">"Letters"</ref> for an extended discussion of letters as an encoded document genre. If you have any questions about working with letters in the TEI not covered in our guides, <ref target="http://tapasproject.org/forums/letters">post to our forums!</ref></p>
+         </postscript>
+      </body>
+     <back>
+        <listPlace>
+           <!-- learn more about internal and 
+              external ography data 
+              http://tapasproject.org/tapas-learn/ographies -->
+           <place><!--  --></place>
+        </listPlace>
+     </back>
+  </text>
+</TEI>
