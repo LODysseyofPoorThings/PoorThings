@@ -82,59 +82,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-  document.getElementById("item1").style.display = "table";
-  document.getElementById("item2").style.display = "none";
-  document.getElementById("item3").style.display = "none";
-  document.getElementById("item4").style.display = "none";
-  document.getElementById("item5").style.display = "none";
-  document.getElementById("item6").style.display = "none";
-  document.getElementById("item7").style.display = "none";
-  document.getElementById("item8").style.display = "none";
-  document.getElementById("item9").style.display = "none";
-  document.getElementById("item10").style.display = "none";
-});
-
-
-function myFunction(inp) {
-  if (inp == 'what')
-  {
-    
-    document.getElementById("1").style.display = "none";
-    document.getElementById("2").style.display = "table";
-    // document.getElementById("2").classList.add("align-items-center")
-    document.getElementById("3").style.display = "none";
-    document.getElementById("4").style.display = "none";
-  
-  }
-  if (inp == 'who')
-  {
-    document.getElementById("1").style.display = "table";
-    document.getElementById("2").style.display = "none";
-    document.getElementById("3").style.display = "none";
-    document.getElementById("4").style.display = "none";
-  
-  }
-  if (inp == 'where')
-  {
-    document.getElementById("1").style.display = "none";
-    document.getElementById("2").style.display = "none";
-    document.getElementById("3").style.display = "table";
-    document.getElementById("4").style.display = "none";
-  
-  }
-  if (inp == 'when')
-  {
-    document.getElementById("1").style.display = "none";
-    document.getElementById("2").style.display = "none";
-    document.getElementById("3").style.display = "none";
-    document.getElementById("4").style.display = "table";
-  
-  }
-
-
-/*RESPONSIVE TABLES x 10 items*/
-
-document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("1").style.display = "table";
   document.getElementById("2").style.display = "none";
   document.getElementById("3").style.display = "none";
@@ -149,167 +96,179 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 function myFunction(inp) {
-  if (inp == 'book')
-  {
-    
-    document.getElementById("1").style.display = "table";
-    document.getElementById("2").style.display = "none";
-    // document.getElementById("2").classList.add("align-items-center")
-    document.getElementById("3").style.display = "none";
-    document.getElementById("4").style.display = "none";
-    document.getElementById("5").style.display = "none";
-    document.getElementById("6").style.display = "none";
-    document.getElementById("7").style.display = "none";
-    document.getElementById("8").style.display = "none";
-    document.getElementById("9").style.display = "none";
-    document.getElementById("10").style.display = "none";
-  
-  }
-  if (inp == 'yorgos')
+  if (inp == 'what')
   {
     document.getElementById("1").style.display = "none";
     document.getElementById("2").style.display = "table";
-    // document.getElementById("2").classList.add("align-items-center")
     document.getElementById("3").style.display = "none";
     document.getElementById("4").style.display = "none";
-    document.getElementById("5").style.display = "none";
-    document.getElementById("6").style.display = "none";
-    document.getElementById("7").style.display = "none";
-    document.getElementById("8").style.display = "none";
-    document.getElementById("9").style.display = "none";
-    document.getElementById("10").style.display = "none";
-  
   }
-  if (inp == 'garden')
+
+  if (inp == 'who')
+  {
+    document.getElementById("1").style.display = "table";
+    document.getElementById("2").style.display = "none";
+    document.getElementById("3").style.display = "none";
+    document.getElementById("4").style.display = "none";
+  }
+
+  if (inp == 'where')
   {
     document.getElementById("1").style.display = "none";
     document.getElementById("2").style.display = "none";
-    // document.getElementById("2").classList.add("align-items-center")
     document.getElementById("3").style.display = "table";
     document.getElementById("4").style.display = "none";
-    document.getElementById("5").style.display = "none";
-    document.getElementById("6").style.display = "none";
-    document.getElementById("7").style.display = "none";
-    document.getElementById("8").style.display = "none";
-    document.getElementById("9").style.display = "none";
-    document.getElementById("10").style.display = "none";
-  
   }
-  if (inp == 'sound')
+
+  if (inp == 'when')
   {
     document.getElementById("1").style.display = "none";
     document.getElementById("2").style.display = "none";
-    // document.getElementById("2").classList.add("align-items-center")
     document.getElementById("3").style.display = "none";
     document.getElementById("4").style.display = "table";
-    document.getElementById("5").style.display = "none";
-    document.getElementById("6").style.display = "none";
-    document.getElementById("7").style.display = "none";
-    document.getElementById("8").style.display = "none";
-    document.getElementById("9").style.display = "none";
-    document.getElementById("10").style.display = "none";
+  }
+
+/*RESPONSIVE TABLES x 10 items*/
+
+  if (inp == 'item1')
+  {
+    document.getElementById("item1").style.display = "table";
+    document.getElementById("item2").style.display = "none";
+    document.getElementById("item3").style.display = "none";
+    document.getElementById("item4").style.display = "none";
+    document.getElementById("item5").style.display = "none";
+    document.getElementById("item6").style.display = "none";
+    document.getElementById("item7").style.display = "none";
+    document.getElementById("item8").style.display = "none";
+    document.getElementById("item9").style.display = "none";
+    document.getElementById("item10").style.display = "none";
+  
+  }
+  if (inp == 'item2')
+  {
+    document.getElementById("item1").style.display = "none";
+    document.getElementById("item2").style.display = "table";
+    document.getElementById("item3").style.display = "none";
+    document.getElementById("item4").style.display = "none";
+    document.getElementById("item5").style.display = "none";
+    document.getElementById("item6").style.display = "none";
+    document.getElementById("item7").style.display = "none";
+    document.getElementById("item8").style.display = "none";
+    document.getElementById("item9").style.display = "none";
+    document.getElementById("item10").style.display = "none";
+  
+  }
+  if (inp == 'item3')
+  {
+    document.getElementById("item1").style.display = "none";
+    document.getElementById("item2").style.display = "none";
+    document.getElementById("item3").style.display = "table";
+    document.getElementById("item4").style.display = "none";
+    document.getElementById("item5").style.display = "none";
+    document.getElementById("item6").style.display = "none";
+    document.getElementById("item7").style.display = "none";
+    document.getElementById("item8").style.display = "none";
+    document.getElementById("item9").style.display = "none";
+    document.getElementById("item10").style.display = "none";
+  
+  }
+  if (inp == 'item4')
+  {
+    document.getElementById("item1").style.display = "none";
+    document.getElementById("item2").style.display = "none";
+    document.getElementById("item3").style.display = "none";
+    document.getElementById("item4").style.display = "table";
+    document.getElementById("item5").style.display = "none";
+    document.getElementById("item6").style.display = "none";
+    document.getElementById("item7").style.display = "none";
+    document.getElementById("item8").style.display = "none";
+    document.getElementById("item9").style.display = "none";
+    document.getElementById("item10").style.display = "none";
   
   }
 
-  if (inp == 'bella')
+  if (inp == 'item5')
   {
-    document.getElementById("1").style.display = "none";
-    document.getElementById("2").style.display = "none";
-    // document.getElementById("2").classList.add("align-items-center")
-    document.getElementById("3").style.display = "none";
-    document.getElementById("4").style.display = "none";
-    document.getElementById("5").style.display = "table";
-    document.getElementById("6").style.display = "none";
-    document.getElementById("7").style.display = "none";
-    document.getElementById("8").style.display = "none";
-    document.getElementById("9").style.display = "none";
-    document.getElementById("10").style.display = "none";
-  
+    document.getElementById("item1").style.display = "none";
+    document.getElementById("item2").style.display = "none";
+    document.getElementById("item3").style.display = "none";
+    document.getElementById("item4").style.display = "none";
+    document.getElementById("item5").style.display = "table";
+    document.getElementById("item6").style.display = "none";
+    document.getElementById("item7").style.display = "none";
+    document.getElementById("item8").style.display = "none";
+    document.getElementById("item9").style.display = "none";
+    document.getElementById("item10").style.display = "none";
   }
   
-  
-  if (inp == 'metro')
+  if (inp == 'item6')
   {
-    document.getElementById("1").style.display = "none";
-    document.getElementById("2").style.display = "none";
-    // document.getElementById("2").classList.add("align-items-center")
-    document.getElementById("3").style.display = "none";
-    document.getElementById("4").style.display = "none";
-    document.getElementById("5").style.display = "none";
-    document.getElementById("6").style.display = "table";
-    document.getElementById("7").style.display = "none";
-    document.getElementById("8").style.display = "none";
-    document.getElementById("9").style.display = "none";
-    document.getElementById("10").style.display = "none";
-  
+    document.getElementById("item1").style.display = "none";
+    document.getElementById("item2").style.display = "none";
+    document.getElementById("item3").style.display = "none";
+    document.getElementById("item4").style.display = "none";
+    document.getElementById("item5").style.display = "none";
+    document.getElementById("item6").style.display = "table";
+    document.getElementById("item7").style.display = "none";
+    document.getElementById("item8").style.display = "none";
+    document.getElementById("item9").style.display = "none";
+    document.getElementById("item10").style.display = "none";
   }
 
-  
-  if (inp == 'article')
+  if (inp == 'item7')
   {
-    document.getElementById("1").style.display = "none";
-    document.getElementById("2").style.display = "none";
-    // document.getElementById("2").classList.add("align-items-center")
-    document.getElementById("3").style.display = "none";
-    document.getElementById("4").style.display = "none";
-    document.getElementById("5").style.display = "none";
-    document.getElementById("6").style.display = "none";
-    document.getElementById("7").style.display = "table";
-    document.getElementById("8").style.display = "none";
-    document.getElementById("9").style.display = "none";
-    document.getElementById("10").style.display = "none";
+    document.getElementById("item1").style.display = "none";
+    document.getElementById("item2").style.display = "none";
+    document.getElementById("item3").style.display = "none";
+    document.getElementById("item4").style.display = "none";
+    document.getElementById("item5").style.display = "none";
+    document.getElementById("item6").style.display = "none";
+    document.getElementById("item7").style.display = "table";
+    document.getElementById("item8").style.display = "none";
+    document.getElementById("item9").style.display = "none";
+    document.getElementById("item10").style.display = "none";
+  }
   
+  if (inp == 'item8')
+  {
+    document.getElementById("item1").style.display = "none";
+    document.getElementById("item2").style.display = "none";
+    document.getElementById("item3").style.display = "none";
+    document.getElementById("item4").style.display = "none";
+    document.getElementById("item5").style.display = "none";
+    document.getElementById("item6").style.display = "none";
+    document.getElementById("item7").style.display = "none";
+    document.getElementById("item8").style.display = "table";
+    document.getElementById("item9").style.display = "none";
+    document.getElementById("item10").style.display = "none";
   }
 
-  
-  if (inp == 'alex')
+  if (inp == 'item9')
   {
-    document.getElementById("1").style.display = "none";
-    document.getElementById("2").style.display = "none";
-    // document.getElementById("2").classList.add("align-items-center")
-    document.getElementById("3").style.display = "none";
-    document.getElementById("4").style.display = "none";
-    document.getElementById("5").style.display = "none";
-    document.getElementById("6").style.display = "none";
-    document.getElementById("7").style.display = "none";
-    document.getElementById("8").style.display = "table";
-    document.getElementById("9").style.display = "none";
-    document.getElementById("10").style.display = "none";
-  
+    document.getElementById("item1").style.display = "none";
+    document.getElementById("item2").style.display = "none";
+    document.getElementById("item3").style.display = "none";
+    document.getElementById("item4").style.display = "none";
+    document.getElementById("item5").style.display = "none";
+    document.getElementById("item6").style.display = "none";
+    document.getElementById("item7").style.display = "none";
+    document.getElementById("item8").style.display = "none";
+    document.getElementById("item9").style.display = "table";
+    document.getElementById("item10").style.display = "none";
   }
-
   
-  if (inp == 'schiele')
+  if (inp == 'item10')
   {
-    document.getElementById("1").style.display = "none";
-    document.getElementById("2").style.display = "none";
-    // document.getElementById("2").classList.add("align-items-center")
-    document.getElementById("3").style.display = "none";
-    document.getElementById("4").style.display = "none";
-    document.getElementById("5").style.display = "none";
-    document.getElementById("6").style.display = "none";
-    document.getElementById("7").style.display = "none";
-    document.getElementById("8").style.display = "none";
-    document.getElementById("9").style.display = "table";
-    document.getElementById("10").style.display = "none";
-  
-  }
-
-  
-  if (inp == 'tour')
-  {
-    document.getElementById("1").style.display = "none";
-    document.getElementById("2").style.display = "none";
-    // document.getElementById("2").classList.add("align-items-center")
-    document.getElementById("3").style.display = "none";
-    document.getElementById("4").style.display = "none";
-    document.getElementById("5").style.display = "none";
-    document.getElementById("6").style.display = "none";
-    document.getElementById("7").style.display = "none";
-    document.getElementById("8").style.display = "none";
-    document.getElementById("9").style.display = "none";
-    document.getElementById("10").style.display = "table";
-  
+    document.getElementById("item1").style.display = "none";
+    document.getElementById("item2").style.display = "none";
+    document.getElementById("item3").style.display = "none";
+    document.getElementById("item4").style.display = "none";
+    document.getElementById("item5").style.display = "none";
+    document.getElementById("item6").style.display = "none";
+    document.getElementById("item7").style.display = "none";
+    document.getElementById("item8").style.display = "none";
+    document.getElementById("item9").style.display = "none";
+    document.getElementById("item10").style.display = "table";
   }
 
 // For all the triples
