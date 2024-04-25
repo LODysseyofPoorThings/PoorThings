@@ -56,8 +56,6 @@
       </fileDesc>
 
 
-
-
     <div n=14 type=Bella>
     <div type=letter>
     
@@ -100,27 +98,25 @@
 </profileDesc>
 
 
-
-
   </teiHeader>
   <text xml:lang="en">
       <body>
       <figure>
-         <graphic href="assets/img/illustration.png"/>   ??????? uri
+         <graphic href="assets"/>   ??????? uri
             <figDesc>Description of the image goes here.</figDesc>
       </figure>
 
          <opener>
             <dateline>
                <placeName>From Glasgow to Odessa</placeName>
-               <date when="2016-08-05">January 01, 2017</date>
+               <date when="2016-08-05">January 01, 2017</date> ???
             </dateline>
 
 
             style="font-style: italic"
 
 
-            <salute>Dear <persName ref="god.xml#JF">God</persName>,</salute>
+            <salute>Dear <persName ref="#god">God</persName>,</salute>
          </opener>
          <div>
           <l>I am writing to you from the sea,<space unit="tab"/></l>
@@ -133,8 +129,7 @@
           <l>when I bade you good-bye, chloroformed Candle,</l>
           <l>then skipped down ladder into Wedder’s arms.</l>
           <l>Swift as the wind we <seg type="onomatopoeia">sped</seg>in cab to train</l>
-          <l>and curtained carriage where we  <seg rend="anadiplosis"> <emph>wed </seg>wed wed,</emph></l> !!!!!!!!!!!!!!111
-          <l>went wedding all the way to London town</l>
+         <l>and curtained carriage where we <seg rend="anadiplosis"><emph>wed</emph></seg>wed wed,</emph></l>
           <l>and booked into <rs type="hotel">Saint Pancras's Hotel.</rs></l>
           <l>And yet poor Duncan wanted marriage too!</l>
           <l>He did not get it. Please tell </name>Candle</name> so.</l>
@@ -149,7 +144,7 @@
          <l>"No one." "Do you expect me to believe</l>
          <l enjamb="y">you walked all day and never saw a man?"</l>
          <l>"No—I saw crowds of men but spoke to none,</l>
-         <l>except a policeman in Regent’s Park</l>
+         <l>except a policeman in <name type="place">Regent’s Park</name></l>
          <l>from whom I asked the way to Drury Lane."</l>
          <l>"Of course!" he said. "It would be the police!</l>
          <l>They’re very tall and handsome are they not?</l>
@@ -166,17 +161,17 @@
          <l>and tore his hair</l>
          <l>then asked for details. That is how I learned</l>
          <l enjamb="y">he did not think that kissing hands is love.</l>
-         <l>Love (Wedder thinks) only deserves the name</l>
+         <l>Love (<name type="person" ref="#wedder">Wedder</name> thinks) only deserves the name</l>
           <l>when men insert their middle footless leg.</l>
-        <l>“If that is so Dear Wedder, rest assured</l>
+        <l>“If that is so Dear <name type="person" ref="#wedder">Wedder</name>, rest assured</l>
         <l>you are the only man I ever loved.”</l>
         <l>“Liar cheat whore!” he screamed. “I am no fool!</l>
         <l>You are no virgin! Who deflowered you first?”</l>
         <l>It took a while to find out what he meant.</l>
         <l>It seems that women who have not been wed</l>
-        <l>by wedders like my Wedder all possess</l>
+        <l>by wedders like my <name type="person" ref="#wedder">Wedder</name> all possess</l>
         <l>a slip of skin across the loving groove</l>
-        <l>where Wedderburns poke their peninsula.</l>
+        <l>where <name type="person" ref="#wedder">Wedderburns</name> poke their peninsula.</l>
         <l>This slip of skin he never found on me.</l>
         <l>“And how do you explain the scar?” he asked,</l>
         <l>referring to a thin white line which starts</l>
@@ -185,7 +180,7 @@
         <l>divides in two the belly Solomon</l>
         <l>has somewhere likened to a heap of wheat.</l>
         <l>“Surely all women’s stomachs have that line.”</l>
-        <l>“No no!” says Wedder. “Only pregnant ones</l>
+        <l>“No no!” says <name type="person" ref="#wedder">Wedder</name>. “Only pregnant ones</l>
         <l>who’ve been cut open to let babies out.”</l>
         <l>“That must have been B.C.B.K.,” I said,</l>
         <l>“the time Before they Cracked poor Bella’s Knob.”</l>
@@ -204,31 +199,31 @@
         <l>pulled off his trousers, wed me very quick.</l>
         <l>I soothed him, babied him (he is a baby)</l>
         <l>and got him wedding at a proper speed.</l>
-        <l>Yes, wed he can and does, but little Candle,</l>
+        <l>Yes, wed he can and does, but little <name type="person" ref="#candle">Candle</name>,</l>
         <l>if you are reading this do not feel sad.</l>
-        <l>Women need Wedderburns but love much more</l>
+        <l>Women need <name type="person" ref="#wedder">Wedderburns</name> but love much more</l>
         <l>their faithful kindly man who waits at home.</l>
         
-          <l>I had a baby once. God, is that true?</l>
+         <l>I had a baby once. God, is that true?</l>
         <l>If it is true what has become of her?</l>
         <l>For I am somehow sure she is a girl.</l>
-        <l>This is a thought too big for Bell to think.</l>
+        <l>This is a thought too big for <name type="person" ref="#bella">Bell</name> to think.</l>
         <l>I must grow into it by slow degrees.</l>
 
-      <l>God, do you read the change there is in me?</l>
+      <l><name type="person" ref="#god">God</name>, do you read the change there is in me?</l>
         <l>I am not quite as selfish as I was.</l>
-        <l>I felt for Candle though he is not here</l>
+        <l>I felt for <name type="person" ref="#candle">Candle</name> though he is not here</l>
         <l>and tried to comfort him. I start to fear</l>
         <l>the feeling that will grow if I think much</l>
         <l>about the little daughter I have lost.</l>
-        <l>Strange how the baby-minded Wedderburn</l>
+        <l>Strange how the baby-minded <name type="person" ref="#wedder">Wedderburn</name></l>
         <l>has taught this cracked and empty-headed Bell</l>
         <l>to be more feelingful for other folk.</l>
         <l>He managed it by making me his nurse</l>
-        <l>when we reached Switzerland. I’ll tell you how.</l>
+        <l>when we reached <name type="place">Switzerland</name>. I’ll tell you how.</l>
 
         <l>The jealousy which he had shown in London</l>
-        <l>did not depart when we reached Amsterdam.</l>
+        <l>did not depart when we reached <name type="place">Amsterdam</name>.</l>
         <l>The only time we were not arm-in-arm</l>
         <l>was when he left me in a waiting-room</l>
         <l>to see a doctor for his lethargy—</l>
@@ -239,16 +234,16 @@
         <l>We rushed through racecourses and boxing-clubs,</l>
         <l>cathedrals, café-dansants, music-halls.</l>
         <l>His face was white, his eyes grew huge and shone.</l>
-        <l>“I am no weakling, Bell!” he cried. “On! On!”</l>
+        <l>“I am no weakling, <name type="person" ref="#bella">Bell</name>!” he cried. “On! On!”</l>
 
-        <l>Thank you, dear God, for teaching me to sleep</l>
+        <l>Thank you, dear <name type="person" ref="#god">God</name>, for teaching me to sleep</l>
         <l>by simply sitting down and shutting eyes.</l>
         <l>In omnibuses, trains, cabs, trams and boats</l>
         <l>this came in handy, but was not enough—</l>
         <l>I had to find some other way to sleep.</l>
         <l>The second night abroad we went to see</l>
         <l>an opera by Wagner. It was long,</l>
-        <l>and Wedder, every time I shut my eyes,</l>
+        <l>and <name type="person" ref="#wedder">Wedder</name>, every time I shut my eyes,</l>
         <l>nudged me and hissed, “Wake up and concentrate!”</l>
         <l>This taught me how to sleep with open eyes.</l>
         <l>Soon I could also do it standing up</l>
@@ -257,7 +252,7 @@
         <l>the only answer he required was, “Yes dear.”</l>
         <l>I always wakened up in our hotels,</l>
         <l>offices where I sent you telegrams</l>
-        <l>(while Wedder telegrammed to his mama)</l>
+        <l>(while <name type="person" ref="#wedder">Wedder</name> telegrammed to his mama)</l>
   <l>in restaurants, because I like my food,</l>
   <l>but nowhere else except the Frankfort zoo</l>
   <l>and German betting-shop I will describe.</l>
@@ -279,19 +274,19 @@
   <l>Against the walls were sofas, scarlet plush,</l>
   <l>where more smart people sat, and one was me.</l>
 
-   <l>And Wedderburn was standing by my side,</l>
+   <l>And <name type="person" ref="#wedder">Wedderburn</name> was standing by my side,</l>
   <l>and gazing at the table nearest us,</l>
   <l>and muttering, “I see. I see. I see.”</l>
   <l>I thought that he was talking in his sleep</l>
   <l>with open eyes, as I had done. I said,</l>
   <l>(gentle but firm) “Let’s go to our hotel,</l>
-  <l>dear Duncan. I will put you into bed.”</l>
+  <l>dear <name type="person" ref="#wedder">Duncan</name>. I will put you into bed.”</l>
   <l>He stared at me, then slowly shook his head.</l>
   <l>“Not yet. Not yet. I have a thing to do.</l>
   <l>I know you inwardly despise my brain—</l>
   <l>think it a mere appendage to my prick</l>
   <l>and less efficient than my testicles.</l>
-  <l>I tell you Bella, that this brain now grasps</l>
+  <l>I tell you <name type="person" ref="#bella">Bella</name>, that this brain now grasps</l>
   <l>a mighty FACT which other men call CHANCE</l>
   <l>because they cannot grasp it. Now I see</l>
   <l>that GOD, FATE, DESTINY, like LUCK and</l>

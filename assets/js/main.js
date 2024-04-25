@@ -130,6 +130,188 @@ function myFunction(inp) {
     document.getElementById("4").style.display = "table";
   
   }
+
+
+/*RESPONSIVE TABLES x 10 items*/
+
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("1").style.display = "table";
+  document.getElementById("2").style.display = "none";
+  document.getElementById("3").style.display = "none";
+  document.getElementById("4").style.display = "none";
+  document.getElementById("5").style.display = "none";
+  document.getElementById("6").style.display = "none";
+  document.getElementById("7").style.display = "none";
+  document.getElementById("8").style.display = "none";
+  document.getElementById("9").style.display = "none";
+  document.getElementById("10").style.display = "none";
+});
+
+
+function myFunction(inp) {
+  if (inp == 'book')
+  {
+    
+    document.getElementById("1").style.display = "table";
+    document.getElementById("2").style.display = "none";
+    // document.getElementById("2").classList.add("align-items-center")
+    document.getElementById("3").style.display = "none";
+    document.getElementById("4").style.display = "none";
+    document.getElementById("5").style.display = "none";
+    document.getElementById("6").style.display = "none";
+    document.getElementById("7").style.display = "none";
+    document.getElementById("8").style.display = "none";
+    document.getElementById("9").style.display = "none";
+    document.getElementById("10").style.display = "none";
+  
+  }
+  if (inp == 'yorgos')
+  {
+    document.getElementById("1").style.display = "none";
+    document.getElementById("2").style.display = "table";
+    // document.getElementById("2").classList.add("align-items-center")
+    document.getElementById("3").style.display = "none";
+    document.getElementById("4").style.display = "none";
+    document.getElementById("5").style.display = "none";
+    document.getElementById("6").style.display = "none";
+    document.getElementById("7").style.display = "none";
+    document.getElementById("8").style.display = "none";
+    document.getElementById("9").style.display = "none";
+    document.getElementById("10").style.display = "none";
+  
+  }
+  if (inp == 'garden')
+  {
+    document.getElementById("1").style.display = "none";
+    document.getElementById("2").style.display = "none";
+    // document.getElementById("2").classList.add("align-items-center")
+    document.getElementById("3").style.display = "table";
+    document.getElementById("4").style.display = "none";
+    document.getElementById("5").style.display = "none";
+    document.getElementById("6").style.display = "none";
+    document.getElementById("7").style.display = "none";
+    document.getElementById("8").style.display = "none";
+    document.getElementById("9").style.display = "none";
+    document.getElementById("10").style.display = "none";
+  
+  }
+  if (inp == 'sound')
+  {
+    document.getElementById("1").style.display = "none";
+    document.getElementById("2").style.display = "none";
+    // document.getElementById("2").classList.add("align-items-center")
+    document.getElementById("3").style.display = "none";
+    document.getElementById("4").style.display = "table";
+    document.getElementById("5").style.display = "none";
+    document.getElementById("6").style.display = "none";
+    document.getElementById("7").style.display = "none";
+    document.getElementById("8").style.display = "none";
+    document.getElementById("9").style.display = "none";
+    document.getElementById("10").style.display = "none";
+  
+  }
+
+  if (inp == 'bella')
+  {
+    document.getElementById("1").style.display = "none";
+    document.getElementById("2").style.display = "none";
+    // document.getElementById("2").classList.add("align-items-center")
+    document.getElementById("3").style.display = "none";
+    document.getElementById("4").style.display = "none";
+    document.getElementById("5").style.display = "table";
+    document.getElementById("6").style.display = "none";
+    document.getElementById("7").style.display = "none";
+    document.getElementById("8").style.display = "none";
+    document.getElementById("9").style.display = "none";
+    document.getElementById("10").style.display = "none";
+  
+  }
+  
+  
+  if (inp == 'metro')
+  {
+    document.getElementById("1").style.display = "none";
+    document.getElementById("2").style.display = "none";
+    // document.getElementById("2").classList.add("align-items-center")
+    document.getElementById("3").style.display = "none";
+    document.getElementById("4").style.display = "none";
+    document.getElementById("5").style.display = "none";
+    document.getElementById("6").style.display = "table";
+    document.getElementById("7").style.display = "none";
+    document.getElementById("8").style.display = "none";
+    document.getElementById("9").style.display = "none";
+    document.getElementById("10").style.display = "none";
+  
+  }
+
+  
+  if (inp == 'article')
+  {
+    document.getElementById("1").style.display = "none";
+    document.getElementById("2").style.display = "none";
+    // document.getElementById("2").classList.add("align-items-center")
+    document.getElementById("3").style.display = "none";
+    document.getElementById("4").style.display = "none";
+    document.getElementById("5").style.display = "none";
+    document.getElementById("6").style.display = "none";
+    document.getElementById("7").style.display = "table";
+    document.getElementById("8").style.display = "none";
+    document.getElementById("9").style.display = "none";
+    document.getElementById("10").style.display = "none";
+  
+  }
+
+  
+  if (inp == 'alex')
+  {
+    document.getElementById("1").style.display = "none";
+    document.getElementById("2").style.display = "none";
+    // document.getElementById("2").classList.add("align-items-center")
+    document.getElementById("3").style.display = "none";
+    document.getElementById("4").style.display = "none";
+    document.getElementById("5").style.display = "none";
+    document.getElementById("6").style.display = "none";
+    document.getElementById("7").style.display = "none";
+    document.getElementById("8").style.display = "table";
+    document.getElementById("9").style.display = "none";
+    document.getElementById("10").style.display = "none";
+  
+  }
+
+  
+  if (inp == 'schiele')
+  {
+    document.getElementById("1").style.display = "none";
+    document.getElementById("2").style.display = "none";
+    // document.getElementById("2").classList.add("align-items-center")
+    document.getElementById("3").style.display = "none";
+    document.getElementById("4").style.display = "none";
+    document.getElementById("5").style.display = "none";
+    document.getElementById("6").style.display = "none";
+    document.getElementById("7").style.display = "none";
+    document.getElementById("8").style.display = "none";
+    document.getElementById("9").style.display = "table";
+    document.getElementById("10").style.display = "none";
+  
+  }
+
+  
+  if (inp == 'tour')
+  {
+    document.getElementById("1").style.display = "none";
+    document.getElementById("2").style.display = "none";
+    // document.getElementById("2").classList.add("align-items-center")
+    document.getElementById("3").style.display = "none";
+    document.getElementById("4").style.display = "none";
+    document.getElementById("5").style.display = "none";
+    document.getElementById("6").style.display = "none";
+    document.getElementById("7").style.display = "none";
+    document.getElementById("8").style.display = "none";
+    document.getElementById("9").style.display = "none";
+    document.getElementById("10").style.display = "table";
+  
+  }
+
 // For all the triples
   if (inp == 'item1')
   {
