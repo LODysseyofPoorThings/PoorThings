@@ -1,0 +1,11 @@
+Subject,Predicate,Object
+Monument,rdf:type,dbpedia-owl:Monument
+Monument,owl:sameAs,https://dbpedia.org/page/Lighthouse_of_Alexandria
+Monument,dc:title,Lighthouse of Alexandria
+Monument,dcterms:created,284/246 BC
+Monument,cdwa:Commissioner,Ptolemy I Soter
+Monument,dcterms:spatial,"Pharos, Alexandria, Egypt"
+Monument,schema:material,Lightcoloured stone
+Monument,cdwa:DimensionDescription,103-118 meter
+Monument,schema:endDate,1303
+Monument,dcterms:isPartOf,Seven Wonders of the Ancient World   
