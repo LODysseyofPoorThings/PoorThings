@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Poor Things: Episodes from the Early Life of Archibald Mccandless M.d. Scottish Public Health Officer.</title>
+            <author>Gray, Alasdair (1934-2019)</author>
+            <respStmt>
+               <resp>Encoded by, </resp>
+               <persName>the 3 mary shelleys</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>Electronic edition</edition>
+        </editionStmt>
+        <extent>13,8 Mb</extent>
+         <publicationStmt>
+            <publisher>
+               <orgName>Bloomsbury Publishing Plc</orgName>
+            </publisher>
+            <address>
+               <addrLine>50 Bedford Square, London WC1B 3DP</addrLine>
+            </address>
+            <idno type="ISBN">978 1 4088 5632 1</idno>
+            <availability>
+               <p>All rights reserved to Bloosmsbury Publishing Plc</p>
+            </availability>
+            <date>2014</date>
+         </publicationStmt>
+         <sourceDesc>
+          <biblStruct xml:lang="en">
+
+              <!-- controlla se monogr va bene perche prima era bibl -->
+
+            <monogr>
+                <title level=a>Poor Things</title>
+                <title level=b>Episodes from the Early Life of Archibald Mccandless M.d. Scottish Public Health Officer.</title>
+                <author>Alasdair Gray</author>
+                <date>1992</date>
+                <imprint>
+                    <pubPlace>London</pubPlace>
+                    <publisher>Bloomsbury Publishing Plc</publisher>
+                </imprint>
+            </monogr>
+         </sourceDesc>
+        <encodingDesc>
+          <projectDesc>
+          <p>This text has been used for a project in Information Science and Cultural Heritage for the Digital Humanities and Digital Knowledge degree program at the University of Bologna.</p>
+          <editorialDecl>
+          <p>Our editorial intention is solely for encoding purposes, and we have not made any alterations. We selected an excerpt from the 14th chapter of this edition for the purpose of the exam.</p>
+          </editorialDecl>
+          </projectDesc>
+      </fileDesc>
+
+
+
+
+    <div n=14 type=Bella>
+    <div type=letter>
+    
+
+     <profileDesc>
+        <particDesc>
+           <!-- learn more about internal 
+              and external ography data 
+              http://tapasproject.org/tapas-learn/ographies -->
+           <!-- orgography may 
+              be stashed here -->
+           <listOrg>
+              <org><!--  --></org>
+           </listOrg>
+           <!-- personography may 
+              be stashed here -->
+           <listPerson>
+              <person>
+                 <persName><!--  --></persName>
+              </person>
+           </listPerson>
+        </particDesc>
+     </profileDesc>
+
+
+
+  </teiHeader>
+  <text xml:lang="en">
+      <body>
+         <opener>
+            <dateline>
+               <placeName>From Glasgow to Odessa</placeName>
+               <date when="2016-08-05">January 01, 2017</date>
+            </dateline>
+            <salute>Dear <persName ref="god.xml#JF">God</persName>,</salute>
+         </opener>
+         <i> I had no peace to write before
+         
+
+
+         <closer>
+            <!-- groups together 
+               salute and signed -->
+            <salute>
+               Sincerely,
+            </salute>
+            <signed>
+               <orgName ref="#TAPAS">the TAPAS Project</orgName>
+            </signed>
+         </closer>
+         <postscript>
+            <label>P.S.</label>
+            <p>Be sure to check out the TAPAS Learn guide: <ref target="http://tapasproject.org/tapas-learn/letters">"Letters"</ref> for an extended discussion of letters as an encoded document genre. If you have any questions about working with letters in the TEI not covered in our guides, <ref target="http://tapasproject.org/forums/letters">post to our forums!</ref></p>
+         </postscript>
+      </body>
+     <back>
+        <listPlace>
+           <!-- learn more about internal and 
+              external ography data 
+              http://tapasproject.org/tapas-learn/ographies -->
+           <place><!--  --></place>
+        </listPlace>
+     </back>
+  </text>
+</TEI>
