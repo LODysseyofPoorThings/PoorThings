@@ -49,8 +49,8 @@ g.add((portrait_uri, DC.title, Literal(df_portrait.loc[2]["Object"], datatype=XS
 g.add((portrait_uri, DCTERMS.created, Literal(df_portrait.loc[3]["Object"], datatype=XSD.gYear)))
 g.add((portrait_uri, DC.creator, URIRef(person + df_portrait.loc[4]["Object"].replace(" ", "_"))))
 g.add((portrait_uri, CDWA.CurrentLocation, URIRef(place + df_portrait.loc[5]["Object"].replace(" ", "_"))))
-g.add((portrait_uri, CDWA.MaterialTechinqueDescription, Literal(df_portrait.loc[6]["Object"], datatype=XSD.string)))
-g.add((portrait_uri, CDWA.DimentionDescription, Literal(df_portrait.loc[7]["Object"], datatype=XSD.string)))
+g.add((portrait_uri, CDWA.MaterialTechniqueDescription, Literal(df_portrait.loc[6]["Object"], datatype=XSD.string)))
+g.add((portrait_uri, CDWA.DimensionDescription, Literal(df_portrait.loc[7]["Object"], datatype=XSD.string)))
 g.add((portrait_uri, DC.subject, Literal(df_portrait.loc[8]["Object"], datatype=XSD.string)))
 
 df_activity = pd.read_csv("csv files/grand_tour.csv")
