@@ -15,6 +15,7 @@ pt = Namespace("https://w3id.org/PoorThings.org/")
 item = URIRef(pt + "item/")
 person = URIRef(pt + "person/")
 place = URIRef(pt + "place/")
+time = URIRef(pt + "time/")
 group = URIRef(pt + "group/")
 concept = URIRef(pt + "concept/")
 
@@ -66,3 +67,8 @@ g.add((activity_uri, SCHEMA.endDate, Literal(df_activity.loc[6]["Object"], datat
 g.add((activity_uri, CIDOC_CRM.P21HadGeneralPurpose, URIRef(concept + df_activity.loc[7]["Object"])))
 
 g.serialize("output.ttl", format="turtle", encoding="utf8")
+
+#timespan = uri
+#time beginning
+#time end
+#cidoc time to timespan 
