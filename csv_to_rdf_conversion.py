@@ -1,5 +1,3 @@
-import csv
-from csv import DictReader
 import rdflib
 from rdflib import Namespace, URIRef, Literal
 from rdflib.namespace import RDF, OWL, DC, DCTERMS, XSD, FOAF, RDFS
@@ -25,7 +23,7 @@ g = rdflib.Graph()
 #bind namespaces to graph
 g.bind("cdwa", CDWA)
 g.bind("schema", SCHEMA)
-g.bind("cido-crm", CIDOC_CRM)
+g.bind("cidoc-crm", CIDOC_CRM)
 
 df_monument = pd.read_csv("csv files/lighthouse_of_alexandria.csv")
 

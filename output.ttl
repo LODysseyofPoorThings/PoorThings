@@ -1,7 +1,7 @@
 @prefix cdwa: <https://www.getty.edu/research/publications/electronic_publications/cdwa/> .
+@prefix cidoc-crm: <https://www.cidoc-crm.org/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix ns1: <https://www.cidoc-crm.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix schema: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -13,7 +13,7 @@
     schema:endDate "Early 19th century"^^xsd:string ;
     schema:name "Grand Tour"^^xsd:string ;
     schema:startDate "Late 17th century"^^xsd:string ;
-    ns1:P21HadGeneralPurpose <https://w3id.org/PoorThings.org/concept/Education> .
+    cidoc-crm:P21HadGeneralPurpose <https://w3id.org/PoorThings.org/concept/Education> .
 
 <https://w3id.org/PoorThings.org/item/Monument> a <dbpedia-owl:Monument> ;
     dc:title "Lighthouse of Alexandria"^^xsd:string ;
@@ -33,6 +33,6 @@
     dcterms:created "1911"^^xsd:gYear ;
     owl:sameAs <https://mcid.mcah.columbia.edu/photographic-print/2023_photocoll_0449_0096> ;
     cdwa:CurrentLocation <https://w3id.org/PoorThings.org/place/Columbia_University> ;
-    cdwa:DimentionDescription "56.5 x 35 cm"^^xsd:string ;
-    cdwa:MaterialTechinqueDescription "Pencil and watercolor"^^xsd:string .
+    cdwa:DimensionDescription "56.5 x 35 cm"^^xsd:string ;
+    cdwa:MaterialTechniqueDescription "Pencil and watercolor"^^xsd:string .
 
