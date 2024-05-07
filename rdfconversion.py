@@ -21,10 +21,6 @@ concept = URIRef(pt + "concept/")
 g = rdflib.Graph()
 
 #bind namespaces to graph
-g.bind("rdf", RDF)
-g.bind("dcterms", DCTERMS)
-g.bind("dc", DC)
-g.bind("owl", OWL)
 g.bind("cdwa", CDWA)
 g.bind("schema", SCHEMA)
 g.bind("cidoc-crm", CIDOC_CRM)
@@ -37,26 +33,20 @@ for _, row in df_monument.iterrows():
     predicate = URIRef(row["Predicate"])
     obj = row["Object"]
     
-    if predicate in [RDF.type, OWL.sameAs]:
+    if predicate is RDF.type or predicate is OWL.sameAs:
         obj = URIRef(obj)
-    elif predicate in [DC.creator, CDWA.Commissioner, SCHEMA.agent]:
-        obj = URIRef(person + obj).replace(" ", "_")
-    elif predicate in [DCTERMS.spatial, CDWA.CurrentLocation]:    
-        obj = URIRef(place + obj).replace(" ", "_")
+    elif predicate is DC.creator or predicate is CDWA.Commissioner or predicate is SCHEMA.agent:
+        obj = URIRef(person + obj.replace(" ", "_"))
+    elif predicate is DCTERMS.spatial or predicate is CDWA.CurrentLocation:    
+        obj = URIRef(place + obj.replace(" ", "_"))
     elif predicate is DCTERMS.isPartOf:
-        obj = URIRef(group + obj).replace(" ", "_")
+        obj = URIRef(group + obj.replace(" ", "_"))
+    elif predicate is DCTERMS.created or predicate is SCHEMA.startDate or predicate is SCHEMA.endDate:    
+        obj = URIRef(time + obj.replace(" ", "_"))    
     else:
-        obj = Literal((obj), datatype=XSD.string)    
+        obj = Literal(obj, datatype=XSD.string)    
 
     g.add((subject_uri, predicate, obj))    
 
-g.serialize("output3.ttl", format="turtle", encoding="utf8")
-
-'''
-    if "rdf" in predicate:
-        ps = predicate.split(":")
-        predicate_uri = RDF + ps[1]
-        obj = URIRef(obj)
-    
-        g.add((subject_uri, predicate_uri, obj))  
-'''        
+g.serialize("output4.ttl", format="turtle", encoding="utf8")
+      

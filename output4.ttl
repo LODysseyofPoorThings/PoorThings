@@ -1,0 +1,19 @@
+@prefix ns1: <schema:> .
+@prefix ns2: <dcterms:> .
+@prefix ns3: <dc:> .
+@prefix ns4: <owl:> .
+@prefix ns5: <cdwa:> .
+@prefix ns6: <rdf:> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/PoorThings.org/item/Monument> ns5:Commissioner "Ptolemy I Soter"^^xsd:string ;
+    ns5:DimensionDescription "103-118 meter"^^xsd:string ;
+    ns3:title "Lighthouse of Alexandria"^^xsd:string ;
+    ns2:created "284/246 BC"^^xsd:string ;
+    ns2:isPartOf "Seven Wonders of the Ancient World"^^xsd:string ;
+    ns2:spatial "Pharos, Alexandria, Egypt"^^xsd:string ;
+    ns4:sameAs "https://dbpedia.org/page/Lighthouse_of_Alexandria"^^xsd:string ;
+    ns6:type "dbpedia-owl:Monument"^^xsd:string ;
+    ns1:endDate "1303"^^xsd:string ;
+    ns1:material "Lightcoloured stone"^^xsd:string .
+
