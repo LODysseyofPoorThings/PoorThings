@@ -1,10 +1,10 @@
 Subject,Predicate,Object
 Portrait,rdf:type,dbpedia-owl:Artwork
 Portrait,owl:sameAs,https://mcid.mcah.columbia.edu/photographic-print/2023_photocoll_0449_0096
-Painting,dc:title,Nude Girl Standing With Long Black Hair & Blue-Black Drape
-Painting,dcterms:created,1911
-Painting,dc:creator,Egon Schiele
-Painting,cdwa:CurrentLocation,Columbia University
-Painting,cdwa:Material/TechniqueDescription,Pencil and watercolor
-Painting,cdwa:DimensionDescription,56.5 x 35 cm
-Painting,dc:subject,Young woman with long hair 
+Portrait,dc:title,Nude Girl Standing With Long Black Hair & Blue-Black Drape
+Portrait,dcterms:created,1911
+Portrait,dc:creator,Egon Schiele
+Portrait,cdwa:CurrentLocation,Columbia University
+Portrait,cdwa:MaterialTechniqueDescription,Pencil and watercolor
+Portrait,cdwa:DimensionDescription,56.5 x 35 cm
+Portrait,dc:subject,Young woman with long hair 

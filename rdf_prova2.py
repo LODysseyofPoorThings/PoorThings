@@ -48,5 +48,5 @@ for _, row in df_monument.iterrows():
 
     g.add((subject_uri, predicate, obj))    
 
-g.serialize("output4.ttl", format="turtle", encoding="utf8")
+g.serialize("outputprova2.ttl", format="turtle", encoding="utf8")
       
