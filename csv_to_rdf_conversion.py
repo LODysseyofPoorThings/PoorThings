@@ -1,13 +1,18 @@
 import rdflib
 from rdflib import Namespace, URIRef, Literal
-from rdflib.namespace import RDF, OWL, DC, DCTERMS, XSD, FOAF, RDFS
+from rdflib.namespace import RDF, OWL, DC, DCTERMS, XSD
 import pandas as pd
 
 #Namespaces
 CDWA = Namespace("https://www.getty.edu/research/publications/electronic_publications/cdwa/")
 SCHEMA = Namespace("https://schema.org/")
 CIDOC_CRM = Namespace("https://www.cidoc-crm.org/")
-pt = Namespace("https://w3id.org/PoorThings.org/")
+
+#creating a rdf graph
+g = rdflib.Graph()
+
+#base_uri
+pt = URIRef("https://w3id.org/PoorThings.org/") 
 
 #creating uris
 item = URIRef(pt + "item/")
@@ -17,56 +22,126 @@ time = URIRef(pt + "time/")
 group = URIRef(pt + "group/")
 concept = URIRef(pt + "concept/")
 
-#creating a rdf graph
-g = rdflib.Graph()
-
 #bind namespaces to graph
 g.bind("cdwa", CDWA)
 g.bind("schema", SCHEMA)
 g.bind("cidoc-crm", CIDOC_CRM)
 
-df_monument = pd.read_csv("csv files/lighthouse_of_alexandria.csv")
+#list of csv files
+files_csv = ["csv files/lighthouse_of_alexandria.csv", "csv files/portrait.csv", "csv files/grand_tour.csv"]
 
-monument_uri = URIRef(item + df_monument.loc[0]["Subject"])
-g.add((monument_uri, RDF.type, URIRef(df_monument.loc[0]["Object"])))
-g.add((monument_uri, OWL.sameAs, URIRef(df_monument.loc[1]["Object"])))
-g.add((monument_uri, DC.title, Literal(df_monument.loc[2]["Object"], datatype=XSD.string)))
-g.add((monument_uri, DCTERMS.created, Literal(df_monument.loc[3]["Object"], datatype=XSD.gYear)))
-g.add((monument_uri, CDWA.Commissioner, URIRef(person + df_monument.loc[4]["Object"].replace(" ", "_"))))
-g.add((monument_uri, DCTERMS.spatial, URIRef(place + df_monument.loc[5]["Object"].replace(" ", "_"))))
-g.add((monument_uri, SCHEMA.material, Literal(df_monument.loc[6]["Object"], datatype=XSD.string)))
-g.add((monument_uri, CDWA.DimensionDescription, Literal(df_monument.loc[7]["Object"], datatype=XSD.string)))
-g.add((monument_uri, SCHEMA.endDate, Literal(df_monument.loc[8]["Object"], datatype=XSD.gYear)))
-g.add((monument_uri, DCTERMS.isPartOf, URIRef(group + df_monument.loc[8]["Object"].replace(" ", "_"))))
+#for loop that iterates all the csv files and add data to the same graph
+for file in files_csv:
 
-df_portrait = pd.read_csv("csv files/portrait.csv")
+    #create a pandas dataframe to read csv 
+    df = pd.read_csv(file)
+    
+    #dict to store uris
+    uris_dict = dict()
+ 
+    #iterate through the dataframe:
+    for _, row in df.iterrows():
+        
+        #get row's subject, predicate and object
+        subject = row["Subject"]
+        predicate = row["Predicate"]
+        object = row["Object"] 
+        
+        #create subject uri
+        if subject not in uris_dict:
+            subject_uri = URIRef((item + subject).replace(" ", "_"))
+            uris_dict[subject] = subject_uri
+        else:
+            subject_uri = uris_dict[subject]
+                                                                   
+        #specify predicates
+        if predicate == "rdf:type":
+            predicate_uri = RDF.type
 
-portrait_uri = URIRef(item + df_portrait.loc[0]["Subject"])
-g.add((portrait_uri, RDF.type, URIRef(df_portrait.loc[0]["Object"])))
-g.add((portrait_uri, OWL.sameAs, URIRef(df_portrait.loc[1]["Object"])))
-g.add((portrait_uri, DC.title, Literal(df_portrait.loc[2]["Object"], datatype=XSD.string)))
-g.add((portrait_uri, DCTERMS.created, Literal(df_portrait.loc[3]["Object"], datatype=XSD.gYear)))
-g.add((portrait_uri, DC.creator, URIRef(person + df_portrait.loc[4]["Object"].replace(" ", "_"))))
-g.add((portrait_uri, CDWA.CurrentLocation, URIRef(place + df_portrait.loc[5]["Object"].replace(" ", "_"))))
-g.add((portrait_uri, CDWA.MaterialTechniqueDescription, Literal(df_portrait.loc[6]["Object"], datatype=XSD.string)))
-g.add((portrait_uri, CDWA.DimensionDescription, Literal(df_portrait.loc[7]["Object"], datatype=XSD.string)))
-g.add((portrait_uri, DC.subject, Literal(df_portrait.loc[8]["Object"], datatype=XSD.string)))
+        elif predicate== "owl:sameAs":
+            predicate_uri = OWL.sameAs
 
-df_activity = pd.read_csv("csv files/grand_tour.csv")
+        elif predicate == "dc:title":
+            predicate_uri = DC.title 
 
-activity_uri = URIRef(item + df_activity.loc[0]["Subject"])
-g.add((activity_uri, RDF.type, URIRef(df_activity.loc[0]["Object"])))
-g.add((activity_uri, OWL.sameAs, URIRef(df_activity.loc[1]["Object"])))
-g.add((activity_uri, SCHEMA.name, Literal(df_activity.loc[2]["Object"], datatype=XSD.string)))
-g.add((activity_uri, SCHEMA.agent, URIRef(person + df_activity.loc[3]["Object"].replace(" ", "_"))))
-g.add((activity_uri, DCTERMS.spatial, URIRef(place + df_activity.loc[4]["Object"].replace(" ", "_"))))
-g.add((activity_uri, SCHEMA.startDate, Literal(df_activity.loc[5]["Object"], datatype=XSD.string)))
-g.add((activity_uri, SCHEMA.endDate, Literal(df_activity.loc[6]["Object"], datatype=XSD.string)))
-g.add((activity_uri, CIDOC_CRM.P21HadGeneralPurpose, URIRef(concept + df_activity.loc[7]["Object"])))
+        elif predicate == "dc:creator":
+            predicate_uri = DC.creator    
 
-g.serialize("output.ttl", format="turtle", encoding="utf8")
+        elif predicate == "dc:subject":
+            predicate_uri = DC.subject    
 
-#timespan = uri
-#time beginning
-#time end
-#cidoc time to timespan 
+        elif predicate == "dcterms:created":
+            predicate_uri = DCTERMS.created
+
+        elif predicate == "dcterms:spatial":
+            predicate_uri = DCTERMS.spatial 
+
+        elif predicate == "dcterms:isPartOf":
+            predicate_uri = DCTERMS.isPartOf    
+
+        elif predicate == "cdwa:Commissioner":
+            predicate_uri = CDWA.Commissioner
+
+        elif predicate == "cdwa:DimensionDescription":
+            predicate_uri = CDWA.DimensionDescription  
+
+        elif predicate == "cdwa:CurrentLocation":
+            predicate_uri = CDWA.CurrentLocation      
+
+        elif predicate == "cdwa:MaterialTechniqueDescription":
+            predicate_uri = CDWA.MaterialTechniqueDescription
+
+        elif predicate == "schema:material":
+            predicate_uri = SCHEMA.material    
+
+        elif predicate == "schema:startDate":
+            predicate_uri = SCHEMA.startDate
+
+        elif predicate == "schema:endDate":
+            predicate_uri = SCHEMA.endDate
+
+        elif predicate == "schema:name":
+            predicate_uri = SCHEMA.name
+
+        elif predicate == "schema:agent":
+            predicate_uri = SCHEMA.agent
+
+        elif predicate == "cidoc-crm:P21 had general purpose":
+            predicate_uri = CIDOC_CRM.P21hadGeneralPurpose
+
+        #specify if objects are uris or litterals and add uris to uris_dict
+        if predicate_uri == RDF.type or predicate_uri == OWL.sameAs:
+            obj = URIRef(object)
+
+        elif predicate_uri == DC.creator or predicate_uri == CDWA.Commissioner or predicate_uri == SCHEMA.agent:
+            obj = URIRef(person + object.replace(" ", "_"))
+            uris_dict[object] = obj
+
+        elif predicate_uri == DCTERMS.spatial or predicate_uri == CDWA.CurrentLocation:    
+            obj = URIRef(place + object.replace(" ", "_"))
+            uris_dict[object] = obj
+
+        elif predicate_uri == DCTERMS.isPartOf:
+            obj = URIRef(group + object.replace(" ", "_"))
+            uris_dict[object] = obj
+
+        elif predicate_uri == DCTERMS.created or predicate_uri == SCHEMA.startDate or predicate_uri == SCHEMA.endDate:    
+            obj = URIRef(time + object.replace(" ", "_"))
+            uris_dict[object] = obj 
+
+        elif predicate_uri == CIDOC_CRM.P21hadGeneralPurpose:
+            obj = URIRef(concept + object.replace(" ", "_"))
+            uris_dict[object] = obj   
+
+        else:
+            obj = Literal(object, datatype=XSD.string)    
+
+        #add triple to graph
+        g.add((subject_uri, predicate_uri, obj))
+
+# Serialize the graph to Turtle format
+turtle_str = g.serialize(format="turtle", base=pt, encoding="utf-8")
+
+# Write the Turtle string to a file
+with open("output.ttl", "wb") as f:
+    f.write(turtle_str)

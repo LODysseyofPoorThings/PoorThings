@@ -759,9 +759,9 @@
       this.delta = null;
       this.last = null;
       this.now = null;
-      this.tapTimeout = null;
-      this.singleTapTimeout = null;
-      this.longTapTimeout = null;
+      this.taptimeout = null;
+      this.singleTaptimeout = null;
+      this.longTaptimeout = null;
       this.swipeTimeout = null;
       this.x1 = this.x2 = this.y1 = this.y2 = null;
       this.preTapPosition = {
@@ -794,7 +794,7 @@
           this.isDoubleTap = this.delta > 0 && this.delta <= 250 && Math.abs(this.preTapPosition.x - this.x1) < 30 && Math.abs(this.preTapPosition.y - this.y1) < 30;
 
           if (this.isDoubleTap) {
-            clearTimeout(this.singleTapTimeout);
+            clearTimeout(this.singleTaptimeout);
           }
         }
 
@@ -820,7 +820,7 @@
         }
 
         this._preventTap = false;
-        this.longTapTimeout = setTimeout(function () {
+        this.longTaptimeout = setTimeout(function () {
           this.longTap.dispatch(evt, this.element);
           this._preventTap = true;
         }.bind(this), 750);
@@ -921,7 +921,7 @@
             self.swipe.dispatch(evt, self.element);
           }, 0);
         } else {
-          this.tapTimeout = setTimeout(function () {
+          this.taptimeout = setTimeout(function () {
             if (!self._preventTap) {
               self.tap.dispatch(evt, self.element);
             }
@@ -933,7 +933,7 @@
           }, 0);
 
           if (!self.isDoubleTap) {
-            self.singleTapTimeout = setTimeout(function () {
+            self.singleTaptimeout = setTimeout(function () {
               self.singleTap.dispatch(evt, self.element);
             }, 250);
           }
@@ -950,9 +950,9 @@
       key: "cancelAll",
       value: function cancelAll() {
         this._preventTap = true;
-        clearTimeout(this.singleTapTimeout);
-        clearTimeout(this.tapTimeout);
-        clearTimeout(this.longTapTimeout);
+        clearTimeout(this.singleTaptimeout);
+        clearTimeout(this.taptimeout);
+        clearTimeout(this.longTaptimeout);
         clearTimeout(this.swipeTimeout);
       }
     }, {
@@ -964,12 +964,12 @@
     }, {
       key: "_cancelLongTap",
       value: function _cancelLongTap() {
-        clearTimeout(this.longTapTimeout);
+        clearTimeout(this.longTaptimeout);
       }
     }, {
       key: "_cancelSingleTap",
       value: function _cancelSingleTap() {
-        clearTimeout(this.singleTapTimeout);
+        clearTimeout(this.singleTaptimeout);
       }
     }, {
       key: "_swipeDirection",
@@ -993,16 +993,16 @@
     }, {
       key: "destroy",
       value: function destroy() {
-        if (this.singleTapTimeout) {
-          clearTimeout(this.singleTapTimeout);
+        if (this.singleTaptimeout) {
+          clearTimeout(this.singleTaptimeout);
         }
 
-        if (this.tapTimeout) {
-          clearTimeout(this.tapTimeout);
+        if (this.taptimeout) {
+          clearTimeout(this.taptimeout);
         }
 
-        if (this.longTapTimeout) {
-          clearTimeout(this.longTapTimeout);
+        if (this.longTaptimeout) {
+          clearTimeout(this.longTaptimeout);
         }
 
         if (this.swipeTimeout) {
@@ -1028,7 +1028,7 @@
         this.touchMove.del();
         this.touchEnd.del();
         this.touchCancel.del();
-        this.preV = this.pinchStartLen = this.zoom = this.isDoubleTap = this.delta = this.last = this.now = this.tapTimeout = this.singleTapTimeout = this.longTapTimeout = this.swipeTimeout = this.x1 = this.x2 = this.y1 = this.y2 = this.preTapPosition = this.rotate = this.touchStart = this.multipointStart = this.multipointEnd = this.pinch = this.swipe = this.tap = this.doubleTap = this.longTap = this.singleTap = this.pressMove = this.touchMove = this.touchEnd = this.touchCancel = this.twoFingerPressMove = null;
+        this.preV = this.pinchStartLen = this.zoom = this.isDoubleTap = this.delta = this.last = this.now = this.taptimeout = this.singleTaptimeout = this.longTaptimeout = this.swipeTimeout = this.x1 = this.x2 = this.y1 = this.y2 = this.preTapPosition = this.rotate = this.touchStart = this.multipointStart = this.multipointEnd = this.pinch = this.swipe = this.tap = this.doubleTap = this.longTap = this.singleTap = this.pressMove = this.touchMove = this.touchEnd = this.touchCancel = this.twoFingerPressMove = null;
         window.removeEventListener('scroll', this._cancelAllHandler);
         return null;
       }

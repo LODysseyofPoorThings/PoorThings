@@ -2559,7 +2559,7 @@
           this.hide();
           return;
         }
-        this._triggerBackdropTransition();
+        this._triggerBackdroptransition();
       });
       EventHandler.on(window, EVENT_RESIZE$1, () => {
         if (this._isShown && !this._isTransitioning) {
@@ -2573,7 +2573,7 @@
             return;
           }
           if (this._config.backdrop === 'static') {
-            this._triggerBackdropTransition();
+            this._triggerBackdroptransition();
             return;
           }
           if (this._config.backdrop) {
@@ -2598,7 +2598,7 @@
     _isAnimated() {
       return this._element.classList.contains(CLASS_NAME_FADE$3);
     }
-    _triggerBackdropTransition() {
+    _triggerBackdroptransition() {
       const hideEvent = EventHandler.trigger(this._element, EVENT_HIDE_PREVENTED$1);
       if (hideEvent.defaultPrevented) {
         return;

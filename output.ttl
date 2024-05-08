@@ -1,3 +1,4 @@
+@base <https://w3id.org/PoorThings.org/> .
 @prefix cdwa: <https://www.getty.edu/research/publications/electronic_publications/cdwa/> .
 @prefix cidoc-crm: <https://www.cidoc-crm.org/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
@@ -6,33 +7,36 @@
 @prefix schema: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://w3id.org/PoorThings.org/item/Activity> a <cidoc-crm:E7Activity> ;
-    dcterms:spatial <https://w3id.org/PoorThings.org/place/Europe_and_the_Mediterranean> ;
+<item/Activity> a <cidoc-crm:E7Activity> ;
+    dcterms:spatial <place/Europe_and_the_Mediterranean> ;
     owl:sameAs <https://dbpedia.org/page/Grand_Tour> ;
-    schema:agent <https://w3id.org/PoorThings.org/person/Young_upper-class_men_> ;
-    schema:endDate "Early 19th century"^^xsd:string ;
+    schema:agent <person/Young_upper-class_men_> ;
+    schema:endDate <time/Early_19th_century> ;
     schema:name "Grand Tour"^^xsd:string ;
-    schema:startDate "Late 17th century"^^xsd:string ;
-    cidoc-crm:P21HadGeneralPurpose <https://w3id.org/PoorThings.org/concept/Education> .
+    schema:startDate <time/Late_17th_century> ;
+    cidoc-crm:P21hadGeneralPurpose <concept/Education> .
 
-<https://w3id.org/PoorThings.org/item/Monument> a <dbpedia-owl:Monument> ;
+<item/Monument> a <dbpedia-owl:Monument> ;
     dc:title "Lighthouse of Alexandria"^^xsd:string ;
-    dcterms:created "2801"^^xsd:gYear ;
-    dcterms:isPartOf <https://w3id.org/PoorThings.org/group/1303> ;
-    dcterms:spatial <https://w3id.org/PoorThings.org/place/Pharos,_Alexandria,_Egypt> ;
+    dcterms:created <time/284/246_BC> ;
+    dcterms:isPartOf <group/Seven_Wonders_of_the_Ancient_World> ;
+    dcterms:spatial <place/Pharos,_Alexandria,_Egypt> ;
     owl:sameAs <https://dbpedia.org/page/Lighthouse_of_Alexandria> ;
-    schema:endDate "1303"^^xsd:gYear ;
+    schema:endDate <time/1303> ;
     schema:material "Lightcoloured stone"^^xsd:string ;
-    cdwa:Commissioner <https://w3id.org/PoorThings.org/person/Ptolemy_I_Soter> ;
+    cdwa:Commissioner <person/Ptolemy_I_Soter> ;
     cdwa:DimensionDescription "103-118 meter"^^xsd:string .
 
-<https://w3id.org/PoorThings.org/item/Portrait> a <dbpedia-owl:Artwork> ;
-    dc:creator <https://w3id.org/PoorThings.org/person/Egon_Schiele> ;
+<item/Portrait> a <dbpedia-owl:Artwork> ;
+    dc:creator <person/Egon_Schiele> ;
     dc:subject "Young woman with long hair "^^xsd:string ;
     dc:title "Nude Girl Standing With Long Black Hair & Blue-Black Drape"^^xsd:string ;
-    dcterms:created "1911"^^xsd:gYear ;
+    dcterms:created <time/1911> ;
     owl:sameAs <https://mcid.mcah.columbia.edu/photographic-print/2023_photocoll_0449_0096> ;
-    cdwa:CurrentLocation <https://w3id.org/PoorThings.org/place/Columbia_University> ;
+    cdwa:CurrentLocation <place/Columbia_University> ;
     cdwa:DimensionDescription "56.5 x 35 cm"^^xsd:string ;
     cdwa:MaterialTechniqueDescription "Pencil and watercolor"^^xsd:string .
+
+<person/Ptolemy_I_Soter> a <cidoc-crm:E21Person> ;
+    owl:sameAs <https://dbpedia.org/page/Ptolemy_I_Soter> .
 

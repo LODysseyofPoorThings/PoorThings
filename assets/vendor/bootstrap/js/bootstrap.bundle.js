@@ -2175,7 +2175,7 @@
     };
   }
 
-  function mapToStyles(_ref2) {
+  function maptoStyles(_ref2) {
     var _Object$assign2;
 
     var popper = _ref2.popper,
@@ -2286,7 +2286,7 @@
     };
 
     if (state.modifiersData.popperOffsets != null) {
-      state.styles.popper = Object.assign({}, state.styles.popper, mapToStyles(Object.assign({}, commonStyles, {
+      state.styles.popper = Object.assign({}, state.styles.popper, maptoStyles(Object.assign({}, commonStyles, {
         offsets: state.modifiersData.popperOffsets,
         position: state.options.strategy,
         adaptive: adaptive,
@@ -2295,7 +2295,7 @@
     }
 
     if (state.modifiersData.arrow != null) {
-      state.styles.arrow = Object.assign({}, state.styles.arrow, mapToStyles(Object.assign({}, commonStyles, {
+      state.styles.arrow = Object.assign({}, state.styles.arrow, maptoStyles(Object.assign({}, commonStyles, {
         offsets: state.modifiersData.arrow,
         position: 'absolute',
         adaptive: false,
@@ -3282,7 +3282,7 @@
     });
   }
 
-  var DEFAULT_OPTIONS = {
+  var DEFAULT_OptIONS = {
     placement: 'bottom',
     modifiers: [],
     strategy: 'absolute'
@@ -3307,7 +3307,7 @@
         _generatorOptions$def = _generatorOptions.defaultModifiers,
         defaultModifiers = _generatorOptions$def === void 0 ? [] : _generatorOptions$def,
         _generatorOptions$def2 = _generatorOptions.defaultOptions,
-        defaultOptions = _generatorOptions$def2 === void 0 ? DEFAULT_OPTIONS : _generatorOptions$def2;
+        defaultOptions = _generatorOptions$def2 === void 0 ? DEFAULT_OptIONS : _generatorOptions$def2;
     return function createPopper(reference, popper, options) {
       if (options === void 0) {
         options = defaultOptions;
@@ -3316,7 +3316,7 @@
       var state = {
         placement: 'bottom',
         orderedModifiers: [],
-        options: Object.assign({}, DEFAULT_OPTIONS, defaultOptions),
+        options: Object.assign({}, DEFAULT_OptIONS, defaultOptions),
         modifiersData: {},
         elements: {
           reference: reference,
@@ -4379,7 +4379,7 @@
           this.hide();
           return;
         }
-        this._triggerBackdropTransition();
+        this._triggerBackdroptransition();
       });
       EventHandler.on(window, EVENT_RESIZE$1, () => {
         if (this._isShown && !this._isTransitioning) {
@@ -4393,7 +4393,7 @@
             return;
           }
           if (this._config.backdrop === 'static') {
-            this._triggerBackdropTransition();
+            this._triggerBackdroptransition();
             return;
           }
           if (this._config.backdrop) {
@@ -4418,7 +4418,7 @@
     _isAnimated() {
       return this._element.classList.contains(CLASS_NAME_FADE$3);
     }
-    _triggerBackdropTransition() {
+    _triggerBackdroptransition() {
       const hideEvent = EventHandler.trigger(this._element, EVENT_HIDE_PREVENTED$1);
       if (hideEvent.defaultPrevented) {
         return;
