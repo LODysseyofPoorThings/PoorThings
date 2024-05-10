@@ -12,5 +12,5 @@ Monument,dcterms:isPartOf,Seven Wonders of the Ancient World
 Ptolemy I Soter,rdf:type,cidoc-crm:E21Person
 Ptolemy I Soter,owl:sameAs,https://dbpedia.org/page/Ptolemy_I_Soter
 284-246 BC,rdf:type,cidoc-crm:E52Time-Span
-284-246 BC,schema:startDate,284
-284-246 BC,schema:endDate,246
+284-246 BC,schema:startDate,"284 BC"
+284-246 BC,schema:endDate,"246 BC"

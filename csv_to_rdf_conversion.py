@@ -137,10 +137,7 @@ for file in files_csv:
                 obj = Literal(object, datatype=XSD.gYear)   
 
         elif predicate_uri == SCHEMA.startDate or predicate_uri == SCHEMA.endDate:
-            if len(object) == 3:
-                obj = Literal(object, datatype=XSD.gYear)
-            else:
-                obj = Literal(object, datatype=XSD.gYear)           
+            obj = Literal(object, datatype=XSD.gYear)           
 
         else:
             obj = Literal(object, datatype=XSD.string)    
