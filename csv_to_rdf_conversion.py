@@ -123,15 +123,24 @@ for file in files_csv:
 
         elif predicate_uri == DCTERMS.isPartOf:
             obj = URIRef(group + object.replace(" ", "_"))
-            uris_dict[object] = obj
-
-        elif predicate_uri == DCTERMS.created or predicate_uri == SCHEMA.startDate or predicate_uri == SCHEMA.endDate:    
-            obj = URIRef(time + object.replace(" ", "_"))
             uris_dict[object] = obj 
 
         elif predicate_uri == CIDOC_CRM.P21hadGeneralPurpose:
             obj = URIRef(concept + object.replace(" ", "_"))
-            uris_dict[object] = obj   
+            uris_dict[object] = obj
+
+        elif predicate_uri == DCTERMS.created:
+            if "-" in object:    
+               obj = URIRef(time + object.replace(" ", "_"))
+               uris_dict[object] = obj
+            else:
+                obj = Literal(object, datatype=XSD.gYear)   
+
+        elif predicate_uri == SCHEMA.startDate or predicate_uri == SCHEMA.endDate:
+            if len(object) == 3:
+                obj = Literal(object, datatype=XSD.gYear)
+            else:
+                obj = Literal(object, datatype=XSD.gYear)           
 
         else:
             obj = Literal(object, datatype=XSD.string)    

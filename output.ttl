@@ -11,18 +11,18 @@
     dcterms:spatial <place/Europe_and_the_Mediterranean> ;
     owl:sameAs <https://dbpedia.org/page/Grand_Tour> ;
     schema:agent <person/Young_upper-class_men_> ;
-    schema:endDate <time/Early_19th_century> ;
+    schema:endDate "1840"^^xsd:gYear ;
     schema:name "Grand Tour"^^xsd:string ;
-    schema:startDate <time/Late_17th_century> ;
+    schema:startDate "1660"^^xsd:gYear ;
     cidoc-crm:P21hadGeneralPurpose <concept/Education> .
 
 <item/Monument> a <dbpedia-owl:Monument> ;
     dc:title "Lighthouse of Alexandria"^^xsd:string ;
-    dcterms:created <time/284/246_BC> ;
+    dcterms:created <time/284-246_BC> ;
     dcterms:isPartOf <group/Seven_Wonders_of_the_Ancient_World> ;
-    dcterms:spatial <place/Pharos,_Alexandria,_Egypt> ;
+    dcterms:spatial <place/Pharos> ;
     owl:sameAs <https://dbpedia.org/page/Lighthouse_of_Alexandria> ;
-    schema:endDate <time/1303> ;
+    schema:endDate "1303"^^xsd:gYear ;
     schema:material "Lightcoloured stone"^^xsd:string ;
     cdwa:Commissioner <person/Ptolemy_I_Soter> ;
     cdwa:DimensionDescription "103-118 meter"^^xsd:string .
@@ -31,7 +31,7 @@
     dc:creator <person/Egon_Schiele> ;
     dc:subject "Young woman with long hair "^^xsd:string ;
     dc:title "Nude Girl Standing With Long Black Hair & Blue-Black Drape"^^xsd:string ;
-    dcterms:created <time/1911> ;
+    dcterms:created "1911"^^xsd:gYear ;
     owl:sameAs <https://mcid.mcah.columbia.edu/photographic-print/2023_photocoll_0449_0096> ;
     cdwa:CurrentLocation <place/Columbia_University> ;
     cdwa:DimensionDescription "56.5 x 35 cm"^^xsd:string ;
@@ -39,4 +39,8 @@
 
 <person/Ptolemy_I_Soter> a <cidoc-crm:E21Person> ;
     owl:sameAs <https://dbpedia.org/page/Ptolemy_I_Soter> .
+
+<time/284-246_BC> a <cidoc-crm:E52Time-Span> ;
+    schema:endDate "2401"^^xsd:gYear ;
+    schema:startDate "2801"^^xsd:gYear .
 

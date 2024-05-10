@@ -4,6 +4,6 @@ Activity,owl:sameAs,https://dbpedia.org/page/Grand_Tour
 Activity,schema:name,Grand Tour
 Activity,schema:agent,Young upper-class men 
 Activity,dcterms:spatial,Europe and the Mediterranean
-Activity,schema:startDate,Late 17th century
-Activity,schema:endDate,Early 19th century
+Activity,schema:startDate,1660s
+Activity,schema:endDate,1840s
 Activity,cidoc-crm:P21 had general purpose,Education
