@@ -6,6 +6,424 @@
 * License: https://bootstrapmade.com/license/
 */
 
+/* MAGNIFIER GLASS*/
+
+function magnify(className, zoom) {
+  var images = document.querySelectorAll('.' + className);
+  images.forEach(img => {
+
+    /* Create magnifier glass: */
+    var glass = document.createElement("DIV");
+    glass.setAttribute("class", "img-magnifier-glass");
+
+    /* Insert magnifier glass: */
+    img.parentElement.insertBefore(glass, img);
+
+    /* Set background properties for the magnifier glass: */
+    glass.style.backgroundImage = "url('" + img.src + "')";
+    glass.style.backgroundRepeat = "no-repeat";
+    glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
+    
+    var bw = 3;
+    var w = glass.offsetWidth / 2;
+    var h = glass.offsetHeight / 2;
+
+    /* Execute a function when someone moves the magnifier glass over the image: */
+    glass.addEventListener("mousemove", moveMagnifier);
+    img.addEventListener("mousemove", moveMagnifier);
+
+    /*and also for touch screens:*/
+    glass.addEventListener("touchmove", moveMagnifier);
+    img.addEventListener("touchmove", moveMagnifier);
+
+    function moveMagnifier(e) {
+    var pos, x, y;
+    /* Prevent any other actions that may occur when moving over the image */
+    e.preventDefault();
+    /* Get the cursor's x and y positions: */
+    pos = getCursorPos(e);
+    x = pos.x;
+    y = pos.y;
+    /* Prevent the magnifier glass from being positioned outside the image: */
+    if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
+    if (x < w / zoom) {x = w / zoom;}
+    if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
+    if (y < h / zoom) {y = h / zoom;}
+    /* Set the position of the magnifier glass: */
+    glass.style.left = (x - w) + "px";
+    glass.style.top = (y - h) + "px";
+    /* Display what the magnifier glass "sees": */
+    glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
+  }
+
+    function getCursorPos(e) {
+      var a, x = 0, y = 0;
+      e = e || window.event;
+      /* Get the x and y positions of the image: */
+      a = img.getBoundingClientRect();
+      /* Calculate the cursor's x and y coordinates, relative to the image: */
+      x = e.pageX - a.left;
+      y = e.pageY - a.top;
+      /* Consider any page scrolling: */
+      x = x - window.pageXOffset;
+      y = y - window.pageYOffset;
+      return {x : x, y : y};
+    }
+  });
+}
+
+/*RESPONSIVE TABLES*/
+
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("1").style.display = "table";
+  document.getElementById("2").style.display = "none";
+  document.getElementById("3").style.display = "none";
+  document.getElementById("4").style.display = "none";
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("1").style.display = "table";
+  document.getElementById("2").style.display = "none";
+  document.getElementById("3").style.display = "none";
+  document.getElementById("4").style.display = "none";
+  document.getElementById("5").style.display = "none";
+  document.getElementById("6").style.display = "none";
+  document.getElementById("7").style.display = "none";
+  document.getElementById("8").style.display = "none";
+  document.getElementById("9").style.display = "none";
+  document.getElementById("10").style.display = "none";
+});
+
+
+function myFunction(inp) {
+  if (inp == 'what')
+  {
+    document.getElementById("1").style.display = "none";
+    document.getElementById("2").style.display = "table";
+    document.getElementById("3").style.display = "none";
+    document.getElementById("4").style.display = "none";
+  }
+
+  if (inp == 'who')
+  {
+    document.getElementById("1").style.display = "table";
+    document.getElementById("2").style.display = "none";
+    document.getElementById("3").style.display = "none";
+    document.getElementById("4").style.display = "none";
+  }
+
+  if (inp == 'where')
+  {
+    document.getElementById("1").style.display = "none";
+    document.getElementById("2").style.display = "none";
+    document.getElementById("3").style.display = "table";
+    document.getElementById("4").style.display = "none";
+  }
+
+  if (inp == 'when')
+  {
+    document.getElementById("1").style.display = "none";
+    document.getElementById("2").style.display = "none";
+    document.getElementById("3").style.display = "none";
+    document.getElementById("4").style.display = "table";
+  }
+
+/*RESPONSIVE TABLES x 10 items*/
+
+  if (inp == 'item1')
+  {
+    document.getElementById("item1").style.display = "table";
+    document.getElementById("item2").style.display = "none";
+    document.getElementById("item3").style.display = "none";
+    document.getElementById("item4").style.display = "none";
+    document.getElementById("item5").style.display = "none";
+    document.getElementById("item6").style.display = "none";
+    document.getElementById("item7").style.display = "none";
+    document.getElementById("item8").style.display = "none";
+    document.getElementById("item9").style.display = "none";
+    document.getElementById("item10").style.display = "none";
+  
+  }
+  if (inp == 'item2')
+  {
+    document.getElementById("item1").style.display = "none";
+    document.getElementById("item2").style.display = "table";
+    document.getElementById("item3").style.display = "none";
+    document.getElementById("item4").style.display = "none";
+    document.getElementById("item5").style.display = "none";
+    document.getElementById("item6").style.display = "none";
+    document.getElementById("item7").style.display = "none";
+    document.getElementById("item8").style.display = "none";
+    document.getElementById("item9").style.display = "none";
+    document.getElementById("item10").style.display = "none";
+  
+  }
+  if (inp == 'item3')
+  {
+    document.getElementById("item1").style.display = "none";
+    document.getElementById("item2").style.display = "none";
+    document.getElementById("item3").style.display = "table";
+    document.getElementById("item4").style.display = "none";
+    document.getElementById("item5").style.display = "none";
+    document.getElementById("item6").style.display = "none";
+    document.getElementById("item7").style.display = "none";
+    document.getElementById("item8").style.display = "none";
+    document.getElementById("item9").style.display = "none";
+    document.getElementById("item10").style.display = "none";
+  
+  }
+  if (inp == 'item4')
+  {
+    document.getElementById("item1").style.display = "none";
+    document.getElementById("item2").style.display = "none";
+    document.getElementById("item3").style.display = "none";
+    document.getElementById("item4").style.display = "table";
+    document.getElementById("item5").style.display = "none";
+    document.getElementById("item6").style.display = "none";
+    document.getElementById("item7").style.display = "none";
+    document.getElementById("item8").style.display = "none";
+    document.getElementById("item9").style.display = "none";
+    document.getElementById("item10").style.display = "none";
+  
+  }
+
+  if (inp == 'item5')
+  {
+    document.getElementById("item1").style.display = "none";
+    document.getElementById("item2").style.display = "none";
+    document.getElementById("item3").style.display = "none";
+    document.getElementById("item4").style.display = "none";
+    document.getElementById("item5").style.display = "table";
+    document.getElementById("item6").style.display = "none";
+    document.getElementById("item7").style.display = "none";
+    document.getElementById("item8").style.display = "none";
+    document.getElementById("item9").style.display = "none";
+    document.getElementById("item10").style.display = "none";
+  }
+  
+  if (inp == 'item6')
+  {
+    document.getElementById("item1").style.display = "none";
+    document.getElementById("item2").style.display = "none";
+    document.getElementById("item3").style.display = "none";
+    document.getElementById("item4").style.display = "none";
+    document.getElementById("item5").style.display = "none";
+    document.getElementById("item6").style.display = "table";
+    document.getElementById("item7").style.display = "none";
+    document.getElementById("item8").style.display = "none";
+    document.getElementById("item9").style.display = "none";
+    document.getElementById("item10").style.display = "none";
+  }
+
+  if (inp == 'item7')
+  {
+    document.getElementById("item1").style.display = "none";
+    document.getElementById("item2").style.display = "none";
+    document.getElementById("item3").style.display = "none";
+    document.getElementById("item4").style.display = "none";
+    document.getElementById("item5").style.display = "none";
+    document.getElementById("item6").style.display = "none";
+    document.getElementById("item7").style.display = "table";
+    document.getElementById("item8").style.display = "none";
+    document.getElementById("item9").style.display = "none";
+    document.getElementById("item10").style.display = "none";
+  }
+  
+  if (inp == 'item8')
+  {
+    document.getElementById("item1").style.display = "none";
+    document.getElementById("item2").style.display = "none";
+    document.getElementById("item3").style.display = "none";
+    document.getElementById("item4").style.display = "none";
+    document.getElementById("item5").style.display = "none";
+    document.getElementById("item6").style.display = "none";
+    document.getElementById("item7").style.display = "none";
+    document.getElementById("item8").style.display = "table";
+    document.getElementById("item9").style.display = "none";
+    document.getElementById("item10").style.display = "none";
+  }
+
+  if (inp == 'item9')
+  {
+    document.getElementById("item1").style.display = "none";
+    document.getElementById("item2").style.display = "none";
+    document.getElementById("item3").style.display = "none";
+    document.getElementById("item4").style.display = "none";
+    document.getElementById("item5").style.display = "none";
+    document.getElementById("item6").style.display = "none";
+    document.getElementById("item7").style.display = "none";
+    document.getElementById("item8").style.display = "none";
+    document.getElementById("item9").style.display = "table";
+    document.getElementById("item10").style.display = "none";
+  }
+  
+  if (inp == 'item10')
+  {
+    document.getElementById("item1").style.display = "none";
+    document.getElementById("item2").style.display = "none";
+    document.getElementById("item3").style.display = "none";
+    document.getElementById("item4").style.display = "none";
+    document.getElementById("item5").style.display = "none";
+    document.getElementById("item6").style.display = "none";
+    document.getElementById("item7").style.display = "none";
+    document.getElementById("item8").style.display = "none";
+    document.getElementById("item9").style.display = "none";
+    document.getElementById("item10").style.display = "table";
+  }
+
+// For all the triples
+  if (inp == 'item1')
+  {
+    document.getElementById("item1").style.display = "table";
+    document.getElementById("item2").style.display = "none";
+    document.getElementById("item3").style.display = "none";
+    document.getElementById("item4").style.display = "none";
+    document.getElementById("item5").style.display = "none";
+    document.getElementById("item6").style.display = "none";
+    document.getElementById("item7").style.display = "none";
+    document.getElementById("item8").style.display = "none";
+    document.getElementById("item9").style.display = "none";
+    document.getElementById("item10").style.display = "none";
+  
+  }
+
+  if (inp == 'item2')
+  {
+    document.getElementById("item1").style.display = "none";
+    document.getElementById("item2").style.display = "table";
+    document.getElementById("item3").style.display = "none";
+    document.getElementById("item4").style.display = "none";
+    document.getElementById("item5").style.display = "none";
+    document.getElementById("item6").style.display = "none";
+    document.getElementById("item7").style.display = "none";
+    document.getElementById("item8").style.display = "none";
+    document.getElementById("item9").style.display = "none";
+    document.getElementById("item10").style.display = "none";
+  
+  }
+
+  if (inp == 'item3')
+  {
+    document.getElementById("item1").style.display = "none";
+    document.getElementById("item2").style.display = "none";
+    document.getElementById("item3").style.display = "table";
+    document.getElementById("item4").style.display = "none";
+    document.getElementById("item5").style.display = "none";
+    document.getElementById("item6").style.display = "none";
+    document.getElementById("item7").style.display = "none";
+    document.getElementById("item8").style.display = "none";
+    document.getElementById("item9").style.display = "none";
+    document.getElementById("item10").style.display = "none";
+  
+  }
+
+  if (inp == 'item4')
+  {
+    document.getElementById("item1").style.display = "none";
+    document.getElementById("item2").style.display = "none";
+    document.getElementById("item3").style.display = "none";
+    document.getElementById("item4").style.display = "table";
+    document.getElementById("item5").style.display = "none";
+    document.getElementById("item6").style.display = "none";
+    document.getElementById("item7").style.display = "none";
+    document.getElementById("item8").style.display = "none";
+    document.getElementById("item9").style.display = "none";
+    document.getElementById("item10").style.display = "none";
+  
+  }
+
+  if (inp == 'item5')
+  {
+    document.getElementById("item1").style.display = "none";
+    document.getElementById("item2").style.display = "none";
+    document.getElementById("item3").style.display = "none";
+    document.getElementById("item4").style.display = "none";
+    document.getElementById("item5").style.display = "table";
+    document.getElementById("item6").style.display = "none";
+    document.getElementById("item7").style.display = "none";
+    document.getElementById("item8").style.display = "none";
+    document.getElementById("item9").style.display = "none";
+    document.getElementById("item10").style.display = "none";
+  
+  }
+
+  if (inp == 'item6')
+  {
+    document.getElementById("item1").style.display = "none";
+    document.getElementById("item2").style.display = "none";
+    document.getElementById("item3").style.display = "none";
+    document.getElementById("item4").style.display = "none";
+    document.getElementById("item5").style.display = "none";
+    document.getElementById("item6").style.display = "table";
+    document.getElementById("item7").style.display = "none";
+    document.getElementById("item8").style.display = "none";
+    document.getElementById("item9").style.display = "none";
+    document.getElementById("item10").style.display = "none";
+  
+  }
+
+  if (inp == 'item7')
+  {
+    document.getElementById("item1").style.display = "none";
+    document.getElementById("item2").style.display = "none";
+    document.getElementById("item3").style.display = "none";
+    document.getElementById("item4").style.display = "none";
+    document.getElementById("item5").style.display = "none";
+    document.getElementById("item6").style.display = "none";
+    document.getElementById("item7").style.display = "table";
+    document.getElementById("item8").style.display = "none";
+    document.getElementById("item9").style.display = "none";
+    document.getElementById("item10").style.display = "none";
+  
+  }
+
+  if (inp == 'item8')
+  {
+    document.getElementById("item1").style.display = "none";
+    document.getElementById("item2").style.display = "none";
+    document.getElementById("item3").style.display = "none";
+    document.getElementById("item4").style.display = "none";
+    document.getElementById("item5").style.display = "none";
+    document.getElementById("item6").style.display = "none";
+    document.getElementById("item7").style.display = "none";
+    document.getElementById("item8").style.display = "table";
+    document.getElementById("item9").style.display = "none";
+    document.getElementById("item10").style.display = "none";
+  
+  }
+
+  if (inp == 'item9')
+  {
+    document.getElementById("item1").style.display = "none";
+    document.getElementById("item2").style.display = "none";
+    document.getElementById("item3").style.display = "none";
+    document.getElementById("item4").style.display = "none";
+    document.getElementById("item5").style.display = "none";
+    document.getElementById("item6").style.display = "none";
+    document.getElementById("item7").style.display = "none";
+    document.getElementById("item8").style.display = "none";
+    document.getElementById("item9").style.display = "table";
+    document.getElementById("item10").style.display = "none";
+  
+  }
+
+  if (inp == 'item10')
+  {
+    document.getElementById("item1").style.display = "none";
+    document.getElementById("item2").style.display = "none";
+    document.getElementById("item3").style.display = "none";
+    document.getElementById("item4").style.display = "none";
+    document.getElementById("item5").style.display = "none";
+    document.getElementById("item6").style.display = "none";
+    document.getElementById("item7").style.display = "none";
+    document.getElementById("item8").style.display = "none";
+    document.getElementById("item9").style.display = "none";
+    document.getElementById("item10").style.display = "table";
+  
+  }
+
+}
+
 (function() {
   "use strict";
 
@@ -162,226 +580,6 @@
         scrollto(window.location.hash)
       }
     }
-  });
-
-
-
-  /**PROBABILEMNTE IL RESTO è INUTLIE-- QUI INIZIO PER IL WHO WHAT WHERE WHEN che non funziona*/
-
-  function myFunction(inp) {
-    if (inp == 'what')
-    {
-      
-      document.getElementById("1").style.display = "none";
-      document.getElementById("2").style.display = "table";
-      // document.getElementById("2").classList.add("align-items-center")
-      document.getElementById("3").style.display = "none";
-      document.getElementById("4").style.display = "none";
-    
-    }
-    if (inp == 'who')
-    {
-      document.getElementById("1").style.display = "table";
-      document.getElementById("2").style.display = "none";
-      document.getElementById("3").style.display = "none";
-      document.getElementById("4").style.display = "none";
-    
-    }
-    if (inp == 'where')
-    {
-      document.getElementById("1").style.display = "none";
-      document.getElementById("2").style.display = "none";
-      document.getElementById("3").style.display = "table";
-      document.getElementById("4").style.display = "none";
-    
-    }
-    if (inp == 'when')
-    {
-      document.getElementById("1").style.display = "none";
-      document.getElementById("2").style.display = "none";
-      document.getElementById("3").style.display = "none";
-      document.getElementById("4").style.display = "table";
-    
-    }
-  // For all the triples
-    if (inp == 'item1')
-    {
-      document.getElementById("item1").style.display = "table";
-      document.getElementById("item2").style.display = "none";
-      document.getElementById("item3").style.display = "none";
-      document.getElementById("item4").style.display = "none";
-      document.getElementById("item5").style.display = "none";
-      document.getElementById("item6").style.display = "none";
-      document.getElementById("item7").style.display = "none";
-      document.getElementById("item8").style.display = "none";
-      document.getElementById("item9").style.display = "none";
-      document.getElementById("item10").style.display = "none";
-    
-    }
-  
-    if (inp == 'item2')
-    {
-      document.getElementById("item1").style.display = "none";
-      document.getElementById("item2").style.display = "table";
-      document.getElementById("item3").style.display = "none";
-      document.getElementById("item4").style.display = "none";
-      document.getElementById("item5").style.display = "none";
-      document.getElementById("item6").style.display = "none";
-      document.getElementById("item7").style.display = "none";
-      document.getElementById("item8").style.display = "none";
-      document.getElementById("item9").style.display = "none";
-      document.getElementById("item10").style.display = "none";
-    
-    }
-  
-    if (inp == 'item3')
-    {
-      document.getElementById("item1").style.display = "none";
-      document.getElementById("item2").style.display = "none";
-      document.getElementById("item3").style.display = "table";
-      document.getElementById("item4").style.display = "none";
-      document.getElementById("item5").style.display = "none";
-      document.getElementById("item6").style.display = "none";
-      document.getElementById("item7").style.display = "none";
-      document.getElementById("item8").style.display = "none";
-      document.getElementById("item9").style.display = "none";
-      document.getElementById("item10").style.display = "none";
-    
-    }
-  
-    if (inp == 'item4')
-    {
-      document.getElementById("item1").style.display = "none";
-      document.getElementById("item2").style.display = "none";
-      document.getElementById("item3").style.display = "none";
-      document.getElementById("item4").style.display = "table";
-      document.getElementById("item5").style.display = "none";
-      document.getElementById("item6").style.display = "none";
-      document.getElementById("item7").style.display = "none";
-      document.getElementById("item8").style.display = "none";
-      document.getElementById("item9").style.display = "none";
-      document.getElementById("item10").style.display = "none";
-    
-    }
-  
-    if (inp == 'item5')
-    {
-      document.getElementById("item1").style.display = "none";
-      document.getElementById("item2").style.display = "none";
-      document.getElementById("item3").style.display = "none";
-      document.getElementById("item4").style.display = "none";
-      document.getElementById("item5").style.display = "table";
-      document.getElementById("item6").style.display = "none";
-      document.getElementById("item7").style.display = "none";
-      document.getElementById("item8").style.display = "none";
-      document.getElementById("item9").style.display = "none";
-      document.getElementById("item10").style.display = "none";
-    
-    }
-  
-    if (inp == 'item6')
-    {
-      document.getElementById("item1").style.display = "none";
-      document.getElementById("item2").style.display = "none";
-      document.getElementById("item3").style.display = "none";
-      document.getElementById("item4").style.display = "none";
-      document.getElementById("item5").style.display = "none";
-      document.getElementById("item6").style.display = "table";
-      document.getElementById("item7").style.display = "none";
-      document.getElementById("item8").style.display = "none";
-      document.getElementById("item9").style.display = "none";
-      document.getElementById("item10").style.display = "none";
-    
-    }
-  
-    if (inp == 'item7')
-    {
-      document.getElementById("item1").style.display = "none";
-      document.getElementById("item2").style.display = "none";
-      document.getElementById("item3").style.display = "none";
-      document.getElementById("item4").style.display = "none";
-      document.getElementById("item5").style.display = "none";
-      document.getElementById("item6").style.display = "none";
-      document.getElementById("item7").style.display = "table";
-      document.getElementById("item8").style.display = "none";
-      document.getElementById("item9").style.display = "none";
-      document.getElementById("item10").style.display = "none";
-    
-    }
-  
-    if (inp == 'item8')
-    {
-      document.getElementById("item1").style.display = "none";
-      document.getElementById("item2").style.display = "none";
-      document.getElementById("item3").style.display = "none";
-      document.getElementById("item4").style.display = "none";
-      document.getElementById("item5").style.display = "none";
-      document.getElementById("item6").style.display = "none";
-      document.getElementById("item7").style.display = "none";
-      document.getElementById("item8").style.display = "table";
-      document.getElementById("item9").style.display = "none";
-      document.getElementById("item10").style.display = "none";
-    
-    }
-  
-    if (inp == 'item9')
-    {
-      document.getElementById("item1").style.display = "none";
-      document.getElementById("item2").style.display = "none";
-      document.getElementById("item3").style.display = "none";
-      document.getElementById("item4").style.display = "none";
-      document.getElementById("item5").style.display = "none";
-      document.getElementById("item6").style.display = "none";
-      document.getElementById("item7").style.display = "none";
-      document.getElementById("item8").style.display = "none";
-      document.getElementById("item9").style.display = "table";
-      document.getElementById("item10").style.display = "none";
-    
-    }
-  
-    if (inp == 'item10')
-    {
-      document.getElementById("item1").style.display = "none";
-      document.getElementById("item2").style.display = "none";
-      document.getElementById("item3").style.display = "none";
-      document.getElementById("item4").style.display = "none";
-      document.getElementById("item5").style.display = "none";
-      document.getElementById("item6").style.display = "none";
-      document.getElementById("item7").style.display = "none";
-      document.getElementById("item8").style.display = "none";
-      document.getElementById("item9").style.display = "none";
-      document.getElementById("item10").style.display = "table";
-    
-    }
-
-  }  
-
-  /**
-   * Porfolio isotope and filter
-   */
-  window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
-      });
-
-      let portfolioFilters = select('#portfolio-flters li', true);
-
-      on('click', '#portfolio-flters li', function(e) {
-        e.preventDefault();
-        portfolioFilters.forEach(function(el) {
-          el.classList.remove('filter-active');
-        });
-        this.classList.add('filter-active');
-
-        portfolioIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
-      }, true);
-    }
-
   });
 
   /**
