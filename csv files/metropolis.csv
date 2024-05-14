@@ -1,0 +1,11 @@
+subject,predicate,object
+Movie,rdf:type,crm: E36 Visual Item
+Movie,owl:sameAs,https://www.imdb.com/title/tt0017136/?ref_=vp_close 
+Movie,dcterms:creator,Fritz Lang
+Movie,dcterms:creator,Thea Van Harbou
+Movie,crm: P2 has type,Sci-fi
+Movie,schema:inLanguage,German
+Movie,dcterms:issued,1927
+Movie,dcterms:extent,2 hours 33 minutes 
+Movie,crm: P2 has type,black and white 
+

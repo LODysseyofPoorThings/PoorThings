@@ -1,0 +1,7 @@
+subject,predicate,object
+Biographic entity person,rdf:type,crm: E21 Person
+Biographic entity person,owl:sameAs,https://www.wikidata.org/wiki/Q975410 
+Biographic entity person,crm:P98i was born,Athens
+Biographic entity person,schema:hasOccupation,Film director 
+Biographic entity person,crm: P2 has type,Male
+Biographic entity person,crm:P98i was born,1973

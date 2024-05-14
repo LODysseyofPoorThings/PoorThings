@@ -1,0 +1,9 @@
+subject,object,predicate
+Biographic entity character,rdf: type,crm: E28 Conceptual Object
+Biographic entity character,owl:sameAs,https://movies.fandom.com/wiki/Bella_Baxter
+Biographic entity character,crm:P14 carried out by,Emma Stone
+Biographic entity character,crm: P2 has type,female 
+Biographic entity character,crm: P2 has type,protagonist 
+Biographic entity character,dcterms:isReferencedBy,Nude Girl Standing With Long Black Hair & Blue-Black Drape
+Biographic entity character,dcterms:isReferencedBy,article
+Biographic entity character,schema: parent,Dr Godwin Baxter

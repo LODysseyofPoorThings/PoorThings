@@ -1,0 +1,10 @@
+subject,predicate,object
+Music album,rdf:type,mo:soundtrack
+Music album,owl:sameAs,https://music.apple.com/us/album/poor-things-original-motion-picture-soundtrack/1715324702
+Music album,crm:P102 has title,Poor Things: Original Motion Picture Soundtrack
+Music album,dcterms:creator,Carminho & Jerskin Fendrix
+Music album,dcterms:issued,2023
+Music album,crm:P2 has type,Soundtrack
+Music album,schema: copyrightHolder,Searchlight Pictures 
+Music album,mo: published_as,Song Bella
+Music album,mo: published_as,Song Alexandria

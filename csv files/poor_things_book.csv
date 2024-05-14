@@ -1,0 +1,10 @@
+subject,predicate,object 
+Book,rdf:type,dcterms:BibliographicResource
+Book,owl:sameAs,https://www.wikidata.org/wiki/Q7228828 
+Book,crm:P102_has_title,Poor things: episodes from the early life of Archibald McCandless M.D. Scottish public health officer
+Book,dcterms:creator,Alasdair Gray 
+Book,dcterms: temporal,19th Century
+Book,dcterms:issued,1992
+Book,dc:publisher,Harcourt Brace Jovanovich
+Book,schema:inLanguage,English 
+Book,crm: P2 has type,Fiction 
