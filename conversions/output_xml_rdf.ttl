@@ -1,0 +1,10 @@
+@base <https://w3id.org/PoorThings.org/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<Poor_Things:_Episodes_from_the_Early_Life_of_Archibald_Mccandless_M.d._Scottish
+_______________Public_Health_Officer.> a <https://dbpedia.org/page/Novel> ;
+    rdfs:label """Poor Things: Episodes from the Early Life of Archibald Mccandless M.d. Scottish
+               Public Health Officer.""" ;
+    dc:creator <Gray,_Alasdair_(1934-2019)> .
+
