@@ -17,6 +17,52 @@ _______________Public_Health_Officer.> a dcterms:BibliographicResource ;
     dcterms:issued "2014" ;
     dcterms:publisher <https://w3id.org/PoorThings.org/Bloomsbury_Publishing_Plc> .
 
+<https://w3id.org/PoorThings.org/character/Archibald_McCandless> a foaf:Person ;
+    rdfs:label "Archibald McCandless" ;
+    foaf:name "Archibald McCandless" ;
+    schema:occupation "god's assistant" .
+
+<https://w3id.org/PoorThings.org/character/Bella_Baxter> a foaf:Person ;
+    rdfs:label "Bella Baxter" ;
+    foaf:name "Bella Baxter" .
+
+<https://w3id.org/PoorThings.org/character/Dr._Godwin_Baxter> a foaf:Person ;
+    rdfs:label "Dr. Godwin Baxter" ;
+    foaf:name "Dr. Godwin Baxter" ;
+    schema:occupation "doctor/surgeon" .
+
+<https://w3id.org/PoorThings.org/character/Duncan_Wedderburn> a foaf:Person ;
+    rdfs:label "Duncan Wedderburn" ;
+    foaf:name "Duncan Wedderburn" ;
+    schema:occupation "lawyer" .
+
+<https://w3id.org/PoorThings.org/place/Amsterdam> a schema:place ;
+    schema:name "Amsterdam" .
+
+<https://w3id.org/PoorThings.org/place/Athens> a schema:place ;
+    schema:name "Athens" .
+
+<https://w3id.org/PoorThings.org/place/Frankfort_zoo> a schema:place ;
+    schema:name "Frankfort zoo" .
+
+<https://w3id.org/PoorThings.org/place/Glasgow_Stock_Exchange> a schema:place ;
+    schema:name "Glasgow Stock Exchange" .
+
+<https://w3id.org/PoorThings.org/place/London> a schema:place ;
+    schema:name "London" .
+
+<https://w3id.org/PoorThings.org/place/Regent’s_Park> a schema:place ;
+    schema:name "Regent’s Park" .
+
+<https://w3id.org/PoorThings.org/place/Sarajevo> a schema:place ;
+    schema:name "Sarajevo" .
+
+<https://w3id.org/PoorThings.org/place/Switzerland> a schema:place ;
+    schema:name "Switzerland" .
+
+<https://w3id.org/PoorThings.org/place/Zagreb> a schema:place ;
+    schema:name "Zagreb" .
+
 <https://w3id.org/PoorThings.org/Bloomsbury_Publishing_Plc> a dbo:publisher ;
     schema:address "50 Bedford Square, London WC1B 3DP" .
 

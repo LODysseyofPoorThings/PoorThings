@@ -56,12 +56,20 @@ g.add((publisher_uri, SCHEMA.address, Literal(address)))
 
 #characters extraction
 for character in tree.findall(".//tei:profileDesc/tei:particDesc/tei:listPerson/tei:person", ns):
-    character_name = tree.find(".//tei:persName").text
-    character_uri = URIRef(pt + "character/" + character_name.replace(" ", "_"))
+    name = character.find("tei:persName", ns).text.rstrip()
+    character_uri = URIRef(pt + "character/" + name.replace(" ", "_"))
     g.add((character_uri, RDF.type, FOAF.Person))
-    g.add((character_uri, RDFS.label, Literal(character_name)))
-    occupation =  tree.find(".//tei:occupation").text
-    g.add((character_uri, SCHEMA.occupation, Literal(occupation)))
+    g.add((character_uri, FOAF.name, Literal(name)))
+    g.add((character_uri, RDFS.label, Literal(name)))
+    if character.find("tei:occupation", ns) is not None:
+        occupation = character.find("tei:occupation", ns).text
+        g.add((character_uri, SCHEMA.occupation, Literal(occupation)))
+
+for place in tree.findall(".//tei:text/tei:body/tei:div/tei:l/tei:name[@type='place']", ns):
+    place_name = place.text
+    place_uri = URIRef(pt + "place/" + place_name.replace(" ", "_"))
+    g.add((place_uri, RDF.type, SCHEMA.place))
+    g.add((place_uri, SCHEMA.name, Literal(place_name)))
 
 #serialize the graph to Turtle format
 g.serialize("output_xml_rdf2.ttl", format="turtle", encoding="utf-8")
