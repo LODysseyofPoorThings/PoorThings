@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
 import rdflib
 from rdflib import Namespace, URIRef, Literal
-from rdflib.namespace import RDF, XSD, FOAF, RDFS, DC, DCTERMS
+from rdflib.namespace import RDF, FOAF, RDFS, DC, DCTERMS
 
 #namespaces definition
 TEI = Namespace("http://www.tei-c.org/ns/1.0")
