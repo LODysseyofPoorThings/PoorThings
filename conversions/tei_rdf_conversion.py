@@ -74,7 +74,7 @@ for character in tree.findall(".//tei:profileDesc/tei:particDesc/tei:listPerson/
             if ref == id:
                 g.add((character_uri, DCTERMS.isReferencedBy, Literal(text)))
         
-#place extraction       
+#places extraction       
 for line in tree.findall(".//tei:text/tei:body/tei:div/tei:l", ns):
     text = ''.join(line.itertext())
     place = line.find("tei:name[@type='place']", ns)
