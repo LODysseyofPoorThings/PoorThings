@@ -57,19 +57,33 @@ g.add((publisher_uri, SCHEMA.address, Literal(address)))
 #characters extraction
 for character in tree.findall(".//tei:profileDesc/tei:particDesc/tei:listPerson/tei:person", ns):
     name = character.find("tei:persName", ns).text.rstrip()
+    id = character.get("{http://www.w3.org/XML/1998/namespace}id")
     character_uri = URIRef(pt + "character/" + name.replace(" ", "_"))
     g.add((character_uri, RDF.type, FOAF.Person))
-    g.add((character_uri, FOAF.name, Literal(name)))
     g.add((character_uri, RDFS.label, Literal(name)))
+
     if character.find("tei:occupation", ns) is not None:
         occupation = character.find("tei:occupation", ns).text
         g.add((character_uri, SCHEMA.occupation, Literal(occupation)))
 
-for place in tree.findall(".//tei:text/tei:body/tei:div/tei:l/tei:name[@type='place']", ns):
-    place_name = place.text
-    place_uri = URIRef(pt + "place/" + place_name.replace(" ", "_"))
-    g.add((place_uri, RDF.type, SCHEMA.place))
-    g.add((place_uri, SCHEMA.name, Literal(place_name)))
+    for line in tree.findall(".//tei:text/tei:body/tei:div/tei:l", ns):
+        text = ''.join(line.itertext())
+        mention = line.find("tei:name[@type='person']", ns)
+        if mention is not None:
+            ref = mention.get("ref").strip('#')
+            if ref == id:
+                g.add((character_uri, DCTERMS.isReferencedBy, Literal(text)))
+        
+#place extraction       
+for line in tree.findall(".//tei:text/tei:body/tei:div/tei:l", ns):
+    text = ''.join(line.itertext())
+    place = line.find("tei:name[@type='place']", ns)
+    if place is not None:
+        place_uri = URIRef(pt + "place/" + place.text.replace(" ", "_"))
+        g.add((place_uri, RDF.type, SCHEMA.place))
+        g.add((place_uri, RDFS.label, Literal(place.text)))
+        g.add((place_uri, DCTERMS.isReferencedBy, Literal(text)))
 
+                
 #serialize the graph to Turtle format
-g.serialize("output_xml_rdf2.ttl", format="turtle", encoding="utf-8")
+g.serialize("output_xml_rdf.ttl", format="turtle", encoding="utf-8")
