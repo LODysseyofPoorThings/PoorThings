@@ -106,8 +106,14 @@ for file in files_csv:
         elif predicate == "schema:agent":
             predicate_uri = SCHEMA.agent
 
-        elif predicate == "cidoc-crm:P21 had general purpose":
-            predicate_uri = CIDOC_CRM.P21hadGeneralPurpose
+        elif predicate == "cidoc-crm:P21_had_general_purpose":
+            predicate_uri = CIDOC_CRM.P21_had_general_purpose
+
+        elif predicate == "cidoc-crm:P82a_begin_of_the_begin":
+            predicate_uri = CIDOC_CRM.P82a_begin_of_the_begin
+
+        elif predicate == "cidoc-crm:P82b_end_of_the_end":
+            predicate_uri = CIDOC_CRM.P82b_end_of_the_end    
 
         #specify if objects are uris or litterals and add uris to uris_dict
         if predicate_uri == RDF.type or predicate_uri == OWL.sameAs:
@@ -125,7 +131,7 @@ for file in files_csv:
             obj = URIRef(group + object.replace(" ", "_"))
             uris_dict[object] = obj 
 
-        elif predicate_uri == CIDOC_CRM.P21hadGeneralPurpose:
+        elif predicate_uri == CIDOC_CRM.P21_had_general_purpose:
             obj = URIRef(concept + object.replace(" ", "_"))
             uris_dict[object] = obj
 
@@ -137,7 +143,10 @@ for file in files_csv:
                 obj = Literal(object, datatype=XSD.gYear)   
 
         elif predicate_uri == SCHEMA.startDate or predicate_uri == SCHEMA.endDate:
-            obj = Literal(object, datatype=XSD.gYear)           
+            obj = Literal(object, datatype=XSD.gYear)
+
+        elif predicate_uri == CIDOC_CRM.P82a_begin_of_the_begin or predicate_uri == CIDOC_CRM.P82b_end_of_the_end:
+            obj = Literal(object, datatype=XSD.date)             
 
         else:
             obj = Literal(object, datatype=XSD.string)    

@@ -14,7 +14,7 @@
     schema:endDate "1840"^^xsd:gYear ;
     schema:name "Grand Tour"^^xsd:string ;
     schema:startDate "1660"^^xsd:gYear ;
-    cidoc-crm:P21hadGeneralPurpose <concept/Education> .
+    cidoc-crm:P21_had_general_purpose <concept/Education> .
 
 <item/Monument> a <dbpedia-owl:Monument> ;
     dc:title "Lighthouse of Alexandria"^^xsd:string ;
@@ -40,7 +40,7 @@
 <person/Ptolemy_I_Soter> a <cidoc-crm:E21Person> ;
     owl:sameAs <https://dbpedia.org/page/Ptolemy_I_Soter> .
 
-<time/284-246_BC> a <cidoc-crm:E52Time> ;
-    schema:endDate "2401"^^xsd:gYear ;
-    schema:startDate "2801"^^xsd:gYear .
+<time/284-246_BC> a <cidoc-crm:E52Time-Span> ;
+    cidoc-crm:P82a_begin_of_the_begin "-284"^^xsd:date ;
+    cidoc-crm:P82b_end_of_the_end "-246"^^xsd:date .
 
