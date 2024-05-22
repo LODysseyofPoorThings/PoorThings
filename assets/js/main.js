@@ -16,16 +16,16 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-  document.getElementById("1").style.display = "table";
-  document.getElementById("2").style.display = "none";
-  document.getElementById("3").style.display = "none";
-  document.getElementById("4").style.display = "none";
-  document.getElementById("5").style.display = "none";
-  document.getElementById("6").style.display = "none";
-  document.getElementById("7").style.display = "none";
-  document.getElementById("8").style.display = "none";
-  document.getElementById("9").style.display = "none";
-  document.getElementById("10").style.display = "none";
+  document.getElementById("item1").style.display = "table";
+  document.getElementById("item2").style.display = "none";
+  document.getElementById("item3").style.display = "none";
+  document.getElementById("item4").style.display = "none";
+  document.getElementById("item5").style.display = "none";
+  document.getElementById("item6").style.display = "none";
+  document.getElementById("item7").style.display = "none";
+  document.getElementById("item8").style.display = "none";
+  document.getElementById("item9").style.display = "none";
+  document.getElementById("item10").style.display = "none";
 });
 
 
