@@ -8,7 +8,8 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <item/Activity> a <cidoc-crm:E7Activity> ;
-    dcterms:spatial <place/Europe_and_the_Mediterranean> ;
+    dcterms:spatial <place/Europe>,
+        <place/Mediterranean_area> ;
     owl:sameAs <https://dbpedia.org/page/Grand_Tour> ;
     schema:agent <person/Young_upper-class_men_> ;
     schema:endDate "1840"^^xsd:gYear ;
@@ -40,7 +41,8 @@
 <person/Ptolemy_I_Soter> a <cidoc-crm:E21Person> ;
     owl:sameAs <https://dbpedia.org/page/Ptolemy_I_Soter> .
 
-<time/284-246_BC> a <cidoc-crm:E52Time-Span> ;
-    cidoc-crm:P82a_begin_of_the_begin "-284"^^xsd:date ;
-    cidoc-crm:P82b_end_of_the_end "-246"^^xsd:date .
+<time/284-246_BC> a <cidoc-crm:E2_Temporal_Entity> ;
+    schema:endDate "1246"^^xsd:gYear ;
+    schema:startDate "1284"^^xsd:gYear ;
+    cidoc-crm:P2_has_type <cidoc-crm:E52Time-Span> .
 

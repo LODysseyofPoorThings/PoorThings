@@ -64,7 +64,7 @@ for character in tree.findall(".//tei:profileDesc/tei:particDesc/tei:listPerson/
 
     if character.find("tei:occupation", ns) is not None:
         occupation = character.find("tei:occupation", ns).text
-        g.add((character_uri, SCHEMA.occupation, Literal(occupation)))
+        g.add((character_uri, SCHEMA.hasOccupation, Literal(occupation)))
 
     for line in tree.findall(".//tei:text/tei:body/tei:div/tei:l", ns):
         text = ''.join(line.itertext())
