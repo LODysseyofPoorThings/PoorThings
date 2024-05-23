@@ -22,7 +22,7 @@ _______________Public_Health_Officer.> a dcterms:BibliographicResource ;
     dcterms:isReferencedBy "I felt for Candle though he is not here",
         "Yes, wed he can and does, but little Candle,",
         "when I bade you good-bye, chloroformed Candle," ;
-    schema:occupation "god's assistant" .
+    schema:hasOccupation "god's assistant" .
 
 <https://w3id.org/PoorThings.org/character/Bella_Baxter> a foaf:Person ;
     rdfs:label "Bella Baxter" ;
@@ -38,7 +38,7 @@ _______________Public_Health_Officer.> a dcterms:BibliographicResource ;
         "I had a baby once. God, is that true?",
         "Thank you, dear God, for teaching me to sleep",
         "You never wedded,  God, so may not know" ;
-    schema:occupation "doctor/surgeon" .
+    schema:hasOccupation "doctor/surgeon" .
 
 <https://w3id.org/PoorThings.org/character/Duncan_Wedderburn> a foaf:Person ;
     rdfs:label "Duncan Wedderburn" ;
@@ -60,7 +60,7 @@ _______________Public_Health_Officer.> a dcterms:BibliographicResource ;
         "“If that is so Dear Wedder, rest assured",
         """“No no!” says Wedder. “Only pregnant
                ones""" ;
-    schema:occupation "lawyer" .
+    schema:hasOccupation "lawyer" .
 
 <https://w3id.org/PoorThings.org/place/Amsterdam> a schema:place ;
     rdfs:label "Amsterdam" ;
