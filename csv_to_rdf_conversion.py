@@ -112,6 +112,12 @@ for file in files_csv:
         elif predicate == "cidoc-crm:P2_has_type":
             predicate_uri = CIDOC_CRM.P2_has_type
 
+        elif predicate == "cidoc-crm:P82a_begin_of_the_begin":
+            predicate_uri = CIDOC_CRM.P82a_begin_of_the_begin 
+
+        elif predicate == "cidoc-crm:P82b_end_of_the_end":
+            predicate_uri = CIDOC_CRM.P82b_end_of_the_end        
+
         #specify if objects are uris or litterals and add uris to uris_dict
         if predicate_uri == RDF.type or predicate_uri == OWL.sameAs or predicate_uri == CIDOC_CRM.P2_has_type:
             obj = URIRef(object)
@@ -139,7 +145,7 @@ for file in files_csv:
             else:
                 obj = Literal(object, datatype=XSD.gYear)   
 
-        elif predicate_uri == SCHEMA.startDate or predicate_uri == SCHEMA.endDate:
+        elif predicate_uri == SCHEMA.startDate or predicate_uri == SCHEMA.endDate or predicate_uri == CIDOC_CRM.P82a_begin_of_the_begin or predicate_uri == CIDOC_CRM.P82b_end_of_the_end:
             obj = Literal(object, datatype=XSD.gYear)
 
         else:

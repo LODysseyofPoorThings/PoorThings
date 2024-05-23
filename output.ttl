@@ -41,8 +41,7 @@
 <person/Ptolemy_I_Soter> a <cidoc-crm:E21Person> ;
     owl:sameAs <https://dbpedia.org/page/Ptolemy_I_Soter> .
 
-<time/284-246_BC> a <cidoc-crm:E2_Temporal_Entity> ;
-    schema:endDate "1246"^^xsd:gYear ;
-    schema:startDate "1284"^^xsd:gYear ;
-    cidoc-crm:P2_has_type <cidoc-crm:E52Time-Span> .
+<time/284-246_BC> a <cidoc-crm:E52_Time-Span> ;
+    cidoc-crm:P82a_begin_of_the_begin "-284"^^xsd:gYear ;
+    cidoc-crm:P82b_end_of_the_end "-246"^^xsd:gYear .
 
