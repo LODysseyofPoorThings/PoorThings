@@ -8,3 +8,10 @@ Activity,dcterms:spatial,Mediterranean area
 Activity,schema:startDate,1660
 Activity,schema:endDate,1840
 Activity,crm:P21_had_general_purpose,Education
+Young upper-class men,rdf:type,crm:E74_Group
+Europe,rdf:type,crm:E53_Place
+Europe,owl:sameAs,https://dbpedia.org/page/Europe
+Mediterranean area,rdf:type,crm:E53_Place
+Mediterranean area,owl:sameAs,https://dbpedia.org/page/Mediterranean_Basin
+Education,rdf:type,skos:Concept
+Education,owl:sameAs,https://dbpedia.org/page/Category:Education

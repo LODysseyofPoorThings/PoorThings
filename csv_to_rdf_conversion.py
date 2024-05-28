@@ -109,17 +109,14 @@ for file in files_csv:
         elif predicate == "crm:P21_had_general_purpose":
             predicate_uri = CRM.P21_had_general_purpose
 
-        elif predicate == "crm:P2_has_type":
-            predicate_uri = CRM.P2_has_type
-
-        elif predicate == "cidoc-crm:P82a_begin_of_the_begin":
+        elif predicate == "crm:P82a_begin_of_the_begin":
             predicate_uri = CRM.P82a_begin_of_the_begin 
 
-        elif predicate == "cidoc-crm:P82b_end_of_the_end":
+        elif predicate == "crm:P82b_end_of_the_end":
             predicate_uri = CRM.P82b_end_of_the_end        
 
         #specify if objects are uris or litterals and add uris to uris_dict
-        if predicate_uri == RDF.type or predicate_uri == OWL.sameAs or predicate_uri == CRM.P2_has_type:
+        if predicate_uri == RDF.type or predicate_uri == OWL.sameAs:
             obj = URIRef(object)
 
         elif predicate_uri == DC.creator or predicate_uri == CDWA.Commissioner or predicate_uri == SCHEMA.agent:

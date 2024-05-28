@@ -7,7 +7,7 @@
 @prefix schema: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<item/Activity> a <cidoc-crm:E7Activity> ;
+<item/Activity> a <crm:E7Activity> ;
     dcterms:spatial <place/Europe>,
         <place/Mediterranean_area> ;
     owl:sameAs <https://dbpedia.org/page/Grand_Tour> ;
@@ -17,7 +17,7 @@
     schema:startDate "1660"^^xsd:gYear ;
     cidoc-crm:P21_had_general_purpose <concept/Education> .
 
-<item/Monument> a <dbpedia-owl:Monument> ;
+<item/Monument> a <dbo:Monument> ;
     dc:title "Lighthouse of Alexandria"^^xsd:string ;
     dcterms:created <time/284-246_BC> ;
     dcterms:isPartOf <group/Seven_Wonders_of_the_Ancient_World> ;
@@ -28,9 +28,9 @@
     cdwa:Commissioner <person/Ptolemy_I_Soter> ;
     cdwa:DimensionDescription "103-118 meter"^^xsd:string .
 
-<item/Portrait> a <dbpedia-owl:Artwork> ;
+<item/Portrait> a <dbo:Artwork> ;
     dc:creator <person/Egon_Schiele> ;
-    dc:subject "Young woman with long hair "^^xsd:string ;
+    dc:subject "Young woman with long hair"^^xsd:string ;
     dc:title "Nude Girl Standing With Long Black Hair & Blue-Black Drape"^^xsd:string ;
     dcterms:created "1911"^^xsd:gYear ;
     owl:sameAs <https://mcid.mcah.columbia.edu/photographic-print/2023_photocoll_0449_0096> ;
@@ -38,10 +38,33 @@
     cdwa:DimensionDescription "56.5 x 35 cm"^^xsd:string ;
     cdwa:MaterialTechniqueDescription "Pencil and watercolor"^^xsd:string .
 
-<person/Ptolemy_I_Soter> a <cidoc-crm:E21Person> ;
+<item/Young_upper-class_men> a <crm:E74_Group> .
+
+<concept/Education> a <skos:Concept> ;
+    owl:sameAs <https://dbpedia.org/page/Category:Education> .
+
+<group/Seven_Wonders_of_the_Ancient_World> a <crm:E74_Group> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q489772> .
+
+<person/Egon_Schiele> a <crm:E21Person> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q44032> .
+
+<person/Ptolemy_I_Soter> a <crm:E21Person> ;
     owl:sameAs <https://dbpedia.org/page/Ptolemy_I_Soter> .
 
-<time/284-246_BC> a <cidoc-crm:E52_Time-Span> ;
+<place/Columbia_University> a <crm:E78_Curated_Holding> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q49088> .
+
+<place/Europe> a <crm:E53_Place> ;
+    owl:sameAs <https://dbpedia.org/page/Europe> .
+
+<place/Mediterranean_area> a <crm:E53_Place> ;
+    owl:sameAs <https://dbpedia.org/page/Mediterranean_Basin> .
+
+<place/Pharos> a <crm:E53_Place> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q2696558> .
+
+<time/284-246_BC> a <crm:E52_Time-Span> ;
     cidoc-crm:P82a_begin_of_the_begin "-284"^^xsd:gYear ;
     cidoc-crm:P82b_end_of_the_end "-246"^^xsd:gYear .
 
