@@ -260,8 +260,7 @@
 
             <h2 class="section-title">Conceptual Map</h2>
             <p class="section-text">
-              Regarding "Poor Things," the selected items play a pivotal role in authentically narrating its story. Our conceptual map aims to depict the gathered data in natural language, illustrating the extracted information and the connections between them. Purple nodes in the graph denote the selected items, while orange nodes highlight significant events and individuals associated with the main subject.
-            CHANGE COLOR NAMES</p>
+              Regarding "Poor Things," the selected items play a pivotal role in authentically narrating its story. Our conceptual map aims to depict the gathered data in natural language, illustrating the extracted information and the connections between them. Light blue nodes in the graph denote the selected items, while grey nodes highlight significant events and individuals associated with the main subject.</p>
           </div> 
 
           <div class="col-12 center-image">
@@ -302,8 +301,7 @@
           <div class="col-12 text-center">
             <h2 class="section-title">Metadata Analysis</h2>
             <p class="section-text">
-              This second model displays data and relationships from the conceptual map in a more abstracted layer. Here we represent people, dates, subjects, places etc. as entities and the connections between them as relationships.
-            </p>
+              *****To ensure interoperability, our team meticulously identified the metadata standards used by the providers of our selected items. We marked all explicitly stated standards with *, while in cases lacking clear declarations, we applied either the prevailing standard within the relevant institution type or a suitable generic metadata standard.            </p>
         </div>
       </div>
       <table class="table table-bordered">
@@ -388,7 +386,7 @@
             <div class="col-12 text-center">
               <h2 class="section-title">Text Conversions</h2>
               <p class="section-text">
-                In this section we did something that can be downloaded <a href="" target="_blank">here</a>
+                In this phase, our team utilizes advanced computational tools to thoroughly analyze the digital edition of "Poor Things" by Alasdair Gray. Digitized and accessible through modern technology, this text allows us to delve deeply into its complexities. By employing XML/TEI encoding, XSLT conversion techniques, RDF/XML representation, and Python scripting, we aim to uncover the intricate layers of meaning embedded in Gray's work.
               </p>
             </div>
           </div>
@@ -396,7 +394,10 @@
             <div class="col-12">
               <h2 class="">XML/TEI Conversion</h2>
               <p class="section-text">
-                In this section we did something that is available <a href="conversions/tei.xml" target="_blank">here</a>
+                We've encoded an XML/TEI document to meticulously represent the textual structure of the initial six pages of Chapter 14 from "Poor Things."
+                This document captures a pivotal moment in "Poor Things," presenting a letter authored by the protagonist, Bella Baxter, addressed to her presumed creator and father, Goldwyn Baxter. Within its contents, we encounter both structured dialogues, presented in verse format, and flowing free text. This letter not only serves as a narrative device but also sheds light on key relationships and themes within the story. By meticulously encoding it according to TEI (Text Encoding Initiative) guidelines, we ensure the fidelity of the original text's richness and complexity.
+                
+                XML/TEI document of Poor Things text's sample is available at this <a href="conversions/tei.xml" target="_blank">link</a>.
               </p>
             </div>
           </div>
@@ -408,7 +409,6 @@
               <h2 class="">Python Scripts for Conversions</h2>
               <p class="section-text">
                 In this section we did something that is available <a href="conversions/python.py" target="_blank">here</a>
-                <script src="https://gist.github.com/elena2notti/5fa6e72d6edb259ca77d286de45c2c2c.js"></script>
               </p>
             </div>
           </div>
@@ -433,7 +433,6 @@
             <div class="col-12">
               <h2 class="">RDF/Turtle Dataset</h2>
               <p class="section-text">
-                In this section we did something that is available <a href="tei.xml" target="_blank">here</a>
               </p>
               <script src="https://gist.github.com/valentinabertelli/01b241131d2faf14bf03bab1b9990e6f.js"></script>
               <p class="section-text">
@@ -481,22 +480,52 @@
               <tr>
                 <th>Property</th>
                 <th>Dublin Core</th>
-                <th>CDWA</th>
                 <th>Schema.org</th>
-                <th>Marc/Marc21</th>
-                <th>CCO</th>
+                <th>CDWA</th>
                 <th>CIDOC-CRM</th>
+                <th>MO</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Creator</td>
                 <td>dcterms:creator</td>
-                <td>Creator Description<br>Creator Identity<br>Creator Role</td>
                 <td>creator</td>
-                <td>100 - Main Entry - Personal Name</td>
-                <td>Creator display<br>Creator Extent</td>
-                <td>E39 Creator<br>P94 has created (was created by)<br>P14 carried out by (performed)</td>
+                <td>Creator Description<br>Creator Identity<br>Creator Role</td>
+                <td>N/A</td>
+                <td>composer</td>
+              </tr>
+              <tr>
+                <td>Occupation</td>
+                <td>N/A</td>
+                <td>hasOccupation</td>
+                <td>Life Roles</td>
+                <td>N/A</td>
+                <td>N/A</td>
+              </tr>
+              <tr>
+                <td>Agent</td>
+                <td>N/A</td>
+                <td>agent</td>
+                <td>Role</td>
+                <td>P14 carried out by (performed)</td>
+                <td>MusicArtist???</td>
+              </tr>
+              <tr>
+                <td>Publisher</td>
+                <td>dc: publisher </td>
+                <td>publisher</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>publisher</td>
+              </tr>
+              <tr>
+                <td>Commissioner</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>Commissioner</td>
+                <td>N/A</td>
+                <td>N/A</td>
               </tr>
             </tbody>
           </table>
@@ -506,75 +535,218 @@
               <tr>
                 <th>Property</th>
                 <th>Dublin Core</th>
-                <th>CDWA</th>
                 <th>Schema.org</th>
-                <th>Marc/Marc21</th>
-                <th>CCO</th>
+                <th>CDWA</th>
                 <th>CIDOC-CRM</th>
+                <th>MO</th>
               </tr>
             </thead>
             <tbody>
+              <tr>
+                <td>Right</td>
+                <td>dcterms:rights</td>
+                <td>license</td>
+                <td>
+                  Copyright Statement<br>
+                  Copyright Holder Name
+                </td>
+                <td>P105 right held by (has right on)</td>
+                <td>label/license</td>
+              </tr>
               <tr>
                 <td>Title</td>
                 <td>dcterms:title</td>
-                <td>Title</td>
                 <td>name</td>
-                <td>245 - Title Statement</td>
-                <td>Title display<br>Title Extent</td>
-                <td>E35 Title<br>P102 has title (is title of)</td>
+                <td>Title Text</td>
+                <td>P102 has title (is title of)</td>
+                <td>title</td>
+              </tr>
+              <tr>
+                <td>Type</td>
+                <td>dcterms:type</td>
+                <td>category</td>
+                <td>Classification Term</td>
+                <td>P2 has type (is type of)</td>
+                <td>genre</td>
+              </tr>
+              <tr>
+                <td>Gender</td>
+                <td>N/A</td>
+                <td>gender</td>
+                <td>Gender</td>
+                <td>N/A</td>
+                <td>N/A</td>
+              </tr>
+              <tr>
+                <td>Dimension</td>
+                <td>dcterms:medium</td>
+                <td>materialExtent</td>
+                <td>Dimension Description</td>
+                <td>P43 has dimension (is dimension of)</td>
+                <td>duration</td>
+              </tr>
+              <tr>
+                <td>Material</td>
+                <td>dcterms:type</td>
+                <td>material</td>
+                <td>Materials/Techniques Description</td>
+                <td>P45 consists of (is incorporated in)</td>
+                <td>medium</td>
+              </tr>
+              <tr>
+                <td>Genre</td>
+                <td>N/A</td>
+                <td>genre</td>
+                <td>N/A</td>
+                <td>P2 has type (is type of)</td>
+                <td>genre</td>
+              </tr>
+              <tr>
+                <td>Language</td>
+                <td>dcterms:language</td>
+                <td>inLanguage</td>
+                <td>N/A</td>
+                <td>P72 has language (is language of)</td>
+                <td>N/A</td>
+              </tr>
+              <tr>
+                <td>Duration</td>
+                <td>dcterms:extent</td>
+                <td>duration</td>
+                <td>N/A</td>
+                <td>P4 has time-span (is time-span of)</td>
+                <td>duration</td>
+              </tr>
+              <tr>
+                <td>Subject</td>
+                <td>dcterms:subject</td>
+                <td>about</td>
+                <td>Subject</td>
+                <td>P129 is about (is subject of)</td>
+                <td>N/A</td>
+              </tr>
+              <tr>
+                <td>Mentions</td>
+                <td>dcterms:description</td>
+                <td>mentions</td>
+                <td>N/A</td>
+                <td>P67 refers to (is referred to by)</td>
+                <td>N/A</td>
+              </tr>
+              <tr>
+                <td>Award</td>
+                <td>N/A</td>
+                <td>award</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>N/A</td>
+              </tr>
+              <tr>
+                <td>Has Part</td>
+                <td>dcterms:hasPart</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>P59 has section (is located on or within)</td>
+                <td>track</td>
+              </tr>
+              <tr>
+                <td>Purpose</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>cidoc-crm:P21 had general purpose</td>
+                <td>N/A</td>
               </tr>
             </tbody>
           </table>
-      
-          <table id="3" class="minimalistBlack">
-            <thead>
-              <tr>
-                <th>Property</th>
-                <th>Dublin Core</th>
-                <th>CDWA</th>
-                <th>Schema.org</th>
-                <th>Marc/Marc21</th>
-                <th>CCO</th>
-                <th>CIDOC-CRM</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Location</td>
-                <td>dcterms:spatial</td>
-                <td>Location</td>
-                <td>location</td>
-                <td>752 - Added Entry - Geographic Name</td>
-                <td>Location display<br>Location Extent</td>
-                <td>E53 Place<br>P89 falls within (contains)</td>
-              </tr>
-            </tbody>
-          </table>
-      
-          <table id="4" class="minimalistBlack">
-            <thead>
-              <tr>
-                <th>Property</th>
-                <th>Dublin Core</th>
-                <th>CDWA</th>
-                <th>Schema.org</th>
-                <th>Marc/Marc21</th>
-                <th>CCO</th>
-                <th>CIDOC-CRM</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Date</td>
-                <td>dcterms:date</td>
-                <td>Date</td>
-                <td>datePublished</td>
-                <td>260 - Publication, Distribution, etc. (Imprint)</td>
-                <td>Date display<br>Date Extent</td>
-                <td>E50 Date<br>P4 has time-span (is time-span of)</td>
-              </tr>
-            </tbody>
-          </table>
+        
+
+<table id="3" class="minimalistBlack">
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Dublin Core</th>
+      <th>Schema.org</th>
+      <th>CDWA</th>
+      <th>CIDOC-CRM</th>
+      <th>MO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Creation Date</td>
+      <td>dcterms:created</td>
+      <td>dateCreated</td>
+      <td>Creation Date</td>
+      <td>N/A</td>
+      <td>composed_in</td>
+    </tr>
+    <tr>
+      <td>Publication Date</td>
+      <td>dcterms:issued</td>
+      <td>datePublished</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>published_in</td>
+    </tr>
+    <tr>
+      <td>Start Date</td>
+      <td>dc:date</td>
+      <td>startDate</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>recorded_in</td>
+    </tr>
+    <tr>
+      <td>End Date</td>
+      <td>dc:date</td>
+      <td>endDate</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>recorded_in</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<table id="4" class="minimalistBlack">
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Dublin Core</th>
+      <th>Schema.org</th>
+      <th>CDWA</th>
+      <th>CIDOC-CRM</th>
+      <th>MO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Location</td>
+      <td>dcterms:spatial</td>
+      <td>spatial</td>
+      <td>Current Location</td>
+      <td>P53 has former or current location (is former or current location of)</td>
+      <td>origin/recorded_in</td>
+    </tr>
+    <tr>
+      <td>Collection/Part Of</td>
+      <td>dcterms:isPartOf</td>
+      <td>isPartOf</td>
+      <td>Work Broader Context</td>
+      <td>P59 has section (is located on or within)</td>
+      <td>part_of</td>
+    </tr>
+    <tr>
+      <td>Itinerary</td>
+      <td>dcterms:spatial</td>
+      <td>itinerary</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
         </div>
       </div>
 
@@ -645,9 +817,9 @@
         <div class="col-12 text-center">
           <h2 class="section-title">Items Description</h2>
           <p class="section-text">
-            In the knowledge representation section, we will generate new data based on the selected items. We will create a table for each item, containing statements in the form of subject-predicate-object. To download the table information in CSV format, please click on the "Download Table" button located at the bottom of each table.
+            In the knowledge representation section, we will generate new data based on the selected items. We will create a table for each item, containing statements in the form of subject-predicate-object. 
+            To access the folder with the table information in CSV format, please click on this <a href="https://github.com/LODysseyofPoorThings/PoorThings/tree/main/conversions" target="_blank">link</a>. or create a donwloadable zip
           </p>
-          <!--make table WOOOORK-->
 
     <div class="d-flex justify-content-center mb-4">
       <button onclick="myFunction('item1')" class="btn btn-outline-dark mx-2" >Book</button>
@@ -682,46 +854,56 @@
         </tr>
         <tr>
           <td>Book</td>
+          <td>crm:P102_has_title</td>
+          <td>Poor Things: Episodes from the Early Life of Archibald McCandless M.D., Scottish Public Health Officer</td>
+        </tr>
+        <tr>
+          <td>Book</td>
+          <td>dcterms:creator</td>
+          <td>Alasdair Gray</td>
+        </tr>
+        <tr>
+          <td>Book</td>
+          <td>dcterms:temporal</td>
+          <td>19th Century</td>
+        </tr>
+        <tr>
+          <td>Book</td>
+          <td>dcterms:issued</td>
+          <td>1992</td>
+        </tr>
+        <tr>
+          <td>Book</td>
+          <td>dc:publisher</td>
+          <td>Harcourt Brace Jovanovich</td>
+        </tr>
+        <tr>
+          <td>Book</td>
+          <td>schema:inLanguage</td>
+          <td>English</td>
+        </tr>
+        <tr>
+          <td>Book</td>
           <td>crm:P2_has_type</td>
-          <td>ddd</td>
+          <td>Fiction</td>
         </tr>
         <tr>
           <td>Book</td>
-          <td>crm:P138_represents</td>
-          <td>Cdd</td>
+          <td>crm:P2_has_type</td>
+          <td>Novel</td>
         </tr>
         <tr>
           <td>Book</td>
-          <td>crm:P4_has_time-span</td>
-          <td>d</td>
+          <td>crm:P129_is_about</td>
+          <td>Feminism</td>
         </tr>
         <tr>
           <td>Book</td>
-          <td>crm:P45_consists_of</td>
-          <td>dne</td>
-        </tr>
-        <tr>
-          <td>Book</td>
-          <td>crm:P108_has_produced</td>
-          <td>Anddns</td>
-        </tr>
-        <tr>
-          <td>Book</td>
-          <td>crm:P8_took_place_on_or_within</td>
-          <td>Eddt</td>
-        </tr>
-        <tr>
-          <td>Book</td>
-          <td>crm:P50_has_current_keeper</td>
-          <td>Tdrt</td>
-        </tr>
-        <tr>
-          <td>Book</td>
-          <td>crm:P23_surrendered_title_through</td>
-          <td>Sdl</td>
+          <td>schema:character</td>
+          <td>Bella Baxter</td>
         </tr>
     </table>
-
+    
     <table id="item2" class="minimalistBlack">
       <thead>
         <tr>
@@ -729,46 +911,69 @@
           <th>Predicate</th>
           <th>Object</th>
         </tr>
+      </thead>
+      <tbody>
         <tr>
-          <td>Yorgos</td>
+          <td>Person</td>
           <td>crm:P2_has_type</td>
-          <td>ddd</td>
+          <td>male</td>
         </tr>
         <tr>
-          <td>Book</td>
+          <td>Person</td>
           <td>crm:P138_represents</td>
-          <td>Cdd</td>
+          <td>N/A</td>
         </tr>
         <tr>
-          <td>Book</td>
+          <td>Person</td>
           <td>crm:P4_has_time-span</td>
-          <td>d</td>
+          <td>N/A</td>
         </tr>
         <tr>
-          <td>Book</td>
+          <td>Person</td>
+          <td>crm:P98i_was_born</td>
+          <td>Athens</td>
+        </tr>
+        <tr>
+          <td>Person</td>
+          <td>crm:P98i_was_born</td>
+          <td>1973</td>
+        </tr>
+        <tr>
+          <td>Person</td>
+          <td>schema:hasOccupation</td>
+          <td>Film director</td>
+        </tr>
+        <tr>
+          <td>Person</td>
+          <td>dcterms:isPartOf</td>
+          <td>The Greek Weird Wave</td>
+        </tr>
+        <tr>
+          <td>Person</td>
           <td>crm:P45_consists_of</td>
           <td>dne</td>
         </tr>
         <tr>
-          <td>Book</td>
+          <td>Person</td>
           <td>crm:P108_has_produced</td>
           <td>Anddns</td>
         </tr>
         <tr>
-          <td>Book</td>
+          <td>Person</td>
           <td>crm:P8_took_place_on_or_within</td>
           <td>Eddt</td>
         </tr>
         <tr>
-          <td>Book</td>
+          <td>Person</td>
           <td>crm:P50_has_current_keeper</td>
           <td>Tdrt</td>
         </tr>
         <tr>
-          <td>Book</td>
+          <td>Person</td>
           <td>crm:P23_surrendered_title_through</td>
           <td>Sdl</td>
         </tr>
+      </tbody>
     </table>
 
     <table id="item3" class="minimalistBlack">
@@ -779,44 +984,40 @@
           <th>Object</th>
         </tr>
         <tr>
-          <td>Garden</td>
-          <td>crm:P2_has_type</td>
-          <td>ddd</td>
+          <td>The Garden of Earthly Delights</td>
+          <td>dcterms:creator</td>
+          <td>Hieronymus Bosch</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P138_represents</td>
-          <td>Cdd</td>
+          <td>The Garden of Earthly Delights</td>
+          <td>dcterms:created</td>
+          <td>1490-1500</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P4_has_time-span</td>
-          <td>d</td>
+          <td>The Garden of Earthly Delights</td>
+          <td>crm:P129_is_about</td>
+          <td>
+            <ul>
+              <li>Left panel: Garden of Eden</li>
+              <li>Central panel: Paradise on Earth</li>
+              <li>Right panel: Torments of Hell</li>
+            </ul>
+          </td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P45_consists_of</td>
-          <td>dne</td>
+          <td>The Garden of Earthly Delights</td>
+          <td>crm:P55_has_current_location</td>
+          <td>Museo del Prado, Madrid, Spain</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P108_has_produced</td>
-          <td>Anddns</td>
+          <td>The Garden of Earthly Delights</td>
+          <td>cdwa:Material/TechniqueDescription</td>
+          <td>Oil on oak panel</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P8_took_place_on_or_within</td>
-          <td>Eddt</td>
-        </tr>
-        <tr>
-          <td>Book</td>
-          <td>crm:P50_has_current_keeper</td>
-          <td>Tdrt</td>
-        </tr>
-        <tr>
-          <td>Book</td>
-          <td>crm:P23_surrendered_title_through</td>
-          <td>Sdl</td>
+          <td>The Garden of Earthly Delights</td>
+          <td>cdwa:DimensionDescription</td>
+          <td>384.9 cm x 205.5 cm</td>
         </tr>
     </table>
 
@@ -828,44 +1029,39 @@
           <th>Object</th>
         </tr>
         <tr>
-          <td>Soundtrack</td>
+          <td>Poor Things Soundtrack</td>
+          <td>crm:P102_has_title</td>
+          <td>"Poor Things: Original Motion Picture Soundtrack"</td>
+        </tr>
+        <tr>
+          <td>Poor Things Soundtrack</td>
+          <td>dcterms:creator</td>
+          <td>Carminho & Jerskin Fendrix</td>
+        </tr>
+        <tr>
+          <td>Poor Things Soundtrack</td>
+          <td>dcterms:issued</td>
+          <td>2023</td>
+        </tr>
+        <tr>
+          <td>Poor Things Soundtrack</td>
           <td>crm:P2_has_type</td>
-          <td>ddd</td>
+          <td>Soundtrack</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P138_represents</td>
-          <td>Cdd</td>
+          <td>Poor Things Soundtrack</td>
+          <td>schema:copyrightHolder</td>
+          <td>Searchlight Pictures</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P4_has_time-span</td>
-          <td>d</td>
+          <td>Poor Things Soundtrack</td>
+          <td>mo:published_as</td>
+          <td>Song “Bella”</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P45_consists_of</td>
-          <td>dne</td>
-        </tr>
-        <tr>
-          <td>Book</td>
-          <td>crm:P108_has_produced</td>
-          <td>Anddns</td>
-        </tr>
-        <tr>
-          <td>Book</td>
-          <td>crm:P8_took_place_on_or_within</td>
-          <td>Eddt</td>
-        </tr>
-        <tr>
-          <td>Book</td>
-          <td>crm:P50_has_current_keeper</td>
-          <td>Tdrt</td>
-        </tr>
-        <tr>
-          <td>Book</td>
-          <td>crm:P23_surrendered_title_through</td>
-          <td>Sdl</td>
+          <td>Poor Things Soundtrack</td>
+          <td>mo:published_as</td>
+          <td>Song “Alexandria”</td>
         </tr>
     </table>
 
@@ -877,44 +1073,34 @@
           <th>Object</th>
         </tr>
         <tr>
-          <td>Bella</td>
+          <td>Biographic entity</td>
+          <td>crm:P14_carried_out_by</td>
+          <td>Emma Stone</td>
+        </tr>
+        <tr>
+          <td>Biographic entity</td>
           <td>crm:P2_has_type</td>
-          <td>ddd</td>
+          <td>female</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P138_represents</td>
-          <td>Cdd</td>
+          <td>Biographic entity</td>
+          <td>crm:P2_has_type</td>
+          <td>protagonist</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P4_has_time-span</td>
-          <td>d</td>
+          <td>Biographic entity</td>
+          <td>dcterms:isReferencedBy</td>
+          <td>Nude Girl Standing With Long Black Hair & Blue-Black Drape</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P45_consists_of</td>
-          <td>dne</td>
+          <td>Biographic entity</td>
+          <td>schema:parent</td>
+          <td>Dr Godwin Baxter</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P108_has_produced</td>
-          <td>Anddns</td>
-        </tr>
-        <tr>
-          <td>Book</td>
-          <td>crm:P8_took_place_on_or_within</td>
-          <td>Eddt</td>
-        </tr>
-        <tr>
-          <td>Book</td>
-          <td>crm:P50_has_current_keeper</td>
-          <td>Tdrt</td>
-        </tr>
-        <tr>
-          <td>Book</td>
-          <td>crm:P23_surrendered_title_through</td>
-          <td>Sdl</td>
+          <td>Biographic entity</td>
+          <td>dcterms:isReplacedBy</td>
+          <td>Article</td>
         </tr>
     </table>
 
@@ -926,44 +1112,39 @@
           <th>Object</th>
         </tr>
         <tr>
-          <td>Metropolis</td>
+          <td>Movie</td>
+          <td>dcterms:creator</td>
+          <td>Fritz Lang</td>
+        </tr>
+        <tr>
+          <td>Movie</td>
+          <td>dcterms:creator</td>
+          <td>Thea Van Harbou</td>
+        </tr>
+        <tr>
+          <td>Movie</td>
           <td>crm:P2_has_type</td>
-          <td>ddd</td>
+          <td>Sci-fi</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P138_represents</td>
-          <td>Cdd</td>
+          <td>Movie</td>
+          <td>schema:inLanguage</td>
+          <td>German</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P4_has_time-span</td>
-          <td>d</td>
+          <td>Movie</td>
+          <td>dcterms:issued</td>
+          <td>1927</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P45_consists_of</td>
-          <td>dne</td>
+          <td>Movie</td>
+          <td>dcterms:extent</td>
+          <td>2 hours 33 minutes</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P108_has_produced</td>
-          <td>Anddns</td>
-        </tr>
-        <tr>
-          <td>Book</td>
-          <td>crm:P8_took_place_on_or_within</td>
-          <td>Eddt</td>
-        </tr>
-        <tr>
-          <td>Book</td>
-          <td>crm:P50_has_current_keeper</td>
-          <td>Tdrt</td>
-        </tr>
-        <tr>
-          <td>Book</td>
-          <td>crm:P23_surrendered_title_through</td>
-          <td>Sdl</td>
+          <td>Movie</td>
+          <td>crm:P2_has_type</td>
+          <td>Black and white</td>
         </tr>
     </table>
 
@@ -976,43 +1157,33 @@
         </tr>
         <tr>
           <td>Article</td>
-          <td>crm:P2_has_type</td>
-          <td>ddd</td>
+          <td>dcterms:creator</td>
+          <td>Melena Ryzik</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P138_represents</td>
-          <td>Cdd</td>
+          <td>Article</td>
+          <td>crm:P102_has_title</td>
+          <td>Unfurling the Unusual Costumes of ‘Poor Things’</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P4_has_time-span</td>
-          <td>d</td>
+          <td>Article</td>
+          <td>dcterms:issued</td>
+          <td>2.02.2024</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P45_consists_of</td>
-          <td>dne</td>
+          <td>Article</td>
+          <td>crm:P129_is_about</td>
+          <td>Costumes in “Poor Things”</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P108_has_produced</td>
-          <td>Anddns</td>
+          <td>Article</td>
+          <td>dc:publisher</td>
+          <td>The New York Times Company</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P8_took_place_on_or_within</td>
-          <td>Eddt</td>
-        </tr>
-        <tr>
-          <td>Book</td>
-          <td>crm:P50_has_current_keeper</td>
-          <td>Tdrt</td>
-        </tr>
-        <tr>
-          <td>Book</td>
-          <td>crm:P23_surrendered_title_through</td>
-          <td>Sdl</td>
+          <td>Article</td>
+          <td>schema:mentions</td>
+          <td>Egon Schiele Portrait</td>
         </tr>
     </table>
 
@@ -1024,44 +1195,44 @@
           <th>Object</th>
         </tr>
         <tr>
-          <td>Lighthouse</td>
-          <td>crm:P2_has_type</td>
-          <td>ddd</td>
+          <td>Monument</td>
+          <td>dc:title</td>
+          <td>Lighthouse of Alexandria</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P138_represents</td>
-          <td>Cdd</td>
+          <td>Monument</td>
+          <td>dcterms:created</td>
+          <td>284 - 246 BC</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P4_has_time-span</td>
-          <td>d</td>
+          <td>Monument</td>
+          <td>cdwa:Commissioner</td>
+          <td>Ptolemy I Soter</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P45_consists_of</td>
-          <td>dne</td>
+          <td>Monument</td>
+          <td>dcterms:spatial</td>
+          <td>Pharos, Alexandria, Egypt</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P108_has_produced</td>
-          <td>Anddns</td>
+          <td>Monument</td>
+          <td>schema:material</td>
+          <td>Lightcoloured stone</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P8_took_place_on_or_within</td>
-          <td>Eddt</td>
+          <td>Monument</td>
+          <td>cdwa:DimensionDescription</td>
+          <td>103-118 meters</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P50_has_current_keeper</td>
-          <td>Tdrt</td>
+          <td>Monument</td>
+          <td>schema:endDate</td>
+          <td>1303</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P23_surrendered_title_through</td>
-          <td>Sdl</td>
+          <td>Monument</td>
+          <td>dcterms:isPartOf</td>
+          <td>Seven Wonders of the Ancient World</td>
         </tr>
     </table>
 
@@ -1073,44 +1244,50 @@
           <th>Object</th>
         </tr>
         <tr>
-          <td>Schiele</td>
-          <td>crm:P2_has_type</td>
-          <td>ddd</td>
+          <td>Portrait</td>
+          <td>dc:title</td>
+          <td>Nude Girl With Long Black Hair & Blue-Black Drape</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P138_represents</td>
-          <td>Cdd</td>
+          <td>Portrait</td>
+          <td>dcterms:created</td>
+          <td>1991</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P4_has_time-span</td>
-          <td>d</td>
+          <td>Portrait</td>
+          <td>dc:creator</td>
+          <td>Egon Schiele</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P45_consists_of</td>
-          <td>dne</td>
+          <td>Portrait</td>
+          <td>cdwa:Current Location</td>
+          <td>Columbia University</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P108_has_produced</td>
-          <td>Anddns</td>
+          <td>Portrait</td>
+          <td>cdwa:Material/Technique Description</td>
+          <td>Pencil and watercolor</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P8_took_place_on_or_within</td>
-          <td>Eddt</td>
+          <td>Portrait</td>
+          <td>cdwa:Dimension Description</td>
+          <td>56.5 x 35 cm</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P50_has_current_keeper</td>
-          <td>Tdrt</td>
+          <td>Portrait</td>
+          <td>dc:subject</td>
+          <td>Young woman with long hair</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P23_surrendered_title_through</td>
-          <td>Sdl</td>
+          <td>Portrait</td>
+          <td>cdwa:Style</td>
+          <td>Expressionism</td>
+        </tr>
+        <tr>
+          <td>Portrait</td>
+          <td>dcterms:isReplacedBy</td>
+          <td>fabio:journal article</td>
+        </tr>
         </tr>
     </table>
     
@@ -1122,44 +1299,39 @@
           <th>Object</th>
         </tr>
         <tr>
+          <td>Activity</td>
+          <td>schema:name</td>
           <td>Grand Tour</td>
-          <td>crm:P2_has_type</td>
-          <td>ddd</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P138_represents</td>
-          <td>Cdd</td>
+          <td>Activity</td>
+          <td>schema:agent</td>
+          <td>Young upper-class men</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P4_has_time-span</td>
-          <td>d</td>
+          <td>Activity</td>
+          <td>dcterms:spatial</td>
+          <td>Europe and the Mediterranean</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P45_consists_of</td>
-          <td>dne</td>
+          <td>Activity</td>
+          <td>schema:startDate</td>
+          <td>Late 18th century</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P108_has_produced</td>
-          <td>Anddns</td>
+          <td>Activity</td>
+          <td>schema:endDate</td>
+          <td>Early 19th century</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P8_took_place_on_or_within</td>
-          <td>Eddt</td>
+          <td>Activity</td>
+          <td>cidoc-crm:P21_had_general_purpose</td>
+          <td>Education</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P50_has_current_keeper</td>
-          <td>Tdrt</td>
-        </tr>
-        <tr>
-          <td>Book</td>
-          <td>crm:P23_surrendered_title_through</td>
-          <td>Sdl</td>
+          <td>Activity</td>
+          <td>schema:agent</td>
+          <td>Bella Baxter</td>
         </tr>
     </table>
 
