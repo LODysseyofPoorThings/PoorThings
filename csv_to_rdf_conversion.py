@@ -6,7 +6,7 @@ import pandas as pd
 #Namespaces
 CDWA = Namespace("https://www.getty.edu/research/publications/electronic_publications/cdwa/")
 SCHEMA = Namespace("https://schema.org/")
-CIDOC_CRM = Namespace("https://www.cidoc-crm.org/")
+CRM = Namespace("https://www.cidoc-crm.org/")
 
 #creating a rdf graph
 g = rdflib.Graph()
@@ -25,7 +25,7 @@ concept = URIRef(pt + "concept/")
 #bind namespaces to graph
 g.bind("cdwa", CDWA)
 g.bind("schema", SCHEMA)
-g.bind("cidoc-crm", CIDOC_CRM)
+g.bind("cidoc-crm", CRM)
 
 #list of csv files
 files_csv = ["csv files/lighthouse_of_alexandria.csv", "csv files/portrait.csv", "csv files/grand_tour.csv"]
@@ -106,20 +106,20 @@ for file in files_csv:
         elif predicate == "schema:agent":
             predicate_uri = SCHEMA.agent
 
-        elif predicate == "cidoc-crm:P21_had_general_purpose":
-            predicate_uri = CIDOC_CRM.P21_had_general_purpose
+        elif predicate == "crm:P21_had_general_purpose":
+            predicate_uri = CRM.P21_had_general_purpose
 
-        elif predicate == "cidoc-crm:P2_has_type":
-            predicate_uri = CIDOC_CRM.P2_has_type
+        elif predicate == "crm:P2_has_type":
+            predicate_uri = CRM.P2_has_type
 
         elif predicate == "cidoc-crm:P82a_begin_of_the_begin":
-            predicate_uri = CIDOC_CRM.P82a_begin_of_the_begin 
+            predicate_uri = CRM.P82a_begin_of_the_begin 
 
         elif predicate == "cidoc-crm:P82b_end_of_the_end":
-            predicate_uri = CIDOC_CRM.P82b_end_of_the_end        
+            predicate_uri = CRM.P82b_end_of_the_end        
 
         #specify if objects are uris or litterals and add uris to uris_dict
-        if predicate_uri == RDF.type or predicate_uri == OWL.sameAs or predicate_uri == CIDOC_CRM.P2_has_type:
+        if predicate_uri == RDF.type or predicate_uri == OWL.sameAs or predicate_uri == CRM.P2_has_type:
             obj = URIRef(object)
 
         elif predicate_uri == DC.creator or predicate_uri == CDWA.Commissioner or predicate_uri == SCHEMA.agent:
@@ -134,7 +134,7 @@ for file in files_csv:
             obj = URIRef(group + object.replace(" ", "_"))
             uris_dict[object] = obj 
 
-        elif predicate_uri == CIDOC_CRM.P21_had_general_purpose:
+        elif predicate_uri == CRM.P21_had_general_purpose:
             obj = URIRef(concept + object.replace(" ", "_"))
             uris_dict[object] = obj
 
@@ -145,7 +145,7 @@ for file in files_csv:
             else:
                 obj = Literal(object, datatype=XSD.gYear)   
 
-        elif predicate_uri == SCHEMA.startDate or predicate_uri == SCHEMA.endDate or predicate_uri == CIDOC_CRM.P82a_begin_of_the_begin or predicate_uri == CIDOC_CRM.P82b_end_of_the_end:
+        elif predicate_uri == SCHEMA.startDate or predicate_uri == SCHEMA.endDate or predicate_uri == CRM.P82a_begin_of_the_begin or predicate_uri == CRM.P82b_end_of_the_end:
             obj = Literal(object, datatype=XSD.gYear)
 
         else:
