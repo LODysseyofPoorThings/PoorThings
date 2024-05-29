@@ -434,8 +434,7 @@ img {
   }
 }
 
-
-/* Table styles sub pred obj */
+/* General Table Styles */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -461,6 +460,7 @@ td {
   color: #5a656e;
 }
 
+/* Specific Styles for sub pred obj table */
 th.subject, td.subject {
   width: 30%;
 }
@@ -473,122 +473,20 @@ th.object, td.object {
   width: 30%;
 }
 
-@media screen and (max-width: 768px) {
-  table, thead, tbody, th, td, tr {
-    display: block;
-  }
-  
-  th, td {
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  th.subject, td.subject,
-  th.predicate, td.predicate,
-  th.object, td.object {
-    width: 100%;
-  }
-}
-
-
-/* Table styles who what where when*/
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 2rem;
-  background-color: #fff;
-}
-
-th, td {
-  padding: 12px 15px;
-  text-align: left;
-  border: 1px solid #ddd;
-}
-
-th {
-  background-color: #f2f6f9;
-  font-weight: bold;
-  font-size: 1.125rem;
-  color: #2c4964;
-}
-
-td {
-  font-size: 1rem;
-  color: #5a656e;
-}
-
+/* Specific Styles for who what where when table */
 th.property, td.property {
   width: 20%;
 }
 
-th.dublincore, td.dublincore {
-  width: 16%;
-}
-
-th.schema, td.schema {
-  width: 16%;
-}
-
-th.cdwa, td.cdwa {
-  width: 16%;
-}
-
-th.cidoc, td.cidoc {
-  width: 16%;
-}
-
+th.dublincore, td.dublincore,
+th.schema, td.schema,
+th.cdwa, td.cdwa,
+th.cidoc, td.cidoc,
 th.mo, td.mo {
   width: 16%;
 }
 
-@media screen and (max-width: 768px) {
-  table, thead, tbody, th, td, tr {
-    display: block;
-  }
-  
-  th, td {
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  th.property, td.property,
-  th.dublincore, td.dublincore,
-  th.schema, td.schema,
-  th.cdwa, td.cdwa,
-  th.cidoc, td.cidoc,
-  th.mo, td.mo {
-    width: 100%;
-  }
-}
-
-
-/* Table styles for metadata analysis*/
-/* Table styles */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 2rem;
-  background-color: #fff;
-}
-
-th, td {
-  padding: 12px 15px;
-  text-align: left;
-  border: 1px solid #ddd;
-}
-
-th {
-  background-color: #f2f6f9;
-  font-weight: bold;
-  font-size: 1.125rem;
-  color: #2c4964;
-}
-
-td {
-  font-size: 1rem;
-  color: #5a656e;
-}
-
+/* Specific Styles for metadata analysis table */
 th.item, td.item {
   width: 25%;
 }
@@ -605,20 +503,27 @@ th.metadata-standard, td.metadata-standard {
   width: 25%;
 }
 
+/* Mobile Styles */
 @media screen and (max-width: 768px) {
-  table, thead, tbody, th, td, tr {
-    display: block;
+  .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  table {
+    width: 100%;
+    display: table;
   }
   
   th, td {
-    width: 100%;
-    box-sizing: border-box;
+    width: auto;
+    display: table-cell;
   }
-  
-  th.item, td.item,
-  th.type, td.type,
-  th.source, td.source,
-  th.metadata-standard, td.metadata-standard {
-    width: 100%;
-  }
+}
+
+/* Container for Tables */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
