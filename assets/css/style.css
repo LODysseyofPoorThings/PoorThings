@@ -527,3 +527,42 @@ th.metadata-standard, td.metadata-standard {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
+.d-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.d-flex.wrap-buttons {
+  max-width: 600px; /* Adjust this value to control the number of buttons per line */
+  margin: 0 auto;
+}
+
+.d-flex.wrap-buttons button {
+  flex: 1 0 45%; /* This will make the buttons take up 45% of the container width */
+  margin: 5px;
+}
+
+/* Adjusting Button Styles */
+.btn {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #2c4964;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #f2f6f9;
+}
+
+@media (max-width: 768px) {
+  .d-flex.wrap-buttons {
+    max-width: 100%; /* Ensure the container is full width on smaller screens */
+  }
+  
+  .d-flex.wrap-buttons button {
+    flex: 1 0 100%; /* Make buttons full width on smaller screens */
+  }
+}
