@@ -520,49 +520,37 @@ th.metadata-standard, td.metadata-standard {
     display: table-cell;
   }
 }
-
-/* Container for Tables */
-.table-container {
-  width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
 .d-flex {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  gap: 10px; /* Space between buttons */
 }
 
-.d-flex.wrap-buttons {
-  max-width: 600px; /* Adjust this value to control the number of buttons per line */
+.wrap-buttons {
+  width: 100%;
+  max-width: 900px; /* Control the maximum width of the button container */
   margin: 0 auto;
 }
 
-.d-flex.wrap-buttons button {
-  flex: 1 0 45%; /* This will make the buttons take up 45% of the container width */
-  margin: 5px;
-}
-
-/* Adjusting Button Styles */
+/* Button Styles */
 .btn {
-  padding: 10px 20px;
+  flex:1 1 auto;
   border: 1px solid #ddd;
   background-color: #fff;
   color: #2c4964;
   cursor: pointer;
   text-align: center;
+  box-sizing: border-box; /* Ensure padding and borders are included in the width */
 }
 
 .btn:hover {
   background-color: #f2f6f9;
 }
 
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-  .d-flex.wrap-buttons {
-    max-width: 100%; /* Ensure the container is full width on smaller screens */
-  }
-  
-  .d-flex.wrap-buttons button {
-    flex: 1 0 100%; /* Make buttons full width on smaller screens */
+  .btn {
+    flex: 1 1 100%; /* Make buttons full width on smaller screens */
   }
 }
