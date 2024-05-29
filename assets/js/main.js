@@ -591,3 +591,31 @@ function myFunction(inp) {
   new PureCounter();
 
 })()
+
+
+ /**
+mobile navigation adjustment   */
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+  const navbar = document.querySelector('#navbar');
+
+  mobileNavToggle.addEventListener('click', function() {
+    navbar.classList.toggle('navbar-mobile');
+    this.classList.toggle('bi-list');
+    this.classList.toggle('bi-x');
+  });
+
+  document.querySelectorAll('.navbar .dropdown > a').forEach(function(dropdownToggle) {
+    dropdownToggle.addEventListener('click', function(e) {
+      if (navbar.classList.contains('navbar-mobile')) {
+        e.preventDefault();
+        this.nextElementSibling.classList.toggle('dropdown-active');
+      }
+    });
+  });
+});
+
+
+

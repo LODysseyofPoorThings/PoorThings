@@ -304,79 +304,80 @@
               *****To ensure interoperability, our team meticulously identified the metadata standards used by the providers of our selected items. We marked all explicitly stated standards with *, while in cases lacking clear declarations, we applied either the prevailing standard within the relevant institution type or a suitable generic metadata standard.            </p>
         </div>
       </div>
-      <table class="table table-bordered">
+      <table class="minimalistBlack">
         <thead>
           <tr>
-            <th scope="col">Item</th>
-            <th scope="col">Type</th>
-            <th scope="col">Source</th>
-            <th scope="col">Metadata Standard</th>
+            <th class="item">Item</th>
+            <th class="type">Type</th>
+            <th class="source">Source</th>
+            <th class="metadata-standard">Metadata Standard</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Yorgos Lanthimos</td>
-            <td>Director</td>
-            <td>IMDB</td>
-            <td>schema.org</td>
+            <td class="item">Yorgos Lanthimos</td>
+            <td class="type">Director</td>
+            <td class="source">IMDB</td>
+            <td class="metadata-standard">schema.org</td>
           </tr>
           <tr>
-            <td>Poor Things</td>
-            <td>Book (novel)</td>
-            <td>Wikidata</td>
-            <td>DublinCore ?</td>
+            <td class="item">Poor Things</td>
+            <td class="type">Book (novel)</td>
+            <td class="source">Wikidata</td>
+            <td class="metadata-standard">DublinCore ?</td>
           </tr>
           <tr>
-            <td>The Grand Tour</td>
-            <td>Activity</td>
-            <td>OpenLibrary</td>
-            <td>schema.org</td>
+            <td class="item">The Grand Tour</td>
+            <td class="type">Activity</td>
+            <td class="source">OpenLibrary</td>
+            <td class="metadata-standard">schema.org</td>
           </tr>
           <tr>
-            <td>The Garden of Earthly Delights</td>
-            <td>Painting</td>
-            <td>Museo del Prado</td>
-            <td>CWDA</td>
+            <td class="item">The Garden of Earthly Delights</td>
+            <td class="type">Painting</td>
+            <td class="source">Museo del Prado</td>
+            <td class="metadata-standard">CWDA</td>
           </tr>
           <tr>
-            <td>Metropolis</td>
-            <td>Film (reference)</td>
-            <td>IMDB</td>
-            <td>schema.org</td>
+            <td class="item">Metropolis</td>
+            <td class="type">Film (reference)</td>
+            <td class="source">IMDB</td>
+            <td class="metadata-standard">schema.org</td>
           </tr>
           <tr>
-            <td>Lighthouse of Alexandria</td>
-            <td>Monument</td>
-            <td>Wikidata</td>
-            <td>CWDA</td>
+            <td class="item">Lighthouse of Alexandria</td>
+            <td class="type">Monument</td>
+            <td class="source">Wikidata</td>
+            <td class="metadata-standard">CWDA</td>
           </tr>
           <tr>
-            <td>Poor Things</td>
-            <td>Soundtrack</td>
-            <td>Wikidata</td>
-            <td>Music Ontology</td>
+            <td class="item">Poor Things</td>
+            <td class="type">Soundtrack</td>
+            <td class="source">Wikidata</td>
+            <td class="metadata-standard">Music Ontology</td>
           </tr>
           <tr>
-            <td>Bella Baxter</td>
-            <td>Character</td>
-            <td>Genius</td>
-            <td>schema.org</td>
+            <td class="item">Bella Baxter</td>
+            <td class="type">Character</td>
+            <td class="source">Genius</td>
+            <td class="metadata-standard">schema.org</td>
           </tr>
           <tr>
-            <td>Nude Girl Standing With Long Black Hair & Blue-Black Drape</td>
-            <td>Portrait</td>
-            <td>Media Center for Art History</td>
-            <td>CWDA</td>
+            <td class="item">Nude Girl Standing With Long Black Hair & Blue-Black Drape</td>
+            <td class="type">Portrait</td>
+            <td class="source">Media Center for Art History</td>
+            <td class="metadata-standard">CWDA</td>
           </tr>
           <tr>
-            <td>Unfurling the Unusual Costumes of Poor Things</td>
-            <td>Article</td>
-            <td>The New York Times</td>
-            <td>DublinCore</td>
+            <td class="item">Unfurling the Unusual Costumes of Poor Things</td>
+            <td class="type">Article</td>
+            <td class="source">The New York Times</td>
+            <td class="metadata-standard">DublinCore</td>
           </tr>
         </tbody>
       </table>
-      </div>
+      
+      
 
     <!-- TEXT CONVERSIONS -->
 
@@ -463,292 +464,283 @@
               <p>Regarding the standards, where we could not find the metadata alignement we wrote <i>N/A</i> on the table below.</p>
             </div>
           </div>
-      
           <div class="d-flex justify-content-center mb-4">
-            <button onclick="myFunction('who')" class="btn btn-outline-dark mx-2" >WHO</button>
-
-            <button onclick="myFunction('what')" class="btn btn-outline-dark mx-2" >WHAT</button>
-            
-            <button onclick="myFunction('when')" class="btn btn-outline-dark mx-2" >WHEN</button>
-          
+            <button onclick="myFunction('who')" class="btn btn-outline-dark mx-2">WHO</button>
+            <button onclick="myFunction('what')" class="btn btn-outline-dark mx-2">WHAT</button>
+            <button onclick="myFunction('when')" class="btn btn-outline-dark mx-2">WHEN</button>
             <button onclick="myFunction('where')" class="btn btn-outline-dark mx-2">WHERE</button>
           </div>
-
+          
           <div class="swiper-wrapper align-items-center">
-          <table id="1" class="minimalistBlack">
-            <thead>
-              <tr>
-                <th>Property</th>
-                <th>Dublin Core</th>
-                <th>Schema.org</th>
-                <th>CDWA</th>
-                <th>CIDOC-CRM</th>
-                <th>MO</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Creator</td>
-                <td>dcterms:creator</td>
-                <td>creator</td>
-                <td>Creator Description<br>Creator Identity<br>Creator Role</td>
-                <td>N/A</td>
-                <td>composer</td>
-              </tr>
-              <tr>
-                <td>Occupation</td>
-                <td>N/A</td>
-                <td>hasOccupation</td>
-                <td>Life Roles</td>
-                <td>N/A</td>
-                <td>N/A</td>
-              </tr>
-              <tr>
-                <td>Agent</td>
-                <td>N/A</td>
-                <td>agent</td>
-                <td>Role</td>
-                <td>P14 carried out by (performed)</td>
-                <td>MusicArtist???</td>
-              </tr>
-              <tr>
-                <td>Publisher</td>
-                <td>dc: publisher </td>
-                <td>publisher</td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>publisher</td>
-              </tr>
-              <tr>
-                <td>Commissioner</td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>Commissioner</td>
-                <td>N/A</td>
-                <td>N/A</td>
-              </tr>
-            </tbody>
-          </table>
-      
-          <table id="2" class="minimalistBlack">
-            <thead>
-              <tr>
-                <th>Property</th>
-                <th>Dublin Core</th>
-                <th>Schema.org</th>
-                <th>CDWA</th>
-                <th>CIDOC-CRM</th>
-                <th>MO</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Right</td>
-                <td>dcterms:rights</td>
-                <td>license</td>
-                <td>
-                  Copyright Statement<br>
-                  Copyright Holder Name
-                </td>
-                <td>P105 right held by (has right on)</td>
-                <td>label/license</td>
-              </tr>
-              <tr>
-                <td>Title</td>
-                <td>dcterms:title</td>
-                <td>name</td>
-                <td>Title Text</td>
-                <td>P102 has title (is title of)</td>
-                <td>title</td>
-              </tr>
-              <tr>
-                <td>Type</td>
-                <td>dcterms:type</td>
-                <td>category</td>
-                <td>Classification Term</td>
-                <td>P2 has type (is type of)</td>
-                <td>genre</td>
-              </tr>
-              <tr>
-                <td>Gender</td>
-                <td>N/A</td>
-                <td>gender</td>
-                <td>Gender</td>
-                <td>N/A</td>
-                <td>N/A</td>
-              </tr>
-              <tr>
-                <td>Dimension</td>
-                <td>dcterms:medium</td>
-                <td>materialExtent</td>
-                <td>Dimension Description</td>
-                <td>P43 has dimension (is dimension of)</td>
-                <td>duration</td>
-              </tr>
-              <tr>
-                <td>Material</td>
-                <td>dcterms:type</td>
-                <td>material</td>
-                <td>Materials/Techniques Description</td>
-                <td>P45 consists of (is incorporated in)</td>
-                <td>medium</td>
-              </tr>
-              <tr>
-                <td>Genre</td>
-                <td>N/A</td>
-                <td>genre</td>
-                <td>N/A</td>
-                <td>P2 has type (is type of)</td>
-                <td>genre</td>
-              </tr>
-              <tr>
-                <td>Language</td>
-                <td>dcterms:language</td>
-                <td>inLanguage</td>
-                <td>N/A</td>
-                <td>P72 has language (is language of)</td>
-                <td>N/A</td>
-              </tr>
-              <tr>
-                <td>Duration</td>
-                <td>dcterms:extent</td>
-                <td>duration</td>
-                <td>N/A</td>
-                <td>P4 has time-span (is time-span of)</td>
-                <td>duration</td>
-              </tr>
-              <tr>
-                <td>Subject</td>
-                <td>dcterms:subject</td>
-                <td>about</td>
-                <td>Subject</td>
-                <td>P129 is about (is subject of)</td>
-                <td>N/A</td>
-              </tr>
-              <tr>
-                <td>Mentions</td>
-                <td>dcterms:description</td>
-                <td>mentions</td>
-                <td>N/A</td>
-                <td>P67 refers to (is referred to by)</td>
-                <td>N/A</td>
-              </tr>
-              <tr>
-                <td>Award</td>
-                <td>N/A</td>
-                <td>award</td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>N/A</td>
-              </tr>
-              <tr>
-                <td>Has Part</td>
-                <td>dcterms:hasPart</td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>P59 has section (is located on or within)</td>
-                <td>track</td>
-              </tr>
-              <tr>
-                <td>Purpose</td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>cidoc-crm:P21 had general purpose</td>
-                <td>N/A</td>
-              </tr>
-            </tbody>
-          </table>
-        
-
-<table id="3" class="minimalistBlack">
-  <thead>
-    <tr>
-      <th>Property</th>
-      <th>Dublin Core</th>
-      <th>Schema.org</th>
-      <th>CDWA</th>
-      <th>CIDOC-CRM</th>
-      <th>MO</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Creation Date</td>
-      <td>dcterms:created</td>
-      <td>dateCreated</td>
-      <td>Creation Date</td>
-      <td>N/A</td>
-      <td>composed_in</td>
-    </tr>
-    <tr>
-      <td>Publication Date</td>
-      <td>dcterms:issued</td>
-      <td>datePublished</td>
-      <td>N/A</td>
-      <td>N/A</td>
-      <td>published_in</td>
-    </tr>
-    <tr>
-      <td>Start Date</td>
-      <td>dc:date</td>
-      <td>startDate</td>
-      <td>N/A</td>
-      <td>N/A</td>
-      <td>recorded_in</td>
-    </tr>
-    <tr>
-      <td>End Date</td>
-      <td>dc:date</td>
-      <td>endDate</td>
-      <td>N/A</td>
-      <td>N/A</td>
-      <td>recorded_in</td>
-    </tr>
-  </tbody>
-</table>
-
-
-<table id="4" class="minimalistBlack">
-  <thead>
-    <tr>
-      <th>Property</th>
-      <th>Dublin Core</th>
-      <th>Schema.org</th>
-      <th>CDWA</th>
-      <th>CIDOC-CRM</th>
-      <th>MO</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Location</td>
-      <td>dcterms:spatial</td>
-      <td>spatial</td>
-      <td>Current Location</td>
-      <td>P53 has former or current location (is former or current location of)</td>
-      <td>origin/recorded_in</td>
-    </tr>
-    <tr>
-      <td>Collection/Part Of</td>
-      <td>dcterms:isPartOf</td>
-      <td>isPartOf</td>
-      <td>Work Broader Context</td>
-      <td>P59 has section (is located on or within)</td>
-      <td>part_of</td>
-    </tr>
-    <tr>
-      <td>Itinerary</td>
-      <td>dcterms:spatial</td>
-      <td>itinerary</td>
-      <td>N/A</td>
-      <td>N/A</td>
-      <td>N/A</td>
-    </tr>
-  </tbody>
-</table>
-        </div>
-      </div>
+            <table id="1" class="minimalistBlack">
+              <thead>
+                <tr>
+                  <th class="property">Property</th>
+                  <th class="dublincore">Dublin Core</th>
+                  <th class="schema">Schema.org</th>
+                  <th class="cdwa">CDWA</th>
+                  <th class="cidoc">CIDOC-CRM</th>
+                  <th class="mo">MO</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="property">Creator</td>
+                  <td class="dublincore">dcterms:creator</td>
+                  <td class="schema">creator</td>
+                  <td class="cdwa">Creator Description<br>Creator Identity<br>Creator Role</td>
+                  <td class="cidoc">N/A</td>
+                  <td class="mo">composer</td>
+                </tr>
+                <tr>
+                  <td class="property">Occupation</td>
+                  <td class="dublincore">N/A</td>
+                  <td class="schema">hasOccupation</td>
+                  <td class="cdwa">Life Roles</td>
+                  <td class="cidoc">N/A</td>
+                  <td class="mo">N/A</td>
+                </tr>
+                <tr>
+                  <td class="property">Agent</td>
+                  <td class="dublincore">N/A</td>
+                  <td class="schema">agent</td>
+                  <td class="cdwa">Role</td>
+                  <td class="cidoc">P14 carried out by (performed)</td>
+                  <td class="mo">MusicArtist???</td>
+                </tr>
+                <tr>
+                  <td class="property">Publisher</td>
+                  <td class="dublincore">dc:publisher</td>
+                  <td class="schema">publisher</td>
+                  <td class="cdwa">N/A</td>
+                  <td class="cidoc">N/A</td>
+                  <td class="mo">publisher</td>
+                </tr>
+                <tr>
+                  <td class="property">Commissioner</td>
+                  <td class="dublincore">N/A</td>
+                  <td class="schema">N/A</td>
+                  <td class="cdwa">Commissioner</td>
+                  <td class="cidoc">N/A</td>
+                  <td class="mo">N/A</td>
+                </tr>
+              </tbody>
+            </table>
+          
+            <table id="2" class="minimalistBlack">
+              <thead>
+                <tr>
+                  <th class="property">Property</th>
+                  <th class="dublincore">Dublin Core</th>
+                  <th class="schema">Schema.org</th>
+                  <th class="cdwa">CDWA</th>
+                  <th class="cidoc">CIDOC-CRM</th>
+                  <th class="mo">MO</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="property">Right</td>
+                  <td class="dublincore">dcterms:rights</td>
+                  <td class="schema">license</td>
+                  <td class="cdwa">Copyright Statement<br>Copyright Holder Name</td>
+                  <td class="cidoc">P105 right held by (has right on)</td>
+                  <td class="mo">label/license</td>
+                </tr>
+                <tr>
+                  <td class="property">Title</td>
+                  <td class="dublincore">dcterms:title</td>
+                  <td class="schema">name</td>
+                  <td class="cdwa">Title Text</td>
+                  <td class="cidoc">P102 has title (is title of)</td>
+                  <td class="mo">title</td>
+                </tr>
+                <tr>
+                  <td class="property">Type</td>
+                  <td class="dublincore">dcterms:type</td>
+                  <td class="schema">category</td>
+                  <td class="cdwa">Classification Term</td>
+                  <td class="cidoc">P2 has type (is type of)</td>
+                  <td class="mo">genre</td>
+                </tr>
+                <tr>
+                  <td class="property">Gender</td>
+                  <td class="dublincore">N/A</td>
+                  <td class="schema">gender</td>
+                  <td class="cdwa">Gender</td>
+                  <td class="cidoc">N/A</td>
+                  <td class="mo">N/A</td>
+                </tr>
+                <tr>
+                  <td class="property">Dimension</td>
+                  <td class="dublincore">dcterms:medium</td>
+                  <td class="schema">materialExtent</td>
+                  <td class="cdwa">Dimension Description</td>
+                  <td class="cidoc">P43 has dimension (is dimension of)</td>
+                  <td class="mo">duration</td>
+                </tr>
+                <tr>
+                  <td class="property">Material</td>
+                  <td class="dublincore">dcterms:type</td>
+                  <td class="schema">material</td>
+                  <td class="cdwa">Materials/Techniques Description</td>
+                  <td class="cidoc">P45 consists of (is incorporated in)</td>
+                  <td class="mo">medium</td>
+                </tr>
+                <tr>
+                  <td class="property">Genre</td>
+                  <td class="dublincore">N/A</td>
+                  <td class="schema">genre</td>
+                  <td class="cdwa">N/A</td>
+                  <td class="cidoc">P2 has type (is type of)</td>
+                  <td class="mo">genre</td>
+                </tr>
+                <tr>
+                  <td class="property">Language</td>
+                  <td class="dublincore">dcterms:language</td>
+                  <td class="schema">inLanguage</td>
+                  <td class="cdwa">N/A</td>
+                  <td class="cidoc">P72 has language (is language of)</td>
+                  <td class="mo">N/A</td>
+                </tr>
+                <tr>
+                  <td class="property">Duration</td>
+                  <td class="dublincore">dcterms:extent</td>
+                  <td class="schema">duration</td>
+                  <td class="cdwa">N/A</td>
+                  <td class="cidoc">P4 has time-span (is time-span of)</td>
+                  <td class="mo">duration</td>
+                </tr>
+                <tr>
+                  <td class="property">Subject</td>
+                  <td class="dublincore">dcterms:subject</td>
+                  <td class="schema">about</td>
+                  <td class="cdwa">Subject</td>
+                  <td class="cidoc">P129 is about (is subject of)</td>
+                  <td class="mo">N/A</td>
+                </tr>
+                <tr>
+                  <td class="property">Mentions</td>
+                  <td class="dublincore">dcterms:description</td>
+                  <td class="schema">mentions</td>
+                  <td class="cdwa">N/A</td>
+                  <td class="cidoc">P67 refers to (is referred to by)</td>
+                  <td class="mo">N/A</td>
+                </tr>
+                <tr>
+                  <td class="property">Award</td>
+                  <td class="dublincore">N/A</td>
+                  <td class="schema">award</td>
+                  <td class="cdwa">N/A</td>
+                  <td class="cidoc">N/A</td>
+                  <td class="mo">N/A</td>
+                </tr>
+                <tr>
+                  <td class="property">Has Part</td>
+                  <td class="dublincore">dcterms:hasPart</td>
+                  <td class="schema">N/A</td>
+                  <td class="cdwa">N/A</td>
+                  <td class="cidoc">P59 has section (is located on or within)</td>
+                  <td class="mo">track</td>
+                </tr>
+                <tr>
+                  <td class="property">Purpose</td>
+                  <td class="dublincore">N/A</td>
+                  <td class="schema">N/A</td>
+                  <td class="cdwa">N/A</td>
+                  <td class="cidoc">P21 had general purpose</td>
+                  <td class="mo">N/A</td>
+                </tr>
+              </tbody>
+            </table>
+          
+            <table id="3" class="minimalistBlack">
+              <thead>
+                <tr>
+                  <th class="property">Property</th>
+                  <th class="dublincore">Dublin Core</th>
+                  <th class="schema">Schema.org</th>
+                  <th class="cdwa">CDWA</th>
+                  <th class="cidoc">CIDOC-CRM</th>
+                  <th class="mo">MO</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="property">Creation Date</td>
+                  <td class="dublincore">dcterms:created</td>
+                  <td class="schema">dateCreated</td>
+                  <td class="cdwa">Creation Date</td>
+                  <td class="cidoc">N/A</td>
+                  <td class="mo">composed_in</td>
+                </tr>
+                <tr>
+                  <td class="property">Publication Date</td>
+                  <td class="dublincore">dcterms:issued</td>
+                  <td class="schema">datePublished</td>
+                  <td class="cdwa">N/A</td>
+                  <td class="cidoc">N/A</td>
+                  <td class="mo">published_in</td>
+                </tr>
+                <tr>
+                  <td class="property">Start Date</td>
+                  <td class="dublincore">dc:date</td>
+                  <td class="schema">startDate</td>
+                  <td class="cdwa">N/A</td>
+                  <td class="cidoc">N/A</td>
+                  <td class="mo">recorded_in</td>
+                </tr>
+                <tr>
+                  <td class="property">End Date</td>
+                  <td class="dublincore">dc:date</td>
+                  <td class="schema">endDate</td>
+                  <td class="cdwa">N/A</td>
+                  <td class="cidoc">N/A</td>
+                  <td class="mo">recorded_in</td>
+                </tr>
+              </tbody>
+            </table>
+          
+            <table id="4" class="minimalistBlack">
+              <thead>
+                <tr>
+                  <th class="property">Property</th>
+                  <th class="dublincore">Dublin Core</th>
+                  <th class="schema">Schema.org</th>
+                  <th class="cdwa">CDWA</th>
+                  <th class="cidoc">CIDOC-CRM</th>
+                  <th class="mo">MO</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="property">Location</td>
+                  <td class="dublincore">dcterms:spatial</td>
+                  <td class="schema">spatial</td>
+                  <td class="cdwa">Current Location</td>
+                  <td class="cidoc">P53 has former or current location (is former or current location of)</td>
+                  <td class="mo">origin/recorded_in</td>
+                </tr>
+                <tr>
+                  <td class="property">Collection/Part Of</td>
+                  <td class="dublincore">dcterms:isPartOf</td>
+                  <td class="schema">isPartOf</td>
+                  <td class="cdwa">Work Broader Context</td>
+                  <td class="cidoc">P59 has section (is located on or within)</td>
+                  <td class="mo">part_of</td>
+                </tr>
+                <tr>
+                  <td class="property">Itinerary</td>
+                  <td class="dublincore">dcterms:spatial</td>
+                  <td class="schema">itinerary</td>
+                  <td class="cdwa">N/A</td>
+                  <td class="cidoc">N/A</td>
+                  <td class="mo">N/A</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
 
     <!-- THEORETICAL MODEL-->
 
@@ -848,155 +840,160 @@
     <table id="item1" class="minimalistBlack">
       <thead>
         <tr>
-          <th>Subject</th>
-          <th>Predicate</th>
-          <th>Object</th>
+          <th class="subject">Subject</th>
+          <th class="predicate">Predicate</th>
+          <th class="object">Object</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="subject">Book</td>
+          <td class="predicate">crm:P102_has_title</td>
+          <td class="object">Poor Things: Episodes from the Early Life of Archibald McCandless M.D., Scottish Public Health Officer</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P102_has_title</td>
-          <td>Poor Things: Episodes from the Early Life of Archibald McCandless M.D., Scottish Public Health Officer</td>
+          <td class="subject">Book</td>
+          <td class="predicate">dcterms:creator</td>
+          <td class="object">Alasdair Gray</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>dcterms:creator</td>
-          <td>Alasdair Gray</td>
+          <td class="subject">Book</td>
+          <td class="predicate">dcterms:temporal</td>
+          <td class="object">19th Century</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>dcterms:temporal</td>
-          <td>19th Century</td>
+          <td class="subject">Book</td>
+          <td class="predicate">dcterms:issued</td>
+          <td class="object">1992</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>dcterms:issued</td>
-          <td>1992</td>
+          <td class="subject">Book</td>
+          <td class="predicate">dc:publisher</td>
+          <td class="object">Harcourt Brace Jovanovich</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>dc:publisher</td>
-          <td>Harcourt Brace Jovanovich</td>
+          <td class="subject">Book</td>
+          <td class="predicate">schema:inLanguage</td>
+          <td class="object">English</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>schema:inLanguage</td>
-          <td>English</td>
+          <td class="subject">Book</td>
+          <td class="predicate">crm:P2_has_type</td>
+          <td class="object">Fiction</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P2_has_type</td>
-          <td>Fiction</td>
+          <td class="subject">Book</td>
+          <td class="predicate">crm:P2_has_type</td>
+          <td class="object">Novel</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P2_has_type</td>
-          <td>Novel</td>
+          <td class="subject">Book</td>
+          <td class="predicate">crm:P129_is_about</td>
+          <td class="object">Feminism</td>
         </tr>
         <tr>
-          <td>Book</td>
-          <td>crm:P129_is_about</td>
-          <td>Feminism</td>
+          <td class="subject">Book</td>
+          <td class="predicate">schema:character</td>
+          <td class="object">Bella Baxter</td>
         </tr>
-        <tr>
-          <td>Book</td>
-          <td>schema:character</td>
-          <td>Bella Baxter</td>
-        </tr>
+      </tbody>
     </table>
     
     <table id="item2" class="minimalistBlack">
       <thead>
         <tr>
-          <th>Subject</th>
-          <th>Predicate</th>
-          <th>Object</th>
+          <th class="subject">Subject</th>
+          <th class="predicate">Predicate</th>
+          <th class="object">Object</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Person</td>
-          <td>crm:P2_has_type</td>
-          <td>male</td>
+          <td class="subject">Person</td>
+          <td class="predicate">crm:P2_has_type</td>
+          <td class="object">male</td>
         </tr>
         <tr>
-          <td>Person</td>
-          <td>crm:P138_represents</td>
-          <td>N/A</td>
+          <td class="subject">Person</td>
+          <td class="predicate">crm:P138_represents</td>
+          <td class="object">N/A</td>
         </tr>
         <tr>
-          <td>Person</td>
-          <td>crm:P4_has_time-span</td>
-          <td>N/A</td>
+          <td class="subject">Person</td>
+          <td class="predicate">crm:P4_has_time-span</td>
+          <td class="object">N/A</td>
         </tr>
         <tr>
-          <td>Person</td>
-          <td>crm:P98i_was_born</td>
-          <td>Athens</td>
+          <td class="subject">Person</td>
+          <td class="predicate">crm:P98i_was_born</td>
+          <td class="object">Athens</td>
         </tr>
         <tr>
-          <td>Person</td>
-          <td>crm:P98i_was_born</td>
-          <td>1973</td>
+          <td class="subject">Person</td>
+          <td class="predicate">crm:P98i_was_born</td>
+          <td class="object">1973</td>
         </tr>
         <tr>
-          <td>Person</td>
-          <td>schema:hasOccupation</td>
-          <td>Film director</td>
+          <td class="subject">Person</td>
+          <td class="predicate">schema:hasOccupation</td>
+          <td class="object">Film director</td>
         </tr>
         <tr>
-          <td>Person</td>
-          <td>dcterms:isPartOf</td>
-          <td>The Greek Weird Wave</td>
+          <td class="subject">Person</td>
+          <td class="predicate">dcterms:isPartOf</td>
+          <td class="object">The Greek Weird Wave</td>
         </tr>
         <tr>
-          <td>Person</td>
-          <td>crm:P45_consists_of</td>
-          <td>dne</td>
+          <td class="subject">Person</td>
+          <td class="predicate">crm:P45_consists_of</td>
+          <td class="object">dne</td>
         </tr>
         <tr>
-          <td>Person</td>
-          <td>crm:P108_has_produced</td>
-          <td>Anddns</td>
+          <td class="subject">Person</td>
+          <td class="predicate">crm:P108_has_produced</td>
+          <td class="object">Anddns</td>
         </tr>
         <tr>
-          <td>Person</td>
-          <td>crm:P8_took_place_on_or_within</td>
-          <td>Eddt</td>
+          <td class="subject">Person</td>
+          <td class="predicate">crm:P8_took_place_on_or_within</td>
+          <td class="object">Eddt</td>
         </tr>
         <tr>
-          <td>Person</td>
-          <td>crm:P50_has_current_keeper</td>
-          <td>Tdrt</td>
+          <td class="subject">Person</td>
+          <td class="predicate">crm:P50_has_current_keeper</td>
+          <td class="object">Tdrt</td>
         </tr>
         <tr>
-          <td>Person</td>
-          <td>crm:P23_surrendered_title_through</td>
-          <td>Sdl</td>
+          <td class="subject">Person</td>
+          <td class="predicate">crm:P23_surrendered_title_through</td>
+          <td class="object">Sdl</td>
         </tr>
       </tbody>
     </table>
-
+    
     <table id="item3" class="minimalistBlack">
       <thead>
         <tr>
-          <th>Subject</th>
-          <th>Predicate</th>
-          <th>Object</th>
+          <th class="subject">Subject</th>
+          <th class="predicate">Predicate</th>
+          <th class="object">Object</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="subject">The Garden of Earthly Delights</td>
+          <td class="predicate">dcterms:creator</td>
+          <td class="object">Hieronymus Bosch</td>
         </tr>
         <tr>
-          <td>The Garden of Earthly Delights</td>
-          <td>dcterms:creator</td>
-          <td>Hieronymus Bosch</td>
+          <td class="subject">The Garden of Earthly Delights</td>
+          <td class="predicate">dcterms:created</td>
+          <td class="object">1490-1500</td>
         </tr>
         <tr>
-          <td>The Garden of Earthly Delights</td>
-          <td>dcterms:created</td>
-          <td>1490-1500</td>
-        </tr>
-        <tr>
-          <td>The Garden of Earthly Delights</td>
-          <td>crm:P129_is_about</td>
-          <td>
+          <td class="subject">The Garden of Earthly Delights</td>
+          <td class="predicate">crm:P129_is_about</td>
+          <td class="object">
             <ul>
               <li>Left panel: Garden of Eden</li>
               <li>Central panel: Paradise on Earth</li>
@@ -1005,335 +1002,357 @@
           </td>
         </tr>
         <tr>
-          <td>The Garden of Earthly Delights</td>
-          <td>crm:P55_has_current_location</td>
-          <td>Museo del Prado, Madrid, Spain</td>
+          <td class="subject">The Garden of Earthly Delights</td>
+          <td class="predicate">crm:P55_has_current_location</td>
+          <td class="object">Museo del Prado, Madrid, Spain</td>
         </tr>
         <tr>
-          <td>The Garden of Earthly Delights</td>
-          <td>cdwa:Material/TechniqueDescription</td>
-          <td>Oil on oak panel</td>
+          <td class="subject">The Garden of Earthly Delights</td>
+          <td class="predicate">cdwa:Material/TechniqueDescription</td>
+          <td class="object">Oil on oak panel</td>
         </tr>
         <tr>
-          <td>The Garden of Earthly Delights</td>
-          <td>cdwa:DimensionDescription</td>
-          <td>384.9 cm x 205.5 cm</td>
+          <td class="subject">The Garden of Earthly Delights</td>
+          <td class="predicate">cdwa:DimensionDescription</td>
+          <td class="object">384.9 cm x 205.5 cm</td>
         </tr>
+      </tbody>
     </table>
-
+    
     <table id="item4" class="minimalistBlack">
       <thead>
         <tr>
-          <th>Subject</th>
-          <th>Predicate</th>
-          <th>Object</th>
+          <th class="subject">Subject</th>
+          <th class="predicate">Predicate</th>
+          <th class="object">Object</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="subject">Poor Things Soundtrack</td>
+          <td class="predicate">crm:P102_has_title</td>
+          <td class="object">"Poor Things: Original Motion Picture Soundtrack"</td>
         </tr>
         <tr>
-          <td>Poor Things Soundtrack</td>
-          <td>crm:P102_has_title</td>
-          <td>"Poor Things: Original Motion Picture Soundtrack"</td>
+          <td class="subject">Poor Things Soundtrack</td>
+          <td class="predicate">dcterms:creator</td>
+          <td class="object">Carminho & Jerskin Fendrix</td>
         </tr>
         <tr>
-          <td>Poor Things Soundtrack</td>
-          <td>dcterms:creator</td>
-          <td>Carminho & Jerskin Fendrix</td>
+          <td class="subject">Poor Things Soundtrack</td>
+          <td class="predicate">dcterms:issued</td>
+          <td class="object">2023</td>
         </tr>
         <tr>
-          <td>Poor Things Soundtrack</td>
-          <td>dcterms:issued</td>
-          <td>2023</td>
+          <td class="subject">Poor Things Soundtrack</td>
+          <td class="predicate">crm:P2_has_type</td>
+          <td class="object">Soundtrack</td>
         </tr>
         <tr>
-          <td>Poor Things Soundtrack</td>
-          <td>crm:P2_has_type</td>
-          <td>Soundtrack</td>
+          <td class="subject">Poor Things Soundtrack</td>
+          <td class="predicate">schema:copyrightHolder</td>
+          <td class="object">Searchlight Pictures</td>
         </tr>
         <tr>
-          <td>Poor Things Soundtrack</td>
-          <td>schema:copyrightHolder</td>
-          <td>Searchlight Pictures</td>
+          <td class="subject">Poor Things Soundtrack</td>
+          <td class="predicate">mo:published_as</td>
+          <td class="object">Song “Bella”</td>
         </tr>
         <tr>
-          <td>Poor Things Soundtrack</td>
-          <td>mo:published_as</td>
-          <td>Song “Bella”</td>
+          <td class="subject">Poor Things Soundtrack</td>
+          <td class="predicate">mo:published_as</td>
+          <td class="object">Song “Alexandria”</td>
         </tr>
-        <tr>
-          <td>Poor Things Soundtrack</td>
-          <td>mo:published_as</td>
-          <td>Song “Alexandria”</td>
-        </tr>
+      </tbody>
     </table>
-
+    
     <table id="item5" class="minimalistBlack">
       <thead>
         <tr>
-          <th>Subject</th>
-          <th>Predicate</th>
-          <th>Object</th>
+          <th class="subject">Subject</th>
+          <th class="predicate">Predicate</th>
+          <th class="object">Object</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="subject">Biographic entity</td>
+          <td class="predicate">crm:P14_carried_out_by</td>
+          <td class="object">Emma Stone</td>
         </tr>
         <tr>
-          <td>Biographic entity</td>
-          <td>crm:P14_carried_out_by</td>
-          <td>Emma Stone</td>
+          <td class="subject">Biographic entity</td>
+          <td class="predicate">crm:P2_has_type</td>
+          <td class="object">female</td>
         </tr>
         <tr>
-          <td>Biographic entity</td>
-          <td>crm:P2_has_type</td>
-          <td>female</td>
+          <td class="subject">Biographic entity</td>
+          <td class="predicate">crm:P2_has_type</td>
+          <td class="object">protagonist</td>
         </tr>
         <tr>
-          <td>Biographic entity</td>
-          <td>crm:P2_has_type</td>
-          <td>protagonist</td>
+          <td class="subject">Biographic entity</td>
+          <td class="predicate">dcterms:isReferencedBy</td>
+          <td class="object">Nude Girl Standing With Long Black Hair & Blue-Black Drape</td>
         </tr>
         <tr>
-          <td>Biographic entity</td>
-          <td>dcterms:isReferencedBy</td>
-          <td>Nude Girl Standing With Long Black Hair & Blue-Black Drape</td>
+          <td class="subject">Biographic entity</td>
+          <td class="predicate">schema:parent</td>
+          <td class="object">Dr Godwin Baxter</td>
         </tr>
         <tr>
-          <td>Biographic entity</td>
-          <td>schema:parent</td>
-          <td>Dr Godwin Baxter</td>
+          <td class="subject">Biographic entity</td>
+          <td class="predicate">dcterms:isReplacedBy</td>
+          <td class="object">Article</td>
         </tr>
-        <tr>
-          <td>Biographic entity</td>
-          <td>dcterms:isReplacedBy</td>
-          <td>Article</td>
-        </tr>
+      </tbody>
     </table>
-
+    
     <table id="item6" class="minimalistBlack">
       <thead>
         <tr>
-          <th>Subject</th>
-          <th>Predicate</th>
-          <th>Object</th>
+          <th class="subject">Subject</th>
+          <th class="predicate">Predicate</th>
+          <th class="object">Object</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="subject">Movie</td>
+          <td class="predicate">dcterms:creator</td>
+          <td class="object">Fritz Lang</td>
         </tr>
         <tr>
-          <td>Movie</td>
-          <td>dcterms:creator</td>
-          <td>Fritz Lang</td>
+          <td class="subject">Movie</td>
+          <td class="predicate">dcterms:creator</td>
+          <td class="object">Thea Van Harbou</td>
         </tr>
         <tr>
-          <td>Movie</td>
-          <td>dcterms:creator</td>
-          <td>Thea Van Harbou</td>
+          <td class="subject">Movie</td>
+          <td class="predicate">crm:P2_has_type</td>
+          <td class="object">Sci-fi</td>
         </tr>
         <tr>
-          <td>Movie</td>
-          <td>crm:P2_has_type</td>
-          <td>Sci-fi</td>
+          <td class="subject">Movie</td>
+          <td class="predicate">schema:inLanguage</td>
+          <td class="object">German</td>
         </tr>
         <tr>
-          <td>Movie</td>
-          <td>schema:inLanguage</td>
-          <td>German</td>
+          <td class="subject">Movie</td>
+          <td class="predicate">dcterms:issued</td>
+          <td class="object">1927</td>
         </tr>
         <tr>
-          <td>Movie</td>
-          <td>dcterms:issued</td>
-          <td>1927</td>
+          <td class="subject">Movie</td>
+          <td class="predicate">dcterms:extent</td>
+          <td class="object">2 hours 33 minutes</td>
         </tr>
         <tr>
-          <td>Movie</td>
-          <td>dcterms:extent</td>
-          <td>2 hours 33 minutes</td>
+          <td class="subject">Movie</td>
+          <td class="predicate">crm:P2_has_type</td>
+          <td class="object">Black and white</td>
         </tr>
-        <tr>
-          <td>Movie</td>
-          <td>crm:P2_has_type</td>
-          <td>Black and white</td>
-        </tr>
+      </tbody>
     </table>
-
+    
     <table id="item7" class="minimalistBlack">
       <thead>
         <tr>
-          <th>Subject</th>
-          <th>Predicate</th>
-          <th>Object</th>
+          <th class="subject">Subject</th>
+          <th class="predicate">Predicate</th>
+          <th class="object">Object</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="subject">Article</td>
+          <td class="predicate">dcterms:creator</td>
+          <td class="object">Melena Ryzik</td>
         </tr>
         <tr>
-          <td>Article</td>
-          <td>dcterms:creator</td>
-          <td>Melena Ryzik</td>
+          <td class="subject">Article</td>
+          <td class="predicate">crm:P102_has_title</td>
+          <td class="object">Unfurling the Unusual Costumes of ‘Poor Things’</td>
         </tr>
         <tr>
-          <td>Article</td>
-          <td>crm:P102_has_title</td>
-          <td>Unfurling the Unusual Costumes of ‘Poor Things’</td>
+          <td class="subject">Article</td>
+          <td class="predicate">dcterms:issued</td>
+          <td class="object">2.02.2024</td>
         </tr>
         <tr>
-          <td>Article</td>
-          <td>dcterms:issued</td>
-          <td>2.02.2024</td>
+          <td class="subject">Article</td>
+          <td class="predicate">crm:P129_is_about</td>
+          <td class="object">Costumes in “Poor Things”</td>
         </tr>
         <tr>
-          <td>Article</td>
-          <td>crm:P129_is_about</td>
-          <td>Costumes in “Poor Things”</td>
+          <td class="subject">Article</td>
+          <td class="predicate">dc:publisher</td>
+          <td class="object">The New York Times Company</td>
         </tr>
         <tr>
-          <td>Article</td>
-          <td>dc:publisher</td>
-          <td>The New York Times Company</td>
+          <td class="subject">Article</td>
+          <td class="predicate">schema:mentions</td>
+          <td class="object">Egon Schiele Portrait</td>
         </tr>
-        <tr>
-          <td>Article</td>
-          <td>schema:mentions</td>
-          <td>Egon Schiele Portrait</td>
-        </tr>
+      </tbody>
     </table>
-
+    
     <table id="item8" class="minimalistBlack">
       <thead>
         <tr>
-          <th>Subject</th>
-          <th>Predicate</th>
-          <th>Object</th>
+          <th class="subject">Subject</th>
+          <th class="predicate">Predicate</th>
+          <th class="object">Object</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="subject">Monument</td>
+          <td class="predicate">dc:title</td>
+          <td class="object">Lighthouse of Alexandria</td>
         </tr>
         <tr>
-          <td>Monument</td>
-          <td>dc:title</td>
-          <td>Lighthouse of Alexandria</td>
+          <td class="subject">Monument</td>
+          <td class="predicate">dcterms:created</td>
+          <td class="object">284 - 246 BC</td>
         </tr>
         <tr>
-          <td>Monument</td>
-          <td>dcterms:created</td>
-          <td>284 - 246 BC</td>
+          <td class="subject">Monument</td>
+          <td class="predicate">cdwa:Commissioner</td>
+          <td class="object">Ptolemy I Soter</td>
         </tr>
         <tr>
-          <td>Monument</td>
-          <td>cdwa:Commissioner</td>
-          <td>Ptolemy I Soter</td>
+          <td class="subject">Monument</td>
+          <td class="predicate">dcterms:spatial</td>
+          <td class="object">Pharos, Alexandria, Egypt</td>
         </tr>
         <tr>
-          <td>Monument</td>
-          <td>dcterms:spatial</td>
-          <td>Pharos, Alexandria, Egypt</td>
+          <td class="subject">Monument</td>
+          <td class="predicate">schema:material</td>
+          <td class="object">Lightcoloured stone</td>
         </tr>
         <tr>
-          <td>Monument</td>
-          <td>schema:material</td>
-          <td>Lightcoloured stone</td>
+          <td class="subject">Monument</td>
+          <td class="predicate">cdwa:DimensionDescription</td>
+          <td class="object">103-118 meters</td>
         </tr>
         <tr>
-          <td>Monument</td>
-          <td>cdwa:DimensionDescription</td>
-          <td>103-118 meters</td>
+          <td class="subject">Monument</td>
+          <td class="predicate">schema:endDate</td>
+          <td class="object">1303</td>
         </tr>
         <tr>
-          <td>Monument</td>
-          <td>schema:endDate</td>
-          <td>1303</td>
+          <td class="subject">Monument</td>
+          <td class="predicate">dcterms:isPartOf</td>
+          <td class="object">Seven Wonders of the Ancient World</td>
         </tr>
-        <tr>
-          <td>Monument</td>
-          <td>dcterms:isPartOf</td>
-          <td>Seven Wonders of the Ancient World</td>
-        </tr>
+      </tbody>
     </table>
-
+    
     <table id="item9" class="minimalistBlack">
       <thead>
         <tr>
-          <th>Subject</th>
-          <th>Predicate</th>
-          <th>Object</th>
+          <th class="subject">Subject</th>
+          <th class="predicate">Predicate</th>
+          <th class="object">Object</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="subject">Portrait</td>
+          <td class="predicate">dc:title</td>
+          <td class="object">Nude Girl With Long Black Hair & Blue-Black Drape</td>
         </tr>
         <tr>
-          <td>Portrait</td>
-          <td>dc:title</td>
-          <td>Nude Girl With Long Black Hair & Blue-Black Drape</td>
+          <td class="subject">Portrait</td>
+          <td class="predicate">dcterms:created</td>
+          <td class="object">1991</td>
         </tr>
         <tr>
-          <td>Portrait</td>
-          <td>dcterms:created</td>
-          <td>1991</td>
+          <td class="subject">Portrait</td>
+          <td class="predicate">dc:creator</td>
+          <td class="object">Egon Schiele</td>
         </tr>
         <tr>
-          <td>Portrait</td>
-          <td>dc:creator</td>
-          <td>Egon Schiele</td>
+          <td class="subject">Portrait</td>
+          <td class="predicate">cdwa:Current Location</td>
+          <td class="object">Columbia University</td>
         </tr>
         <tr>
-          <td>Portrait</td>
-          <td>cdwa:Current Location</td>
-          <td>Columbia University</td>
+          <td class="subject">Portrait</td>
+          <td class="predicate">cdwa:Material/Technique Description</td>
+          <td class="object">Pencil and watercolor</td>
         </tr>
         <tr>
-          <td>Portrait</td>
-          <td>cdwa:Material/Technique Description</td>
-          <td>Pencil and watercolor</td>
+          <td class="subject">Portrait</td>
+          <td class="predicate">cdwa:Dimension Description</td>
+          <td class="object">56.5 x 35 cm</td>
         </tr>
         <tr>
-          <td>Portrait</td>
-          <td>cdwa:Dimension Description</td>
-          <td>56.5 x 35 cm</td>
+          <td class="subject">Portrait</td>
+          <td class="predicate">dc:subject</td>
+          <td class="object">Young woman with long hair</td>
         </tr>
         <tr>
-          <td>Portrait</td>
-          <td>dc:subject</td>
-          <td>Young woman with long hair</td>
+          <td class="subject">Portrait</td>
+          <td class="predicate">cdwa:Style</td>
+          <td class="object">Expressionism</td>
         </tr>
         <tr>
-          <td>Portrait</td>
-          <td>cdwa:Style</td>
-          <td>Expressionism</td>
+          <td class="subject">Portrait</td>
+          <td class="predicate">dcterms:isReplacedBy</td>
+          <td class="object">fabio:journal article</td>
         </tr>
-        <tr>
-          <td>Portrait</td>
-          <td>dcterms:isReplacedBy</td>
-          <td>fabio:journal article</td>
-        </tr>
-        </tr>
+      </tbody>
     </table>
     
     <table id="item10" class="minimalistBlack">
       <thead>
         <tr>
-          <th>Subject</th>
-          <th>Predicate</th>
-          <th>Object</th>
+          <th class="subject">Subject</th>
+          <th class="predicate">Predicate</th>
+          <th class="object">Object</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="subject">Activity</td>
+          <td class="predicate">schema:name</td>
+          <td class="object">Grand Tour</td>
         </tr>
         <tr>
-          <td>Activity</td>
-          <td>schema:name</td>
-          <td>Grand Tour</td>
+          <td class="subject">Activity</td>
+          <td class="predicate">schema:agent</td>
+          <td class="object">Young upper-class men</td>
         </tr>
         <tr>
-          <td>Activity</td>
-          <td>schema:agent</td>
-          <td>Young upper-class men</td>
+          <td class="subject">Activity</td>
+          <td class="predicate">dcterms:spatial</td>
+          <td class="object">Europe and the Mediterranean</td>
         </tr>
         <tr>
-          <td>Activity</td>
-          <td>dcterms:spatial</td>
-          <td>Europe and the Mediterranean</td>
+          <td class="subject">Activity</td>
+          <td class="predicate">schema:startDate</td>
+          <td class="object">Late 18th century</td>
         </tr>
         <tr>
-          <td>Activity</td>
-          <td>schema:startDate</td>
-          <td>Late 18th century</td>
+          <td class="subject">Activity</td>
+          <td class="predicate">schema:endDate</td>
+          <td class="object">Early 19th century</td>
         </tr>
         <tr>
-          <td>Activity</td>
-          <td>schema:endDate</td>
-          <td>Early 19th century</td>
+          <td class="subject">Activity</td>
+          <td class="predicate">cidoc-crm:P21_had_general_purpose</td>
+          <td class="object">Education</td>
         </tr>
         <tr>
-          <td>Activity</td>
-          <td>cidoc-crm:P21_had_general_purpose</td>
-          <td>Education</td>
+          <td class="subject">Activity</td>
+          <td class="predicate">schema:agent</td>
+          <td class="object">Bella Baxter</td>
         </tr>
-        <tr>
-          <td>Activity</td>
-          <td>schema:agent</td>
-          <td>Bella Baxter</td>
-        </tr>
+      </tbody>
     </table>
+    
 
     <!-- URI PRODUCTION-->
 
