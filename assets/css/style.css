@@ -93,9 +93,6 @@ p {
   margin-top: 60px;
 }
 
-
-
-
 .navbar {
   padding: 0;
 }
@@ -307,8 +304,6 @@ p {
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
-
-
 
 #hero {
   width: 100%;
