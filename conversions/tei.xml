@@ -60,8 +60,9 @@
                   of Bologna.</p>
             </projectDesc>
                <editorialDecl>
-                  <quotation marks="none"></quotation> !!!!!
-                  <p>Our editorial intention is solely for encoding purposes, and we have not made
+                  <quotation marks="none"></quotation> 
+                  <normalization><p>Original spelling is retained, except for the dehyphenation of words that were originally cut at the end of a row.</p></normalization>
+                     <p>Our editorial intention is solely for encoding purposes, and we have not made
                      any alterations. We selected an excerpt from the 14th chapter of this edition
                      for the purpose of the exam. Line breaks, paragraph breaks, and indentations have been preserved within the transcription. The layout of the page has been preserved whenever possible.</p>
                </editorialDecl>
@@ -69,12 +70,11 @@
 
 
       <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+             
          <particDesc>
-            <!-- Organization information -->
-            <listOrg>
-               <org><!-- Org data here --></org>
-            </listOrg>
-
             <listPerson type="fictional">
                <person xml:id="bella">
                   <persName>Bella Baxter
@@ -109,23 +109,17 @@
             </listPerson>
          </particDesc>
       </profileDesc>
-
-
    </teiHeader>
+   
    <text xml:lang="en">
       <body>
-         
-         <figure>
-            <graphic url="assets/img/illustration.png"/>
-            <figDesc>Description of the image goes here.</figDesc>
-         </figure>
- 
+      <div type="chapter" n="14">
+      <head>From Glasgow to Odessa</head>
+      
+   <div rend="italic">
          <opener>
-               <placeName>From Glasgow to Odessa</placeName>
             <salute>Dear <persName ref="#god">God</persName>,</salute>
          </opener>
-         
-         <div rend="italic">
             
             <l><space unit="tab"/>I am writing to you from the sea,</l>
             <l>I had no peace to write before</l>
@@ -322,6 +316,7 @@
             <lb/>
             <gap rend="asterisks" quantity="14" unit="chars"/>
          </div>
+      </div>
       </body>
    </text>
 </TEI>
