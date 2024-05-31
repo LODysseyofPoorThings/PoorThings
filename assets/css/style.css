@@ -553,6 +553,10 @@ th.metadata-standard, td.metadata-standard {
    /* Add margin bottom to create consistent spacing */
 }
 
+.button_image:hover {
+  background-color: #e3bf9e; /* Colore di sfondo al passaggio del mouse */
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .btn {
@@ -566,7 +570,7 @@ th.metadata-standard, td.metadata-standard {
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 20px;
-  color: #5a656e;
+  color: rgb(90, 101, 110);
   text-align: left;
   list-style-type: none;
   padding: 0 1rem;
@@ -612,7 +616,7 @@ th.metadata-standard, td.metadata-standard {
   height: 2px;
   background-color: #2c4964;
   width: 100%;
-  margin: 100px auto 0px; /* Add margin top and bottom to create consistent spacing */
+  margin: 50px auto 0px; /* Add margin top and bottom to create consistent spacing */
   border: none;
 }
 
