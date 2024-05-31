@@ -4,12 +4,12 @@ body {
 }
 
 a {
-  color: #d43076;
+  color: #de6d03;
   text-decoration: none;
 }
 
 a:hover {
-  color: #dd5a92;
+  color: #de6d03;
   text-decoration: none;
 }
 
@@ -20,12 +20,12 @@ h4,
 h5,
 h6 {
   font-family: "Playfair Display", serif;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 p {
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
   padding: 0;
 }
 
@@ -64,11 +64,11 @@ p {
   z-index: 997;
   height: 60px;
   background: #fff;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 20px 0px #858e97;
 }
 
 #header .logo h1 {
-  font-size: 26px;
+  font-size: 30px;
   margin: 0;
   padding: 6px 0;
   line-height: 1;
@@ -316,26 +316,31 @@ p {
 
 .lod {
   margin: -200px 0 10px 0;
-  font-size: 60px;
+  font-size: 70px;
   font-weight: 700;
   line-height: 85px;
-  color: #3a2827;
+  color: #2c4964;
 }
 
 #hero h1 {
   margin: -200px 0 10px 0;
-  font-size: 60px;
+  font-size: 70px;
   font-weight: 700;
   line-height: 85px;
-  color: #d49995;
+  color: #233d55;
+  font-family: "Playfair Display", serif; /* Usa lo stesso font della .section-title */
+  letter-spacing: 2px; /* Aggiungi questa riga per distanziare le lettere */
+
 }
 
 #hero h3 {
-  color: #d49995;
+  color: #2c4964;
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 300;
-  font-family: "Poppins", sans-serif;
+  font-family: "Playfair Display", serif; /* Usa lo stesso font della .section-title */
+  letter-spacing: 1px; /* Aggiungi questa riga per distanziare le lettere */
+
 }
 
 @keyframes btnMovement {
@@ -347,7 +352,7 @@ p {
 #hero .btn-get-started {
   font-size: 50px;
   transition: 0.5s;
-  color: #d49995;
+  color: #2c4964;
   height: 75px;
   animation: btnMovement 0.8s infinite;
 }
@@ -387,19 +392,20 @@ p {
 .section-title {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 1rem;
-  margin-top: 2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
   color: #2c4964;
   text-align: center;
-  padding: 0;
+  padding: 0 1rem;
+  font-family: "Playfair Display", serif;
 }
 
 .section-text {
   font-size: 1rem;
   line-height: 1.5;
-  margin-bottom: 1.5rem;
+  margin-bottom: 20px;
   color: #5a656e;
-  text-align: center;
+  text-align: left;
   padding: 0 1rem;
 }
 
@@ -416,13 +422,13 @@ img {
 @media (max-width: 768px) {
   .section-title {
     font-size: 1.5rem;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .section-text {
     font-size: 0.875rem;
-    margin-bottom: 1rem;
+    margin-bottom: 20px;
   }
 
   .container {
@@ -520,6 +526,7 @@ th.metadata-standard, td.metadata-standard {
     display: table-cell;
   }
 }
+
 .d-flex {
   display: flex;
   justify-content: flex-start;
@@ -542,6 +549,7 @@ th.metadata-standard, td.metadata-standard {
   cursor: pointer;
   text-align: center;
   box-sizing: border-box; /* Ensure padding and borders are included in the width */
+  margin-bottom: 0px; /* Add margin bottom to create consistent spacing */
 }
 
 .btn:hover {
@@ -552,5 +560,82 @@ th.metadata-standard, td.metadata-standard {
 @media (max-width: 768px) {
   .btn {
     flex: 1 1 100%; /* Make buttons full width on smaller screens */
+  }
+}
+
+/* list */
+
+.section-list {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #5a656e;
+  text-align: left;
+  list-style-type: none;
+  padding: 0 1rem;
+}
+
+.section-list li {
+  text-align: left;
+  margin-bottom: 20px; /* Add margin bottom to create consistent spacing */
+}
+
+/* title */
+
+.chapter-title {
+  font-size: 28px;
+  margin: 20px 0; /* Add margin top and bottom to create consistent spacing */
+  padding: 6px 0;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #2c4964;
+}
+
+.chapter-title a,
+.chapter-title a:hover {
+  color: #2c4964;
+  text-decoration: none;
+}
+
+/* linea divisoria x sottotitoli */
+
+.custom-hr2 {
+  height: 2px;
+  background-color: #2c4964;
+  width: 50%;
+  margin: 20px auto 0px; /* Add margin top and bottom to create consistent spacing */
+  border: none;
+}
+
+/* linea divisoria x macrotitoli */
+
+.custom-hr3 {
+  height: 2px;
+  background-color: #2c4964;
+  width: 100%;
+  margin: 100px auto 0px; /* Add margin top and bottom to create consistent spacing */
+  border: none;
+}
+
+
+/* Custom styles for the concept section */
+.section-text {
+  text-align: justify;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .order-md-1 {
+    order: 1;
+  }
+
+  .order-md-2 {
+    order: 2;
   }
 }

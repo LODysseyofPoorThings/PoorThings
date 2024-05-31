@@ -63,14 +63,20 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li class="dropdown"><a href="#studyofthedomain"><span>Study of the domain</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#studyofthedomain">Concept</a></li>
               <li><a href="#items">Items</a></li>
-              <li><a href="#textconversions">Text Conversions</a></li>
             </ul>
           </li> 
+          <li class="dropdown"><a href="#textconversions"><span>Text Conversions</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#xml/tei">XML/TEI Conversion</a></li>
+              <li><a href="#pythonscripts">Python Scripts for Conversions</a></li>
+              <li><a href="#xslttohtml">XSLT Document for XML to HTML Conversion</a></li>
+              <li><a href="#rdf/turtle">RDF/Turtle Dataset</a></li>
+            </ul>
+          </li>
           <li class="dropdown"><a href="#knowledgeorganization"><span>Knowledge Organization</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#conceptualmap">Conceptual Map</a></li>
@@ -100,47 +106,67 @@
     <!-- CONCEPT-->
 <body>
   <section id="studyofthedomain">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <section id="body">
-            <h2 class="section-title">Concept</h2>
-            <p class="section-text">
-              <p>"Poor Things" is a cinematic tapestry woven with various cultural and historical threads blends a mix of cultural, historical, and mythical elements that deepen its story.</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <section id="body">
+            <h2 class="chapter-title">The Concept</h2>
+            
+            <div class="row align-items-center mb-4">
+                <p class="section-text text-justify">
+                  "Poor Things" is a cinematic tapestry woven with various cultural and historical threads blends a mix of cultural, historical, and mythical elements that deepen its story.<br>
+                  Find a quote for Poor Things by someone important about this theme<br>
+</p>              <div class="col-md-6">
 
-<p>Find a quote for Poor Things by someone important about this theme</p>
+                  <p class="section-text text-justify">
 
-<p>The film, an adaptation of the novel by <a href="https://en.wikipedia.org/wiki/Alasdair_Gray">Alasdair Gray</a>, tells the story of Bella Baxter, a woman brought back to life with the brain of an infant, who embarks on a journey of self-discovery and defiance against societal norms.</p>
-
-<p><a href="https://en.wikipedia.org/wiki/Yorgos_Lanthimos">Lanthimos</a>'s direction in "Poor Things" brilliantly incorporates influences from various epochs and art forms, making the film a rich visual and intellectual experience.</p>
-
-<p>For instance, the concept of "The Grand Tour”, a 17th-century custom where young aristocrats traveled across Europe to absorb cultural legacies, parallels Bella’s personal journey. Her travels and experiences symbolize a grand tour of human emotions and societal roles, reflecting a deep quest for identity and meaning in a constraining Victorian society.</p>
-
-<p>The film’s aesthetic and thematic layers also draw comparisons to <a href="https://en.wikipedia.org/wiki/Hieronymus_Bosch">Hieronymus Bosch</a>’s painting "The Garden of Earthly Delights”. Just as Bosch’s work depicts a surreal, intricate vision of paradise and damnation, "Poor Things" presents a fantastical, yet disturbing vista of human life, teeming with grotesque realities and eccentricities. Bella’s resurrection and subsequent adventures can be seen as a move from innocence to experience, mirroring the triptych’s journey from Eden to a haunting earthly existence and eventual hellish consequences.</p>
-
-<p>UGLYMoreover, the influence of <a href="https://en.wikipedia.org/wiki/Fritz_Lang">Fritz Lang</a>'s "Metropolis" is palpable in the film’s critique of modernity and technology. Bella, much like the created humanoid of Lang’s narrative, symbolizes the intersection of human vulnerability and the mechanical, showcasing the dangers and ethical dilemmas of scientific advancement. Lanthimos uses this parallel to enhance the film's exploration of autonomy, consciousness, and the definition of being human in a rapidly evolving world.</p>
-
-<p>The Lighthouse of Alexandria, another historical reference in the film, symbolizes enlightenment and guidance amid chaos. Bella, navigating through her reconstructed life, seeks light amidst her confusing existence, much like sailors would look towards the lighthouse for direction. This metaphor extends to her role in the narrative, serving as a beacon that challenges the dark waters of societal expectations and gender roles.</p>
-
-<p>Visually, "Poor Things" is a feast of unusual and symbolic costumes that reflect the characters’ complex narratives and the film's thematic richness. These costumes not only signify the characters’ societal statuses and inner transformations but also add a layer of commentary on the period’s fashion as an extension of personal identity and liberty. The inclusion of a painting-like reference, such as the "Nude Girl Standing with Long Black Hair & Blue-Black Drape," suggests a visual and thematic richness, linking Bella’s character to the concept of the muse and subject in art, who is both observed and observer, passive yet powerful.CRINGE?</p>
-
-<p>Through "Poor Things," Lanthimos not only crafts a narrative about the bizarre and the surreal but also invites viewers to reflect on the essence of humanity and freedom. The film becomes a grand tour itself, not just through geography but through history, art, and the human psyche, making Bella not merely a character in a story but a profound statement on life itself.</p>
-<p>add soundtrack and book/tei concept?</p>
-<p>SUCKSCrafted as a valuable tool for scholars, students, and fans alike, this initiative aims to shed light on the universe of connections and the various art forms and historical contexts of Poor Things.</p>
-
-<p>The materials for this project can be accessed through this <a href="https://github.com/LODysseyofPoorThings/PoorThings">repository</a>.</p>
-              </p>            </p>
-          </div>
+                  The film, an adaptation of the novel by <a href="https://en.wikipedia.org/wiki/Alasdair_Gray">Alasdair Gray</a>, tells the story of Bella Baxter, a woman brought back to life with the brain of an infant, who embarks on a journey of self-discovery and defiance against societal norms.<br>
+                  <a href="https://en.wikipedia.org/wiki/Yorgos_Lanthimos">Lanthimos</a>'s direction in "Poor Things" brilliantly incorporates influences from various epochs and art forms, making the film a rich visual and intellectual experience.<br>
+                  For instance, the concept of "The Grand Tour”, a 17th-century custom where young aristocrats traveled across Europe to absorb cultural legacies, parallels Bella’s personal journey. Her travels and experiences symbolize a grand tour of human emotions and societal roles, reflecting a deep quest for identity and meaning in a constraining Victorian society.<br>
+                  The film’s aesthetic and thematic layers also draw comparisons to <a href="https://en.wikipedia.org/wiki/Hieronymus_Bosch">Hieronymus Bosch</a>’s painting "The Garden of Earthly Delights”. Just as Bosch’s work depicts a surreal, intricate vision of paradise and damnation, "Poor Things" presents a fantastical, yet disturbing vista of human life, teeming with grotesque realities and eccentricities. Bella’s resurrection and subsequent adventures can be seen as a move from innocence to experience, mirroring the triptych’s journey from Eden to a haunting earthly existence and eventual hellish consequences.<br>
+                  Moreover, the influence of <a href="https://en.wikipedia.org/wiki/Fritz_Lang">Fritz Lang</a>'s "Metropolis" is palpable in the film’s critique of modernity and technology. Bella, much like the created humanoid of Lang’s narrative, symbolizes the intersection of human vulnerability and the mechanical, showcasing the dangers and ethical dilemmas of scientific advancement. Lanthimos uses this parallel to enhance the film's exploration of autonomy, consciousness, and the definition of being human in a rapidly evolving world.<br>
+                </p>
+                  
+              </div>
+              <div class="col-md-6">
+                <img src="assets/img/bellabaxter1.png" class="img-fluid rounded-start" alt="bella baxter 1">
+              </div>
+            </div>
+                  <p class="section-text">
+                  The Lighthouse of Alexandria, another historical reference in the film, symbolizes enlightenment and guidance amid chaos. Bella, navigating through her reconstructed life, seeks light amidst her confusing existence, much like sailors would look towards the lighthouse for direction. This metaphor extends to her role in the narrative, serving as a beacon that challenges the dark waters of societal expectations and gender roles.<br>
+                </p>
+              
+  
+            <div class="row align-items-center mb-4">
+              <div class="col-md-6 order-md-2">
+                <p class="section-text text-justify">
+                  Visually, "Poor Things" is a feast of unusual and symbolic costumes that reflect the characters’ complex narratives and the film's thematic richness. These costumes not only signify the characters’ societal statuses and inner transformations but also add a layer of commentary on the period’s fashion as an extension of personal identity and liberty. The inclusion of a painting-like reference, such as the "Nude Girl Standing with Long Black Hair & Blue-Black Drape," suggests a visual and thematic richness, linking Bella’s character to the concept of the muse and subject in art, who is both observed and observer, passive yet powerful.<br>
+                  Through "Poor Things," Lanthimos not only crafts a narrative about the bizarre and the surreal but also invites viewers to reflect on the essence of humanity and freedom. The film becomes a grand tour itself, not just through geography but through history, art, and the human psyche, making Bella not merely a character in a story but a profound statement on life itself.<br>
+                  add soundtrack and book/tei concept<br>SUCKSCrafted as a valuable tool for scholars, students, and fans alike, this initiative aims to shed light on the universe of connections and the various art forms and historical contexts of Poor Things.<br>
+                  The materials for this project can be accessed through this <a href="https://github.com/LODysseyofPoorThings/PoorThings">repository</a>.<br>
+                </p>
+              </div>
+              <div class="col-md-6 order-md-1">
+                <img src="assets/img/bellabaxter2.png" class="img-fluid rounded-start" alt="bella baxter 2">
+              </div>
+            </div>
+          </section>
         </div>
       </div>
+    </div>
+  </section>
+
+  
+      <hr class="custom-hr2">
 
       <section id="items">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h2 class="section-title">Our Items</h2>
+            <h2 class="chapter-title">The Items</h2>
             <p class="section-text">
-              Here are the 10 items we've chosen for the study domain.
+              At the start of our project, we aimed to choose ten different things related to our main idea. We wanted these items to fit well together and tell a story about Poor Things. We thought about how each thing connects to other people, places, times, and ideas. We carefully picked each item to make sure it was interesting and diverse.
+              Below, you'll find short descriptions and links to learn more about each item.
             </p>
             
  <!-- start of the cards -->
@@ -265,62 +291,71 @@
     <section id="textconversions">
       <div class="container">
         <div class="row">
-          <div class="col-12 text-center">
-            <h2 class="section-title">Text Conversions</h2>
+          <div class="col-12">
+            <hr class="custom-hr3">
+            <h2 class="custom-title">TEXT CONVERSIONS</h2>
+
             <p class="section-text">
-              <p>In this phase, our team utilizes advanced computational tools to thoroughly analyze the digital edition of "Poor Things" by Alasdair Gray.</p>
-              <p>Digitized and accessible through modern technology, this text allows us to delve deeply into its complexities.</p>
-              <p>By employing XML/TEI encoding, XSLT conversion techniques, RDF/XML representation, and Python scripting, we aim to uncover the intricate layers of meaning embedded in Gray's work.</p>
+              In this phase, our team utilizes advanced computational tools to thoroughly analyze the digital edition of "Poor Things" by Alasdair Gray.</br>
+              Digitized and accessible through modern technology, this text allows us to delve deeply into its complexities.</br>
+          By employing XML/TEI encoding, XSLT conversion techniques, RDF/XML representation, and Python scripting, we aim to uncover the intricate layers of meaning embedded in Gray's work.</p>
           </div>
         </div>
+
+        <!-- XML/TEI -->
+        <hr class="custom-hr2">
+
+        <section id="xml/tei">
         <div class="row">
-          <div class="col-12">
-            <h2 class="">XML/TEI Conversion</h2>
+          <div class="col-12 text-center">
+         <h2 class="chapter-title">XML/TEI Conversion</h2>
             <p class="section-text">
-              <p>We have encoded an XML/TEI document to meticulously represent the textual structure of the initial six pages of Chapter 14 from "Poor Things."</p>
-<p>This document captures a pivotal moment in "Poor Things," presenting a letter authored by the protagonist, Bella Baxter, addressed to her presumed creator and father, Goldwyn Baxter.</p>
-<p>Within its contents, we encounter both structured dialogues, presented in verse format, and flowing free text. This letter not only serves as a narrative device but also sheds light on key relationships and themes within the story.</p>
-<p>By meticulously encoding it according to TEI (Text Encoding Initiative) guidelines, we ensure the fidelity of the original text's richness and complexity.</p>
-<p>XML/TEI document of Poor Things text's sample is available at this <a href="conversions/tei.xml" target="_blank">link</a>.</p>
+            We have encoded an XML/TEI document to meticulously represent the textual structure of the initial six pages of Chapter 14 from "Poor Things."
+This document captures a pivotal moment in "Poor Things," presenting a letter authored by the protagonist, Bella Baxter, addressed to her presumed creator and father, Goldwyn Baxter.
+Within its contents, we encounter both structured dialogues, presented in verse format, and flowing free text. This letter not only serves as a narrative device but also sheds light on key relationships and themes within the story.</br>
+By meticulously encoding it according to the TEI (Text Encoding Initiative) guidelines, we ensure the fidelity of the original text's richness and complexity.</p>
+<p class="section-text">The XML/TEI document of Poor Things text's sample is available at this <a href="conversions/tei.xml" target="_blank">link</a>.</p>
           </div>
         </div>
       
         <!-- PYHTON SCRIPTS -->
+        <hr class="custom-hr2">
 
+        <section id="pythonscripts">
         <div class="row">
-          <div class="col-12">
-            <h2 class="">Python Scripts for Conversions</h2>
+          <div class="col-12 text-center">
+            <h2 class="chapter-title">Python Scripts for Conversions</h2>
             <p class="section-text">
-              In this section we did something that is available <a href="conversions/python.py" target="_blank">here</a>
+              In this section we did something that is available at this <a href="conversions/python.py" target="_blank">link</a>.
             </p>
           </div>
         </div>
 
         <!-- XSLT TO HTML -->
+        <hr class="custom-hr2">
 
+        <section id="xslttohtml">
         <div class="row">
-          <div class="col-12">
-            <h2 class="">XSLT Document for XML to HTML Conversion</h2>
+          <div class="col-12 text-center">
+            <h2 class="chapter-title">XSLT Document for XML to HTML Conversion</h2>
             <p class="section-text">
-              In this section we did something that is available <a href="conversions/html.xslt" target="_blank">here</a>
-            </p>
-            <p class="section-text">
-              The result of this is <a href="conversions/chapter14.html" target="_blank">here</a>
+              In this section we did something that is available at this <a href="conversions/html.xslt" target="_blank">link</a>.</p>
+              <p class="section-text">The result of this is <a href="conversions/chapter14.html" target="_blank">here</a>.</p>
             </p>
           </div>
         </div>
 
        <!-- RDF/TURTLE -->
+       <hr class="custom-hr2">
 
+       <section id="rdf/turtle">
         <div class="row">
-          <div class="col-12">
-            <h2 class="">RDF/Turtle Dataset</h2>
+          <div class="col-12 text-center">
+            <h2 class="chapter-title">RDF/Turtle Dataset</h2>
             <p class="section-text">
+              The result of this code is avaliable at this <a href="conversions/output_xml_rdf.ttl" target="_blank">link</a>.
             </p>
             <script src="https://gist.github.com/valentinabertelli/01b241131d2faf14bf03bab1b9990e6f.js"></script>
-            <p class="section-text">
-              The result of this code is avaliable <a href="conversions/output_xml_rdf.ttl" target="_blank">here</a>
-            </p>
           </div>
         </div>
       </div>
@@ -332,9 +367,8 @@
     <!-- KNOWLEDGE ORGANIZATION -->
 
 <section id="knowledgeorganization">
-  <hr class="custom-hr">
+  <hr class="custom-hr3">
   <h2 class="custom-title">KNOWLEDGE ORGANIZATION</h2>
-  <hr class="custom-hr">
 
     <!-- CONCEPTUAL MAP-->
 
@@ -343,7 +377,7 @@
         <div class="row">
           <div class="col-12 text-center">
 
-            <h2 class="section-title">Conceptual Map</h2>
+            <h2 class="chapter-title">Conceptual Map</h2>
             <p class="section-text">
               Regarding "Poor Things," the selected items play a pivotal role in authentically narrating its story. Our conceptual map aims to depict the gathered data in natural language, illustrating the extracted information and the connections between them. Light blue nodes in the graph denote the selected items, while grey nodes highlight significant events and individuals associated with the main subject.</p>
           </div> 
@@ -353,25 +387,25 @@
               <a role="button" class="btn btn-outline-dark mx-2 button_image" href="assets/img/map_with_white_background.png" target="_blank">Open Image</a> 
               </div>
               <div>
-                <img id="myImg" class="imageZoom" src="assets/img/map_with_white_background.png" class="img-fluid" style="width:100%; height: 800px;" alt="Conceptual Map">
+                <img id="myImg" class="imageZoom" src="assets/img/xmind/conceptualmap.png" class="img-fluid" style="width:100%; height: 800px;" alt="Conceptual Map">
               </div>
-              <!-- image png has xmind logo + check class-->
           </div>
         </div>
       </div>
 
     <!-- E/R MODEL-->
+    <hr class="custom-hr2">
 
     <section id="ermodel">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h2 class="section-title">E/R Model</h2>
+            <h2 class="chapter-title">E/R Model</h2>
             <p class="section-text">
-              In this second model, we aim to present the data and relationships from the conceptual map in a more abstracted manner. Here, individuals, dates, subjects, places, and other elements are represented as entities, while the connections between them are depicted as relationships.
+              In this second model, we aim to present the data and relationships from the conceptual map in a more abstract manner. Here, individuals, dates, subjects, places, and other elements are represented as entities, while the connections between them are depicted as relationships.
             </p>
             <div class="col-12 center-image">
-              <img id="bella" class="imageZoom" src="assets/img/bella-baxter.png" class="img-fluid" style="width:100%; height: 800px;" alt="Conceptual Map">
+              <img id="bella" class="imageZoom" src="assets/img/xmind/e:rmodel.png" class="img-fluid" style="width:100%; height: 800px;" alt="E/R Model">
               <!-- image png has xmind logo + cehck class-->
             </div>
           </div>
@@ -379,12 +413,13 @@
       </div>
 
       <!-- METADATA ANALYSIS -->
+      <hr class="custom-hr2">
 
     <section id="metadataanalysis">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h2 class="section-title">Metadata Analysis</h2>
+            <h2 class="chapter-title">Metadata Analysis</h2>
             <p class="section-text">
               *****To ensure interoperability, our team meticulously identified the metadata standards used by the providers of our selected items. We marked all explicitly stated standards with *, while in cases lacking clear declarations, we applied either the prevailing standard within the relevant institution type or a suitable generic metadata standard.            </p>
         </div>
@@ -403,19 +438,19 @@
           <tr>
             <td class="item">Yorgos Lanthimos</td>
             <td class="type">Director</td>
-            <td class="source">IMDB</td>
+            <td class="source">Wikidata</td>
             <td class="metadata-standard">schema.org</td>
           </tr>
           <tr>
             <td class="item">Poor Things</td>
-            <td class="type">Book (novel)</td>
-            <td class="source">Wikidata</td>
-            <td class="metadata-standard">DublinCore ?</td>
+            <td class="type">Book</td>
+            <td class="source">Openlibrary</td>
+            <td class="metadata-standard">DublinCore</td>
           </tr>
           <tr>
             <td class="item">The Grand Tour</td>
             <td class="type">Activity</td>
-            <td class="source">OpenLibrary</td>
+            <td class="source">Wikidata</td>
             <td class="metadata-standard">schema.org</td>
           </tr>
           <tr>
@@ -426,7 +461,7 @@
           </tr>
           <tr>
             <td class="item">Metropolis</td>
-            <td class="type">Film (reference)</td>
+            <td class="type">Film</td>
             <td class="source">IMDB</td>
             <td class="metadata-standard">schema.org</td>
           </tr>
@@ -439,13 +474,13 @@
           <tr>
             <td class="item">Poor Things</td>
             <td class="type">Soundtrack</td>
-            <td class="source">Wikidata</td>
+            <td class="source">Genius</td>
             <td class="metadata-standard">Music Ontology</td>
           </tr>
           <tr>
             <td class="item">Bella Baxter</td>
             <td class="type">Character</td>
-            <td class="source">Genius</td>
+            <td class="source">Fandom</td>
             <td class="metadata-standard">schema.org</td>
           </tr>
           <tr>
@@ -467,21 +502,25 @@
      
       
       <!-- METADATA ALIGNMENT -->
+      <hr class="custom-hr2">
 
       <section id="metadataalignment">
         <div class="container">
           <div class="row">
             <div class="col-12 text-center">
-              <h2 class="section-title">Metadata Alignment</h2>
+              <h2 class="chapter-title">Metadata Alignment</h2>
               <p class="section-text">
                 After identifying the related institutions and their standards, this final step allows for the complete description and connection of items. The main goal of this project has been to use shared semantic ontologies to ensure consistent data delivery.
               </p>
-              <li>1. <b>Dublin Core</b> <i>: dcterms</i>. Applied over most standards, for its core relevancy. </li>
-              <li>2. <b>Schema.org:</b> <i>Schema:</i>      </li>
-              <li>3. <b>CDWA</b>: applied as a shared markup vocabulary.      </li>
-              <li>4. <b>CRM</b>: <i>CRM:</i>
+              <ul class="section-list">
+             <li><b>Dublin Core</b> <i>: dcterms</i>. is bla bla bla  </li>
+              <li><b>Schema.org:</b> is bla bla bla     </li>
+              <li><b>CDWA</b>: is bla bla bla       </li>
+              <li><b>CRM</b>: is bla bla bla              </li>
+              <li><b>Music Ontology</b>: describes music-related concepts 
               </li>
-              <p>Regarding the standards, where we could not find the metadata alignement we wrote <i>N/A</i> on the table below.</p>
+            </ul>
+              <p class="section-text">Regarding the standards, where we could not find the metadata alignment we wrote <i>N/A</i> on the table below.</p>
             </div>
           </div>
           <div class="d-flex justify-content-center mb-4">
@@ -764,52 +803,57 @@
           
 
     <!-- THEORETICAL MODEL-->
+    <hr class="custom-hr2">
 
     <section id="theoreticalmodel">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h2 class="section-title">Theoretical Model</h2>
+            <h2 class="chapter-title">Theoretical Model</h2>
             <p class="section-text">
               The theoretical model introduces a higher level of interpretation, enriched with web-based information. Its purpose is to address the following questions:
-- WHO? Identifying individuals related to the main topic and their respective roles.
-- WHAT? Providing descriptions of the objects: their purposes and characteristics.
-- WHERE? Pinpointing locations and significant places.
-- WHEN? Highlighting relevant dates and events.
             </p>
-            <img src="../website/assets/img/POOR THINGS.png" class="card-img-top" alt="Conceptual Map">
-              <!-- image png has xmind logo + cehck class + change image-->
+            
+            <ul class="section-list">
+              <li><strong><span style="color: #BB69C9;">WHO?</span></strong> Identifying individuals related to the main topic and their respective roles.</li>
+              <li><strong><span style="color: #8FDEF9;">WHAT?</span></strong> Providing descriptions of the objects: their purposes and characteristics.</li>
+              <li><strong><span style="color: #EB8BBB;">WHERE?</span></strong> Pinpointing locations and significant places.</li>
+              <li><strong><span style="color: #8FDF9A;">WHEN?</span></strong> Highlighting relevant dates and events.</li>
+            </ul>
+            <img src="assets/img/xmind/theoreticalmodel.png" class="card-img-top" alt="Theoretical Model">
           </div>
         </div>
       </div>
 
     <!-- ENHANCED E/R MODEL-->
+    <hr class="custom-hr2">
 
     <section id="enhancedermodel">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h2 class="section-title">Enhanced E/R Model</h2>
+            <h2 class="chapter-title">Enhanced E/R Model</h2>
             <p class="section-text">
               Transitioning from natural language to an Entity/Relationships model once more, we incorporate additional details akin to the previous E/R model. This augmentation aims to enrich the model with a deeper understanding of the relationships between entities and their attributes.
             </p>
-            <img src="" class="card-img-top" alt="Conceptual Map">
+            <img src="assets/img/xmind/enhancede:rmodel.png" class="card-img-top" alt="Enhanced E/R Model">
               <!-- image png has xmind logo + cehck class + change image-->
           </div>
         </div>
       </div>
 
     <!-- CONCEPTUAL MODEL-->
+    <hr class="custom-hr2">
 
     <section id="conceptualmodel">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h2 class="section-title">Conceptual Model</h2>
+            <h2 class="chapter-title">Conceptual Model</h2>
             <p class="section-text">
               At last, we arrive at the utmost level of abstraction through this formal representation. This model is ontological in nature as it depicts entities and relationships based on the final adopted standards and classes of the corresponding institutions. The properties utilized are sourced from existing schemas, ontologies, and vocabularies, ensuring alignment with established conventions and terminologies.
             </p>
-            <img src="../website/assets/img/POOR THINGS.png" class="card-img-top" alt="Conceptual Map">
+            <img src="assets/img/xmind/conceptualmodel.png" class="card-img-top" alt="Conceptual Model">
               <!-- image png has xmind logo + cehck class + change image-->
           </div>
         </div>
@@ -818,9 +862,8 @@
     <!-- KNOWLEDGE REPRESENTATION-->
 
     <section id="knowledgerepresentation">
-    <hr class="custom-hr">
+    <hr class="custom-hr3">
     <h2 class="custom-title">KNOWLEDGE REPRESENTATION</h2>
-    <hr class="custom-hr">
 
     <!-- ITEMS DESCRIPTION-->
 
@@ -828,9 +871,9 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2 class="section-title">Items Description</h2>
+          <h2 class="chapter-title">Items Description</h2>
           <p class="section-text">
-            In the knowledge representation section, we will generate new data based on the selected items. We will create a table for each item, containing statements in the form of subject-predicate-object. 
+            In the knowledge representation section, we will generate new data based on the selected items. We will create a table for each item, containing statements in the form of subject-predicate-object.</br>
             To access the folder with the table information in CSV format, please click on this <a href="https://github.com/LODysseyofPoorThings/PoorThings/tree/main/conversions" target="_blank">link</a>. or create a donwloadable zip
           </p>
 
@@ -1377,42 +1420,76 @@
     </div>
 
     <!-- URI PRODUCTION-->
+    <hr class="custom-hr2">
 
 <section id="uriproduction">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2 class="section-title">URI Production</h2>
+          <h2 class="chapter-title">URI Production</h2>
           <p class="section-text">
-            In this step, we select 4 items from our provided list as RDF subjects. We create the following URIs to describe the items and their significant entities. These URIs serve as unique identifiers for each item in the RDF representation, allowing us to describe their properties and relationships within the semantic web framework.
+            In this step, we select four items from our provided list as RDF subjects. We create the following URIs to describe the items and their significant entities. These URIs serve as unique identifiers for each item in the RDF representation, allowing us to describe their properties and relationships within the semantic web framework.
           </p>
-          <!--create a list -->
-      </div>
+          <div>
+            <p class="section-text"><strong>Items</strong></br>
+                https://w3id.org/PoorThings.org/</br>
+                https://w3id.org/PoorThings.org/PoorThings</br>
+                https://w3id.org/PoorThings.org/items/Book</br>
+                https://w3id.org/PoorThings.org/items/BiographicEntityPerson</br>
+                https://w3id.org/PoorThings.org/items/Painting</br>
+                https://w3id.org/PoorThings.org/items/MusicAlbum</br>
+                https://w3id.org/PoorThings.org/items/BiographicEntityCharecter</br>
+                https://w3id.org/PoorThings.org/items/Movie</br>
+                https://w3id.org/PoorThings.org/items/Article</br>
+                https://w3id.org/PoorThings.org/items/Monument</br>
+                https://w3id.org/PoorThings.org/items/Portrait</br>
+                https://w3id.org/PoorThings.org/items/Activity</br>
+            </p>
+            <p class="section-text"><strong>Book</strong></br>
+                https://w3id.org/PoorThings.org/person/AlasdairGray</br>
+                https://w3id.org/PoorThings.org/timespan/19thCentury</br>
+                https://w3id.org/PoorThings.org/publishingHouse/HarcourtBraceJovanovich</br>
+            </p>
+            <p class="section-text"><strong>Lanthimos</strong></br>
+                https://w3id.org/PoorThings.org/place/Athens</br>
+                https://w3id.org/PoorThings.org/artMovement/TheGreekWiredWave</br>
+            </p>
+            <p class="section-text"><strong>Grand Tour</strong></br>
+                https://w3id.org/PoorThings.org/group/UpperClassYoungMen</br>
+                https://w3id.org/PoorThings.org/place/MediterraneanAreaAndEurope</br>
+                https://w3id.org/PoorThings.org/concept/Education</br>
+            </p>
+            <p class="section-text"><strong>Lighthouse of Alexandria</strong></br>
+                https://w3id.org/PoorThings.org/person/PtolemyISoter</br>
+            </p>
+        </div>        
     </div>
 
     <!-- RDF PRODUCTION-->
+    <hr class="custom-hr2">
+
 
   <section id="rdfproduction">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2 class="section-title">RDF Production</h2>
-          <p class="section-text">
-            In this step, we employ the URIs generated previously to craft RDF statements in Turtle serialization format. These statements incorporate additional authorities and sources, linking them to the existing data of our items.
+          <h2 class="chapter-title">RDF Production</h2>
+          <p class="section-text">In this step, we employ the URIs generated previously to craft RDF statements in Turtle serialization format. These statements incorporate additional authorities and sources, linking them to the existing data of our items.
           </p>
           <!--create a link to github -->
       </div>
     </div>
 
     <!-- RDF VISUALIZATION-->
+    <hr class="custom-hr2">
+
 
   <section id="rdfvisualization">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2 class="section-title">RDF Visualization</h2>
-          <p class="section-text">
-            At last, here is the visualization of the RDF statements, offering an alternative perspective to enhance comprehension of the knowledge.
+          <h2 class="chapter-title">RDF Visualization</h2>
+          <p class="section-text">At last, here is the visualization of the RDF statements, offering an alternative perspective to enhance comprehension of the knowledge.
           </p>
           <img src="../website/assets/img/POOR THINGS.png" class="card-img-top" alt="Conceptual Map">
             <!-- image png has xmind logo + cehck class + change image-->
@@ -1420,18 +1497,20 @@
       </div>
     </div>
 
-    <!-- TEAM -->
+<section id="team">
+      <hr class="custom-hr3">
+      <h2 class="custom-title" style="text-align:left;">TEAM</h2>
 
-  <section id="team">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="section-title">Team</h2>
           <p class="section-text">
-            These are the 3 Mary Shelleys
+            us
           </p>
-          <img src="" class="card-img-top" alt="Conceptual Map">
-            <!-- create 3 cards-->
+            <ul class="section-list">
+              <li><b>Anna Pak</b> anna.pak@studio.unibo.it</li>
+               <li><b>Elena Binotti</b> elena.binotti2@studio.unibo.it</li>
+               <li><b>Valentina Bertelli</b> valentina.bertelli2@studio.unibo.it</li>
+               </li>
+             </ul>
+       
         </div>
       </div>
     </div>
