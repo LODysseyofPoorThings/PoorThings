@@ -542,18 +542,15 @@ th.metadata-standard, td.metadata-standard {
 
 /* Button Styles */
 .btn {
-  flex:1 1 auto;
+  flex:0 1 auto;
   border: 1px solid #ddd;
   background-color: #fff;
   color: #2c4964;
   cursor: pointer;
   text-align: center;
   box-sizing: border-box; /* Ensure padding and borders are included in the width */
-  margin-bottom: 0px; /* Add margin bottom to create consistent spacing */
-}
-
-.btn:hover {
-  background-color: #f2f6f9;
+  margin-bottom: 0px;
+   /* Add margin bottom to create consistent spacing */
 }
 
 /* Responsive Adjustments */
