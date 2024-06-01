@@ -5,91 +5,30 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
 
-<https://w3id.org/PoorThings.org/Poor_Things:_Episodes_from_the_Early_Life_of_Archibald_Mccandless_M.d._Scottish
-_______________Public_Health_Officer.> a dcterms:BibliographicResource ;
-    rdfs:label """Poor Things: Episodes from the Early Life of Archibald Mccandless M.d. Scottish
-               Public Health Officer.""" ;
+<https://w3id.org/PoorThings.org/Poor_Things> a dcterms:BibliographicResource ;
+    rdfs:label "Poor Things" ;
     dc:creator <https://w3id.org/PoorThings.org/Gray,_Alasdair_(1934-2019)> ;
     dc:format "Electronic edition" ;
     dc:identifier "978 1 4088 5632 1" ;
     dc:rights "All rights reserved to Bloosmsbury Publishing Plc" ;
     dcterms:extent "13,8 Mb" ;
-    dcterms:issued "2014" ;
+    dcterms:issued "None" ;
     dcterms:publisher <https://w3id.org/PoorThings.org/Bloomsbury_Publishing_Plc> .
 
 <https://w3id.org/PoorThings.org/character/Archibald_McCandless> a foaf:Person ;
     rdfs:label "Archibald McCandless" ;
-    dcterms:isReferencedBy "I felt for Candle though he is not here",
-        "Yes, wed he can and does, but little Candle,",
-        "when I bade you good-bye, chloroformed Candle," ;
     schema:hasOccupation "god's assistant" .
 
 <https://w3id.org/PoorThings.org/character/Bella_Baxter> a foaf:Person ;
-    rdfs:label "Bella Baxter" ;
-    dcterms:isReferencedBy "I tell you Bella, that this brain now grasps",
-        "This is a thought too big for Bell to think.",
-        "“I am no weakling, Bell!” he cried. “On! On!”",
-        "“the time Before they Cracked poor  Bella’s Knob.”" .
+    rdfs:label "Bella Baxter" .
 
 <https://w3id.org/PoorThings.org/character/Dr._Godwin_Baxter> a foaf:Person ;
     rdfs:label "Dr. Godwin Baxter" ;
-    dcterms:isReferencedBy "Dear God, I am tired. It is late. Writing like Shakespeare is hard work for a woman with a cracked head who cannot spell properly, though I notice my writing is getting",
-        "God, do you read the change there is in me?",
-        "I had a baby once. God, is that true?",
-        "Thank you, dear God, for teaching me to sleep",
-        "You never wedded,  God, so may not know" ;
-    schema:hasOccupation "doctor/surgeon" .
+    schema:hasOccupation "doctor" .
 
 <https://w3id.org/PoorThings.org/character/Duncan_Wedderburn> a foaf:Person ;
     rdfs:label "Duncan Wedderburn" ;
-    dcterms:isReferencedBy "(while Wedder telegrammed to his mama)",
-        "And Wedderburn was standing by my side,",
-        "And yet poor Duncan wanted marriage too!",
-        """Love (Wedder thinks) only deserves the
-               name""",
-        "Strange how the baby-minded Wedderburn",
-        "Wedder is snug in bunk and glad at last",
-        "Women need Wedderburns but love much more",
-        "and Wedder, every time I shut my eyes,",
-        "by wedders like my Wedder all possess",
-        "dear Duncan. I will put you into bed.”",
-        "smaller. Tomorrow we stop at Athens. Do you remember taking me there ages ago by way of Zagreb and Sarajevo? I hope they have mended the Parthenon. Now I will creep to Wedder’s side and say",
-        "then skipped down ladder into Wedder’s arms.",
-        "then waked my  Wedder with a good high tea.",
-        "where Wedderburns poke their peninsula.",
-        "“If that is so Dear Wedder, rest assured",
-        """“No no!” says Wedder. “Only pregnant
-               ones""" ;
     schema:hasOccupation "lawyer" .
-
-<https://w3id.org/PoorThings.org/place/Amsterdam> a schema:place ;
-    rdfs:label "Amsterdam" ;
-    dcterms:isReferencedBy "did not depart when we reached Amsterdam." .
-
-<https://w3id.org/PoorThings.org/place/Athens> a schema:place ;
-    rdfs:label "Athens" ;
-    dcterms:isReferencedBy "smaller. Tomorrow we stop at Athens. Do you remember taking me there ages ago by way of Zagreb and Sarajevo? I hope they have mended the Parthenon. Now I will creep to Wedder’s side and say" .
-
-<https://w3id.org/PoorThings.org/place/Frankfort_zoo> a schema:place ;
-    rdfs:label "Frankfort zoo" ;
-    dcterms:isReferencedBy "but nowhere else except the Frankfort zoo" .
-
-<https://w3id.org/PoorThings.org/place/Glasgow_Stock_Exchange> a schema:place ;
-    rdfs:label "Glasgow Stock Exchange" ;
-    dcterms:isReferencedBy "the Glasgow Stock Exchange It looked like that." .
-
-<https://w3id.org/PoorThings.org/place/London> a schema:place ;
-    rdfs:label "London" ;
-    dcterms:isReferencedBy "The jealousy which he had shown in London",
-        "went wedding all the way to London town" .
-
-<https://w3id.org/PoorThings.org/place/Regent’s_Park> a schema:place ;
-    rdfs:label "Regent’s Park" ;
-    dcterms:isReferencedBy "except a policeman in Regent’s Park" .
-
-<https://w3id.org/PoorThings.org/place/Switzerland> a schema:place ;
-    rdfs:label "Switzerland" ;
-    dcterms:isReferencedBy "when we reached Switzerland. I’ll tell you how." .
 
 <https://w3id.org/PoorThings.org/Bloomsbury_Publishing_Plc> a dbo:publisher ;
     schema:address "50 Bedford Square, London WC1B 3DP" .
