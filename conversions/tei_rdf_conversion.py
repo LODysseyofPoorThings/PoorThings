@@ -73,6 +73,14 @@ for character in tree.findall(".//tei:profileDesc/tei:particDesc/tei:listPerson/
             ref = mention.get("ref").strip('#')
             if ref == id:
                 g.add((character_uri, DCTERMS.isReferencedBy, Literal(text)))
+
+    for q in tree.findall(".//tei:text/tei:body/tei:div/tei:l/tei:q", ns):
+        quotation = q.text
+        quotation_uri = URIRef(pt + "quotation/" + quotation.replace(" ", "_"))
+        speaker = q.get("who").strip('#')
+        if speaker is not None and speaker == id:
+            g.add((quotation_uri, RDF.type, SCHEMA.Quotation))  
+            g.add((quotation_uri, SCHEMA.spokenByCharacter, character_uri))              
         
 #places extraction       
 for line in tree.findall(".//tei:text/tei:body/tei:div/tei:l", ns):
