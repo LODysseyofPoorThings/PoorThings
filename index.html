@@ -891,29 +891,29 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
           <h2 class="chapter-title">Items Description</h2>
           <p class="section-text">
             In the knowledge representation section, we will generate new data based on the selected items. We will create a table for each item, containing statements in the form of subject-predicate-object.</br>
-            To access the folder with the table information in CSV format, please click on this <a href="https://github.com/LODysseyofPoorThings/PoorThings/tree/main/conversions" target="_blank">link</a>. or create a donwloadable zip
+            To access the folder with the table information in CSV format, please click on this <a href="https://github.com/LODysseyofPoorThings/PoorThings/tree/6506c0276bd8eb48d0fc0cbee4eaa6bc0497156b/csv%20files" target="_blank">link</a>.
           </p>
 
     <div class="d-flex justify-content-center wrap-buttons mb-4">
-      <button onclick="myFunction('item1')" class="btn btn-outline-dark mx-2" >Book</button>
+      <button onclick="myFunction('item1')" class="btn btn-outline-dark mx-2">Book</button>
 
-      <button onclick="myFunction('item2')" class="btn btn-outline-dark mx-2" >Yorgos Lanthimos</button>
+      <button onclick="myFunction('item2')" class="btn btn-outline-dark mx-2">Biographic Entity Person</button>
       
-      <button onclick="myFunction('item3')" class="btn btn-outline-dark mx-2" >The Garden of Earthly Delights</button>
+      <button onclick="myFunction('item3')" class="btn btn-outline-dark mx-2">Painting</button>
     
       <button onclick="myFunction('item4')" class="btn btn-outline-dark mx-2">Soundtrack</button>
 
-      <button onclick="myFunction('item5')" class="btn btn-outline-dark mx-2" >Bella Baxter</button>
+      <button onclick="myFunction('item5')" class="btn btn-outline-dark mx-2">Biographic Entity Character</button>
 
-      <button onclick="myFunction('item6')" class="btn btn-outline-dark mx-2" >Metropolis</button>
+      <button onclick="myFunction('item6')" class="btn btn-outline-dark mx-2">Metropolis</button>
       
-      <button onclick="myFunction('item7')" class="btn btn-outline-dark mx-2" >Article</button>
+      <button onclick="myFunction('item7')" class="btn btn-outline-dark mx-2">Article</button>
     
-      <button onclick="myFunction('item8')" class="btn btn-outline-dark mx-2">Lighthouse of Alexandria</button>
+      <button onclick="myFunction('item8')" class="btn btn-outline-dark mx-2">Monument</button>
 
-      <button onclick="myFunction('item9')" class="btn btn-outline-dark mx-2" >Schiele Painting</button>
+      <button onclick="myFunction('item9')" class="btn btn-outline-dark mx-2">Painting</button>
 
-      <button onclick="myFunction('item10')" class="btn btn-outline-dark mx-2" >Grand Tour</button>
+      <button onclick="myFunction('item10')" class="btn btn-outline-dark mx-2">Activity</button>
 
     </div>
 
@@ -990,68 +990,32 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
       </thead>
       <tbody>
         <tr>
-          <td class="subject">Person</td>
+          <td class="subject">Biographic Entity Person</td>
           <td class="predicate">schema:gender</td>
           <td class="object">male</td>
         </tr>
         <tr>
-          <td class="subject">Person</td>
-          <td class="predicate">crm:P138_represents</td>
-          <td class="object">N/A</td>
-        </tr>
-        <tr>
-          <td class="subject">Person</td>
-          <td class="predicate">crm:P4_has_time-span</td>
-          <td class="object">N/A</td>
-        </tr>
-        <tr>
-          <td class="subject">Person</td>
-          <td class="predicate">crm:P98i_was_born</td>
+          <td class="subject">Biographic Entity Person</td>
+          <td class="predicate">schema:birthPlace</td>
           <td class="object">Athens</td>
         </tr>
         <tr>
-          <td class="subject">Person</td>
-          <td class="predicate">crm:P98i_was_born</td>
+          <td class="subject">Biographic Entity Person</td>
+          <td class="predicate">schema:birthDate</td>
           <td class="object">1973</td>
         </tr>
         <tr>
-          <td class="subject">Person</td>
+          <td class="subject">Biographic Entity Person</td>
           <td class="predicate">schema:hasOccupation</td>
           <td class="object">Film director</td>
         </tr>
         <tr>
-          <td class="subject">Person</td>
+          <td class="subject">Biographic Entity Person</td>
           <td class="predicate">foaf.member</td>
           <td class="object">The Greek Weird Wave</td>
         </tr>
-        <tr>
-          <td class="subject">Person</td>
-          <td class="predicate">crm:P45_consists_of</td>
-          <td class="object">dne</td>
-        </tr>
-        <tr>
-          <td class="subject">Person</td>
-          <td class="predicate">crm:P108_has_produced</td>
-          <td class="object">Anddns</td>
-        </tr>
-        <tr>
-          <td class="subject">Person</td>
-          <td class="predicate">crm:P8_took_place_on_or_within</td>
-          <td class="object">Eddt</td>
-        </tr>
-        <tr>
-          <td class="subject">Person</td>
-          <td class="predicate">crm:P50_has_current_keeper</td>
-          <td class="object">Tdrt</td>
-        </tr>
-        <tr>
-          <td class="subject">Person</td>
-          <td class="predicate">crm:P23_surrendered_title_through</td>
-          <td class="object">Sdl</td>
-        </tr>
       </tbody>
     </table>
-  
     
     <table id="item3" class="minimalistBlack">
       <thead>
@@ -1063,17 +1027,27 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
       </thead>
       <tbody>
         <tr>
-          <td class="subject">The Garden of Earthly Delights</td>
+          <td class="subject">Painting</td>
+          <td class="predicate">crm:P102_has_title</td>
+          <td class="object">The Garden of Earthly Delights</td>
+        </tr>
+        <tr>
+          <td class="subject">Painting</td>
           <td class="predicate">dcterms:creator</td>
           <td class="object">Hieronymus Bosch</td>
         </tr>
         <tr>
-          <td class="subject">The Garden of Earthly Delights</td>
+          <td class="subject">Painting</td>
           <td class="predicate">dcterms:created</td>
           <td class="object">1490-1500</td>
         </tr>
         <tr>
-          <td class="subject">The Garden of Earthly Delights</td>
+          <td class="subject">Painting</td>
+          <td class="predicate">crm:P2_has_type</td>
+          <td class="object">Tryptic</td>
+        </tr>
+        <tr>
+          <td class="subject">Painting</td>
           <td class="predicate">crm:P129_is_about</td>
           <td class="object">
             <ul>
@@ -1084,17 +1058,17 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
           </td>
         </tr>
         <tr>
-          <td class="subject">The Garden of Earthly Delights</td>
+          <td class="subject">Painting</td>
           <td class="predicate">crm:P55_has_current_location</td>
-          <td class="object">Museo del Prado, Madrid, Spain</td>
+          <td class="object">Museo del Prado</td>
         </tr>
         <tr>
-          <td class="subject">The Garden of Earthly Delights</td>
+          <td class="subject">Painting</td>
           <td class="predicate">cdwa:Material/TechniqueDescription</td>
           <td class="object">Oil on oak panel</td>
         </tr>
         <tr>
-          <td class="subject">The Garden of Earthly Delights</td>
+          <td class="subject">Painting</td>
           <td class="predicate">cdwa:DimensionDescription</td>
           <td class="object">384.9 cm x 205.5 cm</td>
         </tr>
@@ -1111,37 +1085,42 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
       </thead>
       <tbody>
         <tr>
-          <td class="subject">Poor Things Soundtrack</td>
+          <td class="subject">Soundtrack</td>
           <td class="predicate">crm:P102_has_title</td>
-          <td class="object">"Poor Things: Original Motion Picture Soundtrack"</td>
+          <td class="object">Poor Things: Original Motion Picture Soundtrack</td>
         </tr>
         <tr>
-          <td class="subject">Poor Things Soundtrack</td>
+          <td class="subject">Soundtrack</td>
           <td class="predicate">dcterms:creator</td>
-          <td class="object">Carminho & Jerskin Fendrix</td>
+          <td class="object">Carminho</td>
         </tr>
         <tr>
-          <td class="subject">Poor Things Soundtrack</td>
+          <td class="subject">Soundtrack</td>
+          <td class="predicate">dcterms:creator</td>
+          <td class="object">Jerskin Fendrix</td>
+        </tr>
+        <tr>
+          <td class="subject">Soundtrack</td>
           <td class="predicate">dcterms:issued</td>
           <td class="object">2023</td>
         </tr>
         <tr>
-          <td class="subject">Poor Things Soundtrack</td>
-          <td class="predicate">crm:P2_has_type</td>
+          <td class="subject">Soundtrack</td>
+          <td class="predicate">schema:genre</td>
           <td class="object">Soundtrack</td>
         </tr>
         <tr>
-          <td class="subject">Poor Things Soundtrack</td>
+          <td class="subject">Soundtrack</td>
           <td class="predicate">schema:copyrightHolder</td>
           <td class="object">Searchlight Pictures</td>
         </tr>
         <tr>
-          <td class="subject">Poor Things Soundtrack</td>
+          <td class="subject">Soundtrack</td>
           <td class="predicate">mo:published_as</td>
           <td class="object">Song “Bella”</td>
         </tr>
         <tr>
-          <td class="subject">Poor Things Soundtrack</td>
+          <td class="subject">Soundtrack</td>
           <td class="predicate">mo:published_as</td>
           <td class="object">Song “Alexandria”</td>
         </tr>
@@ -1158,33 +1137,38 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
       </thead>
       <tbody>
         <tr>
-          <td class="subject">Biographic entity</td>
+          <td class="subject">Biographic Entity Character</td>
           <td class="predicate">crm:P14_carried_out_by</td>
           <td class="object">Emma Stone</td>
         </tr>
         <tr>
-          <td class="subject">Biographic entity</td>
-          <td class="predicate">crm:P2_has_type</td>
+          <td class="subject">Biographic Entity Character</td>
+          <td class="predicate">foaf:name</td>
+          <td class="object">Bella Baxter</td>
+        </tr>
+        <tr>
+          <td class="subject">Biographic Entity Character</td>
+          <td class="predicate">schema:gender</td>
           <td class="object">female</td>
         </tr>
         <tr>
-          <td class="subject">Biographic entity</td>
+          <td class="subject">Biographic Entity Character</td>
           <td class="predicate">crm:P2_has_type</td>
           <td class="object">protagonist</td>
         </tr>
         <tr>
-          <td class="subject">Biographic entity</td>
-          <td class="predicate">dcterms:isReferencedBy</td>
-          <td class="object">Nude Girl Standing With Long Black Hair & Blue-Black Drape</td>
+          <td class="subject">Biographic Entity Character</td>
+          <td class="predicate">dcterms:references</td>
+          <td class="object">Portrait</td>
         </tr>
         <tr>
-          <td class="subject">Biographic entity</td>
+          <td class="subject">Biographic Entity Character</td>
           <td class="predicate">schema:parent</td>
           <td class="object">Dr Godwin Baxter</td>
         </tr>
         <tr>
-          <td class="subject">Biographic entity</td>
-          <td class="predicate">dcterms:isReplacedBy</td>
+          <td class="subject">Biographic Entity Character</td>
+          <td class="predicate">dcterms:isReferencedby</td>
           <td class="object">Article</td>
         </tr>
       </tbody>
@@ -1201,6 +1185,11 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
       <tbody>
         <tr>
           <td class="subject">Movie</td>
+          <td class="predicate">crm:P102_has_title</td>
+          <td class="object">Metropolis</td>
+        </tr>
+        <tr>
+          <td class="subject">Movie</td>
           <td class="predicate">dcterms:creator</td>
           <td class="object">Fritz Lang</td>
         </tr>
@@ -1211,7 +1200,7 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
         </tr>
         <tr>
           <td class="subject">Movie</td>
-          <td class="predicate">crm:P2_has_type</td>
+          <td class="predicate">schema:genre</td>
           <td class="object">Sci-fi</td>
         </tr>
         <tr>
@@ -1254,7 +1243,7 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
         <tr>
           <td class="subject">Article</td>
           <td class="predicate">crm:P102_has_title</td>
-          <td class="object">Unfurling the Unusual Costumes of ‘Poor Things’</td>
+          <td class="object">Unfurling the Unusual Costumes of “Poor Things”</td>
         </tr>
         <tr>
           <td class="subject">Article</td>
@@ -1274,7 +1263,12 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
         <tr>
           <td class="subject">Article</td>
           <td class="predicate">schema:mentions</td>
-          <td class="object">Egon Schiele Portrait</td>
+          <td class="object">Portrait</td>
+        </tr>
+        <tr>
+          <td class="subject">Article</td>
+          <td class="predicate">crm:P129_is_about</td>
+          <td class="object">Poor Things Movie</td>
         </tr>
       </tbody>
     </table>
@@ -1290,7 +1284,7 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
       <tbody>
         <tr>
           <td class="subject">Monument</td>
-          <td class="predicate">dc:title</td>
+          <td class="predicate">crm:P102_has_title</td>
           <td class="object">Lighthouse of Alexandria</td>
         </tr>
         <tr>
@@ -1342,7 +1336,7 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
       <tbody>
         <tr>
           <td class="subject">Portrait</td>
-          <td class="predicate">dc:title</td>
+          <td class="predicate">crm:P102_has_title</td>
           <td class="object">Nude Girl With Long Black Hair & Blue-Black Drape</td>
         </tr>
         <tr>
@@ -1362,12 +1356,12 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
         </tr>
         <tr>
           <td class="subject">Portrait</td>
-          <td class="predicate">cdwa:Material/Technique Description</td>
+          <td class="predicate">cdwa:Material/TechniqueDescription</td>
           <td class="object">Pencil and watercolor</td>
         </tr>
         <tr>
           <td class="subject">Portrait</td>
-          <td class="predicate">cdwa:Dimension Description</td>
+          <td class="predicate">cdwa:DimensionDescription</td>
           <td class="object">56.5 x 35 cm</td>
         </tr>
         <tr>
@@ -1377,13 +1371,18 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
         </tr>
         <tr>
           <td class="subject">Portrait</td>
+          <td class="predicate">crm:P2_has_type</td>
+          <td class="object">Portrait</td>
+        </tr>
+        <tr>
+          <td class="subject">Portrait</td>
           <td class="predicate">cdwa:Style</td>
           <td class="object">Expressionism</td>
         </tr>
         <tr>
           <td class="subject">Portrait</td>
-          <td class="predicate">dcterms:isReplacedBy</td>
-          <td class="object">fabio:journal article</td>
+          <td class="predicate">dcterms:isReferencedBy</td>
+          <td class="object">Article</td>
         </tr>
       </tbody>
     </table>
@@ -1399,7 +1398,7 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
       <tbody>
         <tr>
           <td class="subject">Activity</td>
-          <td class="predicate">schema:name</td>
+          <td class="predicate">crm:P102_has_title</td>
           <td class="object">Grand Tour</td>
         </tr>
         <tr>
@@ -1424,7 +1423,7 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
         </tr>
         <tr>
           <td class="subject">Activity</td>
-          <td class="predicate">cidoc-crm:P21_had_general_purpose</td>
+          <td class="predicate">crm:P21_had_general_purpose</td>
           <td class="object">Education</td>
         </tr>
         <tr>

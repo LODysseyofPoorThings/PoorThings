@@ -1,17 +1,23 @@
 Subject,Predicate,Object
 Activity,rdf:type,crm:E7Activity
 Activity,owl:sameAs,https://dbpedia.org/page/Grand_Tour
-Activity,schema:name,Grand Tour
+Activity,crm:P102_has_title,Grand Tour
 Activity,schema:agent,Young upper-class men 
 Activity,dcterms:spatial,Europe
 Activity,dcterms:spatial,Mediterranean area
 Activity,schema:startDate,1660
 Activity,schema:endDate,1840
 Activity,crm:P21_had_general_purpose,Education
-Young upper-class men,rdf:type,crm:E74_Group
+Activity,schema:agent,Biographic entity character
+Young upper-class men,rdf:type,foaf:Group
+Young upper-class men,foaf:member,Goethe
+Young upper-class men,foar:member,Lord Byron
 Europe,rdf:type,crm:E53_Place
 Europe,owl:sameAs,https://dbpedia.org/page/Europe
+Europe,dsterms:hasPart,Lisbon
+Europe,dsterms:hasPart,Paris
 Mediterranean area,rdf:type,crm:E53_Place
 Mediterranean area,owl:sameAs,https://dbpedia.org/page/Mediterranean_Basin
+Mediterranean area,dcterms:hasPart,Pharos
 Education,rdf:type,skos:Concept
 Education,owl:sameAs,https://dbpedia.org/page/Category:Education
