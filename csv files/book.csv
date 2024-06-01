@@ -2,12 +2,12 @@ subject,predicate,object
 Book,rdf:type,dcterms:BibliographicResource
 Book,owl:sameAs,https://openlibrary.org/books/OL1735096M/Poor_things 
 Book,crm:P102_has_title,Poor things: episodes from the early life of Archibald McCandless M.D. Scottish public health officer
-Book,dcterms:creator,Alasdair Gray 
+Book,dcterms:creator,Alasdair Gray
 Book,dcterms:temporal,19th Century
 Book,dcterms:issued,1992
 Book,dc:publisher,Harcourt Brace Jovanovich
-Book,schema:inLanguage,English 
-Book,schema:genre,Fiction 
+Book,schema:inLanguage,English
+Book,schema:genre,Fiction
 Book,crm:P2_has_type,Novel
 Book,crm:P129_is_about,Feminism
 Book,schema:character,Biographic entity character
@@ -16,7 +16,7 @@ Alasdair Gray,owl:sameAs,https://www.wikidata.org/wiki/Q729121
 19th Century,rdf:type,crm:E4_Period
 19th Century,owl:sameAs,https://www.wikidata.org/wiki/Q6955
 Harcourt Brace Jovanovich,rdf:type,schema:Organization
-Harcourt Brace Jovanovich,owl:sameAs,https://www.wikidata.org/wiki/Q5654997 
-Harcourt Brace Jovanovich,dcterms:spatial,London
+Harcourt Brace Jovanovich,owl:sameAs,https://www.wikidata.org/wiki/Q5654997
+Harcourt Brace Jovanovich,schema:containedInPlace,London
 Feminism,rdf:type,skos:Concept
-Feminism,owl:sameAs,https://dbpedia.org/page/Feminism 
+Feminism,owl:sameAs,https://dbpedia.org/page/Feminism

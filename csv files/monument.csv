@@ -5,13 +5,13 @@ Monument,crm:P102_has_title,Lighthouse of Alexandria
 Monument,dcterms:created,284-246 BC
 Monument,cdwa:Commissioner,Ptolemy I Soter
 Monument,dcterms:spatial,Pharos
-Monument,schema:material,Lightcoloured stone
+Monument,cdwa:MaterialTechniqueDescription,Lightcoloured stone
 Monument,cdwa:DimensionDescription,103-118 meter
 Monument,dbp:yeardeactivated,1303
 Monument,dcterms:isPartOf,Seven Wonders of the Ancient World
 Ptolemy I Soter,rdf:type,crm:E21Person
 Ptolemy I Soter,owl:sameAs,https://dbpedia.org/page/Ptolemy_I_Soter
-Ptolemy_I_Soter,foaf:familyMember,Ptolemaic dinasty
+Ptolemaic dinasty,foaf:member,Ptolemy_I_Soter
 284-246 BC,rdf:type,crm:E52_Time-Span
 284-246 BC,crm:P82a_begin_of_the_begin,"-284"
 284-246 BC,crm:P82b_end_of_the_end,"-246"
