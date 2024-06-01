@@ -5,7 +5,7 @@ Portrait,crm:P102_has_title,Nude Girl Standing With Long Black Hair & Blue-Black
 Portrait,dcterms:created,1911
 Portrait,dc:creator,Egon Schiele
 Portrait,crm:P2_has_type,Portrait
-Portrait,cdwa:CurrentLocation,Columbia University
+Portrait,crm:P55_has_current_location,Columbia University
 Portrait,cdwa:MaterialTechniqueDescription,Pencil and watercolor
 Portrait,cdwa:DimensionDescription,56.5 x 35 cm
 Portrait,dc:subject,Young woman with long hair
@@ -15,7 +15,7 @@ Egon Schiele,owl:sameAs,https://www.wikidata.org/wiki/Q44032
 Egon Schiele,cdwa:Style,Expressionism
 Columbia University,rdf:type,crm:E78_Curated_Holding
 Columbia University,owl:sameAs,https://www.wikidata.org/wiki/Q49088
-Columbia University,dcterms:spatial,New York City
+Columbia University,schema:containedInPlace,New York City
 New York City,rdf:type,crm:E53_Place
 New York City,owl:sameAs,https://dbpedia.org/page/New_York_City
-New York City,dcterms:isPartOf,USA
+New York City,schema:containedInPlace,USA

@@ -17,9 +17,9 @@ Ptolemy_I_Soter,foaf:familyMember,Ptolemaic dinasty
 284-246 BC,crm:P82b_end_of_the_end,"-246"
 Pharos,rdf:type,crm:E53_Place
 Pharos,owl:sameAs,https://www.wikidata.org/wiki/Q2696558
-Pharos,dcterms:isPartOf,Alexandria
+Pharos,schema:containedInPlace,Alexandria
 Alexandria,rdf:type,crm:E53_Place
 Alexandria,owl:sameAs,https://dbpedia.org/page/Alexandria
-Alexandria,dcterms:isPartOf,Egypt
+Alexandria,schema:containedInPlace,Egypt
 Seven Wonders of the Ancient World,rdf:type,crm:E74_Group
 Seven Wonders of the Ancient World,owl:sameAs,https://www.wikidata.org/wiki/Q489772

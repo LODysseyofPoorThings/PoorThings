@@ -3,12 +3,12 @@ Biographic entity character,rdf: type,crm:E28_Conceptual_Object
 Biographic entity character,owl:sameAs,https://movies.fandom.com/wiki/Bella_Baxter
 Biographic entity character,foaf:name,Bella Baxter
 Biographic entity character,crm:P14_carried_out_by,Emma Stone
-Biographic entity character,schema:gender,female 
-Biographic entity character,crm:P2_has_type,protagonist 
+Biographic entity character,schema:gender,female
+Biographic entity character,crm:P2_has_type,protagonist
 Biographic entity character,dcterms:references,Portrait
-Biographic entity character,dcterms:isReferencedBy,Academyrticle
+Biographic entity character,dcterms:isReferencedBy,Article
 Biographic entity character,schema:parent,Dr Godwin Baxter
 Emma Stone,rdf:type,crm:E21_Person
 Emma Stone,owl:sameAs,https://dbpedia.org/page/Emma_Stone
-Emma Stone,schema:award,96th Academy Award: Best Actress 
+Emma Stone,schema:award,96th Academy Award: Best Actress
 Dr Godwin Baxter,rdf:type,crm:E28_Conceptual_Object
