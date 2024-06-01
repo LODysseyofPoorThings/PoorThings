@@ -1,12 +1,14 @@
 import rdflib
 from rdflib import Namespace, URIRef, Literal
-from rdflib.namespace import RDF, OWL, DC, DCTERMS, XSD
+from rdflib.namespace import RDF, OWL, DC, DCTERMS, XSD, FOAF
 import pandas as pd
 
 #Namespaces
 CDWA = Namespace("https://www.getty.edu/research/publications/electronic_publications/cdwa/")
 SCHEMA = Namespace("https://schema.org/")
 CRM = Namespace("https://www.cidoc-crm.org/")
+MO = Namespace("http://musicontology.com/")
+DBO = Namespace("https://dbpedia.org/ontology/")
 
 #creating a rdf graph
 g = rdflib.Graph()

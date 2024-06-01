@@ -33,7 +33,8 @@ publisher = tree.find(".//tei:publicationStmt/tei:publisher/tei:orgName", ns).te
 address = tree.find(".//tei:publicationStmt/tei:address/tei:addrLine", ns).text
 id = tree.find(".//tei:publicationStmt/tei:idno", ns).text
 copyright = tree.find(".//tei:publicationStmt/tei:availability/tei:p", ns).text
-date = tree.find(".//tei:publicationStmt/tei:date", ns).text
+date = tree.find(".//tei:publicationStmt/tei:date", ns)
+when = date.get("when")
 
 #metadata uris
 title_uri = URIRef(pt + title.replace(" ", "_"))
@@ -43,7 +44,7 @@ publisher_uri = URIRef(pt + publisher.replace(" ", "_"))
 #adding metadata triples to the graph
 g.add((title_uri, RDF.type, DCTERMS.BibliographicResource))
 g.add((title_uri, DC.creator, author_uri))
-g.add((title_uri, DCTERMS.issued, Literal(date)))
+g.add((title_uri, DCTERMS.issued, Literal(when)))
 g.add((title_uri, DC.format, Literal(format)))
 g.add((title_uri, DCTERMS.extent, Literal(extent)))
 g.add((title_uri, DCTERMS.publisher, publisher_uri))
@@ -73,7 +74,7 @@ for character in tree.findall(".//tei:profileDesc/tei:particDesc/tei:listPerson/
             ref = mention.get("ref").strip('#')
             if ref == id:
                 g.add((character_uri, DCTERMS.isReferencedBy, Literal(text)))
-
+'''
     for q in tree.findall(".//tei:text/tei:body/tei:div/tei:l/tei:q", ns):
         quotation = q.text
         quotation_uri = URIRef(pt + "quotation/" + quotation.replace(" ", "_"))
@@ -91,7 +92,7 @@ for line in tree.findall(".//tei:text/tei:body/tei:div/tei:l", ns):
         g.add((place_uri, RDF.type, SCHEMA.place))
         g.add((place_uri, RDFS.label, Literal(place.text)))
         g.add((place_uri, DCTERMS.isReferencedBy, Literal(text)))
-
+'''
                 
 #serialize the graph to Turtle format
 g.serialize("output_xml_rdf.ttl", format="turtle", encoding="utf-8")

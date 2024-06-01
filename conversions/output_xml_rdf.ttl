@@ -12,7 +12,7 @@
     dc:identifier "978 1 4088 5632 1" ;
     dc:rights "All rights reserved to Bloosmsbury Publishing Plc" ;
     dcterms:extent "13,8 Mb" ;
-    dcterms:issued "None" ;
+    dcterms:issued "2014-09-05" ;
     dcterms:publisher <https://w3id.org/PoorThings.org/Bloomsbury_Publishing_Plc> .
 
 <https://w3id.org/PoorThings.org/character/Archibald_McCandless> a foaf:Person ;
