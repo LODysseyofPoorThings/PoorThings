@@ -1,7 +1,13 @@
 subject,predicate,object
-Biographic entity person,rdf:type,crm: E21 Person
+Biographic entity person,rdf:type,crm:E21_Person
 Biographic entity person,owl:sameAs,https://www.wikidata.org/wiki/Q975410 
-Biographic entity person,crm:P98i was born,Athens
+Biographic entity person,foaf:name,Yorgos Lanthimos
+Biographic entity person,schema:birthPlace,Athens
 Biographic entity person,schema:hasOccupation,Film director 
-Biographic entity person,crm: P2 has type,Male
-Biographic entity person,crm:P98i was born,1973
+Biographic entity person,schema:gender,Male
+Biographic entity person,schema:birthDate,1973
+Biographic entity person,foaf:member,Greek Weird Wave
+Athens,rdf:type,crm:E53_Place
+Athens,owl:sameAs,https://dbpedia.org/page/Athens
+Greek Weird Wave,rdf:type,foaf:E74_Group
+Greek Weird Wave,owl:sameAs,https://www.wikidata.org/wiki/Q62086465 

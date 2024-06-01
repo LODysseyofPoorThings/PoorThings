@@ -1,7 +1,7 @@
 Subject,Predicate,Object
 Monument,rdf:type,dbo:Monument
-Monument,owl:sameAs,https://dbpedia.org/page/Lighthouse_of_Alexandria
-Monument,dc:title,Lighthouse of Alexandria
+Monument,owl:sameAs,https://www.wikidata.org/wiki/Q43244 
+Monument,crm:P102_has_title,Lighthouse of Alexandria
 Monument,dcterms:created,284-246 BC
 Monument,cdwa:Commissioner,Ptolemy I Soter
 Monument,dcterms:spatial,Pharos
@@ -11,10 +11,15 @@ Monument,schema:endDate,1303
 Monument,dcterms:isPartOf,Seven Wonders of the Ancient World
 Ptolemy I Soter,rdf:type,crm:E21Person
 Ptolemy I Soter,owl:sameAs,https://dbpedia.org/page/Ptolemy_I_Soter
+Ptolemy_I_Soter,foaf:familyMember,Ptolemaic dinasty
 284-246 BC,rdf:type,crm:E52_Time-Span
 284-246 BC,crm:P82a_begin_of_the_begin,"-284"
 284-246 BC,crm:P82b_end_of_the_end,"-246"
 Pharos,rdf:type,crm:E53_Place
 Pharos,owl:sameAs,https://www.wikidata.org/wiki/Q2696558
+Pharos,dcterms:isPartOf,Alexandria
+Alexandria,rdf:type,crm:E53_Place
+Alexandria,owl:sameAs,https://dbpedia.org/page/Alexandria
+Alexandria,dcterms:isPartOf,Egypt
 Seven Wonders of the Ancient World,rdf:type,crm:E74_Group
 Seven Wonders of the Ancient World,owl:sameAs,https://www.wikidata.org/wiki/Q489772

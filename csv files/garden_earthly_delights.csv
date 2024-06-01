@@ -1,7 +1,25 @@
 subject,predicate,object
 Painting,rdf:type, dbpedia-owl:Artwork
 Painting,owl:sameAs,https://www.museodelprado.es/en/the-collection/art-work/the-garden-of-earthly-delights-triptych/02388242-6d6a-4e9e-a992-e1311eab3609
+Painting,crm:P102_has_title,The Garden of Earthly Delights
 Painting,dcterms:creator,Hieronymus Bosch
 Painting,dcterms:created,1490-1500
-Painting,crm: P129 is about,left panel: Garden of Eden; central panel: paradise on Earth; right panel: torments of Hell
-Painting,crm: P55 has current location,Museo del Prada
+Painting,crm:P129_is_about,"left panel: Garden of Eden central; panel: paradise on Earth; right panel: torments of Hell"
+Painting,crm:P55_has_current_location,Museo del Prada
+Painting,crm:P2_has_type,triptych
+Painting,cdwa:Material/TechniqueDescription,oil on oak panel
+Painting,cdwa:DimensionDescription,384.9 cm x 205.5 cm
+Hieronymus Bosch,rdf:type,crm:E21_Person
+Hieronymus Bosch,owl:sameAs,https://dbpedia.org/page/Hieronymus_Bosch 
+Hieronymus Bosch,cdwa:Style,Northern Renaissance
+1490-1500,rdf:type,crm:E52_Time-Span
+1490-1500,crm:P82a_begin_of_the_begin,"1490"
+1490-1500,crm:P82b_end_of_the_end,"1500"
+Museo Del Prado,rdf:type,crm:E79_Curated_Holding
+Museo Del Prado,owl:sameAs,https://dbpedia.org/page/Museo_del_Prado
+Museo Del Prado,dcterms:spatial,Madrid
+Madrid,rdf:type,crm:E53_Place
+Madrid,owl:sameAs,https://dbpedia.org/page/Madrid
+Madrid,dcterms:isPartOf,Spain
+
+

@@ -4,5 +4,11 @@ Article,owl:sameAs,https://www.nytimes.com/2024/01/02/movies/emma-stone-bella-ba
 Article,dcterms:creator,Melena Ryzik
 Article,crm:P102_has_title,Unfurling the Unusual Costumes of Poor Things
 Article,dcterms:issued,2.02.2024
-Article,crm: P129 is about,costumes in Poor things”
+Article,crm:P129_is_about,Costumes in Poor things
 Article,dc:publisher,The New York Times Company 
+Article,crm:P129_is_about,Poor things movie
+Melena Ryzik,rdf:type,crm:E21_Person
+Melena Ryzik,owl:sameAs,
+Costumes in Poor things,rdf:type,crm:E24_Physical_Human-Made_Thing
+Costumes in Poor things,dcterms:creator,Holly Washington
+

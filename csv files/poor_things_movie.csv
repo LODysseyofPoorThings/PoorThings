@@ -1,0 +1,13 @@
+Subject,Predicate,Object 
+Poor things movie,rdf:type,schema:Movie
+Poot things movie,owl:sameAs,https://www.imdb.com/title/tt14230458/?ref_=ev_nom 
+Poor things movie,schema:isBasedOn,Book
+Poor things movie,dcterms:creator,Biographic entity person
+Poor things movie,crm:P129_is_about,Activity
+Poor things movie,dcterms:hasPart,Monument
+Poor things movie,dcterms:references,Movie
+Poor things movie,dcterms:hasPart,Soundtrack
+Poor things movie,dcterms:character,Biographic entity character
+Poor things movie,dcterms:references,Portrait
+Poor things movie,dcterms:references,Painting
+Poor things movie,crm:P129_is_about,Article
