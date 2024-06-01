@@ -117,7 +117,7 @@ for file in files_csv:
             predicate_uri = CRM.P82a_begin_of_the_begin 
 
         elif predicate == "crm:P82b_end_of_the_end":
-            predicate_uri = CRM.P82b_end_of_the_end        
+            predicate_uri = CRM.P82b_end_of_the_end       
 
         #specify if objects are uris or litterals and add uris to uris_dict
         if predicate_uri == RDF.type or predicate_uri == OWL.sameAs:
