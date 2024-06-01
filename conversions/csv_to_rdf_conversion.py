@@ -27,7 +27,9 @@ concept = URIRef(pt + "concept/")
 #bind namespaces to graph
 g.bind("cdwa", CDWA)
 g.bind("schema", SCHEMA)
-g.bind("cidoc-crm", CRM)
+g.bind("crm", CRM)
+g.bind("mo", MO)
+g.bind("dbo", DBO)
 
 #list of csv files
 files_csv = ["csv files/lighthouse_of_alexandria.csv", "csv files/portrait.csv", "csv files/grand_tour.csv"]
