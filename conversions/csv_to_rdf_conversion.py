@@ -32,7 +32,7 @@ g.bind("mo", MO)
 g.bind("dbo", DBO)
 
 #list of csv files
-files_csv = ["csv files/lighthouse_of_alexandria.csv", "csv files/portrait.csv", "csv files/grand_tour.csv"]
+files_csv = ["csv files/monument.csv",  "csv files/poor_things_movie.csv", "csv files/portrait.csv", "csv files/activity.csv", "csv files/book.csv", "csv files/article.csv", "csv files/movie.csv", "csv files/painting.csv", "csv files/bio_ent_char.csv", "csv files/bio_ent_pers.csv", "csv files/soundtrack.csv"]
 
 #for loop that iterates all the csv files and add data to the same graph
 for file in files_csv:
