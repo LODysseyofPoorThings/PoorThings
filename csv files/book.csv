@@ -1,6 +1,6 @@
-subject,predicate,object 
+Subject,Predicate,Object
 Book,rdf:type,dcterms:BibliographicResource
-Book,owl:sameAs,https://openlibrary.org/books/OL1735096M/Poor_things 
+Book,owl:sameAs,https://openlibrary.org/books/OL1735096M/Poor_things
 Book,crm:P102_has_title,Poor things: episodes from the early life of Archibald McCandless M.D. Scottish public health officer
 Book,dcterms:creator,Alasdair Gray
 Book,dcterms:temporal,19th Century

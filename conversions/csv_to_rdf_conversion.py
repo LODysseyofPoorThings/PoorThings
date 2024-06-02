@@ -40,7 +40,7 @@ g.bind("dbo", DBO)
 g.bind("dbp", DBP)
 
 #list of csv files
-files_csv = ["csv files/activity.csv", "csv files/article.csv"]
+files_csv = ["csv files/poor_things_movie.csv", "csv files/activity.csv", "csv files/article.csv", "csv files/bio_ent_char.csv", "csv files/bio_ent_person.csv", "csv files/book.csv", "csv files/monument.csv", "csv files/movie.csv", "csv files/painting.csv", "csv files/portrait.csv", "csv files/soundtrack.csv"]
 #for loop that iterates all the csv files and add data to the same graph
 for file in files_csv:
     if not os.path.isfile(file):
@@ -59,7 +59,7 @@ for file in files_csv:
     #dict to store uris
     uris_dict = dict()
 
-    items_list = ["Activity", "Article", "Biographic entity character", "Poor Things Movie"]
+    items_list = ["Activity", "Article", "Biographic entity character", "Biographic entity person", "Book", "Monument", "Movie", "Painting", "Portrait", "Soundtrack", "Poor Things Movie"]
  
     #iterate through the dataframe:
     for _, row in df.iterrows():
@@ -74,7 +74,7 @@ for file in files_csv:
         #create subject uri
         if subject not in uris_dict:
             subject_uri = URIRef(item + subject.replace(" ", "_"))
-            uris_dict[subject] = subject_uri
+            uris_dict[subject] = subject_uri   
         else:
             subject_uri = uris_dict[subject]
                                                                    
@@ -222,24 +222,56 @@ for file in files_csv:
             obj = URIRef(object)
         
         elif predicate_uri == DCTERMS.references or predicate_uri == DCTERMS.isReferencedBy or predicate_uri == SCHEMA.character or predicate_uri == SCHEMA.isBasedOn or predicate_uri == DCTERMS.hasPart:
-            obj = URIRef(item + object.replace(" ", "_"))
-            uris_dict[object] = obj
+            if object not in uris_dict:  
+                obj = URIRef(item + object.replace(" ", "_"))
+                uris_dict[object] = obj
+            else:
+                obj = uris_dict[object]     
 
         elif predicate_uri == CRM.P129_is_about:
             if object not in uris_dict:
                 if object in items_list:
                     obj = URIRef(item + object.replace(" ", "_"))
                     uris_dict[object] = obj
+                elif object == "Feminism":
+                    obj = URIRef(concept + object.replace(" ", "_"))
+                    uris_dict[object] = obj
                 else:
                     obj = URIRef(phisical_thing + object.replace(" ", "_"))
+                    uris_dict[object] = obj
+            else:
+                obj = uris_dict[object]
+
+        elif predicate_uri == DCTERMS.creator:
+            if object not in uris_dict:
+                if object in items_list:
+                    obj = URIRef(item + object.replace(" ", "_"))
+                    uris_dict[object] = obj
+                else:    
+                    obj = URIRef(person + object.replace(" ", "_"))
+                    uris_dict[object] = obj
+            else:
+                obj = uris_dict[object]           
+        
+        elif predicate_uri == CDWA.Commissioner or predicate_uri == CRM.P14_carried_out_by:
+            if object not in uris_dict:
+                obj = URIRef(person + object.replace(" ", "_"))
                 uris_dict[object] = obj
             else:
                 obj = uris_dict[object]    
-        
-        elif predicate_uri == DCTERMS.creator or predicate_uri == CDWA.Commissioner or predicate_uri == FOAF.member or predicate_uri == CRM.P14_carried_out_by:
-            obj = URIRef(person + object.replace(" ", "_"))
-            uris_dict[object] = obj
 
+        elif predicate_uri == FOAF.member:
+            if object not in uris_dict:
+                groups_list = ["Greek Weird Wave", "Ptolemaic dinasty", "Young upper-class men"]
+                if object in groups_list:
+                    obj = URIRef(group_of_people + object.replace(" ", "_"))
+                    uris_dict[object] = obj
+                else:
+                    obj = URIRef(person + object.replace(" ", "_"))
+                    uris_dict[object] = obj    
+            else:
+                obj = uris_dict[object] 
+         
         elif predicate_uri == SCHEMA.agent:
             if object not in uris_dict:
                 if object in items_list:
@@ -252,51 +284,81 @@ for file in files_csv:
                 obj = uris_dict[object]                    
 
         elif predicate_uri == DC.publisher or predicate_uri == SCHEMA.copyrightHolder:
-            obj = URIRef(organization + object.replace(" ", "_"))
-            uris_dict[object] = obj  
+            if object not in uris_dict:
+                obj = URIRef(organization + object.replace(" ", "_"))
+                uris_dict[object] = obj
+            else:
+                obj = uris_dict[object]      
 
         elif predicate_uri == DCTERMS.spatial or predicate_uri == CRM.P55_has_current_location or predicate_uri == SCHEMA.containedInPlace or predicate_uri == SCHEMA.containsPlace or predicate_uri == SCHEMA.birthPlace:    
-            obj = URIRef(place + object.replace(" ", "_"))
-            uris_dict[object] = obj
+            if object not in uris_dict:
+                obj = URIRef(place + object.replace(" ", "_"))
+                uris_dict[object] = obj
+            else:
+                obj = uris_dict[object]    
 
         elif predicate_uri == DCTERMS.isPartOf:
-            obj = URIRef(group_of_objects + object.replace(" ", "_"))
-            uris_dict[object] = obj     
+            if object not in uris_dict:
+                obj = URIRef(group_of_objects + object.replace(" ", "_"))
+                uris_dict[object] = obj
+            else:
+                obj = uris_dict[object]          
 
         elif predicate_uri == CRM.P21_had_general_purpose:
-            obj = URIRef(concept + object.replace(" ", "_"))
-            uris_dict[object] = obj
+            if object not in uris_dict:
+                obj = URIRef(concept + object.replace(" ", "_"))
+                uris_dict[object] = obj
+            else:
+                obj = uris_dict[object]    
 
         elif predicate_uri == MO.published_as:
-            obj = URIRef(song + object.replace(" ", "_"))
-            uris_dict[object] = obj   
+            if object not in uris_dict:
+                obj = URIRef(song + object.replace(" ", "_"))
+                uris_dict[object] = obj   
+            else:
+                obj = uris_dict[object]
 
         elif predicate_uri == SCHEMA.parent:
-            obj = URIRef(conceptual_object + object.replace(" ", "_"))
-            uris_dict[object] = obj
-
-        elif predicate_uri == DCTERMS.extent:
-             obj = Literal(object, datatype=XSD.dayTimeDuration)      
+            if object not in uris_dict:
+                obj = URIRef(conceptual_object + object.replace(" ", "_"))
+                uris_dict[object] = obj  
+            else:
+                obj = uris_dict[object]        
 
         elif predicate_uri == DCTERMS.created:
-            if "-" in object:    
-               obj = URIRef(time + object.replace(" ", "_"))
-               uris_dict[object] = obj  
+            if object not in uris_dict:
+                if "-" in object:    
+                    obj = URIRef(time + object.replace(" ", "_"))
+                    uris_dict[object] = obj  
+                else:
+                    obj = Literal(object, datatype=XSD.gYear)
             else:
-                obj = Literal(object, datatype=XSD.gYear)
+                obj = uris_dict[object]    
         
         elif predicate_uri == DCTERMS.issued:
-            if "-" in object:
-                obj = Literal(object, datatype=XSD.date)   
+            if object not in uris_dict:
+                if "-" in object:
+                    obj = Literal(object, datatype=XSD.date)   
+                else:
+                    obj = Literal(object, datatype=XSD.gYear)   
             else:
-                obj = Literal(object, datatype=XSD.gYear)         
+                obj = uris_dict[object]               
 
         elif predicate_uri == DCTERMS.temporal:
-            obj = URIRef(time + object.replace(" ", "_"))
-            uris_dict[object] = obj       
+            if object not in uris_dict:
+                obj = URIRef(time + object.replace(" ", "_"))
+                uris_dict[object] = obj       
+            else:
+                obj = uris_dict[object]
 
         elif predicate_uri == SCHEMA.startDate or predicate_uri == SCHEMA.endDate or predicate_uri == CRM.P82a_begin_of_the_begin or predicate_uri == CRM.P82b_end_of_the_end or predicate_uri == SCHEMA.birthDate or predicate_uri == DBP.yeardeactivated:
             obj = Literal(object, datatype=XSD.gYear)
+
+        elif predicate_uri == DCTERMS.extent:
+             obj = Literal(object, datatype=XSD.dayTimeDuration)    
+
+        elif predicate_uri == SCHEMA.inLanguage:
+            obj = Literal(object, datatype=XSD.language)    
 
         else:
             obj = Literal(object, datatype=XSD.string)  
@@ -310,7 +372,7 @@ for file in files_csv:
 turtle_str = g.serialize(format="turtle", base=pt, encoding="utf-8")
 
 # Write the Turtle string to a file
-with open("output.ttl", "wb") as f:
+with open("output2.ttl", "wb") as f:
     f.write(turtle_str)
 
 print("Graph serialization complete. Output written to 'output.ttl'.")    

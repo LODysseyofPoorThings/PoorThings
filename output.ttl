@@ -7,6 +7,10 @@
 @prefix schema: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<group_of_people/Greek_Weird_Wave> a <foaf:E74_Group> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q62086465> ;
+    foaf:member <person/Biographic_entity_person> .
+
 <item/Activity> a <crm:E7Activity> ;
     dcterms:spatial <place/Europe>,
         <place/Mediterranean_Area> ;
@@ -18,6 +22,39 @@
     crm:P102_has_title "Grand Tour"^^xsd:string ;
     crm:P21_had_general_purpose <concept/Education> .
 
+<item/Biographic_entity_person> a <crm:E21_Person> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q975410> ;
+    foaf:name "Yorgos Lanthimos"^^xsd:string ;
+    schema:birthDate "1973"^^xsd:gYear ;
+    schema:birthPlace <place/Athens> ;
+    schema:gender "Male"^^xsd:string ;
+    schema:hasOccupation "Film director"^^xsd:string .
+
+<item/Book> a <dcterms:BibliographicResource> ;
+    dc:publisher <organization/Harcourt_Brace_Jovanovich> ;
+    dcterms:creator <person/Alasdair_Gray> ;
+    dcterms:issued "1992"^^xsd:gYear ;
+    dcterms:temporal <time/19th_Century> ;
+    owl:sameAs <https://openlibrary.org/books/OL1735096M/Poor_things> ;
+    schema:character <item/Biographic_entity_character> ;
+    schema:genre "Fiction"^^xsd:string ;
+    schema:inLanguage "English"^^xsd:language ;
+    crm:P102_has_title "Poor things: episodes from the early life of Archibald McCandless M.D. Scottish public health officer"^^xsd:string ;
+    crm:P129_is_about <concept/Feminism> ;
+    crm:P2_has_type "Novel"^^xsd:string .
+
+<concept/Education> a <skos:Concept> ;
+    owl:sameAs <https://dbpedia.org/page/Category:Education> .
+
+<concept/Feminism> a <skos:Concept> ;
+    owl:sameAs <https://dbpedia.org/page/Feminism> .
+
+<conceptual_object/Dr_Godwin_Baxter> a <crm:E28_Conceptual_Object> .
+
+<group_of_people/Young_upper-class_men> a <foaf:Group> ;
+    foaf:member <person/Goethe>,
+        <person/Lord_Byron> .
+
 <item/Article> a <fabio:journalarticle> ;
     dc:publisher <organization/The_New_York_Times_Company_> ;
     dcterms:creator <person/Melena_Ryzik> ;
@@ -27,18 +64,25 @@
     crm:P129_is_about <item/Poor_Things_Movie>,
         <phisical_thing/Costumes_in_Poor_Things> .
 
-<item/Costumes_in_Poor_things> a <crm:E24_Physical_Human-Made_Thing> ;
-    dcterms:creator <person/Holly_Washington> .
+<organization/Harcourt_Brace_Jovanovich> a <schema:Organization> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q5654997> ;
+    schema:containedInPlace <place/London> .
 
-<concept/Education> a <skos:Concept> ;
-    owl:sameAs <https://dbpedia.org/page/Category:Education> .
+<person/Alasdair_Gray> a <crm:E21_Person> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q729121> .
 
-<group_of_people/Young_upper-class_men> a <foaf:Group> ;
-    foaf:member <person/Goethe>,
-        <person/Lord_Byron> .
+<person/Emma_Stone> a <crm:E21_Person> ;
+    owl:sameAs <https://dbpedia.org/page/Emma_Stone> ;
+    schema:award "96th Academy Award: Best Actress"^^xsd:string .
 
 <person/Melena_Ryzik> a <crm:E21_Person> ;
     owl:sameAs <https://commons.wikimedia.org/wiki/Category:Melena_Ryzik> .
+
+<phisical_thing/Costumes_in_Poor_Things> a <crm:E24_Physical_Human-Made_Thing> ;
+    dcterms:creator <person/Holly_Washington> .
+
+<place/Athens> a <crm:E53_Place> ;
+    owl:sameAs <https://dbpedia.org/page/Athens> .
 
 <place/Europe> a <crm:E53_Place> ;
     owl:sameAs <https://dbpedia.org/page/Europe> ;
@@ -49,3 +93,15 @@
     owl:sameAs <https://dbpedia.org/page/Mediterranean_Basin> ;
     schema:containsPlace <place/Pharos> .
 
+<time/19th_Century> a <crm:E4_Period> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q6955> .
+
+<item/Biographic_entity_character> a <crm:E28_Conceptual_Object> ;
+    dcterms:isReferencedBy <item/Article> ;
+    dcterms:references <item/Portrait> ;
+    owl:sameAs <https://movies.fandom.com/wiki/Bella_Baxter> ;
+    foaf:name "Bella Baxter"^^xsd:string ;
+    schema:gender "female"^^xsd:string ;
+    schema:parent <conceptual_object/Dr_Godwin_Baxter> ;
+    crm:P14_carried_out_by <person/Emma_Stone> ;
+    crm:P2_has_type "protagonist"^^xsd:string .

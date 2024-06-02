@@ -1,5 +1,5 @@
-Subject,Predicate,Object 
-Biographic entity character,rdf: type,crm:E28_Conceptual_Object
+Subject,Predicate,Object
+Biographic entity character,rdf:type,crm:E28_Conceptual_Object
 Biographic entity character,owl:sameAs,https://movies.fandom.com/wiki/Bella_Baxter
 Biographic entity character,foaf:name,Bella Baxter
 Biographic entity character,crm:P14_carried_out_by,Emma Stone

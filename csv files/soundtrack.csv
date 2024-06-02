@@ -1,22 +1,22 @@
-Subject,Predicate,Object 
+Subject,Predicate,Object
 Soundtrack,rdf:type,mo:soundtrack
-Soundtrack,owl:sameAs,https://genius.com/albums/Jerskin-fendrix/Poor-things-original-motion-picture-soundtrack 
-Soundtrack,crm:P102 has title,Poor Things: Original Motion Picture Soundtrack
+Soundtrack,owl:sameAs,https://genius.com/albums/Jerskin-fendrix/Poor-things-original-motion-picture-soundtrack
+Soundtrack,crm:P102_has_title,Poor Things: Original Motion Picture Soundtrack
 Soundtrack,dcterms:creator,Carminho
 Soundtrack,dcterms:creator,Jerskin Fendrix
 Soundtrack,dcterms:issued,2023
 Soundtrack,schema:genre,Soundtrack
-Soundtrack,schema:copyrightHolder,Searchlight Pictures 
+Soundtrack,schema:copyrightHolder,Searchlight Pictures
 Soundtrack,mo:published_as,Song Bella
 Soundtrack,mo:published_as,Song Alexandria
 Carminho,rdf:type,crm:E21_Person
-Carminho,owl:sameAs,https://www.wikidata.org/wiki/Q468766 
+Carminho,owl:sameAs,https://www.wikidata.org/wiki/Q468766
 Jerskin Fendrix,rdf:type,crm:E21_Person
-Jerskin Fendrix,owl:sameAs,https://www.wikidata.org/wiki/Q120896583 
+Jerskin Fendrix,owl:sameAs,https://www.wikidata.org/wiki/Q120896583
 Jerskin Fendrix,schema:award,Film Festival Gent:Best original music
 Searchlight Pictures,rdf:type,schema:Organization
-Searchlight Pictures,owl:sameAs,https://dbpedia.org/page/Searchlight_Pictures 
+Searchlight Pictures,owl:sameAs,https://dbpedia.org/page/Searchlight_Pictures
 Song Bella,rdf:type,mo:track
-Song Bells,crm:P129_is_about,Biographic entity character
+Song Bella,crm:P129_is_about,Biographic entity character
 Song Alexandria,rdf:type,mo:track
 Song Alexandria,crm:P129_is_about,Monument
