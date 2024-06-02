@@ -10,7 +10,7 @@ Portrait,cdwa:MaterialTechniqueDescription,Pencil and watercolor
 Portrait,cdwa:DimensionDescription,56.5 x 35 cm
 Portrait,dc:subject,Young woman with long hair
 Portrait,dcterms:isReferencedBy,Article 
-Egon Schiele,rdf:type,crm:E21Person
+Egon Schiele,rdf:type,crm:E21_Person
 Egon Schiele,owl:sameAs,https://www.wikidata.org/wiki/Q44032
 Egon Schiele,cdwa:Style,Expressionism
 Columbia University,rdf:type,crm:E78_Curated_Holding

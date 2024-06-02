@@ -9,7 +9,7 @@ Monument,cdwa:MaterialTechniqueDescription,Lightcoloured stone
 Monument,cdwa:DimensionDescription,103-118 meter
 Monument,dbp:yeardeactivated,1303
 Monument,dcterms:isPartOf,Seven Wonders of the Ancient World
-Ptolemy I Soter,rdf:type,crm:E21Person
+Ptolemy I Soter,rdf:type,crm:E21_Person
 Ptolemy I Soter,owl:sameAs,https://dbpedia.org/page/Ptolemy_I_Soter
 Ptolemy I Soter,foaf:member,Ptolemaic dinasty
 284-246 BC,rdf:type,crm:E52_Time-Span

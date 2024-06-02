@@ -1,0 +1,126 @@
+@base <https://w3id.org/PoorThings.org/> .
+@prefix cdwa: <https://www.getty.edu/research/publications/electronic_publications/cdwa/> .
+@prefix crm: <https://www.cidoc-crm.org/> .
+@prefix dbp: <https://dbpedia.org/page/DBP/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://musicontology.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<item/Poor_things_movie> a <schema:Movie> ;
+    dcterms:creator <item/Biographic_entity_person> ;
+    dcterms:hasPart <item/Biographic_entity_character>,
+        <item/Monument>,
+        <item/Soundtrack> ;
+    dcterms:references <item/Movie>,
+        <item/Painting>,
+        <item/Portrait> ;
+    owl:sameAs <https://www.imdb.com/title/tt14230458/?ref_=ev_nom> ;
+    schema:isBasedOn <item/Book> ;
+    crm:P129_is_about <item/Activity>,
+        <item/Article> .
+
+<concept/Feminism> a <skos:Concept> ;
+    owl:sameAs <https://dbpedia.org/page/Feminism> .
+
+<group_of_objects/Seven_Wonders_of_the_Ancient_World> a <crm:E74_Group> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q489772> .
+
+<item/Book> a <dcterms:BibliographicResource> ;
+    dc:publisher <organization/Harcourt_Brace_Jovanovich> ;
+    dcterms:creator <person/Alasdair_Gray> ;
+    dcterms:issued "1992"^^xsd:gYear ;
+    dcterms:temporal <time/19th_Century> ;
+    owl:sameAs <https://openlibrary.org/books/OL1735096M/Poor_things> ;
+    schema:character <item/Biographic_entity_character> ;
+    schema:genre "Fiction"^^xsd:string ;
+    schema:inLanguage "English"^^xsd:language ;
+    crm:P102_has_title "Poor things: episodes from the early life of Archibald McCandless M.D. Scottish public health officer"^^xsd:string ;
+    crm:P129_is_about <concept/Feminism> ;
+    crm:P2_has_type "Novel"^^xsd:string .
+
+<item/Movie> a <schema:Movie> ;
+    dcterms:creator <person/Fritz_Lang>,
+        <person/Thea_Van_Harbou> ;
+    dcterms:extent "02:33:00"^^xsd:dayTimeDuration ;
+    dcterms:issued "1927"^^xsd:gYear ;
+    owl:sameAs <https://www.imdb.com/title/tt0017136/?ref_=vp_close> ;
+    schema:genre "Sci-fi"^^xsd:string ;
+    schema:inLanguage "German"^^xsd:language ;
+    crm:P102_has_title "Metropolis"^^xsd:string ;
+    crm:P2_has_type "black and white"^^xsd:string .
+
+<item/Soundtrack> a <mo:soundtrack> ;
+    mo:published_as <song/Song_Alexandria>,
+        <song/Song_Bella> ;
+    dcterms:creator <person/Carminho>,
+        <person/Jerskin_Fendrix> ;
+    dcterms:issued "2023"^^xsd:gYear ;
+    owl:sameAs <https://genius.com/albums/Jerskin-fendrix/Poor-things-original-motion-picture-soundtrack> ;
+    schema:copyrightHolder <organization/Searchlight_Pictures> ;
+    schema:genre "Soundtrack"^^xsd:string ;
+    crm:P102_has_title "Poor Things: Original Motion Picture Soundtrack"^^xsd:string .
+
+<organization/Harcourt_Brace_Jovanovich> a <schema:Organization> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q5654997> ;
+    schema:containedInPlace <place/London> .
+
+<organization/Searchlight_Pictures> a <schema:Organization> ;
+    owl:sameAs <https://dbpedia.org/page/Searchlight_Pictures> .
+
+<person/Alasdair_Gray> a <crm:E21_Person> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q729121> .
+
+<person/Carminho> a <crm:E21_Person> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q468766> .
+
+<person/Fritz_Lang> a <crm:E21_Person> ;
+    owl:sameAs <https://dbpedia.org/page/Fritz_Lang> ;
+    schema:hasOccupation "film director"^^xsd:string .
+
+<person/Jerskin_Fendrix> a <crm:E21_Person> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q120896583> ;
+    schema:award "Film Festival Gent:Best original music"^^xsd:string .
+
+<person/Ptolemy_I_Soter> a <crm:E21_Person> ;
+    owl:sameAs <https://dbpedia.org/page/Ptolemy_I_Soter> ;
+    foaf:member <group_of_people/Ptolemaic_dinasty> .
+
+<person/Thea_Van_Harbou> a <crm:E21_Person> ;
+    owl:sameAs <https://dbpedia.org/page/Thea_von_Harbou> .
+
+<place/Alexandria> a <crm:E53_Place> ;
+    owl:sameAs <https://dbpedia.org/page/Alexandria> ;
+    schema:containedInPlace <place/Egypt> .
+
+<place/Pharos> a <crm:E53_Place> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q2696558> ;
+    schema:containedInPlace <place/Alexandria> .
+
+<song/Song_Alexandria> a <mo:track> ;
+    crm:P129_is_about <item/Monument> .
+
+<song/Song_Bella> a <mo:track> ;
+    crm:P129_is_about <item/Biographic_entity_character> .
+
+<time/19th_Century> a <crm:E4_Period> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q6955> .
+
+<time/284-246_BC> a <crm:E52_Time-Span> ;
+    crm:P82a_begin_of_the_begin "-284"^^xsd:gYear ;
+    crm:P82b_end_of_the_end "-246"^^xsd:gYear .
+
+<item/Monument> a <dbo:Monument> ;
+    dcterms:created <time/284-246_BC> ;
+    dcterms:isPartOf <group_of_objects/Seven_Wonders_of_the_Ancient_World> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q43244> ;
+    dbp:yeardeactivated "1303"^^xsd:gYear ;
+    schema:containedInPlace <place/Pharos> ;
+    crm:P102_has_title "Lighthouse of Alexandria"^^xsd:string ;
+    cdwa:Commissioner <person/Ptolemy_I_Soter> ;
+    cdwa:DimensionDescription "103-118 meter"^^xsd:string ;
+    cdwa:MaterialTechniqueDescription "Lightcoloured stone"^^xsd:string .
+

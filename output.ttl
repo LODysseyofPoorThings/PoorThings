@@ -120,7 +120,7 @@
 <person/Carminho> a <crm:E21_Person> ;
     owl:sameAs <https://www.wikidata.org/wiki/Q468766> .
 
-<person/Egon_Schiele> a <crm:E21Person> ;
+<person/Egon_Schiele> a <crm:E21_Person> ;
     owl:sameAs <https://www.wikidata.org/wiki/Q44032> ;
     cdwa:Style "Expressionism"^^xsd:string .
 
@@ -143,7 +143,7 @@
 <person/Melena_Ryzik> a <crm:E21_Person> ;
     owl:sameAs <https://commons.wikimedia.org/wiki/Category:Melena_Ryzik> .
 
-<person/Ptolemy_I_Soter> a <crm:E21Person> ;
+<person/Ptolemy_I_Soter> a <crm:E21_Person> ;
     owl:sameAs <https://dbpedia.org/page/Ptolemy_I_Soter> ;
     foaf:member <group_of_people/Ptolemaic_dinasty> .
 
@@ -247,3 +247,4 @@
     schema:parent <conceptual_object/Dr_Godwin_Baxter> ;
     crm:P14_carried_out_by <person/Emma_Stone> ;
     crm:P2_has_type "protagonist"^^xsd:string .
+
