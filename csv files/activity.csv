@@ -3,6 +3,7 @@ Activity,rdf:type,crm:E7Activity
 Activity,owl:sameAs,https://dbpedia.org/page/Grand_Tour
 Activity,crm:P102_has_title,Grand Tour
 Activity,schema:agent,Young upper-class men
+Activity,schema:agent,Biographic entity character
 Activity,dcterms:spatial,Europe
 Activity,dcterms:spatial,Mediterranean Area
 Activity,schema:startDate,1660
