@@ -1,0 +1,51 @@
+@base <https://w3id.org/PoorThings.org/> .
+@prefix crm: <https://www.cidoc-crm.org/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<item/Activity> a <crm:E7Activity> ;
+    dcterms:spatial <place/Europe>,
+        <place/Mediterranean_Area> ;
+    owl:sameAs <https://dbpedia.org/page/Grand_Tour> ;
+    schema:agent <group_of_people/Young_upper-class_men>,
+        <item/Biographic_entity_character> ;
+    schema:endDate "1840"^^xsd:gYear ;
+    schema:startDate "1660"^^xsd:gYear ;
+    crm:P102_has_title "Grand Tour"^^xsd:string ;
+    crm:P21_had_general_purpose <concept/Education> .
+
+<item/Article> a <fabio:journalarticle> ;
+    dc:publisher <organization/The_New_York_Times_Company_> ;
+    dcterms:creator <person/Melena_Ryzik> ;
+    dcterms:issued "2024-02-02"^^xsd:date ;
+    owl:sameAs <https://www.nytimes.com/2024/01/02/movies/emma-stone-bella-baxter-costumes-poor-things.html?searchResultPosition=2> ;
+    crm:P102_has_title "Unfurling the Unusual Costumes of Poor Things"^^xsd:string ;
+    crm:P129_is_about <item/Poor_Things_Movie>,
+        <phisical_thing/Costumes_in_Poor_Things> .
+
+<item/Costumes_in_Poor_things> a <crm:E24_Physical_Human-Made_Thing> ;
+    dcterms:creator <person/Holly_Washington> .
+
+<concept/Education> a <skos:Concept> ;
+    owl:sameAs <https://dbpedia.org/page/Category:Education> .
+
+<group_of_people/Young_upper-class_men> a <foaf:Group> ;
+    foaf:member <person/Goethe>,
+        <person/Lord_Byron> .
+
+<person/Melena_Ryzik> a <crm:E21_Person> ;
+    owl:sameAs <https://commons.wikimedia.org/wiki/Category:Melena_Ryzik> .
+
+<place/Europe> a <crm:E53_Place> ;
+    owl:sameAs <https://dbpedia.org/page/Europe> ;
+    schema:containsPlace <place/Lisbon>,
+        <place/Paris> .
+
+<place/Mediterranean_Area> a <crm:E53_Place> ;
+    owl:sameAs <https://dbpedia.org/page/Mediterranean_Basin> ;
+    schema:containsPlace <place/Pharos> .
+

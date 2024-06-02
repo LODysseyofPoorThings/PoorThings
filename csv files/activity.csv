@@ -2,7 +2,7 @@ Subject,Predicate,Object
 Activity,rdf:type,crm:E7Activity
 Activity,owl:sameAs,https://dbpedia.org/page/Grand_Tour
 Activity,crm:P102_has_title,Grand Tour
-Activity,schema:agent,Young upper-class men 
+Activity,schema:agent,Young upper-class men
 Activity,dcterms:spatial,Europe
 Activity,dcterms:spatial,Mediterranean Area
 Activity,schema:startDate,1660
@@ -16,8 +16,8 @@ Europe,rdf:type,crm:E53_Place
 Europe,owl:sameAs,https://dbpedia.org/page/Europe
 Europe,schema:containsPlace,Lisbon
 Europe,schema:containsPlace,Paris
-Mediterranean area,rdf:type,crm:E53_Place
-Mediterranean area,owl:sameAs,https://dbpedia.org/page/Mediterranean_Basin
-Mediterranean area,schema:containsPlace,Pharos
+Mediterranean Area,rdf:type,crm:E53_Place
+Mediterranean Area,owl:sameAs,https://dbpedia.org/page/Mediterranean_Basin
+Mediterranean Area,schema:containsPlace,Pharos
 Education,rdf:type,skos:Concept
 Education,owl:sameAs,https://dbpedia.org/page/Category:Education

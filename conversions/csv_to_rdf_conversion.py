@@ -2,6 +2,7 @@ import rdflib
 from rdflib import Namespace, URIRef, Literal
 from rdflib.namespace import RDF, OWL, DC, DCTERMS, XSD, FOAF
 import pandas as pd
+import os
 
 #Namespaces
 CDWA = Namespace("https://www.getty.edu/research/publications/electronic_publications/cdwa/")
@@ -24,9 +25,11 @@ organization = URIRef(pt + "organization/")
 place = URIRef(pt + "place/")
 time = URIRef(pt + "time/")
 group_of_objects = URIRef(pt + "group_of_objects/")
+group_of_people = URIRef(pt + "group_of_people/")
 concept = URIRef(pt + "concept/")
 conceptual_object = URIRef(pt + "conceptual_object/")
 song = URIRef(pt + "song/")
+phisical_thing = URIRef(pt + "phisical_thing/")
 
 #bind namespaces to graph
 g.bind("cdwa", CDWA)
@@ -37,16 +40,26 @@ g.bind("dbo", DBO)
 g.bind("dbp", DBP)
 
 #list of csv files
-files_csv = ["csv files/monument.csv", "csv files/poor_things_movie.csv", "csv files/portrait.csv", "csv files/activity.csv", "csv files/book.csv", "csv files/article.csv", "csv files/movie.csv", "csv files/painting.csv", "csv files/bio_ent_char.csv", "csv files/bio_ent_pers.csv", "csv files/soundtrack.csv"]
-
+files_csv = ["csv files/activity.csv", "csv files/article.csv"]
 #for loop that iterates all the csv files and add data to the same graph
 for file in files_csv:
+    if not os.path.isfile(file):
+        print(f"File not found: {file}")
+        continue
 
     #create a pandas dataframe to read csv 
     df = pd.read_csv(file)
+
+    if df.empty:
+        print(f"CSV file is empty or not read correctly: {file}")
+        continue    
     
+    print(f"Processing file: {file}")
+
     #dict to store uris
     uris_dict = dict()
+
+    items_list = ["Activity", "Article", "Biographic entity character", "Poor Things Movie"]
  
     #iterate through the dataframe:
     for _, row in df.iterrows():
@@ -54,11 +67,13 @@ for file in files_csv:
         #get row's subject, predicate and object
         subject = row["Subject"]
         predicate = row["Predicate"]
-        object = row["Object"] 
+        object = row["Object"]
+
+        print(f"Row {_}: Subject = {subject}, Predicate = {predicate}, Object = {object}") 
         
         #create subject uri
         if subject not in uris_dict:
-            subject_uri = URIRef((item + subject).replace(" ", "_"))
+            subject_uri = URIRef(item + subject.replace(" ", "_"))
             uris_dict[subject] = subject_uri
         else:
             subject_uri = uris_dict[subject]
@@ -151,8 +166,8 @@ for file in files_csv:
         elif predicate == "schema:containedInPlace":
             predicate_uri = SCHEMA.containedInPlace
 
-        elif predicate == "schema:containesPlace":
-            predicate_uri = SCHEMA.containesPlace    
+        elif predicate == "schema:containsPlace":
+            predicate_uri = SCHEMA.containsPlace    
 
         elif predicate == "schema:startDate":
             predicate_uri = SCHEMA.startDate
@@ -184,7 +199,7 @@ for file in files_csv:
         elif predicate == "crm:P55_has_current_location":
             predicate_uri = CRM.P55_has_current_location    
 
-        elif predicate == "crm:129_is_about":
+        elif predicate == "crm:P129_is_about":
             predicate_uri = CRM.P129_is_about       
 
         elif predicate == "crm:P21_had_general_purpose":
@@ -209,16 +224,38 @@ for file in files_csv:
         elif predicate_uri == DCTERMS.references or predicate_uri == DCTERMS.isReferencedBy or predicate_uri == SCHEMA.character or predicate_uri == SCHEMA.isBasedOn or predicate_uri == DCTERMS.hasPart:
             obj = URIRef(item + object.replace(" ", "_"))
             uris_dict[object] = obj
+
+        elif predicate_uri == CRM.P129_is_about:
+            if object not in uris_dict:
+                if object in items_list:
+                    obj = URIRef(item + object.replace(" ", "_"))
+                    uris_dict[object] = obj
+                else:
+                    obj = URIRef(phisical_thing + object.replace(" ", "_"))
+                uris_dict[object] = obj
+            else:
+                obj = uris_dict[object]    
         
-        elif predicate_uri == DCTERMS.creator or predicate_uri == CDWA.Commissioner or predicate_uri == SCHEMA.agent or predicate_uri == FOAF.member or predicate_uri == CRM.P14_carried_out_by:
+        elif predicate_uri == DCTERMS.creator or predicate_uri == CDWA.Commissioner or predicate_uri == FOAF.member or predicate_uri == CRM.P14_carried_out_by:
             obj = URIRef(person + object.replace(" ", "_"))
             uris_dict[object] = obj
+
+        elif predicate_uri == SCHEMA.agent:
+            if object not in uris_dict:
+                if object in items_list:
+                    obj = URIRef(item + object.replace(" ", "_"))
+                    uris_dict[object] = obj
+                else:
+                    obj = URIRef(group_of_people + object.replace(" ", "_"))
+                    uris_dict[object] = obj
+            else:
+                obj = uris_dict[object]                    
 
         elif predicate_uri == DC.publisher or predicate_uri == SCHEMA.copyrightHolder:
             obj = URIRef(organization + object.replace(" ", "_"))
             uris_dict[object] = obj  
 
-        elif predicate_uri == DCTERMS.spatial or predicate_uri == CRM.P55_has_current_location or predicate_uri == SCHEMA.containedInPlace or predicate_uri == SCHEMA.containesPlace or predicate_uri == SCHEMA.birthPlace:    
+        elif predicate_uri == DCTERMS.spatial or predicate_uri == CRM.P55_has_current_location or predicate_uri == SCHEMA.containedInPlace or predicate_uri == SCHEMA.containsPlace or predicate_uri == SCHEMA.birthPlace:    
             obj = URIRef(place + object.replace(" ", "_"))
             uris_dict[object] = obj
 
@@ -241,7 +278,7 @@ for file in files_csv:
         elif predicate_uri == DCTERMS.extent:
              obj = Literal(object, datatype=XSD.dayTimeDuration)      
 
-        elif predicate_uri == DCTERMS.created or predicate_uri == DCTERMS.issued:
+        elif predicate_uri == DCTERMS.created:
             if "-" in object:    
                obj = URIRef(time + object.replace(" ", "_"))
                uris_dict[object] = obj  
@@ -249,8 +286,8 @@ for file in files_csv:
                 obj = Literal(object, datatype=XSD.gYear)
         
         elif predicate_uri == DCTERMS.issued:
-            if "." in object:
-                obj = Literal(object, datatype=XSD.dateTime)   
+            if "-" in object:
+                obj = Literal(object, datatype=XSD.date)   
             else:
                 obj = Literal(object, datatype=XSD.gYear)         
 
@@ -262,7 +299,9 @@ for file in files_csv:
             obj = Literal(object, datatype=XSD.gYear)
 
         else:
-            obj = Literal(object, datatype=XSD.string)    
+            obj = Literal(object, datatype=XSD.string)  
+
+        print(f"Adding triple: ({subject_uri}, {predicate_uri}, {obj})")      
 
         #add triple to graph
         g.add((subject_uri, predicate_uri, obj))
@@ -273,3 +312,5 @@ turtle_str = g.serialize(format="turtle", base=pt, encoding="utf-8")
 # Write the Turtle string to a file
 with open("output.ttl", "wb") as f:
     f.write(turtle_str)
+
+print("Graph serialization complete. Output written to 'output.ttl'.")    

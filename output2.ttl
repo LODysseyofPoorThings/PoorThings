@@ -1,0 +1,35 @@
+@base <https://w3id.org/PoorThings.org/> .
+@prefix crm: <https://www.cidoc-crm.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<item/Activity> a <crm:E7Activity> ;
+    dcterms:spatial <place/Europe>,
+        <place/Mediterranean_Area> ;
+    owl:sameAs <https://dbpedia.org/page/Grand_Tour> ;
+    schema:agent <person/Biographic_entity_character>,
+        <person/Young_upper-class_men> ;
+    schema:endDate "1840"^^xsd:gYear ;
+    schema:startDate "1660"^^xsd:gYear ;
+    crm:P102_has_title "Grand Tour"^^xsd:string ;
+    crm:P21_had_general_purpose <concept/Education> .
+
+<concept/Education> a <skos:Concept> ;
+    owl:sameAs <https://dbpedia.org/page/Category:Education> .
+
+<person/Young_upper-class_men> a <foaf:Group> ;
+    foaf:member <person/Goethe>,
+        <person/Lord_Byron> .
+
+<place/Europe> a <crm:E53_Place> ;
+    owl:sameAs <Lisbon>,
+        <Paris>,
+        <https://dbpedia.org/page/Europe> .
+
+<place/Mediterranean_Area> a <crm:E53_Place> ;
+    owl:sameAs <Pharos>,
+        <https://dbpedia.org/page/Mediterranean_Basin> .
+

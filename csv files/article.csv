@@ -1,9 +1,9 @@
-subject,predicate,object
-Article,rdf:type,fabio: journal article 
-Article,owl:sameAs,https://www.nytimes.com/2024/01/02/movies/emma-stone-bella-baxter-costumes-poor-things.html?searchResultPosition=2 
+Subject,Predicate,Object
+Article,rdf:type,fabio:journalarticle
+Article,owl:sameAs,https://www.nytimes.com/2024/01/02/movies/emma-stone-bella-baxter-costumes-poor-things.html?searchResultPosition=2
 Article,dcterms:creator,Melena Ryzik
 Article,crm:P102_has_title,Unfurling the Unusual Costumes of Poor Things
-Article,dcterms:issued,2.02.2024
+Article,dcterms:issued,2024-02-02
 Article,crm:P129_is_about,Costumes in Poor Things
 Article,dc:publisher,The New York Times Company 
 Article,crm:P129_is_about,Poor Things Movie
