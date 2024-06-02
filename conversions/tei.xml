@@ -65,9 +65,9 @@
                         <label>noQuotes</label>
                         <item>double quotes, open and close</item>
                         <label>beginQ</label>
-                        <item>double quotes, only open</item>
+                        <item>double quotes, open</item>
                         <label>endQ</label>
-                        <item>double quotes, only close</item>
+                        <item>double quotes, close</item>
                      </list>
                   </p></quotation> 
                   <normalization><p>Original spelling is retained, except for the dehyphenation of words that were originally cut at the end of a row.</p></normalization>
@@ -77,11 +77,15 @@
                </editorialDecl>
          </encodingDesc>
 
+         
+        
+         
+         
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
          </langUsage>
-             
+         
          <particDesc>
             <listPerson type="fictional">
                <person xml:id="bella">
@@ -95,7 +99,7 @@
                   <forename>Godwin</forename>
                   <addName type="nickname">God</addName>
                   <surname>Baxter</surname></persName>
-                  <occupation>doctor</occupation>
+                  <occupation>Doctor</occupation>
                   
                </person>
                <person xml:id="wedder">
@@ -103,7 +107,7 @@
                   <forename>Duncan</forename>
                   <addName type="nickname">Wedder</addName>
                   <surname>Wedderburn</surname></persName>
-                  <occupation>lawyer</occupation>
+                  <occupation>Lawyer</occupation>
                  
                </person>
                <person xml:id="candle">
@@ -111,12 +115,12 @@
                   <forename>Archibald</forename>
                   <addName type="nickname">Candle</addName>
                   <surname>McCandless</surname></persName>
-                  <occupation>god's assistant</occupation>
+                  <occupation>God's Assistant</occupation>
             
                </person>
             </listPerson>
          </particDesc>
-      </profileDesc>
+         </profileDesc>
    </teiHeader>
    
    <text xml:lang="en">
@@ -154,32 +158,40 @@
             <l><q who="#wedder">Where have you been?</q></l>
             <l rend="right"><q who="#bella">I told.</q></l>
             <l rend="right"><q who="#wedder">Who did you meet?</q></l>
-            <l><q who="#bella">No one.</q><q who="#wedder" rend="beginQ">Do you expect me to believe</q></l>
-            <l><q who="#wedder" rend="endQ">you walked all day and never saw a man?</q></l>
-            <l><q who="#bella" rend="beginQ">No <pc rend="emdash">—</pc> I saw crowds of men but spoke to none,</q></l>
-            <l><q who="#bella" rend="noquotes">except a policeman in <name type="place">Regent’s Park</name>,</q></l>
-            <l><q who="#bella" rend="endQ">from whom I asked the way to <name type="street">Drury Lane.</name></q></l>
-            <l><q who="#wedder">Of course!</q> he said. <q who="#wedder" rend="beginQ">It would be the police!</q></l>
-            <l><q who="#wedder" rend="NoQuotes">They’re very tall and handsome are they not?</q></l>
-            <l><q who="#wedder" rend="NoQuotes">Guards officers are strong and handsome too.</q></l>
-            <l><q who="#wedder" rend="NoQuotes">They prowl the parks for girls who won’t say no.</q></l>
-            <l><q who="#wedder" rend="NoQuotes">Perhaps your <name rend="emph" rendition="#normal">policeman</name> was in the Guards.</q></l>
-            <l><q who="#wedder" rend="endQ">The uniforms are very similar.</q></l>
-            <l><q who="#bella">Have you gone daft?</q> I asked him. <q who="#bella">What is wrong?</q></l>
-            <l><q who="#wedder" rend="beginQ">I’m not the only man you ever loved</q><pc rend="emdash"> —</pc></l>
-            <l><q who="#wedder" rend="endQ">admit you have had hundreds before me!</q></l>
-            <l><q who="#bella" rend="beginQ">Not hundreds <pc rend="emdash">—</pc> no. I never counted them,</q></l>
-            <l><q who="#bella" rend="endQ">but half a hundred might be about right.</q></l>
-            <l>He gasped, gaped, groaned, writhed, sobbed</l>
+      <l><q who="#bella">No one.</q><q who="#wedder" rend="beginQ"><s xml:id="qs1" next="#qs2">Do you expect me to believe</s></q></l>
+      <l><q who="#wedder" rend="endQ"><s xml:id="qs2" prev="#qs1">you walked all day and never saw a man?</s></q></l>
+      <link type="join" target="#qs1 #qs2"/>
+      <l><q who="#bella" rend="beginQ"><s xml:id="qs3" next="#qs4">No <pc rend="emdash">—</pc> I saw crowds of men but spoke to none,</s></q></l>
+      <l><q who="#bella" rend="noquotes"><s xml:id="qs4" prev="#qs3">except a policeman in <name type="place">Regent’s Park</name>,</s></q></l>
+      <l><q who="#bella" rend="endQ"><s xml:id="qs5" prev="#qs4">from whom I asked the way to <name type="street">Drury Lane.</name></s></q></l>
+      <link type="join" target="#qs3 #qs4 #qs5"/>
+      <l><q who="#wedder"><s xml:id="qs6" next="#qs7">Of course!</s></q> he said. <q who="#wedder" rend="beginQ"><s xml:id="qs7" prev="#qs6">It would be the police!</s></q></l>
+      <l><q who="#wedder" rend="NoQuotes"><s xml:id="qs8" prev="#qs7">They’re very tall and handsome are they not?</s></q></l>
+      <l><q who="#wedder" rend="NoQuotes"><s xml:id="qs9" prev="#qs8">Guards officers are strong and handsome too.</s></q></l>
+      <l><q who="#wedder" rend="NoQuotes"><s xml:id="qs10" prev="#qs9">They prowl the parks for girls who won’t say no.</s></q></l>
+      <l><q who="#wedder" rend="NoQuotes"><s xml:id="qs11" prev="#qs10">Perhaps your <name rend="emph" rendition="#normal">policeman</name> was in the Guards.</s></q></l>
+      <l><q who="#wedder" rend="endQ"><s xml:id="qs12" prev="#qs11">The uniforms are very similar.</s></q></l>
+      <link type="join" target="#qs6 #qs7 #qs8 #qs9 #qs10 #qs11 #qs12"/>
+      <l><q who="#bella"><s xml:id="qs13" next="#qs14">Have you gone daft?</s></q> I asked him. <q who="#bella"><s xml:id="qs14" prev="#qs13">What is wrong?</s></q></l>
+      <link type="join" target="#qs13 #qs14"/>
+      <l><q who="#wedder" rend="beginQ"><s xml:id="qs15" next="#qs16">I’m not the only man you ever loved</s></q><pc rend="emdash"> —</pc></l>
+      <l><q who="#wedder" rend="endQ"><s xml:id="qs16" prev="#qs15">admit you have had hundreds before me!</s></q></l>
+      <link type="join" target="#qs15 #qs16"/>
+      <l><q who="#bella" rend="beginQ"><s xml:id="qs17" next="#qs18">Not hundreds <pc rend="emdash">—</pc> no. I never counted them,</s></q></l>
+      <l><q who="#bella" rend="endQ"><s xml:id="qs18" prev="#qs17">but half a hundred might be about right.</s></q></l>
+      <link type="join" target="#qs17 #qs18"/>
+      <l>He gasped, gaped, groaned, writhed, sobbed</l>
             <l rend="right">and tore his hair</l>
             <l>then asked for details. That is how I learned</l>
-            <l enjamb="y">he did not think that kissing hands is love.</l>
+            <l>he did not think that kissing hands is love.</l>
             <l>Love (<name type="person" ref="#wedder">Wedder</name> thinks) only deserves the name</l>
             <l>when men insert their middle footless leg.</l>
-            <l><q who="#bella" rend="beginQ">If that is so Dear <name type="person" ref="#wedder">Wedder</name>, rest assured</q></l>
-            <l><q who="#bella" rend="endQ">you are the only man I ever loved.</q></l>
-            <l><q who="#wedder">Liar cheat whore!</q> he screamed. <q who="#wedder" rend="beginQ">I am no fool!</q></l>
-            <l><q who="#wedder" rend="endQ">You are no virgin! Who deflowered you first?</q></l>
+      <l><q who="#bella" rend="beginQ"><s xml:id="qs19" next="#qs20">If that is so Dear <name type="person" ref="#wedder">Wedder</name>, rest assured</s></q></l>
+      <l><q who="#bella" rend="endQ"><s xml:id="qs20" prev="#qs19">you are the only man I ever loved.</s></q></l>
+      <link type="join" target="#qs19 #qs20"/>
+      <l><q who="#wedder"><s xml:id="qs21" next="#qs22">Liar cheat whore!</s></q> he screamed. <q who="#wedder" rend="beginQ"><s xml:id="qs22" prev="#qs21">I am no fool!</s></q></l>
+      <l><q who="#wedder" rend="endQ"><s xml:id="qs23" prev="#qs22">You are no virgin! Who deflowered you first?</s></q></l>
+      <link type="join" target="#qs21 #qs22 #qs23"/>
             <l>It took a while to find out what he meant.</l>
             <l>It seems that women who have not been wed</l>
             <l>by wedders like my <name type="person" ref="#wedder">Wedder</name> all possess</l>
@@ -193,21 +205,24 @@
             <l>divides in two the belly Solomon</l>
             <l>has somewhere likened to a heap of wheat.</l>
             <l><q who="#bella">Surely all women’s stomachs have that line.</q></l>
-            <l><q who="#wedder">No no!</q> says <name type="person" ref="#wedder">Wedder</name>. <q who="#wedder" rend="beginQ">Only pregnant ones</q></l>
-            <l><q who="#wedder" rend="endQ">who’ve been cut open to let babies out.</q></l>
+      <l><q who="#wedder"><s xml:id="qs24" next="#qs25">No no!</s></q> says <name type="person" ref="#wedder">Wedder</name>. <q who="#wedder" rend="beginQ"><s xml:id="qs25" prev="#qs24">Only pregnant ones</s></q></l>
+      <l><q who="#wedder" rend="endQ"><s xml:id="qs26" prev="#qs25">who’ve been cut open to let babies out.</s></q></l>
+      <link type="join" target="#qs24 #qs25 #qs26"/>
             <l><q who="#bella">That must have been B.C.B.K.,</q> I said,</l>
             <l><q who="#bella">the time Before they Cracked poor <name type="person" ref="#bella">Bella</name>’s Knob.</q></l>
             <l>I let him feel that crack which rings my skull</l>
             <l>just underneath the hair. He sighed and said,</l>
-            <l><q who="#wedder" rend="beginQ">I told you everything <pc rend="emdash">—</pc> my inmost thoughts,</q></l>
-            <l><q who="#wedder" rend="noQuotes">childhood and darkest deeds. Why did you not</q></l>
-            <l><q who="#wedder" rend="endQ">speak of your past? Or rather, lack of past.</q></l>
-            <l><q who="#bella" rend="beginQ">You never gave me time before tonight</q></l>
-            <l><q who="#bella" rend="noQuotes">to tell you anything, you talked so much.</q></l>
-            <l><q who="#bella" rend="noQuotes">I thought you did not want to know my past,</q></l>
-            <l><q who="#bella" rend="noQuotes">my thoughts and hopes and anything of me</q></l>
-            <l><q who="#bella" rend="endQ">not obviously useful when we wed.</q></l>
-            <l><q who="#wedder" rend="beginQ">You’re right <pc rend="emdash">—</pc> I am a fiend! I ought to die!</q></l>
+      <l><q who="#wedder" rend="beginQ"><s xml:id="qs27" next="#qs28">I told you everything <pc rend="emdash">—</pc> my inmost thoughts,</s></q></l>
+      <l><q who="#wedder" rend="noQuotes"><s xml:id="qs28" prev="#qs27">childhood and darkest deeds. Why did you not</s></q></l>
+      <l><q who="#wedder" rend="endQ"><s xml:id="qs29" prev="#qs28">speak of your past? Or rather, lack of past.</s></q></l>
+      <link type="join" target="#qs27 #qs28 #qs29"/>
+      <l><q who="#bella" rend="beginQ"><s xml:id="qs30" next="#qs31">You never gave me time before tonight</s></q></l>
+      <l><q who="#bella" rend="noQuotes"><s xml:id="qs31" prev="#qs30">to tell you anything, you talked so much.</s></q></l>
+      <l><q who="#bella" rend="noQuotes"><s xml:id="qs32" prev="#qs31">I thought you did not want to know my past,</s></q></l>
+      <l><q who="#bella" rend="noQuotes"><s xml:id="qs33" prev="#qs32">my thoughts and hopes and anything of me</s></q></l>
+      <l><q who="#bella" rend="endQ"><s xml:id="qs34" prev="#qs33">not obviously useful when we wed.</s></q></l>
+      <link type="join" target="#qs30 #qs31 #qs32 #qs33 #qs34"/>
+            <l><q who="#wedder">You’re right <pc rend="emdash">—</pc> I am a fiend! I ought to die!</q></l>
             <l>he yelled, then punched his head, burst into tears,</l>
             <l>pulled off his trousers, wed me very quick.</l>
             <l>I soothed him, babied him (he is a baby)</l>
@@ -220,7 +235,7 @@
             <l>I had a baby once. <name type="person" ref="#god">God</name>, is that true?</l>
             <l>If it is true what has become of her?</l>
             <l>For I am somehow sure she is a girl.</l>
-            <l>This is a thought too b4wkkig for <name type="person" ref="#bella">Bell</name> to think.</l>
+            <l>This is a thought too big for <name type="person" ref="#bella">Bell</name> to think.</l>
             <l>I must grow into it by slow degrees.</l>
             <lb/>
             <l><name type="person" ref="#god">God</name>, do you read the change there is in me?</l>
@@ -247,7 +262,8 @@
             <l>We rushed through racecourses and boxing-clubs,</l>
             <l>cathedrals, café-dansants, music-halls.</l>
             <l>His face was white, his eyes grew huge and shone.</l>
-            <l><q who="#wedder">I am no weakling, <name type="person" ref="#bella">Bell</name>!</q> he cried. <q who="#wedder">On! On!</q></l>
+      <l><q who="#wedder"><s xml:id="qs49" next="#qs50">I am no weakling, <name type="person" ref="#bella">Bell</name>!</s></q> he cried. <q who="#wedder"><s xml:id="qs49" prev="#qs50">On! On!</s></q></l>
+      <link type="join" target="#qs49 #qs50"/>
             <lb/>
             <l>Thank you, dear <name type="person" ref="#god">God</name>, for teaching me to sleep</l>
             <l>by simply sitting down and shutting eyes.</l>
@@ -255,7 +271,7 @@
             <l>this came in handy, but was not enough <pc rend="emdash">—</pc></l>
             <l>I had to find some other way to sleep.</l>
             <l>The second night abroad we went to see</l>
-            <l>an opera by <name type="person" ref="https://en.wikipedia.org/wiki/Richard_Wagner">Wagner</name>. It was long,</l>
+            <l>an opera by <name type="person">Wagner</name>. It was long,</l>
             <l>and <name type="person" ref="#wedder">Wedder</name>, every time I shut my eyes,</l>
             <l>nudged me and hissed, <q who="#wedder">Wake up and concentrate!</q></l>
             <l>This taught me how to sleep with open eyes.</l>
@@ -267,7 +283,7 @@
             <l>offices where I sent you telegrams</l>
             <l>(while <name type="person" ref="#wedder">Wedder</name> telegrammed to his mama)</l>
             <l>in restaurants, because I like my food,</l>
-            <l>but nowhere else except the <name type="place" ref="https://en.wikipedia.org/wiki/Frankfurt_Zoo">Frankfort zoo</name></l>
+            <l>but nowhere else except the <name type="place">Frankfort zoo</name></l>
             <l>and German betting-shop I will describe.</l>
             <lb/>
             <l>I think it was the smell which wakened me.</l>
@@ -277,7 +293,7 @@
             <l>My fancy nose perhaps exaggerated <pc rend="emdash">—</pc></l>
             <l>I opened eyes upon a brilliant room.</l>
             <l>Do you remember taking me to see</l>
-            <l>the <name type="place" ref="https://en.wikipedia.org/wiki/Glasgow_Stock_Exchange">Glasgow Stock Exchange</name> It looked like that.</l>
+            <l>the <name type="place">Glasgow Stock Exchange</name> It looked like that.</l>
             <l>Around me fluted columns, cream and gold,</l>
             <l>held up a vaulted ceiling, blue and white,</l>
             <l>from which hung shining crystal chandeliers</l>
@@ -290,34 +306,35 @@
             <l>and muttering, <q who="#wedder">I see. I see. I see.</q></l>
             <l>I thought that he was talking in his sleep</l>
             <l>with open eyes, as I had done. I said,</l>
-            <l>(gentle but firm) <q who="#bella" rend="beginQ">Let’s go to our hotel,</q></l>
-            <l><q who="#bella" rend="endQ">dear <name type="person" ref="#wedder">Duncan</name>. I will put you into bed.</q></l>
+      <l>(gentle but firm) <q who="#bella" rend="beginQ"><s xml:id="qs35" next="#qs36">Let’s go to our hotel,</s></q></l>
+      <l><q who="#bella" rend="endQ"><s xml:id="qs36" prev="#qs35">dear <name type="person" ref="#wedder">Duncan</name>. I will put you into bed.</s></q></l>
+      <link type="join" target="#qs35 #qs36"/>
             <l>He stared at me, then slowly shook his head.</l>
-            <l><q who="#wedder" rend="beginQ">Not yet. Not yet. I have a thing to do.</q></l>
-            <l><q who="#wedder" rend="noQuotes">I know you inwardly despise my brain <pc rend="emdash">—</pc></q></l>
-            <l><q who="#wedder" rend="noQuotes">think it a mere appendage to my prick</q></l>
-            <l><q who="#wedder" rend="noQuotes">and less efficient than my testicles.</q></l>
-            <l><q who="#wedder" rend="noQuotes">I tell you <name type="person" ref="#bella">Bella</name>, that this brain now grasps</q></l>
-            <l><q who="#wedder" rend="noQuotes">a mighty <hi rend="allcaps">FACT</hi> which other men call <hi rend="allcaps">CHANCE</hi></q></l>
-            <l><q who="#wedder" rend="noQuotes">because they cannot grasp it. Now I see</q></l>
-            <l><q who="#wedder" rend="noQuotes">that <hi rend="allcaps">GOD, FATE, DESTINY,</hi> like <hi rend="allcaps">LUCK</hi> and</q></l>
-            <l rend="right"><q who="#wedder" rend="noQuotes"><hi rend="allcaps">CHANCE</hi></q></l>
-            <l><q who="#wedder" rend="noQuotes">are noises glorifying <hi rend="allcaps">IGNORANCE</hi></q></l>
-            <l><q who="#wedder" rend="noQuotes">under the label of a solemn name.</q></l>
-            <l><q who="#wedder" rend="endQ">Up, woman, and attend me to the game!</q></l>
+      <l><q who="#wedder" rend="beginQ"><s xml:id="qs37" next="#qs38">Not yet. Not yet. I have a thing to do.</s></q></l>
+      <l><q who="#wedder" rend="noQuotes"><s xml:id="qs38" prev="#qs37">I know you inwardly despise my brain <pc rend="emdash">—</pc></s></q></l>
+      <l><q who="#wedder" rend="noQuotes"><s xml:id="qs39" prev="#qs38">think it a mere appendage to my prick</s></q></l>
+      <l><q who="#wedder" rend="noQuotes"><s xml:id="qs40" prev="#qs39">and less efficient than my testicles.</s></q></l>
+      <l><q who="#wedder" rend="noQuotes"><s xml:id="qs41" prev="#qs40">I tell you <name type="person" ref="#bella">Bella</name>, that this brain now grasps</s></q></l>
+      <l><q who="#wedder" rend="noQuotes"><s xml:id="qs42" prev="#qs41">a mighty <hi rend="allcaps">FACT</hi> which other men call <hi rend="allcaps">CHANCE</hi></s></q></l>
+      <l><q who="#wedder" rend="noQuotes"><s xml:id="qs43" prev="#qs42">because they cannot grasp it. Now I see</s></q></l>
+      <l><q who="#wedder" rend="noQuotes"><s xml:id="qs44" prev="#qs43">that <hi rend="allcaps">GOD, FATE, DESTINY,</hi> like <hi rend="allcaps">LUCK</hi> and</s></q></l>
+      <l rend="right"><q who="#wedder" rend="noQuotes"><s xml:id="qs45" prev="#qs44"><hi rend="allcaps">CHANCE</hi></s></q></l>
+      <l><q who="#wedder" rend="noQuotes"><s xml:id="qs46" prev="#qs45">are noises glorifying <hi rend="allcaps">IGNORANCE</hi></s></q></l>
+      <l><q who="#wedder" rend="noQuotes"><s xml:id="qs47" prev="#qs46">under the label of a solemn name.</s></q></l>
+      <l><q who="#wedder" rend="endQ"><s xml:id="qs48" prev="#qs47">Up, woman, and attend me to the game!</s></q></l>
+      <link type="join" target="#qs37 #qs38 #qs39 #qs40 #qs41 #qs42 #qs43 #qs44 #qs45 #qs46 #qs47 #qs48"/>
             <l>The people at the table turned to stare</l>
             <l>as we approached. One offered him a chair.</l>
             <l>He murmured thanks, and into it he slid.</l>
             <l>I stood behind to watch, as he had bid.</l>
             <lb/>
-            <p>Dear <name type="person" ref="#god">God</name> I am tired. It is late. Writing like <name type="person" ref="https://en.wikipedia.org/wiki/William_Shakespeare">Shakespeare</name> is <lb/>hard work for a woman with a cracked head who cannot<lb/>
+            <p>Dear <name type="person" ref="#god">God</name> I am tired. It is late. Writing like <name type="person">Shakespeare</name> is <lb/>hard work for a woman with a cracked head who cannot<lb/>
                spell properly, though I notice my writing is getting smaller.<lb/>
-               Tomorrow we stop at <name type="place" ref="https://en.wikipedia.org/wiki/Athens">Athens</name>. Do you remember taking me<lb/>
-               there ages ago by way of <name type="place" ref="https://en.wikipedia.org/wiki/Zagreb">Zagreb</name> and <name type="place">Sarajevo</name> I hope they<lb/>
-               have mended the <name type="monument" ref="https://en.wikipedia.org/wiki/Parthenon">Parthenon</name>. Now I will creep to <name type="person" ref="#wedder">Wedder</name>’s side and say<lb/>
+               Tomorrow we stop at <name type="place">Athens</name>. Do you remember taking me<lb/>
+               there ages ago by way of <name type="place">Zagreb</name> and <name type="place">Sarajevo</name> I hope they<lb/>
+               have mended the <name type="monument">Parthenon</name>. Now I will creep to <name type="person" ref="#wedder">Wedder</name>’s side and say<lb/>
                what led to his collapse another day, ending this entry with a line of stars.
                </p>
-           
             <lb/>
             <gap rend="asterisks" quantity="14" unit="chars"/>
          </div>
