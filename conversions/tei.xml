@@ -13,7 +13,7 @@
             <author>Gray, Alasdair (1934-2019)</author>
             <respStmt>
                <resp>Encoded by, </resp>
-               <persName>Elena Binotti</persName>
+               <persName>EB</persName>
             </respStmt>
          </titleStmt>
          <editionStmt>
@@ -58,7 +58,18 @@
                   of Bologna.</p>
             </projectDesc>
                <editorialDecl>
-                  <quotation marks="none"></quotation> 
+                  <quotation marks="none">
+                     <p>No quotation marks have been retained. Instead, the <att>rend</att> attribute on the
+                     <gi>q</gi> element is used to specify what kinds of quotation mark was used, according
+                     to the following list: <list type="gloss">
+                        <label>noQuotes</label>
+                        <item>double quotes, open and close</item>
+                        <label>beginQ</label>
+                        <item>double quotes, only open</item>
+                        <label>endQ</label>
+                        <item>double quotes, only close</item>
+                     </list>
+                  </p></quotation> 
                   <normalization><p>Original spelling is retained, except for the dehyphenation of words that were originally cut at the end of a row.</p></normalization>
                      <p>Our editorial intention is solely for encoding purposes, and we have not made
                      any alterations. We selected an excerpt from the 14th chapter of this edition
@@ -143,65 +154,60 @@
             <l><q who="#wedder">Where have you been?</q></l>
             <l rend="right"><q who="#bella">I told.</q></l>
             <l rend="right"><q who="#wedder">Who did you meet?</q></l>
-            <l>
-               <q who="#bella">No one.</q>
-               <q who="#wedder"><seg>Do you expect me to believe</seg></q>
-            </l>
-            <l part="Y"><q who="#wedder"><seg rend="noQuotes">you walked all day and never saw a man?</seg></q></l>
-            
-      <l><q who="#bella" rend="beginQ">No <pc rend="emdash">—</pc> I saw crowds of men but spoke to none,</q></l>
+            <l><q who="#bella">No one.</q><q who="#wedder" rend="beginQ">Do you expect me to believe</q></l>
+            <l><q who="#wedder" rend="endQ">you walked all day and never saw a man?</q></l>
+            <l><q who="#bella" rend="beginQ">No <pc rend="emdash">—</pc> I saw crowds of men but spoke to none,</q></l>
             <l><q who="#bella" rend="noquotes">except a policeman in <name type="place">Regent’s Park</name>,</q></l>
             <l><q who="#bella" rend="endQ">from whom I asked the way to <name type="street">Drury Lane.</name></q></l>
-      <l><q who="#wedder">Of course!</q> he said. <q who="#wedder" rend="beginQ">It would be the police!</q></l>
+            <l><q who="#wedder">Of course!</q> he said. <q who="#wedder" rend="beginQ">It would be the police!</q></l>
             <l><q who="#wedder" rend="NoQuotes">They’re very tall and handsome are they not?</q></l>
             <l><q who="#wedder" rend="NoQuotes">Guards officers are strong and handsome too.</q></l>
             <l><q who="#wedder" rend="NoQuotes">They prowl the parks for girls who won’t say no.</q></l>
             <l><q who="#wedder" rend="NoQuotes">Perhaps your <name rend="emph" rendition="#normal">policeman</name> was in the Guards.</q></l>
-      <l><q who="#wedder" rend="endQ">The uniforms are very similar.</q></l>
-      <l><q who="#bella">Have you gone daft?</q> I asked him. <q who="#bella">What is wrong?</q></l>
-      <l><q who="#wedder" rend="beginQ">I’m not the only man you ever loved</q><pc rend="emdash"> —</pc></l>
-      <l><q who="#wedder" rend="endQ">admit you have had hundreds before me!</q></l>
-      <l><q who="#bella" rend="beginQ">Not hundreds <pc rend="emdash">—</pc> no. I never counted them,</q></l>
-      <l><q who="#bella" rend="endQ">but half a hundred might be about right.</q></l>
+            <l><q who="#wedder" rend="endQ">The uniforms are very similar.</q></l>
+            <l><q who="#bella">Have you gone daft?</q> I asked him. <q who="#bella">What is wrong?</q></l>
+            <l><q who="#wedder" rend="beginQ">I’m not the only man you ever loved</q><pc rend="emdash"> —</pc></l>
+            <l><q who="#wedder" rend="endQ">admit you have had hundreds before me!</q></l>
+            <l><q who="#bella" rend="beginQ">Not hundreds <pc rend="emdash">—</pc> no. I never counted them,</q></l>
+            <l><q who="#bella" rend="endQ">but half a hundred might be about right.</q></l>
             <l>He gasped, gaped, groaned, writhed, sobbed</l>
             <l rend="right">and tore his hair</l>
             <l>then asked for details. That is how I learned</l>
             <l enjamb="y">he did not think that kissing hands is love.</l>
-            <l>Love (<name type="person" ref="#wedder">Wedder</name> thinks) only deserves the
-               name</l>
+            <l>Love (<name type="person" ref="#wedder">Wedder</name> thinks) only deserves the name</l>
             <l>when men insert their middle footless leg.</l>
-      <l><q who="#bella" rend="beginQ">If that is so Dear <name type="person" ref="#wedder">Wedder</name>, rest assured</q></l>
-      <l><q who="#bella" rend="endQ">you are the only man I ever loved.</q></l>
-      <l><q who="#wedder">Liar cheat whore!</q> he screamed. <q who="#wedder" rend="beginQ">I am no fool!</q></l>
-      <l><q who="#wedder" rend="endQ">You are no virgin! Who deflowered you first?</q></l>
+            <l><q who="#bella" rend="beginQ">If that is so Dear <name type="person" ref="#wedder">Wedder</name>, rest assured</q></l>
+            <l><q who="#bella" rend="endQ">you are the only man I ever loved.</q></l>
+            <l><q who="#wedder">Liar cheat whore!</q> he screamed. <q who="#wedder" rend="beginQ">I am no fool!</q></l>
+            <l><q who="#wedder" rend="endQ">You are no virgin! Who deflowered you first?</q></l>
             <l>It took a while to find out what he meant.</l>
             <l>It seems that women who have not been wed</l>
             <l>by wedders like my <name type="person" ref="#wedder">Wedder</name> all possess</l>
             <l>a slip of skin across the loving groove</l>
             <l>where <name type="person" ref="#wedder">Wedderburns</name> poke their peninsula.</l>
             <l>This slip of skin he never found on me.</l>
-      <l><q who="#wedder">And how do you explain the scar?</q> he asked,</l>
+            <l><q who="#wedder">And how do you explain the scar?</q> he asked,</l>
             <l>referring to a thin white line which starts</l>
             <l>among the curls above my loving groove</l>
             <l>and, like the Greenwich line of longitude,</l>
             <l>divides in two the belly Solomon</l>
             <l>has somewhere likened to a heap of wheat.</l>
-      <l><q who="#bella">Surely all women’s stomachs have that line.</q></l>
-      <l><q who="#wedder">No no!</q> says <name type="person" ref="#wedder">Wedder</name>. <q who="#wedder" rend="beginQ">Only pregnant ones</q></l>
-      <l><q who="#wedder" rend="endQ">who’ve been cut open to let babies out.</q></l>
-      <l><q who="#bella">That must have been B.C.B.K.,</q> I said,</l>
-      <l><q who="#bella">the time Before they Cracked poor <name type="person" ref="#bella">Bella</name>’s Knob.</q></l>
+            <l><q who="#bella">Surely all women’s stomachs have that line.</q></l>
+            <l><q who="#wedder">No no!</q> says <name type="person" ref="#wedder">Wedder</name>. <q who="#wedder" rend="beginQ">Only pregnant ones</q></l>
+            <l><q who="#wedder" rend="endQ">who’ve been cut open to let babies out.</q></l>
+            <l><q who="#bella">That must have been B.C.B.K.,</q> I said,</l>
+            <l><q who="#bella">the time Before they Cracked poor <name type="person" ref="#bella">Bella</name>’s Knob.</q></l>
             <l>I let him feel that crack which rings my skull</l>
             <l>just underneath the hair. He sighed and said,</l>
-      <l><q who="#wedder" rend="beginQ">I told you everything <pc rend="emdash">—</pc> my inmost thoughts,</q></l>
-      <l><q who="#wedder" rend="noQuotes">childhood and darkest deeds. Why did you not</q></l>
-      <l><q who="#wedder" rend="endQ">speak of your past? Or rather, lack of past.</q></l>
-      <l><q who="#bella" rend="beginQ">You never gave me time before tonight</q></l>
-      <l><q who="#bella" rend="noQuotes">to tell you anything, you talked so much.</q></l>
-      <l><q who="#bella" rend="noQuotes">I thought you did not want to know my past,</q></l>
-      <l><q who="#bella" rend="noQuotes">my thoughts and hopes and anything of me</q></l>
-      <l><q who="#bella" rend="endQ">not obviously useful when we wed.</q></l>
-      <l><q who="#wedder" rend="beginQ">You’re right <pc rend="emdash">—</pc> I am a fiend! I ought to die!</q></l>
+            <l><q who="#wedder" rend="beginQ">I told you everything <pc rend="emdash">—</pc> my inmost thoughts,</q></l>
+            <l><q who="#wedder" rend="noQuotes">childhood and darkest deeds. Why did you not</q></l>
+            <l><q who="#wedder" rend="endQ">speak of your past? Or rather, lack of past.</q></l>
+            <l><q who="#bella" rend="beginQ">You never gave me time before tonight</q></l>
+            <l><q who="#bella" rend="noQuotes">to tell you anything, you talked so much.</q></l>
+            <l><q who="#bella" rend="noQuotes">I thought you did not want to know my past,</q></l>
+            <l><q who="#bella" rend="noQuotes">my thoughts and hopes and anything of me</q></l>
+            <l><q who="#bella" rend="endQ">not obviously useful when we wed.</q></l>
+            <l><q who="#wedder" rend="beginQ">You’re right <pc rend="emdash">—</pc> I am a fiend! I ought to die!</q></l>
             <l>he yelled, then punched his head, burst into tears,</l>
             <l>pulled off his trousers, wed me very quick.</l>
             <l>I soothed him, babied him (he is a baby)</l>
@@ -241,7 +247,7 @@
             <l>We rushed through racecourses and boxing-clubs,</l>
             <l>cathedrals, café-dansants, music-halls.</l>
             <l>His face was white, his eyes grew huge and shone.</l>
-      <l><q who="#wedder">I am no weakling, <name type="person" ref="#bella">Bell</name>!</q> he cried. <q who="#wedder">On! On!</q></l>
+            <l><q who="#wedder">I am no weakling, <name type="person" ref="#bella">Bell</name>!</q> he cried. <q who="#wedder">On! On!</q></l>
             <lb/>
             <l>Thank you, dear <name type="person" ref="#god">God</name>, for teaching me to sleep</l>
             <l>by simply sitting down and shutting eyes.</l>
@@ -251,12 +257,12 @@
             <l>The second night abroad we went to see</l>
             <l>an opera by <name type="person" ref="https://en.wikipedia.org/wiki/Richard_Wagner">Wagner</name>. It was long,</l>
             <l>and <name type="person" ref="#wedder">Wedder</name>, every time I shut my eyes,</l>
-      <l>nudged me and hissed, <q who="#wedder">Wake up and concentrate!</q></l>
+            <l>nudged me and hissed, <q who="#wedder">Wake up and concentrate!</q></l>
             <l>This taught me how to sleep with open eyes.</l>
             <l>Soon I could also do it standing up</l>
             <l>and rushing arm-in-arm from place to place.</l>
             <l>I think I answered questions in my sleep <pc rend="emdash">—</pc></l>
-      <l>the only answer he required was, <q who="#bella">Yes dear.</q></l>
+            <l>the only answer he required was, <q who="#bella">Yes dear.</q></l>
             <l>I always wakened up in our hotels,</l>
             <l>offices where I sent you telegrams</l>
             <l>(while <name type="person" ref="#wedder">Wedder</name> telegrammed to his mama)</l>
@@ -281,24 +287,24 @@
             <l>where more smart people sat, and one was me.</l>
             <l>And <name type="person" ref="#wedder">Wedderburn</name> was standing by my side,</l>
             <l>and gazing at the table nearest us,</l>
-      <l>and muttering, <q who="#wedder">I see. I see. I see.</q></l>
+            <l>and muttering, <q who="#wedder">I see. I see. I see.</q></l>
             <l>I thought that he was talking in his sleep</l>
             <l>with open eyes, as I had done. I said,</l>
-      <l>(gentle but firm) <q who="#bella" rend="beginQ">Let’s go to our hotel,</q></l>
-      <l><q who="#bella" rend="endQ">dear <name type="person" ref="#wedder">Duncan</name>. I will put you into bed.</q></l>
+            <l>(gentle but firm) <q who="#bella" rend="beginQ">Let’s go to our hotel,</q></l>
+            <l><q who="#bella" rend="endQ">dear <name type="person" ref="#wedder">Duncan</name>. I will put you into bed.</q></l>
             <l>He stared at me, then slowly shook his head.</l>
-      <l><q who="#wedder" rend="beginQ">Not yet. Not yet. I have a thing to do.</q></l>
-      <l><q who="#wedder" rend="noQuotes">I know you inwardly despise my brain <pc rend="emdash">—</pc></q></l>
-      <l><q who="#wedder" rend="noQuotes">think it a mere appendage to my prick</q></l>
-      <l><q who="#wedder" rend="noQuotes">and less efficient than my testicles.</q></l>
-      <l><q who="#wedder" rend="noQuotes">I tell you <name type="person" ref="#bella">Bella</name>, that this brain now grasps</q></l>
-      <l><q who="#wedder" rend="noQuotes">a mighty <hi rend="allcaps">FACT</hi> which other men call <hi rend="allcaps">CHANCE</hi></q></l>
-      <l><q who="#wedder" rend="noQuotes">because they cannot grasp it. Now I see</q></l>
-      <l><q who="#wedder" rend="noQuotes">that <hi rend="allcaps">GOD, FATE, DESTINY,</hi> like <hi rend="allcaps">LUCK</hi> and</q></l>
-      <l rend="right"><q who="#wedder" rend="noQuotes"><hi rend="allcaps">CHANCE</hi></q></l>
-      <l><q who="#wedder" rend="noQuotes">are noises glorifying <hi rend="allcaps">IGNORANCE</hi></q></l>
-      <l><q who="#wedder" rend="noQuotes">under the label of a solemn name.</q></l>
-      <l><q who="#wedder" rend="endQ">Up, woman, and attend me to the game!</q></l>
+            <l><q who="#wedder" rend="beginQ">Not yet. Not yet. I have a thing to do.</q></l>
+            <l><q who="#wedder" rend="noQuotes">I know you inwardly despise my brain <pc rend="emdash">—</pc></q></l>
+            <l><q who="#wedder" rend="noQuotes">think it a mere appendage to my prick</q></l>
+            <l><q who="#wedder" rend="noQuotes">and less efficient than my testicles.</q></l>
+            <l><q who="#wedder" rend="noQuotes">I tell you <name type="person" ref="#bella">Bella</name>, that this brain now grasps</q></l>
+            <l><q who="#wedder" rend="noQuotes">a mighty <hi rend="allcaps">FACT</hi> which other men call <hi rend="allcaps">CHANCE</hi></q></l>
+            <l><q who="#wedder" rend="noQuotes">because they cannot grasp it. Now I see</q></l>
+            <l><q who="#wedder" rend="noQuotes">that <hi rend="allcaps">GOD, FATE, DESTINY,</hi> like <hi rend="allcaps">LUCK</hi> and</q></l>
+            <l rend="right"><q who="#wedder" rend="noQuotes"><hi rend="allcaps">CHANCE</hi></q></l>
+            <l><q who="#wedder" rend="noQuotes">are noises glorifying <hi rend="allcaps">IGNORANCE</hi></q></l>
+            <l><q who="#wedder" rend="noQuotes">under the label of a solemn name.</q></l>
+            <l><q who="#wedder" rend="endQ">Up, woman, and attend me to the game!</q></l>
             <l>The people at the table turned to stare</l>
             <l>as we approached. One offered him a chair.</l>
             <l>He murmured thanks, and into it he slid.</l>
