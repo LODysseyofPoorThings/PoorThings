@@ -1,14 +1,14 @@
-Subject,Predicate,Object 
+Subject,Predicate,Object
 Movie,rdf:type,schema:Movie
-Movie,owl:sameAs,https://www.imdb.com/title/tt0017136/?ref_=vp_close 
+Movie,owl:sameAs,https://www.imdb.com/title/tt0017136/?ref_=vp_close
 Movie,crm:P102_has_title,Metropolis
 Movie,dcterms:creator,Fritz Lang
 Movie,dcterms:creator,Thea Van Harbou
 Movie,schema:genre,Sci-fi
 Movie,schema:inLanguage,German
 Movie,dcterms:issued,1927
-Movie,dcterms:extent,2 hours 33 minutes 
-Movie,crm:P2_has_type,black and white 
+Movie,dcterms:extent,02:33:00
+Movie,crm:P2_has_type,black and white
 Fritz Lang,rdf:type,crm:E21_Person
 Fritz Lang,owl:sameAs,https://dbpedia.org/page/Fritz_Lang
 Fritz Lang,schema:hasOccupation,film director
