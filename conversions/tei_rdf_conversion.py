@@ -55,44 +55,79 @@ g.add((title_uri, RDFS.label, Literal(title)))
 g.add((publisher_uri, RDF.type, DBO.publisher))
 g.add((publisher_uri, SCHEMA.address, Literal(address)))
 
+#character dictionary
+character_dict = dict()
+
 #characters extraction
 for character in tree.findall(".//tei:profileDesc/tei:particDesc/tei:listPerson/tei:person", ns):
+
+    #create charecter uri and add them to graph
     name = character.find("tei:persName", ns).text.rstrip()
     id = character.get("{http://www.w3.org/XML/1998/namespace}id")
     character_uri = URIRef(pt + "character/" + name.replace(" ", "_"))
+    character_dict[id] = character_uri
     g.add((character_uri, RDF.type, FOAF.Person))
     g.add((character_uri, RDFS.label, Literal(name)))
-
+    
+    #find if character has occupation and add it to graph
     if character.find("tei:occupation", ns) is not None:
         occupation = character.find("tei:occupation", ns).text
-        g.add((character_uri, SCHEMA.hasOccupation, Literal(occupation)))
+        g.add((character_uri, SCHEMA.hasOccupation, Literal(occupation)))        
 
-    for line in tree.findall(".//tei:text/tei:body/tei:div/tei:l", ns):
-        text = ''.join(line.itertext())
-        mention = line.find("tei:name[@type='person']", ns)
-        if mention is not None:
-            ref = mention.get("ref").strip('#')
-            if ref == id:
-                g.add((character_uri, DCTERMS.isReferencedBy, Literal(text)))
-'''
-    for q in tree.findall(".//tei:text/tei:body/tei:div/tei:l/tei:q", ns):
-        quotation = q.text
-        quotation_uri = URIRef(pt + "quotation/" + quotation.replace(" ", "_"))
-        speaker = q.get("who").strip('#')
-        if speaker is not None and speaker == id:
-            g.add((quotation_uri, RDF.type, SCHEMA.Quotation))  
-            g.add((quotation_uri, SCHEMA.spokenByCharacter, character_uri))              
-        
-#places extraction       
-for line in tree.findall(".//tei:text/tei:body/tei:div/tei:l", ns):
-    text = ''.join(line.itertext())
+#lines dictionary
+lines_dict = dict()
+
+#counter
+counter = 1
+
+#find lines
+for line in tree.findall(".//tei:text/tei:body/tei:div/tei:div/tei:l", ns):
+
+    #create id and uri for every line
+    line_id = counter
+    line_uri = URIRef(pt + "line/" + str(line_id))
+    #add id and uri to dict
+    lines_dict[line_id] = line_uri 
+    counter += 1
+
+    #find text of line
+    text = ''.join(line.itertext()) 
+
+    #find if characters are mentioned
+    mention = line.find("tei:name[@type='person']", ns)
+    if mention is not None:
+        ref = mention.get("ref").strip('#')
+        if ref in character_dict:
+            character_uri = character_dict[ref]
+            g.add((line_uri, RDF.type, SCHEMA.Text))
+            g.add((line_uri, RDFS.label, Literal(text))) 
+            g.add((line_uri, DCTERMS.references, character_uri))
+            g.add((character_uri, DCTERMS.isReferencedBy, line_uri))
+
+    #find if places are mentioned
     place = line.find("tei:name[@type='place']", ns)
     if place is not None:
         place_uri = URIRef(pt + "place/" + place.text.replace(" ", "_"))
         g.add((place_uri, RDF.type, SCHEMA.place))
         g.add((place_uri, RDFS.label, Literal(place.text)))
-        g.add((place_uri, DCTERMS.isReferencedBy, Literal(text)))
-'''
-                
+        g.add((place_uri, DCTERMS.isReferencedBy, line_uri))
+        g.add((line_uri, RDF.type, SCHEMA.Text))
+        g.add((line_uri, RDFS.label, Literal(text)))
+        g.add((line_uri, DCTERMS.references, place_uri))        
+
+#find quotations
+for q in tree.findall(".//tei:text/tei:body/tei:div/tei:div/tei:l/tei:q", ns): 
+    quotation = ''.join(q.itertext())
+    quotation_uri = URIRef(pt + "quotation/" + quotation.replace(" ", "_"))
+    speaker = q.get("who").strip('#')
+    speaker_uri = character_dict[speaker]
+    g.add((quotation_uri, RDF.type, SCHEMA.Quotation))  
+    g.add((quotation_uri, SCHEMA.spokenByCharacter, speaker_uri))              
+
 #serialize the graph to Turtle format
-g.serialize("output_xml_rdf.ttl", format="turtle", encoding="utf-8")
+turtle_str = g.serialize(format="turtle", base=pt, encoding="utf-8")
+
+#write the Turtle string to a file
+with open("output_tei_rdf.ttl", "wb") as f:
+    f.write(turtle_str)
+

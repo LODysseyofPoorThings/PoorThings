@@ -1,0 +1,379 @@
+@base <https://w3id.org/PoorThings.org/> .
+@prefix dbo: <https://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+
+<Poor_Things> a dcterms:BibliographicResource ;
+    rdfs:label "Poor Things" ;
+    dc:creator <Gray,_Alasdair_(1934-2019)> ;
+    dc:format "Electronic edition" ;
+    dc:identifier "978 1 4088 5632 1" ;
+    dc:rights "All rights reserved to Bloosmsbury Publishing Plc" ;
+    dcterms:extent "13,8 Mb" ;
+    dcterms:issued "2014-09-05" ;
+    dcterms:publisher <Bloomsbury_Publishing_Plc> .
+
+<quotation/And_how_do_you_explain_the_scar?> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/CHANCE> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/Do_you_expect_me_to_believe> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/Guards_officers_are_strong_and_handsome_too.> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/Have_you_gone_daft?> a schema:Quotation ;
+    schema:spokenByCharacter <character/Bella_Baxter> .
+
+<quotation/I_am_no_fool!> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/I_am_no_weakling,_Bell!> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/I_know_you_inwardly_despise_my_brain_—> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/I_see._I_see._I_see.> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/I_tell_you_Bella,_that_this_brain_now_grasps> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/I_thought_you_did_not_want_to_know_my_past,> a schema:Quotation ;
+    schema:spokenByCharacter <character/Bella_Baxter> .
+
+<quotation/I_told.> a schema:Quotation ;
+    schema:spokenByCharacter <character/Bella_Baxter> .
+
+<quotation/I_told_you_everything_—_my_inmost_thoughts,> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/If_that_is_so_Dear_Wedder,_rest_assured> a schema:Quotation ;
+    schema:spokenByCharacter <character/Bella_Baxter> .
+
+<quotation/It_would_be_the_police!> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/I’m_not_the_only_man_you_ever_loved> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/Let’s_go_to_our_hotel,> a schema:Quotation ;
+    schema:spokenByCharacter <character/Bella_Baxter> .
+
+<quotation/Liar_cheat_whore!> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/No_no!> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/No_one.> a schema:Quotation ;
+    schema:spokenByCharacter <character/Bella_Baxter> .
+
+<quotation/No_—_I_saw_crowds_of_men_but_spoke_to_none,> a schema:Quotation ;
+    schema:spokenByCharacter <character/Bella_Baxter> .
+
+<quotation/Not_hundreds_—_no._I_never_counted_them,> a schema:Quotation ;
+    schema:spokenByCharacter <character/Bella_Baxter> .
+
+<quotation/Not_yet._Not_yet._I_have_a_thing_to_do.> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/Of_course!> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/On!_On!> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/Only_pregnant_ones> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/Perhaps_your_policeman_was_in_the_Guards.> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/Surely_all_women’s_stomachs_have_that_line.> a schema:Quotation ;
+    schema:spokenByCharacter <character/Bella_Baxter> .
+
+<quotation/That_must_have_been_B.C.B.K.,> a schema:Quotation ;
+    schema:spokenByCharacter <character/Bella_Baxter> .
+
+<quotation/The_uniforms_are_very_similar.> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/They_prowl_the_parks_for_girls_who_won’t_say_no.> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/They’re_very_tall_and_handsome_are_they_not?> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/Up,_woman,_and_attend_me_to_the_game!> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/Wake_up_and_concentrate!> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/What_is_wrong?> a schema:Quotation ;
+    schema:spokenByCharacter <character/Bella_Baxter> .
+
+<quotation/Where_have_you_been?> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/Who_did_you_meet?> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/Yes_dear.> a schema:Quotation ;
+    schema:spokenByCharacter <character/Bella_Baxter> .
+
+<quotation/You_are_no_virgin!_Who_deflowered_you_first?> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/You_never_gave_me_time_before_tonight> a schema:Quotation ;
+    schema:spokenByCharacter <character/Bella_Baxter> .
+
+<quotation/You’re_right_—_I_am_a_fiend!_I_ought_to_die!> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/a_mighty_FACT_which_other_men_call_CHANCE> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/admit_you_have_had_hundreds_before_me!> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/and_less_efficient_than_my_testicles.> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/are_noises_glorifying_IGNORANCE> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/because_they_cannot_grasp_it._Now_I_see> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/but_half_a_hundred_might_be_about_right.> a schema:Quotation ;
+    schema:spokenByCharacter <character/Bella_Baxter> .
+
+<quotation/childhood_and_darkest_deeds._Why_did_you_not> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/dear_Duncan._I_will_put_you_into_bed.> a schema:Quotation ;
+    schema:spokenByCharacter <character/Bella_Baxter> .
+
+<quotation/except_a_policeman_in_Regent’s_Park,> a schema:Quotation ;
+    schema:spokenByCharacter <character/Bella_Baxter> .
+
+<quotation/from_whom_I_asked_the_way_to_Drury_Lane.> a schema:Quotation ;
+    schema:spokenByCharacter <character/Bella_Baxter> .
+
+<quotation/my_thoughts_and_hopes_and_anything_of_me> a schema:Quotation ;
+    schema:spokenByCharacter <character/Bella_Baxter> .
+
+<quotation/not_obviously_useful_when_we_wed.> a schema:Quotation ;
+    schema:spokenByCharacter <character/Bella_Baxter> .
+
+<quotation/speak_of_your_past?_Or_rather,_lack_of_past.> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/that_GOD,_FATE,_DESTINY,_like_LUCK_and> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/the_time_Before_they_Cracked_poor_Bella’s_Knob.> a schema:Quotation ;
+    schema:spokenByCharacter <character/Bella_Baxter> .
+
+<quotation/think_it_a_mere_appendage_to_my_prick> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/to_tell_you_anything,_you_talked_so_much.> a schema:Quotation ;
+    schema:spokenByCharacter <character/Bella_Baxter> .
+
+<quotation/under_the_label_of_a_solemn_name.> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/who’ve_been_cut_open_to_let_babies_out.> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<quotation/you_are_the_only_man_I_ever_loved.> a schema:Quotation ;
+    schema:spokenByCharacter <character/Bella_Baxter> .
+
+<quotation/you_walked_all_day_and_never_saw_a_man?> a schema:Quotation ;
+    schema:spokenByCharacter <character/Duncan_Wedderburn> .
+
+<Bloomsbury_Publishing_Plc> a dbo:publisher ;
+    schema:address "50 Bedford Square, London WC1B 3DP" .
+
+<Gray,_Alasdair_(1934-2019)> a foaf:Person .
+
+<line/101> a schema:Text ;
+    rdfs:label "when we reached Switzerland. I’ll tell you how." ;
+    dcterms:references <place/Switzerland> .
+
+<line/102> a schema:Text ;
+    rdfs:label "The jealousy which he had shown in London" ;
+    dcterms:references <place/London> .
+
+<line/103> a schema:Text ;
+    rdfs:label "did not depart when we reached Amsterdam." ;
+    dcterms:references <place/Amsterdam> .
+
+<line/115> a schema:Text ;
+    rdfs:label "Thank you, dear God, for teaching me to sleep" ;
+    dcterms:references <character/Dr._Godwin_Baxter> .
+
+<line/12> a schema:Text ;
+    rdfs:label "went wedding all the way to London town" ;
+    dcterms:references <place/London> .
+
+<line/122> a schema:Text ;
+    rdfs:label "and Wedder, every time I shut my eyes," ;
+    dcterms:references <character/Duncan_Wedderburn> .
+
+<line/131> a schema:Text ;
+    rdfs:label "(while Wedder telegrammed to his mama)" ;
+    dcterms:references <character/Duncan_Wedderburn> .
+
+<line/133> a schema:Text ;
+    rdfs:label "but nowhere else except the Frankfort zoo" ;
+    dcterms:references <place/Frankfort_zoo> .
+
+<line/14> a schema:Text ;
+    rdfs:label "And yet poor Duncan wanted marriage too!" ;
+    dcterms:references <character/Duncan_Wedderburn> .
+
+<line/142> a schema:Text ;
+    rdfs:label "the Glasgow Stock Exchange It looked like that." ;
+    dcterms:references <place/Glasgow_Stock_Exchange> .
+
+<line/15> a schema:Text ;
+    rdfs:label "He did not get it. Please tell Candle so." ;
+    dcterms:references <character/Archibald_McCandless> .
+
+<line/150> a schema:Text ;
+    rdfs:label "And Wedderburn was standing by my side," ;
+    dcterms:references <character/Duncan_Wedderburn> .
+
+<line/16> a schema:Text ;
+    rdfs:label "You never wedded,  God, so may not know" ;
+    dcterms:references <character/Dr._Godwin_Baxter> .
+
+<line/20> a schema:Text ;
+    rdfs:label "then waked my Wedder with a good high tea." ;
+    dcterms:references <character/Duncan_Wedderburn> .
+
+<line/4> a schema:Text ;
+    rdfs:label "Wedder is snug in bunk and glad at last" ;
+    dcterms:references <character/Duncan_Wedderburn> .
+
+<line/44> a schema:Text ;
+    rdfs:label "Love (Wedder thinks) only deserves the name" ;
+    dcterms:references <character/Duncan_Wedderburn> .
+
+<line/52> a schema:Text ;
+    rdfs:label "by wedders like my Wedder all possess" ;
+    dcterms:references <character/Duncan_Wedderburn> .
+
+<line/54> a schema:Text ;
+    rdfs:label "where Wedderburns poke their peninsula." ;
+    dcterms:references <character/Duncan_Wedderburn> .
+
+<line/63> a schema:Text ;
+    rdfs:label "No no! says Wedder. Only pregnant ones" ;
+    dcterms:references <character/Duncan_Wedderburn> .
+
+<line/8> a schema:Text ;
+    rdfs:label "when I bade you good-bye, chloroformed Candle," ;
+    dcterms:references <character/Archibald_McCandless> .
+
+<line/82> a schema:Text ;
+    rdfs:label "Yes, wed he can and does, but little Candle," ;
+    dcterms:references <character/Archibald_McCandless> .
+
+<line/84> a schema:Text ;
+    rdfs:label "Women need Wedderburns but love much more" ;
+    dcterms:references <character/Duncan_Wedderburn> .
+
+<line/86> a schema:Text ;
+    rdfs:label "I had a baby once. God, is that true?" ;
+    dcterms:references <character/Dr._Godwin_Baxter> .
+
+<line/89> a schema:Text ;
+    rdfs:label "This is a thought too b4wkkig for Bell to think." ;
+    dcterms:references <character/Bella_Baxter> .
+
+<line/9> a schema:Text ;
+    rdfs:label "then skipped down ladder into Wedder’s arms." ;
+    dcterms:references <character/Duncan_Wedderburn> .
+
+<line/91> a schema:Text ;
+    rdfs:label "God, do you read the change there is in me?" ;
+    dcterms:references <character/Dr._Godwin_Baxter> .
+
+<line/93> a schema:Text ;
+    rdfs:label "I felt for Candle though he is not here" ;
+    dcterms:references <character/Archibald_McCandless> .
+
+<line/97> a schema:Text ;
+    rdfs:label "Strange how the baby-minded Wedderburn" ;
+    dcterms:references <character/Duncan_Wedderburn> .
+
+<place/Amsterdam> a schema:place ;
+    rdfs:label "Amsterdam" ;
+    dcterms:isReferencedBy <line/103> .
+
+<place/Frankfort_zoo> a schema:place ;
+    rdfs:label "Frankfort zoo" ;
+    dcterms:isReferencedBy <line/133> .
+
+<place/Glasgow_Stock_Exchange> a schema:place ;
+    rdfs:label "Glasgow Stock Exchange" ;
+    dcterms:isReferencedBy <line/142> .
+
+<place/Switzerland> a schema:place ;
+    rdfs:label "Switzerland" ;
+    dcterms:isReferencedBy <line/101> .
+
+<place/London> a schema:place ;
+    rdfs:label "London" ;
+    dcterms:isReferencedBy <line/102>,
+        <line/12> .
+
+<character/Archibald_McCandless> a foaf:Person ;
+    rdfs:label "Archibald McCandless" ;
+    dcterms:isReferencedBy <line/15>,
+        <line/8>,
+        <line/82>,
+        <line/93> ;
+    schema:hasOccupation "god's assistant" .
+
+<character/Dr._Godwin_Baxter> a foaf:Person ;
+    rdfs:label "Dr. Godwin Baxter" ;
+    dcterms:isReferencedBy <line/115>,
+        <line/16>,
+        <line/86>,
+        <line/91> ;
+    schema:hasOccupation "doctor" .
+
+<character/Bella_Baxter> a foaf:Person ;
+    rdfs:label "Bella Baxter" ;
+    dcterms:isReferencedBy <line/89> .
+
+<character/Duncan_Wedderburn> a foaf:Person ;
+    rdfs:label "Duncan Wedderburn" ;
+    dcterms:isReferencedBy <line/122>,
+        <line/131>,
+        <line/14>,
+        <line/150>,
+        <line/20>,
+        <line/4>,
+        <line/44>,
+        <line/52>,
+        <line/54>,
+        <line/63>,
+        <line/84>,
+        <line/9>,
+        <line/97> ;
+    schema:hasOccupation "lawyer" .
+
