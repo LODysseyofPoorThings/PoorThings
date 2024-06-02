@@ -262,7 +262,7 @@
             <l>We rushed through racecourses and boxing-clubs,</l>
             <l>cathedrals, café-dansants, music-halls.</l>
             <l>His face was white, his eyes grew huge and shone.</l>
-      <l><q who="#wedder"><s xml:id="qs49" next="#qs50">I am no weakling, <name type="person" ref="#bella">Bell</name>!</s></q> he cried. <q who="#wedder"><s xml:id="qs49" prev="#qs50">On! On!</s></q></l>
+      <l><q who="#wedder"><s xml:id="qs49" next="#qs50">I am no weakling, <name type="person" ref="#bella">Bell</name>!</s></q> he cried. <q who="#wedder"><s xml:id="qs50" prev="#qs49">On! On!</s></q></l>
       <link type="join" target="#qs49 #qs50"/>
             <lb/>
             <l>Thank you, dear <name type="person" ref="#god">God</name>, for teaching me to sleep</l>
