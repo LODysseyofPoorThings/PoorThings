@@ -46,7 +46,7 @@ function myFunction(inp) {
     document.getElementById("4").style.display = "none";
   }
 
-  if (inp == 'where')
+  if (inp == 'when')
   {
     document.getElementById("1").style.display = "none";
     document.getElementById("2").style.display = "none";
@@ -54,7 +54,7 @@ function myFunction(inp) {
     document.getElementById("4").style.display = "none";
   }
 
-  if (inp == 'when')
+  if (inp == 'where')
   {
     document.getElementById("1").style.display = "none";
     document.getElementById("2").style.display = "none";
