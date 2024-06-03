@@ -155,7 +155,7 @@
                <l><q who="#wedder" rend="endQ"><s xml:id="qs2" prev="#qs1">you walked all day and never saw a man?</s></q></l>
                <link type="join" target="#qs1 #qs2"/>
                <l><q who="#bella" rend="beginQ"><s xml:id="qs3" next="#qs4">No <pc rend="emdash">—</pc> I saw crowds of men but spoke to none,</s></q></l>
-               <l><q who="#bella" rend="noquotes"><s xml:id="qs4" prev="#qs3">except a policeman in <name type="place">Regent’s Park</name>,</s></q></l>
+               <l><q who="#bella" rend="noQuotes"><s xml:id="qs4" prev="#qs3">except a policeman in <name type="place">Regent’s Park</name>,</s></q></l>
                <l><q who="#bella" rend="endQ"><s xml:id="qs5" prev="#qs4">from whom I asked the way to <name type="street">Drury Lane.</name></s></q></l>
                <link type="join" target="#qs3 #qs4 #qs5"/>
                <l><q who="#wedder"><s xml:id="qs6" next="#qs7">Of course!</s></q> he said. <q who="#wedder" rend="beginQ"><s xml:id="qs7" prev="#qs6">It would be the police!</s></q></l>

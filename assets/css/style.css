@@ -319,7 +319,7 @@ p {
   font-size: 70px;
   font-weight: 700;
   line-height: 85px;
-  color: #3c4b59;
+  color: #233d55;
 }
 
 #hero h1 {
@@ -334,12 +334,12 @@ p {
 }
 
 #hero h3 {
-  color: #3c4b59;
+  color: #2c4256;
   margin-bottom: 10px;
   font-size: 30px;
   font-weight: 300;
   font-family: "Playfair Display", serif; /* Usa lo stesso font della .section-title */
-  letter-spacing: 1.4px; /* Aggiungi questa riga per distanziare le lettere */
+  letter-spacing: 1.5px; /* Aggiungi questa riga per distanziare le lettere */
 
 }
 
@@ -630,6 +630,7 @@ th.metadata-standard, td.metadata-standard {
 .img-fluid {
   max-width: 100%;
   height: auto;
+  margin-top: -40px;
 }
 
 @media (min-width: 768px) {
@@ -650,3 +651,5 @@ th.metadata-standard, td.metadata-standard {
   font-size: 1.3em;
   margin-top: 5px;
 }
+
+
