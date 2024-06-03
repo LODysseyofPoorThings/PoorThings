@@ -90,7 +90,7 @@
             <ul>
               <li><a href="#itemsdescription">Items Description</a></li>
               <li><a href="#uriproduction">URI Production</a></li>
-              <li><a href="#rdfproduction">RDF Production</a></li>
+              <li><a href="#rdfserialization">RDF Serialization</a></li>
               <li><a href="#rdfvisualization">RDF Visualization</a></li>
             </ul>
           </li>          
@@ -112,7 +112,7 @@
             
             <div class="row align-items-center mb-4">
               <p class="center">
-                “Besides, a life without freedom to choose is not worth having./I am finding being alive fascinating”</br>Bella Baxter
+                ****“Besides, a life without freedom to choose is not worth having./I am finding being alive fascinating”</br>Bella Baxter
               </p>
 
                   <div class="col-md-6">
@@ -171,7 +171,7 @@
           <div class="col-12 text-center">
             <h2 class="chapter-title">The Items</h2>
             <p class="section-text">
-              At the start of our project, we aimed to choose ten different things related to our main idea. We wanted these items to fit well together and tell a story about "Poor Things". We thought about how each thing connects to other people, places, times, and ideas. We carefully picked each item to make sure it was interesting and diverse.
+              At the beginning of our project, we set out to select ten distinct elements related to our main concept, with the goal of ensuring these items fit cohesively and conveyed a narrative about "Poor Things." We carefully considered how each element connected to various people, places, times, and ideas, meticulously choosing each item to ensure it was both interesting and diverse.
             </p><p class="section-text">Below, you'll find short descriptions and links to learn more about each item.
             </p>
             
@@ -301,9 +301,8 @@
             <h2 class="custom-title">TEXT CONVERSIONS</h2>
 
             <p class="section-text">
-              In this phase, our team utilizes advanced computational tools to thoroughly analyze the digital edition of "Poor Things" by Alasdair Gray.
-              Digitized and accessible through modern technology, this text allows us to delve deeply into its complexities.
-            </p><p class="section-text">By employing XML/TEI encoding, XSLT conversion techniques, RDF/XML representation, and Python scripting, we aim to uncover the intricate layers of meaning embedded in Gray's work.</p>
+              In this phase, our team utilized advanced computational tools to thoroughly analyze the digital edition of "Poor Things" by Alasdair Gray. 
+            </p><p class="section-text">By employing XML/TEI encoding, XSLT conversion techniques, RDF/XML representation, and Python scripting, we aimed to uncover the intricate layers of meaning embedded in Gray's work.</p>
             </p>
         </div>
 
@@ -315,10 +314,8 @@
           <div class="col-12 text-center">
          <h2 class="chapter-title">XML/TEI Conversion</h2>
             <p class="section-text">
-            We have encoded an XML/TEI document to meticulously represent the textual structure of the initial six pages of Chapter 14 from "Poor Things."
-This document captures a pivotal moment in "Poor Things," presenting a letter authored by the protagonist, Bella Baxter, addressed to her presumed creator and father, Goldwyn Baxter.
-Within its contents, we encounter both structured dialogues, presented in verse format, and flowing free text. This letter not only serves as a narrative device but also sheds light on key relationships and themes within the story.</br>
-By meticulously encoding it according to the TEI (Text Encoding Initiative) guidelines, we ensure the fidelity of the original text's richness and complexity.</p>
+              We have encoded an XML/TEI document to meticulously represent the textual structure of the initial six pages of Chapter 14 from "Poor Things." This document captured a pivotal moment in "Poor Things," presenting a letter authored by the protagonist, Bella Baxter, addressed to her presumed creator and father, Goldwyn Baxter. Within its contents, we encountered both structured dialogues, presented in verse format, and flowing free text. This letter not only served as a narrative device but also shed light on key relationships and themes within the story.</br>
+By meticulously encoding it according to the TEI (Text Encoding Initiative) guidelines, we ensured the fidelity of the original text's richness and complexity.</p>
 <p class="section-text"> The XML/TEI document of Poor Things text's sample is available at this <a href="conversions/tei.xml" target="_blank">link</a>.</p>
           </div>
         </div>
@@ -414,7 +411,7 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
           <div class="col-12 text-center">
             <h2 class="chapter-title">E/R Model</h2>
             <p class="section-text">
-              In this second model, we aim to present the data and relationships from the conceptual map in a more abstract manner. Here, individuals, dates, subjects, places, and other elements are represented as entities, while the connections between them are depicted as relationships.
+              In this second model, the data and relationships from the conceptual map are represented in a more abstract manner. Here, individuals, dates, subjects, places, and other elements are represented as entities, while the connections between them are depicted as relationships.
             </p>
             <div class="col-12 center-image">
               <div class="d-flex justify-content-center mb-4">
@@ -438,7 +435,7 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
           <div class="col-12 text-center">
             <h2 class="chapter-title">Metadata Analysis</h2>
             <p class="section-text">
-              *****To ensure interoperability, our team meticulously identified the metadata standards used by the providers of our selected items. We marked all explicitly stated standards with *, while in cases lacking clear declarations, we applied either the prevailing standard within the relevant institution type or a suitable generic metadata standard.            </p>
+              ***To ensure everything works together smoothly, the team figured out which standards the providers of our chosen items use to describe their metadata. In the table below, standards mentioned by the institutions themselves are marked with an asterisk (*). If there wasn't a clear mention, the team went with either the most commonly used standard for that type of institution or a general standard that fit the object well. </p>
         </div>
       </div>
       <div class="table-container">
@@ -528,6 +525,7 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
               <h2 class="chapter-title">Metadata Alignment</h2>
               <p class="section-text">
                 After identifying the related institutions and their standards, this final step allows for the complete description and connection of items. The main goal of this project has been to use shared semantic ontologies to ensure consistent data delivery.
+                We have categorized all the properties into four groups: WHO, WHERE, WHEN, and WHAT. If there are any missing details in the tables, we've labeled them as "N/A".
               </p>
               <ul class="section-list">
              <li><b>Dublin Core</b>: we chose the Dublin Core Metadata Initiative (DCMI) Terms, often referred to as dcterms, because they provide a widely recognized and standardized vocabulary for describing a broad range of resources. This ensures consistent data delivery and enhances interoperability across different systems, making it easier for our project to integrate with other platforms.</li>
@@ -828,8 +826,9 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
           <div class="col-12 text-center">
             <h2 class="chapter-title">Theoretical Model</h2>
             <p class="section-text">
-              The theoretical model introduces a higher level of interpretation, enriched with web-based information. Its purpose is to address the following questions:
-            </p>
+              The theoretical model offers an extensive examination, articulated in plain language, detailing all properties associated with each item and the interconnections among domain entities. Furthermore, additional entities were introduced during this phase to augment the data with interpretative dimensions.
+            </p><p class="section-text"> Its purpose is to address these questions for every object:
+              </p>
             
             <ul class="section-list">
               <li><strong><span style="color: #BB69C9;">WHO?</span></strong> Identifying individuals related to the main topic and their respective roles.</li>
@@ -837,6 +836,7 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
               <li><strong><span style="color: #EB8BBB;">WHERE?</span></strong> Pinpointing locations and significant places.</li>
               <li><strong><span style="color: #8FDF9A;">WHEN?</span></strong> Highlighting relevant dates and events.</li>
             </ul>
+
             <div class="d-flex justify-content-center mb-4">
               <a role="button" class="btn btn-outline-dark mx-2 button_image" href="assets/img/xmind/theoreticalmodel.png" target="_blank">Open Image</a> 
             </div>
@@ -880,23 +880,7 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
             <p class="section-text text-justify">
               At last, we arrive at the utmost level of abstraction through this formal representation. This model is ontological in nature as it depicts entities and relationships based on the final adopted standards and classes of the corresponding institutions. The properties utilized are sourced from existing schemas, ontologies, and vocabularies, ensuring alignment with established conventions and terminologies.
             </p>
-            <p class="section-text"> 
-              These are the prefixes that we used:</p>
-              
-              <p class="section-text"> 
-              rdf: <a href="https://www.w3.org/RDF/">https://www.w3.org/RDF/</a><br>
-              dc/terms: <a href="https://www.dublincore.org/">https://www.dublincore.org/</a><br>
-              schema: <a href="https://schema.org/">https://schema.org/</a><br>
-              crm: <a href="https://www.cidoc-crm.org/html/cidoc_crm_v7.1.3.html">https://www.cidoc-crm.org/html/cidoc_crm_v7.1.3.html</a><br>
-              cdwa: <a href="https://www.getty.edu/research/publications/electronic_publications/cdwa/index.html">https://www.getty.edu/research/publications/electronic_publications/cdwa/index.html</a><br>
-              dbo: <a href="https://dbpedia.org/ontology/">https://dbpedia.org/ontology/</a><br>
-              dbp: <a href="dbp:https://dbpedia.org/page/DBP">https://dbpedia.org/page/DBP/</a><br> 
-              mo: <a href="http://musicontology.com/">http://musicontology.com/</a><br>
-              time: <a href="https://www.w3.org/2002/07/owl#">https://www.w3.org/2002/07/owl#</a><br>
-              fabio: <a href="https://sparontologies.github.io/fabio/current/fabio.html">https://sparontologies.github.io/fabio/current/fabio.html</a><br>
-              foaf: <a href="http://xmlns.com/foaf/spec/">http://xmlns.com/foaf/spec/</a><br>
-              skos: <a href="https://www.w3.org/2009/08/skos-reference/skos.html">https://www.w3.org/2009/08/skos-reference/skos.html</a><br>
-          </p>
+           
           
             <div class="d-flex justify-content-center mb-4">
               <a role="button" class="btn btn-outline-dark mx-2 button_image" href="assets/img/xmind/conceptualmodel.png" target="_blank">Open Image</a> 
@@ -905,6 +889,23 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
             <img src="assets/img/xmind/conceptualmodel.png" class="card-img-top" alt="Conceptual Model">
               <!-- image png has xmind logo + cehck class + change image-->
               </div>
+              <p class="section-text"> 
+                These are the prefixes that we used:</p>
+                
+                <p class="section-text"> 
+                rdf: <a href="https://www.w3.org/RDF/">https://www.w3.org/RDF/</a><br>
+                dc/terms: <a href="https://www.dublincore.org/">https://www.dublincore.org/</a><br>
+                schema: <a href="https://schema.org/">https://schema.org/</a><br>
+                crm: <a href="https://www.cidoc-crm.org/html/cidoc_crm_v7.1.3.html">https://www.cidoc-crm.org/html/cidoc_crm_v7.1.3.html</a><br>
+                cdwa: <a href="https://www.getty.edu/research/publications/electronic_publications/cdwa/index.html">https://www.getty.edu/research/publications/electronic_publications/cdwa/index.html</a><br>
+                dbo: <a href="https://dbpedia.org/ontology/">https://dbpedia.org/ontology/</a><br>
+                dbp: <a href="dbp:https://dbpedia.org/page/DBP">https://dbpedia.org/page/DBP/</a><br> 
+                mo: <a href="http://musicontology.com/">http://musicontology.com/</a><br>
+                time: <a href="https://www.w3.org/2002/07/owl#">https://www.w3.org/2002/07/owl#</a><br>
+                fabio: <a href="https://sparontologies.github.io/fabio/current/fabio.html">https://sparontologies.github.io/fabio/current/fabio.html</a><br>
+                foaf: <a href="http://xmlns.com/foaf/spec/">http://xmlns.com/foaf/spec/</a><br>
+                skos: <a href="https://www.w3.org/2009/08/skos-reference/skos.html">https://www.w3.org/2009/08/skos-reference/skos.html</a><br>
+            </p>
             </div>
         </div>
       </div>
@@ -923,7 +924,7 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
         <div class="col-12 text-center">
           <h2 class="chapter-title">Items Description</h2>
           <p class="section-text">
-            In the knowledge representation section, we will generate new data based on the selected items. We will create a table for each item, containing statements in the form of subject-predicate-object.</p>
+            In this segment, the team circled back to the items to characterize them based on the attributes outlined in the Conceptual Model. Below, for each item, a table with three columns is exhibited. Each column corresponds to the components of the triple - subject, predicate, object - while each row delineates a distinct statement.</p>
             <p class="section-text">To access the folder with the table information in CSV format, please click on this <a href="https://github.com/LODysseyofPoorThings/PoorThings/tree/6506c0276bd8eb48d0fc0cbee4eaa6bc0497156b/csv%20files" target="_blank">link</a>.
           </p>
 
@@ -1482,7 +1483,7 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
         <div class="col-12 text-center">
           <h2 class="chapter-title">URI Production</h2>
           <p class="section-text">
-            In this step, we select four items from our provided list as RDF subjects. We create the following URIs to describe the items and their significant entities. These URIs serve as unique identifiers for each item in the RDF representation, allowing us to describe their properties and relationships within the semantic web framework.
+            ********In this step, we select four items from our provided list as RDF subjects. We create the following URIs to describe the items and their significant entities. These URIs serve as unique identifiers for each item in the RDF representation, allowing us to describe their properties and relationships within the semantic web framework.
           </p>
           <div>
             <p class="section-text"><strong>Items</strong></br>
@@ -1516,18 +1517,21 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
             <p class="section-text"><strong>Lighthouse of Alexandria</strong></br>
                 https://w3id.org/PoorThings.org/person/PtolemyISoter</br>
             </p>
+
+            <p class="section-text"></p>******Turtle file for the whole set of items can be downloaded by clicking <a href=""></a> here.
+          </p>
         </div>        
     </div>
 
-    <!-- RDF PRODUCTION-->
+    <!-- RDF SERIALIZATION-->
     <hr class="custom-hr2">
 
 
-  <section id="rdfproduction">
+  <section id="rdfserialization">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2 class="chapter-title">RDF Production</h2>
+          <h2 class="chapter-title">RDF Serialization</h2>
           <p class="section-text">In this step, we employ the URIs generated previously to craft RDF statements in Turtle serialization format. These statements incorporate additional authorities and sources, linking them to the existing data of our items.
           </p>
           <script src="https://gist.github.com/valentinabertelli/492382b67fc799348ee60dac9db7af1c.js"></script>
@@ -1566,7 +1570,7 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
               <img src="assets/img/mary1.png" class="card-img-top" alt="mary1">
               <div class="card-body">
                 <h5 class="card-title">Anna Pak</h5>
-                <p class="card-text text-justify">anna.pak@studio.unibo.it</p>
+                <p class="card-text text-justify"><a href="mailto:anna.pak@studio.unibo.it">anna.pak@studio.unibo.it</a></p>
               </div>
             </div>
           </div>
@@ -1575,7 +1579,7 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
               <img src="assets/img/mary2.png" class="card-img-top" alt="mary2">
               <div class="card-body">
                 <h5 class="card-title">Elena Binotti</h5>
-                <p class="card-text text-justify">elena.binotti2@studio.unibo.it</p>
+                <p class="card-text text-justify"><a href="mailto:elena.binotti2@studio.unibo.it">elena.binotti2@studio.unibo.it</a></p>
               </div>
             </div>
           </div>
@@ -1584,7 +1588,7 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
               <img src="assets/img/mary3.png" class="card-img-top" alt="mary3">
               <div class="card-body">
                 <h5 class="card-title">Valentina Bertelli</h5>
-                <p class="card-text text-justify">valentina.bertelli2@studio.unibo.it</p>
+                <p class="card-text text-justify"><a href="mailto:valentina.bertelli2@studio.unibo.it">valentina.bertelli2@studio.unibo.it</a></p>
               </div>
             </div>
           </div>
