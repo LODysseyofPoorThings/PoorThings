@@ -325,6 +325,12 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
             <p class="section-text">
               In this section we did something that is available at this <a href="conversions/python.py" target="_blank">link</a>.
             </p>
+            <p>
+              The following python script was designed to convert the text encoded in XML/TEI into a RDF/Turtle format.
+              We considered all the meaniningful relationships between text's components and how to represent them.
+              This code allowed us to assign URIs (Uniform Resource Identifier) to people, places, line of texts and quotations and to express the relationships that connect them to each other through appropriate properties.     
+            </p>
+            <script src="https://gist.github.com/valentinabertelli/38fbc076a0be607843a38db12bf409f4.js"></script>
           </div>
         </div>
 
@@ -350,9 +356,9 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
           <div class="col-12 text-center">
             <h2 class="chapter-title">RDF/Turtle Dataset</h2>
             <p class="section-text">
-              The result of this code is avaliable at this <a href="conversions/output_xml_rdf.ttl" target="_blank">link</a>.
+              The result of the previous RDF python code leads to the following Turtle Dataset.    
             </p>
-            <script src="https://gist.github.com/valentinabertelli/01b241131d2faf14bf03bab1b9990e6f.js"></script>
+            <script src="https://gist.github.com/valentinabertelli/38be2349f0072d71b48dc2a3debf8b3e.js"></script>
           </div>
         </div>
       </div>
@@ -1515,7 +1521,7 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
           <h2 class="chapter-title">RDF Production</h2>
           <p class="section-text">In this step, we employ the URIs generated previously to craft RDF statements in Turtle serialization format. These statements incorporate additional authorities and sources, linking them to the existing data of our items.
           </p>
-          <!--create a link to github -->
+          <script src="https://gist.github.com/valentinabertelli/492382b67fc799348ee60dac9db7af1c.js"></script>
       </div>
     </div>
 

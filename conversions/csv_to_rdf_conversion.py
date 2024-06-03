@@ -2,7 +2,6 @@ import rdflib
 from rdflib import Namespace, URIRef, Literal
 from rdflib.namespace import RDF, OWL, DC, DCTERMS, XSD, FOAF
 import pandas as pd
-import os
 
 #Namespaces
 CDWA = Namespace("https://www.getty.edu/research/publications/electronic_publications/cdwa/")
@@ -41,21 +40,13 @@ g.bind("dbp", DBP)
 
 #list of csv files
 files_csv = ["csv files/poor_things_movie.csv", "csv files/bio_ent_person.csv", "csv files/movie.csv", "csv files/painting.csv", "csv files/monument.csv", "csv files/article.csv", "csv files/portrait.csv", "csv files/bio_ent_char.csv", "csv files/activity.csv", "csv files/book.csv", "csv files/soundtrack.csv"]
+
 #for loop that iterates all the csv files and add data to the same graph
 for file in files_csv:
-    if not os.path.isfile(file):
-        print(f"File not found: {file}")
-        continue
 
     #create a pandas dataframe to read csv 
-    df = pd.read_csv(file)
-
-    if df.empty:
-        print(f"CSV file is empty or not read correctly: {file}")
-        continue    
+    df = pd.read_csv(file)   
     
-    print(f"Processing file: {file}")
-
     #dict to store uris
     uris_dict = dict()
 
@@ -68,8 +59,6 @@ for file in files_csv:
         subject = row["Subject"]
         predicate = row["Predicate"]
         object = row["Object"]
-
-        print(f"Row {_}: Subject = {subject}, Predicate = {predicate}, Object = {object}") 
         
         #create subject uri
         if subject not in uris_dict:
@@ -361,18 +350,15 @@ for file in files_csv:
             obj = Literal(object, datatype=XSD.language)    
 
         else:
-            obj = Literal(object, datatype=XSD.string)  
-
-        print(f"Adding triple: ({subject_uri}, {predicate_uri}, {obj})")      
+            obj = Literal(object, datatype=XSD.string)      
 
         #add triple to graph
         g.add((subject_uri, predicate_uri, obj))
 
-# Serialize the graph to Turtle format
+#serialize the graph to Turtle format
 turtle_str = g.serialize(format="turtle", base=pt, encoding="utf-8")
 
-# Write the Turtle string to a file
+#write the Turtle string to a file
 with open("output.ttl", "wb") as f:
     f.write(turtle_str)
-
-print("Graph serialization complete. Output written to 'output.ttl'.")    
+  
