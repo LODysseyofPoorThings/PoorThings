@@ -23,6 +23,9 @@
                             padding-bottom: 10px;
                             margin-bottom: 20px;
                         }
+                        .right-indent {
+                            margin-left: 20em;
+                        }
                     </style>
             </head>
             <body>
@@ -71,12 +74,12 @@
     <xsl:template match="tei:body">
         <xsl:apply-templates/>
     </xsl:template>
-
-    <!-- Template to match <div> with rend attribute -->
-    <xsl:template match="tei:div">
-        <div class="{@rend}">
-            <xsl:apply-templates/>
-        </div>
+    
+    <!-- Text in italic -->
+    <xsl:template match="tei:div[@type='text' and @rend='rend-it']">
+        <i>
+          <xsl:apply-templates/>
+        </i>
     </xsl:template>
     
     <!-- Template for head element -->
@@ -111,9 +114,10 @@
     
     <!-- Template to match <l> elements with rend="right" -->
     <xsl:template match="tei:l[@rend='right']">
-        <span style="display: block; text-align: center;">
+        <span class="right-indent">
           <xsl:apply-templates/>
         </span>
+        <br/>
     </xsl:template>
     
     <!-- Template to match <l> elements without rend="right" -->
@@ -124,12 +128,14 @@
         <br/>
     </xsl:template>
 
-    <xsl:template match="tei:q[@rend='noquotes']">
+     <!-- Template to match <q> elements rendition without quotes -->
+    <xsl:template match="tei:q[@rend='noQuotes']">
         <span class="quote noquotes">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-    
+
+    <!-- Template to match <q> elements rendition with quotes only in the beginning -->
     <xsl:template match="tei:q[@rend='beginQ']">
         <span class="quote noquotes">
           <xsl:text>"</xsl:text>
@@ -137,6 +143,7 @@
         </span>
     </xsl:template>
     
+    <!-- Template to match <q> elements rendition with quotes only in the ending -->
     <xsl:template match="tei:q[@rend='endQ']">
         <span class="quote noquotes">
             <xsl:apply-templates/>
@@ -149,6 +156,13 @@
         <span class="quote">
             &#8220;<xsl:apply-templates/>&#8221;
         </span>
+    </xsl:template>
+    
+    <!-- Template for <p> element -->
+    <xsl:template match="tei:p">
+        <p>
+            <xsl:apply-templates select="node()[not(self::tei:lb)]"/>
+        </p>
     </xsl:template>
     
     <!-- Convert line breaks -->
