@@ -70,7 +70,6 @@
           <li class="dropdown"><a href="#textconversions"><span>Text Conversions</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#xml/tei">XML/TEI Conversion</a></li>
-              <li><a href="#pythonscripts">Python Scripts for Conversions</a></li>
               <li><a href="#xslttohtml">XSLT Document for XML to HTML Conversion</a></li>
               <li><a href="#rdf/turtle">RDF/Turtle Dataset</a></li>
             </ul>
@@ -320,24 +319,7 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
           </div>
         </div>
       
-        <!-- PYHTON SCRIPTS -->
-        <hr class="custom-hr2">
-
-        <section id="pythonscripts">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h2 class="chapter-title">Python Scripts for Conversions</h2>
-            <p class="section-text">
-              The following python script was designed to convert the text encoded in XML/TEI into a HTML format. 
-              The code is available at this <a href="conversions/xml_to_html.py" target="_blank">link</a>.     
-            </p>
-              <script src="https://gist.github.com/elena2notti/2fde3ee9630644ca0b704a2997a14aca.js"></script>
-            <p class="section-text">
-            The following python script was designed to convert the text encoded in XML/TEI into a RDF/Turtle format. We considered all the meaniningful relationships between text's components and how to represent them. This code allowed us to assign URIs (Uniform Resource Identifier) to people, places, line of texts and quotations and to express the relationships that connect them to each other through appropriate properties.
-            The code is available at this <a href="conversions/tei_rdf_conversion.py" target="_blank">link</a>.     
-            </p>
-          </div>
-        </div>
+      
 
         <!-- XSLT TO HTML -->
         <hr class="custom-hr2">
@@ -345,6 +327,7 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
         <div class="row">
           <div class="col-12 text-center">
             <h2 class="chapter-title">XSLT Document for XML to HTML Conversion</h2>
+            
             <p class="section-text">
               In this section, we utilize the XSLT (Extensible Stylesheet Language Transformations) language to transform XML documents into HTML format.
         The primary purpose of this conversion is to enable the display of XML data in a user-friendly, web-compatible manner. During this process, we ensure that the stylistic structure of the original document is preserved, maintaining consistency and visual integrity across different formats.
@@ -352,6 +335,10 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
 <p class="section-text">For the code of our implementation, please refer to this <a href="conversions/html.xslt" target="_blank">link</a>.</p>
               <p class="section-text">The resulting converted document can be viewed <a href="conversions/result_conversion.html" target="_blank">here</a>.</p>
             </p>
+            <p class="section-text">
+              The following python script was designed to convert the text encoded in XML/TEI into a HTML format. 
+            </p>
+              <script src="https://gist.github.com/elena2notti/2fde3ee9630644ca0b704a2997a14aca.js"></script>
           </div>
         </div>
 
@@ -362,6 +349,10 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
         <div class="row">
           <div class="col-12 text-center">
             <h2 class="chapter-title">RDF/Turtle Dataset</h2>
+            <p class="section-text">
+              The following python script was designed to convert the text encoded in XML/TEI into a RDF/Turtle format. We considered all the meaniningful relationships between text's components and how to represent them. This code allowed us to assign URIs (Uniform Resource Identifier) to people, places, line of texts and quotations and to express the relationships that connect them to each other through appropriate properties.
+              The code is available at this <a href="conversions/tei_rdf_conversion.py" target="_blank">link</a>.     
+              </p>
             <p class="section-text">
               The result of the previous RDF python code leads to the following Turtle Dataset.    
             </p>
@@ -391,14 +382,13 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
               Regarding "Poor Things," the selected items play a pivotal role in authentically narrating its story. Our conceptual map aims to depict the gathered data in natural language, illustrating the extracted information and the connections between them. Light blue nodes in the graph denote the selected items, while grey nodes highlight significant events and individuals associated with the main subject.</p>
           </div> 
 
-          <div class="col-12 center-image">
              <div class="d-flex justify-content-center mb-4">
               <a role="button" class="btn btn-outline-dark mx-2 button_image" href="assets/img/xmind/conceptualmap.png" target="_blank">Open Image</a> 
               </div>
               <div>
                 <img id="myImg" class="imageZoom" src="assets/img/xmind/conceptualmap.png" class="img-fluid" style="width:100%; height: 800px;" alt="Conceptual Map">
               </div>
-          </div>
+          
         </div>
       </div>
 
@@ -413,14 +403,13 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
             <p class="section-text">
               In this second model, the data and relationships from the conceptual map are represented in a more abstract manner. Here, individuals, dates, subjects, places, and other elements are represented as entities, while the connections between them are depicted as relationships.
             </p>
-            <div class="col-12 center-image">
+          </div> 
               <div class="d-flex justify-content-center mb-4">
                 <a role="button" class="btn btn-outline-dark mx-2 button_image" href="assets/img/xmind/ermodel.png" target="_blank">Open Image</a> 
                 </div>
                 <div>
               <img id="bella" class="imageZoom" src="assets/img/xmind/ermodel.png" class="img-fluid" style="width:100%; height: 800px;" alt="E/R Model">
-              <!-- image png has xmind logo + cehck class-->
-                </div>
+            </div>
             </div>
           </div>
         </div>
@@ -435,7 +424,7 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
           <div class="col-12 text-center">
             <h2 class="chapter-title">Metadata Analysis</h2>
             <p class="section-text">
-              ***To ensure everything works together smoothly, the team figured out which standards the providers of our chosen items use to describe their metadata. In the table below, standards mentioned by the institutions themselves are marked with an asterisk (*). If there wasn't a clear mention, the team went with either the most commonly used standard for that type of institution or a general standard that fit the object well. </p>
+              We conducted a thorough evaluation of our selected items, carefully examining how they are described on their respective source websites. This involved a detailed analysis of the descriptions provided by the original sources to understand the key attributes and characteristics highlighted for each item. Based on this comprehensive analysis, we identified and selected metadata standards that are most suitable for accurately describing each object. Our chosen metadata standards are designed to be coherent with the original descriptions, ensuring that the metadata captures all essential details and aligns seamlessly with the way the items are presented on their source websites.</p>
         </div>
       </div>
       <div class="table-container">
@@ -524,13 +513,13 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
             <div class="col-12 text-center">
               <h2 class="chapter-title">Metadata Alignment</h2>
               <p class="section-text">
-                After identifying the related institutions and their standards, this final step allows for the complete description and connection of items. The main goal of this project has been to use shared semantic ontologies to ensure consistent data delivery.
-                We have categorized all the properties into four groups: WHO, WHERE, WHEN, and WHAT. If there are any missing details in the tables, we've labeled them as "N/A".
+                After identifying all the standards, this final step allows for the complete description and connection of items. The main goal of this project has been to use shared semantic ontologies to ensure consistent data delivery.
+                We have categorized all the properties into four groups: WHO, WHERE, WHEN, and WHAT.<br>
               </p>
               <ul class="section-list">
-             <li><b>Dublin Core</b>: we chose the Dublin Core Metadata Initiative (DCMI) Terms, often referred to as dcterms, because they provide a widely recognized and standardized vocabulary for describing a broad range of resources. This ensures consistent data delivery and enhances interoperability across different systems, making it easier for our project to integrate with other platforms.</li>
-              <li><b>Schema.org:</b> we selected Schema.org because it offers a robust and widely adopted set of schemas for structured data on the web. This allows us to improve the discoverability and integration of our data across various platforms and search engines, facilitating broader accessibility and usability of our project’s information.</li>
-              <li><b>CDWA</b>: the Categories for the Description of Works of Art (CDWA) were chosen because they provide detailed guidelines and standards specifically tailored for describing and cataloging works of art and cultural objects. This is crucial for our project as it ensures that art-related information is consistently and accurately shared and retrieved.</li>
+             <li><b>Dublin Core</b>: we chose the Dublin Core Metadata Initiative (DCMI) Terms because they provide a widely recognized and standardized vocabulary for describing a broad range of resources.</li>
+              <li><b>Schema.org:</b> we selected Schema.org because it offers a robust and widely adopted set of schemas for structured data on the web.</li>
+              <li><b>CDWA</b>: the Categories for the Description of Works of Art (CDWA) were chosen because they provide detailed guidelines and standards specifically tailored for describing and cataloging works of art and cultural objects.</li>
               <li><b>CIDOC CRM</b>: we opted for the CIDOC Conceptual Reference Model (CRM) because it is an ontology specifically designed for cultural heritage information. It enables the integration, mediation, and exchange of heterogeneous cultural heritage data, which is essential for our project to connect and contextualize items across various institutions and disciplines.</li>
               <li><b>Music Ontology</b>: we chose the MO because it specifically describes music-related concepts and relationships. This is particularly relevant for parts of our project focused on music, allowing us to organize and link music-related data effectively on the web.
               </li>
@@ -713,7 +702,7 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
                 <tr>
                   <td class="property">Has Part</td>
                   <td class="dublincore">dcterms:hasPart</td>
-                  <td class="schema">N/A</td>
+                  <td class="schema">hasPart</td>
                   <td class="cdwa">N/A</td>
                   <td class="cidoc">P59 has section (is located on or within)</td>
                   <td class="mo">track</td>
@@ -725,6 +714,30 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
                   <td class="cdwa">N/A</td>
                   <td class="cidoc">P21 had general purpose</td>
                   <td class="mo">N/A</td>
+                </tr>
+                <tr>
+                  <td class="property">Is Part Of</td>
+                  <td class="dublincore">dcterms:isPartOf</td>
+                  <td class="schema">isPartOf</td>
+                  <td class="cdwa">N/A</td>
+                  <td class="cidoc">N/A</td>
+                  <td class="mo">??</td>
+                </tr>
+                <tr>
+                  <td class="property">Referenced By</td>
+                  <td class="dublincore">dcterms:isReferencedBy</td>
+                  <td class="schema">citation</td>
+                  <td class="cdwa">N/A</td>
+                  <td class="cidoc">P67i is referred to by</td>
+                  <td class="mo">??</td>
+                </tr>
+                <tr>
+                  <td class="property">References</td>
+                  <td class="dublincore">dcterms:references</td>
+                  <td class="schema">mentions</td>
+                  <td class="cdwa">N/A</td>
+                  <td class="cidoc">P67 refers to</td>
+                  <td class="mo">??</td>
                 </tr>
               </tbody>
             </table>
@@ -761,17 +774,25 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
                   <td class="property">Start Date</td>
                   <td class="dublincore">dc:date</td>
                   <td class="schema">startDate</td>
-                  <td class="cdwa">N/A</td>
-                  <td class="cidoc">N/A</td>
+                  <td class="cdwa">Earliest Date</td>
+                  <td class="cidoc">P82a begin of the begin</td>
                   <td class="mo">recorded_in</td>
                 </tr>
                 <tr>
                   <td class="property">End Date</td>
                   <td class="dublincore">dc:date</td>
                   <td class="schema">endDate</td>
-                  <td class="cdwa">N/A</td>
-                  <td class="cidoc">N/A</td>
+                  <td class="cdwa">Latest Date</td>
+                  <td class="cidoc">P82b end of the end</td>
                   <td class="mo">recorded_in</td>
+                </tr>
+                <tr>
+                  <td class="property">Temporal Coverage</td>
+                  <td class="dublincore">dc:temporal</td>
+                  <td class="schema">temporal</td>
+                  <td class="cdwa">N/A</td>
+                  <td class="cidoc">P4 has time-span</td>
+                  <td class="mo">???</td>
                 </tr>
               </tbody>
             </table>
@@ -791,10 +812,10 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
                 <tr>
                   <td class="property">Location</td>
                   <td class="dublincore">dcterms:spatial</td>
-                  <td class="schema">P98i was born</td>
+                  <td class="schema">location</td>
                   <td class="cdwa">Current Location</td>
                   <td class="cidoc">P53 has former or current location (is former or current location of)</td>
-                  <td class="mo">origin</td>
+                  <td class="mo">??</td>
                 </tr>
                 <tr>
                   <td class="property">Collection/Part Of</td>
@@ -805,12 +826,12 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
                   <td class="mo">part_of</td>
                 </tr>
                 <tr>
-                  <td class="property">Itinerary</td>
+                  <td class="property">Birth Place</td>
                   <td class="dublincore">dcterms:spatial</td>
-                  <td class="schema">itinerary</td>
-                  <td class="cdwa">N/A</td>
+                  <td class="schema">birthPlace</td>
+                  <td class="cdwa">Creation Place/Original Location</td>
                   <td class="cidoc">N/A</td>
-                  <td class="mo">N/A</td>
+                  <td class="mo">origin</td>
                 </tr>
               </tbody>
             </table>
@@ -826,8 +847,8 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
           <div class="col-12 text-center">
             <h2 class="chapter-title">Theoretical Model</h2>
             <p class="section-text">
-              The theoretical model offers an extensive examination, articulated in plain language, detailing all properties associated with each item and the interconnections among domain entities. Furthermore, additional entities were introduced during this phase to augment the data with interpretative dimensions.
-            </p><p class="section-text"> Its purpose is to address these questions for every object:
+              The theoretical model offers an extensive examination, articulated in natural language, detailing all properties associated with each item and the interconnections among domain entities. Furthermore, additional entities were introduced during this phase to augment the data with interpretative dimensions.
+            </p><p class="section-text">The purpose was to address these questions for every object:
               </p>
             
             <ul class="section-list">
@@ -924,7 +945,7 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
         <div class="col-12 text-center">
           <h2 class="chapter-title">Items Description</h2>
           <p class="section-text">
-            In this segment, the team circled back to the items to characterize them based on the attributes outlined in the Conceptual Model. Below, for each item, a table with three columns is exhibited. Each column corresponds to the components of the triple - subject, predicate, object - while each row delineates a distinct statement.</p>
+            In this segment, the team circled back to the items to characterize them based on the attributes outlined in the Conceptual Model. Below, for each item, a table with three columns is exhibited. Each column corresponds to the components of the triple (subject, predicate, object) while each row delineates a distinct statement.</p>
             <p class="section-text">To access the folder with the table information in CSV format, please click on this <a href="https://github.com/LODysseyofPoorThings/PoorThings/tree/6506c0276bd8eb48d0fc0cbee4eaa6bc0497156b/csv%20files" target="_blank">link</a>.
           </p>
 
