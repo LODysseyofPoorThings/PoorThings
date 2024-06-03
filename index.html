@@ -136,7 +136,7 @@
                     Moreover, the influence of <a href="https://en.wikipedia.org/wiki/Fritz_Lang">Fritz Lang</a>'s "Metropolis" is palpable in the film’s critique of modernity and technology. Bella, much like the created humanoid of Lang’s narrative, symbolizes the intersection of human vulnerability and the mechanical, showcasing the dangers and ethical dilemmas of scientific advancement. Lanthimos uses this parallel to enhance the film's exploration of autonomy, consciousness, and the definition of being human in a rapidly evolving world.<br>
                     
                   The Lighthouse of Alexandria, another historical reference in the film, symbolizes enlightenment and guidance amid chaos. Bella, navigating through her reconstructed life, seeks light amidst her confusing existence, much like sailors would look towards the lighthouse for direction. This metaphor extends to her role in the narrative, serving as a beacon that challenges the dark waters of societal expectations and gender roles.<br>
-              <br></p>
+              <br><br></p>
   
             <div class="row align-items-center mb-4">
               <div class="col-md-6 order-md-2">
@@ -250,7 +250,7 @@
         <img src="assets/img/article.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Article</h5>
-          <p class="card-text text-justify">Article on the costume design history in the film "Poor Things," in which designer Holly Waddington discusses how Bella Baxter transforms on screen in the portrayal by Emma Stone.</p>
+          <p class="card-text text-justify">New York Times article that delves into the costume design journey within the film "Poor Things," featuring insights from designer Holly Waddington as she explores Emma Stone's on-screen transformation into Bella Baxter.</p>
           <a href="https://www.nytimes.com/2024/01/02/movies/emma-stone-bella-baxter-costumes-poor-things.html?searchResultPosition=2">Learn More</a>
         </div>
       </div>
@@ -301,10 +301,10 @@
             <h2 class="custom-title">TEXT CONVERSIONS</h2>
 
             <p class="section-text">
-              In this phase, our team utilizes advanced computational tools to thoroughly analyze the digital edition of "Poor Things" by Alasdair Gray.</br>
-              Digitized and accessible through modern technology, this text allows us to delve deeply into its complexities.</br>
-          By employing XML/TEI encoding, XSLT conversion techniques, RDF/XML representation, and Python scripting, we aim to uncover the intricate layers of meaning embedded in Gray's work.</p>
-          </div>
+              In this phase, our team utilizes advanced computational tools to thoroughly analyze the digital edition of "Poor Things" by Alasdair Gray.
+              Digitized and accessible through modern technology, this text allows us to delve deeply into its complexities.
+            </p><p class="section-text">By employing XML/TEI encoding, XSLT conversion techniques, RDF/XML representation, and Python scripting, we aim to uncover the intricate layers of meaning embedded in Gray's work.</p>
+            </p>
         </div>
 
         <!-- XML/TEI -->
@@ -319,7 +319,7 @@
 This document captures a pivotal moment in "Poor Things," presenting a letter authored by the protagonist, Bella Baxter, addressed to her presumed creator and father, Goldwyn Baxter.
 Within its contents, we encounter both structured dialogues, presented in verse format, and flowing free text. This letter not only serves as a narrative device but also sheds light on key relationships and themes within the story.</br>
 By meticulously encoding it according to the TEI (Text Encoding Initiative) guidelines, we ensure the fidelity of the original text's richness and complexity.</p>
-<p class="section-text"> parla di/settingDesc/The XML/TEI document of Poor Things text's sample is available at this <a href="conversions/tei.xml" target="_blank">link</a>.</p>
+<p class="section-text"> The XML/TEI document of Poor Things text's sample is available at this <a href="conversions/tei.xml" target="_blank">link</a>.</p>
           </div>
         </div>
       
@@ -331,13 +331,14 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
           <div class="col-12 text-center">
             <h2 class="chapter-title">Python Scripts for Conversions</h2>
             <p class="section-text">
-              The following python script was designed to convert the text encoded in XML/TEI into a HTML format. </p>
+              The following python script was designed to convert the text encoded in XML/TEI into a HTML format. 
+              The code is available at this <a href="conversions/xml_to_html.py" target="_blank">link</a>.     
+            </p>
               <script src="https://gist.github.com/elena2notti/2fde3ee9630644ca0b704a2997a14aca.js"></script>
             <p class="section-text">
             The following python script was designed to convert the text encoded in XML/TEI into a RDF/Turtle format. We considered all the meaniningful relationships between text's components and how to represent them. This code allowed us to assign URIs (Uniform Resource Identifier) to people, places, line of texts and quotations and to express the relationships that connect them to each other through appropriate properties.
             The code is available at this <a href="conversions/tei_rdf_conversion.py" target="_blank">link</a>.     
             </p>
-            <script src="https://gist.github.com/valentinabertelli/38fbc076a0be607843a38db12bf409f4.js"></script>
           </div>
         </div>
 
@@ -351,7 +352,7 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
               In this section, we utilize the XSLT (Extensible Stylesheet Language Transformations) language to transform XML documents into HTML format.
         The primary purpose of this conversion is to enable the display of XML data in a user-friendly, web-compatible manner. During this process, we ensure that the stylistic structure of the original document is preserved, maintaining consistency and visual integrity across different formats.
  </p>
-<p class="section-text">For a detailed example of our implementation, please refer to this <a href="conversions/html.xslt" target="_blank">link</a>.</p>
+<p class="section-text">For the code of our implementation, please refer to this <a href="conversions/html.xslt" target="_blank">link</a>.</p>
               <p class="section-text">The resulting converted document can be viewed <a href="conversions/result_conversion.html" target="_blank">here</a>.</p>
             </p>
           </div>
