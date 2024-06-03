@@ -319,27 +319,27 @@ p {
   font-size: 70px;
   font-weight: 700;
   line-height: 85px;
-  color: #2c4964;
+  color: #3c4b59;
 }
 
 #hero h1 {
   margin: -200px 0 10px 0;
-  font-size: 70px;
+  font-size: 65px;
   font-weight: 700;
   line-height: 85px;
   color: #233d55;
   font-family: "Playfair Display", serif; /* Usa lo stesso font della .section-title */
-  letter-spacing: 2px; /* Aggiungi questa riga per distanziare le lettere */
+  letter-spacing: 2.5px; /* Aggiungi questa riga per distanziare le lettere */
 
 }
 
 #hero h3 {
-  color: #2c4964;
+  color: #3c4b59;
   margin-bottom: 10px;
   font-size: 30px;
   font-weight: 300;
   font-family: "Playfair Display", serif; /* Usa lo stesso font della .section-title */
-  letter-spacing: 1px; /* Aggiungi questa riga per distanziare le lettere */
+  letter-spacing: 1.4px; /* Aggiungi questa riga per distanziare le lettere */
 
 }
 
@@ -400,7 +400,7 @@ p {
 }
 
 .section-text {
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.5;
   margin-bottom: 20px;
   color: #5a656e;

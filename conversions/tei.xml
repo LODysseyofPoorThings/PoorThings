@@ -159,10 +159,10 @@
                <l><q who="#bella" rend="endQ"><s xml:id="qs5" prev="#qs4">from whom I asked the way to <name type="street">Drury Lane.</name></s></q></l>
                <link type="join" target="#qs3 #qs4 #qs5"/>
                <l><q who="#wedder"><s xml:id="qs6" next="#qs7">Of course!</s></q> he said. <q who="#wedder" rend="beginQ"><s xml:id="qs7" prev="#qs6">It would be the police!</s></q></l>
-               <l><q who="#wedder" rend="NoQuotes"><s xml:id="qs8" prev="#qs7">They’re very tall and handsome are they not?</s></q></l>
-               <l><q who="#wedder" rend="NoQuotes"><s xml:id="qs9" prev="#qs8">Guards officers are strong and handsome too.</s></q></l>
-               <l><q who="#wedder" rend="NoQuotes"><s xml:id="qs10" prev="#qs9">They prowl the parks for girls who won’t say no.</s></q></l>
-               <l><q who="#wedder" rend="NoQuotes"><s xml:id="qs11" prev="#qs10">Perhaps your <name rend="emph">policeman</name> was in the Guards.</s></q></l>
+               <l><q who="#wedder" rend="noQuotes"><s xml:id="qs8" prev="#qs7">They’re very tall and handsome are they not?</s></q></l>
+               <l><q who="#wedder" rend="noQuotes"><s xml:id="qs9" prev="#qs8">Guards officers are strong and handsome too.</s></q></l>
+               <l><q who="#wedder" rend="noQuotes"><s xml:id="qs10" prev="#qs9">They prowl the parks for girls who won’t say no.</s></q></l>
+               <l><q who="#wedder" rend="noQuotes"><s xml:id="qs11" prev="#qs10">Perhaps your <name rend="emph">policeman</name> was in the Guards.</s></q></l>
                <l><q who="#wedder" rend="endQ"><s xml:id="qs12" prev="#qs11">The uniforms are very similar.</s></q></l>
                <link type="join" target="#qs6 #qs7 #qs8 #qs9 #qs10 #qs11 #qs12"/>
                <l><q who="#bella"><s xml:id="qs13" next="#qs14">Have you gone daft?</s></q> I asked him. <q who="#bella"><s xml:id="qs14" prev="#qs13">What is wrong?</s></q></l>
