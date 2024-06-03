@@ -405,7 +405,7 @@ p {
   margin-bottom: 20px;
   color: #5a656e;
   text-align: justify;
-  padding: 0 1rem;
+  padding: 0 0rem;
 }
 
 .card {
@@ -426,7 +426,7 @@ img {
   }
 
   .section-text {
-    font-size: 0.875rem;
+    font-size: 1.1rem;
     margin-bottom: 20px;
     text-align: justify;
   }
@@ -568,13 +568,13 @@ th.metadata-standard, td.metadata-standard {
 /* list */
 
 .section-list {
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.5;
   margin-bottom: 20px;
   color: rgb(90, 101, 110);
   text-align: left;
   list-style-type: none;
-  padding: 0 1rem;
+  padding: 0 0rem;
 }
 
 .section-list li {
@@ -631,6 +631,7 @@ th.metadata-standard, td.metadata-standard {
   max-width: 100%;
   height: auto;
   margin-top: -40px;
+  max-height: 570px;
 }
 
 @media (min-width: 768px) {
@@ -653,3 +654,9 @@ th.metadata-standard, td.metadata-standard {
 }
 
 
+footer {
+  margin-top: 20px; /* Puoi regolare il valore per ottenere lo spazio desiderato */
+  text-align: center; /* Centra il testo nel footer */
+  background-color: #fff; /* Colore di sfondo del footer */
+  padding: 20px 0; /* Aggiunge spazio interno al footer */
+}
