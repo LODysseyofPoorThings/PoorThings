@@ -171,7 +171,7 @@
             <h2 class="chapter-title">The Items</h2>
             <p class="section-text">
               At the beginning of our project, we set out to select ten distinct elements related to our main concept, with the goal of ensuring these items fit cohesively and conveyed a narrative about "Poor Things." We carefully considered how each element connected to various people, places, times, and ideas, meticulously choosing each item to ensure it was both interesting and diverse.
-            </p><p class="section-text">Below, you'll find short descriptions and links to learn more about each item.
+            </p><p class="section-text">Below, you'll find short descriptions and links to learn more about each item.<br>
             </p>
             
  <!-- start of the cards -->
@@ -336,8 +336,7 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
               <p class="section-text">The resulting converted document can be viewed <a href="conversions/result_conversion.html" target="_blank">here</a>.</p>
             </p>
             <p class="section-text">
-              The following python script was designed to convert the text encoded in XML/TEI into a HTML format. 
-            </p>
+              To automate the conversion procedures, we created a Python script designed for converting XML/TEI documents into HTML. Using libraries like lxml, this script efficiently manages the conversion process with reliability.</p>
               <script src="https://gist.github.com/elena2notti/2fde3ee9630644ca0b704a2997a14aca.js"></script>
           </div>
         </div>
@@ -545,6 +544,8 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
                   <th class="cdwa">CDWA</th>
                   <th class="cidoc">CIDOC-CRM</th>
                   <th class="mo">MO</th>
+                  <th class="foaf">FOAF</th>
+
                 </tr>
               </thead>
               <tbody>
@@ -555,6 +556,7 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
                   <td class="cdwa">Creator Description<br>Creator Identity<br>Creator Role</td>
                   <td class="cidoc">N/A</td>
                   <td class="mo">composer</td>
+                  <td class="foaf">made</td>
                 </tr>
                 <tr>
                   <td class="property">Occupation</td>
@@ -563,6 +565,7 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
                   <td class="cdwa">Life Roles</td>
                   <td class="cidoc">N/A</td>
                   <td class="mo">N/A</td>
+                  <td class="foaf">N/A</td>
                 </tr>
                 <tr>
                   <td class="property">Agent</td>
@@ -570,7 +573,8 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
                   <td class="schema">agent</td>
                   <td class="cdwa">Role</td>
                   <td class="cidoc">P14 carried out by (performed)</td>
-                  <td class="mo">MusicArtist???</td>
+                  <td class="mo">performer</td>
+                  <td class="foaf">N/A</td>
                 </tr>
                 <tr>
                   <td class="property">Publisher</td>
@@ -579,6 +583,7 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
                   <td class="cdwa">N/A</td>
                   <td class="cidoc">N/A</td>
                   <td class="mo">publisher</td>
+                  <td class="foaf">N/A</td>
                 </tr>
                 <tr>
                   <td class="property">Commissioner</td>
@@ -587,6 +592,34 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
                   <td class="cdwa">Commissioner</td>
                   <td class="cidoc">N/A</td>
                   <td class="mo">N/A</td>
+                  <td class="foaf">N/A</td>
+                </tr>
+                <tr>
+                  <td class="property">Member</td>
+                  <td class="dublincore">dcterms:isPartOf</td>
+                  <td class="schema">member</td>
+                  <td class="cdwa">N/A</td>
+                  <td class="cidoc">N/A</td>
+                  <td class="mo">member_of</td>
+                  <td class="foaf">member</td>
+                </tr>
+                <tr>
+                  <td class="property">Name</td>
+                  <td class="dublincore">N/A</td>
+                  <td class="schema">name</td>
+                  <td class="cdwa">Creator Identity</td>
+                  <td class="cidoc">N/A</td>
+                  <td class="mo">N/A</td>
+                  <td class="foaf">name</td>
+                </tr>
+                <tr>
+                  <td class="property">Parent</td>
+                  <td class="dublincore">N/A</td>
+                  <td class="schema">parent</td>
+                  <td class="cdwa">N/A</td>
+                  <td class="cidoc">P152 has parent (is parent of)</td>
+                  <td class="mo">N/A</td>
+                  <td class="foaf">knows</td>
                 </tr>
               </tbody>
             </table>
@@ -604,9 +637,9 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
               </thead>
               <tbody>
                 <tr>
-                  <td class="property">Right</td>
+                  <td class="property">Copyright</td>
                   <td class="dublincore">dcterms:rights</td>
-                  <td class="schema">license</td>
+                  <td class="schema">copyrightHolder</td>
                   <td class="cdwa">Copyright Statement<br>Copyright Holder Name</td>
                   <td class="cidoc">P105 right held by (has right on)</td>
                   <td class="mo">label/license</td>
@@ -625,7 +658,7 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
                   <td class="schema">category</td>
                   <td class="cdwa">Classification Term</td>
                   <td class="cidoc">P2 has type (is type of)</td>
-                  <td class="mo">genre</td>
+                  <td class="mo">published_as</td>
                 </tr>
                 <tr>
                   <td class="property">Gender</td>
@@ -653,11 +686,11 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
                 </tr>
                 <tr>
                   <td class="property">Genre</td>
-                  <td class="dublincore">N/A</td>
+                  <td class="dublincore">dcterms:type</td>
                   <td class="schema">genre</td>
-                  <td class="cdwa">N/A</td>
+                  <td class="cdwa">Style</td>
                   <td class="cidoc">P2 has type (is type of)</td>
-                  <td class="mo">genre</td>
+                  <td class="mo">mo:style<br>mo:genre</td>
                 </tr>
                 <tr>
                   <td class="property">Language</td>
@@ -720,7 +753,7 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
                   <td class="dublincore">dcterms:isPartOf</td>
                   <td class="schema">isPartOf</td>
                   <td class="cdwa">N/A</td>
-                  <td class="cidoc">N/A</td>
+                  <td class="cidoc">P4 is Part Of</td>
                   <td class="mo">??</td>
                 </tr>
                 <tr>
@@ -728,15 +761,23 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
                   <td class="dublincore">dcterms:isReferencedBy</td>
                   <td class="schema">citation</td>
                   <td class="cdwa">N/A</td>
-                  <td class="cidoc">P67i is referred to by</td>
+                  <td class="cidoc">P67 is referred to by</td>
                   <td class="mo">??</td>
                 </tr>
                 <tr>
                   <td class="property">References</td>
                   <td class="dublincore">dcterms:references</td>
-                  <td class="schema">mentions</td>
+                  <td class="schema">mentions<br>isBasedOn</td>
                   <td class="cdwa">N/A</td>
                   <td class="cidoc">P67 refers to</td>
+                  <td class="mo">??</td>
+                </tr>
+                <tr>
+                  <td class="property">Character</td>
+                  <td class="dublincore">dcterms:isPartOf</td>
+                  <td class="schema">character</td>
+                  <td class="cdwa">N/A</td>
+                  <td class="cidoc">P4 is Part Of</td>
                   <td class="mo">??</td>
                 </tr>
               </tbody>
@@ -794,6 +835,14 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
                   <td class="cidoc">P4 has time-span</td>
                   <td class="mo">???</td>
                 </tr>
+                <tr>
+                  <td class="property">Birth Date</td>
+                  <td class="dublincore">dcterms:date</td>
+                  <td class="schema">temporal</td>
+                  <td class="cdwa">N/A</td>
+                  <td class="cidoc">P98 brought into life (was born)</td>
+                  <td class="mo">???</td>
+                </tr>
               </tbody>
             </table>
           
@@ -814,7 +863,7 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
                   <td class="dublincore">dcterms:spatial</td>
                   <td class="schema">location</td>
                   <td class="cdwa">Current Location</td>
-                  <td class="cidoc">P53 has former or current location (is former or current location of)</td>
+                  <td class="cidoc">P55 has current location</td>
                   <td class="mo">??</td>
                 </tr>
                 <tr>
@@ -832,6 +881,22 @@ By meticulously encoding it according to the TEI (Text Encoding Initiative) guid
                   <td class="cdwa">Creation Place/Original Location</td>
                   <td class="cidoc">N/A</td>
                   <td class="mo">origin</td>
+                </tr>
+                <tr>
+                  <td class="property">Contained In Place</td>
+                  <td class="dublincore">dcterms:spatial</td>
+                  <td class="schema">containedInPlace</td>
+                  <td class="cdwa">CurrentLocation</td>
+                  <td class="cidoc">P89 falls within (contains)</td>
+                  <td class="mo">mo:place</td>
+                </tr>
+                <tr>
+                  <td class="property">Contains Place</td>
+                  <td class="dublincore">dcterms:spatial</td>
+                  <td class="schema">containsPlace</td>
+                  <td class="cdwa">P89 falls within (contains)</td>
+                  <td class="cidoc">N/A</td>
+                  <td class="mo">N/A</td>
                 </tr>
               </tbody>
             </table>
