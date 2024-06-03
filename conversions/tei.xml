@@ -71,7 +71,7 @@
             <p>The <gi>s</gi> element is used to encode segments of text that are logically connected but interrupted by other elements. The <att>next</att> and <att>prev</att> attributes link these segments together. The <gi>link</gi> element with type="join" is used to explicitly indicate the connection between these segments.</p>
          </editorialDecl>
          <tagsDecl partial="true">
-            <rendition xml:id="rend-it" scheme="css" selector="text">font-style: italic;</rendition>
+            <rendition xml:id="rend-it" scheme="css" selector="div">font-style: italic;</rendition>
             <rendition xml:id="right" scheme="css" selector="l">text-align: right;</rendition>
             <rendition xml:id="center" scheme="css" selector="l">text-align: center;</rendition>
             <rendition xml:id="allcaps" scheme="css" selector="hi">text-transform: uppercase;</rendition>

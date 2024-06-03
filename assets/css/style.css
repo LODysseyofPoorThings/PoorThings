@@ -641,3 +641,12 @@ th.metadata-standard, td.metadata-standard {
     order: 2;
   }
 }
+
+/* quote al centro */
+
+.center {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.3em;
+  margin-top: 5px;
+}
