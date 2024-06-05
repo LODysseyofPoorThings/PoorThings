@@ -227,7 +227,9 @@ for file in files_csv:
             elif object == "crm:E79_Curated_Holding":
                 obj = CRM.E79_Curated_Holding   
             elif object == "schema:Movie":
-                obj = SCHEMA.Movie       
+                obj = SCHEMA.Movie
+            elif object == "schema:Organization":
+                obj = SCHEMA.Organization        
             elif object == "foaf:Group":
                 obj = FOAF.Group
             elif object == "skos:Concept":

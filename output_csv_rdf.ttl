@@ -56,7 +56,7 @@
     crm:P21_had_general_purpose <concept/Education> .
 
 <item/Biographic_entity_person> a crm:E21_Person ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q975410> ;
+    owl:sameAs <https://viaf.org/viaf/121831339> ;
     foaf:member <group_of_people/Greek_Weird_Wave> ;
     foaf:name "Yorgos Lanthimos"^^xsd:string ;
     schema:birthDate "1973"^^xsd:gYear ;
@@ -110,70 +110,76 @@
     schema:genre "Soundtrack"^^xsd:string ;
     crm:P102_has_title "Poor Things: Original Motion Picture Soundtrack"^^xsd:string .
 
-<organization/Harcourt_Brace_Jovanovich> a <https://www.wikidata.org/wiki/Q6955> ;
+<organization/Harcourt_Brace_Jovanovich> a schema:Organization ;
     owl:sameAs <https://www.wikidata.org/wiki/Q5654997> ;
     schema:containedInPlace <place/London> .
 
-<organization/Searchlight_Pictures> a "Film Festival Gent:Best original music"^^xsd:string ;
+<organization/Searchlight_Pictures> a schema:Organization ;
     owl:sameAs <https://dbpedia.org/page/Searchlight_Pictures> .
 
 <person/Alasdair_Gray> a crm:E21_Person ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q729121> .
+    owl:sameAs <https://viaf.org/viaf/114328115> .
 
 <person/Carminho> a crm:E21_Person ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q468766> .
+    owl:sameAs <https://viaf.org/viaf/269173321> .
 
 <person/Egon_Schiele> a crm:E21_Person ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q44032> ;
+    owl:sameAs <https://viaf.org/viaf/41850463> ;
     cdwa:Style "Expressionism"^^xsd:string .
 
 <person/Emma_Stone> a crm:E21_Person ;
-    owl:sameAs <https://dbpedia.org/page/Emma_Stone> ;
+    owl:sameAs <https://viaf.org/viaf/161765799> ;
     schema:award "96th Academy Award: Best Actress"^^xsd:string .
 
 <person/Fritz_Lang> a crm:E21_Person ;
-    owl:sameAs <https://dbpedia.org/page/Fritz_Lang> ;
+    owl:sameAs <https://viaf.org/viaf/14802583> ;
     schema:hasOccupation "film director"^^xsd:string .
 
+<person/Goethe> a crm:E21_Person ;
+    owl:sameAs <https://viaf.org/viaf/24602065> .
+
 <person/Hieronymus_Bosch> a crm:E21_Person ;
-    owl:sameAs <https://dbpedia.org/page/Hieronymus_Bosch> ;
+    owl:sameAs <https://viaf.org/viaf/76401424> ;
     cdwa:Style "Northern Renaissance"^^xsd:string .
 
 <person/Jerskin_Fendrix> a crm:E21_Person ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q120896583> ;
+    owl:sameAs <http://viaf.org/viaf/9944171594733003380004> ;
     schema:award "Film Festival Gent:Best original music"^^xsd:string .
 
+<person/Lord_Byron> a crm:E21_Person ;
+    owl:sameAs <https://viaf.org/viaf/95230688> .
+
 <person/Melena_Ryzik> a crm:E21_Person ;
-    owl:sameAs <https://commons.wikimedia.org/wiki/Category:Melena_Ryzik> .
+    owl:sameAs <https://viaf.org/viaf/26510116> .
 
 <person/Ptolemy_I_Soter> a crm:E21_Person ;
-    owl:sameAs <https://dbpedia.org/page/Ptolemy_I_Soter> ;
+    owl:sameAs <https://viaf.org/viaf/21347488> ;
     foaf:member <group_of_people/Ptolemaic_dinasty> .
 
 <person/Thea_Van_Harbou> a crm:E21_Person ;
-    owl:sameAs <https://dbpedia.org/page/Thea_von_Harbou> .
+    owl:sameAs <https://viaf.org/viaf/19884182> .
 
-<phisical_thing/Costumes_in_Poor_Things> a <https://commons.wikimedia.org/wiki/Category:Melena_Ryzik> ;
+<phisical_thing/Costumes_in_Poor_Things> a <https://viaf.org/viaf/26510116> ;
     dcterms:creator <person/Holly_Washington> .
 
 <place/Alexandria> a crm:E53_Place ;
-    owl:sameAs <https://dbpedia.org/page/Alexandria> ;
+    owl:sameAs <https://pleiades.stoa.org/places/876562> ;
     schema:containedInPlace <place/Egypt> .
 
 <place/Athens> a crm:E53_Place ;
-    owl:sameAs <https://dbpedia.org/page/Athens> .
+    owl:sameAs <https://www.geonames.org/264371/athens.html> .
 
 <place/Columbia_University> a "Expressionism"^^xsd:string ;
     owl:sameAs <https://www.wikidata.org/wiki/Q49088> ;
     schema:containedInPlace <place/New_York_City> .
 
 <place/Europe> a crm:E53_Place ;
-    owl:sameAs <https://dbpedia.org/page/Europe> ;
+    owl:sameAs <https://www.geonames.org/6255148/europe.html> ;
     schema:containsPlace <place/Lisbon>,
         <place/Paris> .
 
 <place/Madrid> a crm:E53_Place ;
-    owl:sameAs <https://dbpedia.org/page/Madrid> ;
+    owl:sameAs <https://www.geonames.org/3117735/madrid.html> ;
     schema:containedInPlace <place/Spain> .
 
 <place/Mediterranean_Area> a crm:E53_Place ;
@@ -185,7 +191,7 @@
     schema:containedInPlace <place/Madrid> .
 
 <place/New_York_City> a crm:E53_Place ;
-    owl:sameAs <https://dbpedia.org/page/New_York_City> ;
+    owl:sameAs <https://www.geonames.org/5128581/new-york-city.html> ;
     schema:containedInPlace <place/USA> .
 
 <song/Song_Alexandria> a mo:track ;
@@ -238,7 +244,7 @@
     cdwa:MaterialTechniqueDescription "Pencil and watercolor"^^xsd:string .
 
 <place/Pharos> a crm:E53_Place ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q2696558> ;
+    owl:sameAs <https://pleiades.stoa.org/places/727197> ;
     schema:containedInPlace <place/Alexandria> .
 
 <item/Biographic_entity_character> a crm:E28_Conceptual_Object ;
