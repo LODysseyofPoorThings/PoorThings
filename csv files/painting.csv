@@ -1,5 +1,5 @@
 Subject,Predicate,Object
-Painting,rdf:type,dbpedia-owl:Artwork
+Painting,rdf:type,dbo:Artwork
 Painting,owl:sameAs,https://www.museodelprado.es/en/the-collection/art-work/the-garden-of-earthly-delights-triptych/02388242-6d6a-4e9e-a992-e1311eab3609
 Painting,crm:P102_has_title,The Garden of Earthly Delights
 Painting,dcterms:creator,Hieronymus Bosch

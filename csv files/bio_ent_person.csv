@@ -9,5 +9,5 @@ Biographic entity person,schema:birthDate,1973
 Biographic entity person,foaf:member,Greek Weird Wave
 Athens,rdf:type,crm:E53_Place
 Athens,owl:sameAs,https://dbpedia.org/page/Athens
-Greek Weird Wave,rdf:type,foaf:E74_Group
+Greek Weird Wave,rdf:type,foaf:Group
 Greek Weird Wave,owl:sameAs,https://www.wikidata.org/wiki/Q62086465

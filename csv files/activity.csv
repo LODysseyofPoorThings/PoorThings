@@ -1,5 +1,5 @@
 Subject,Predicate,Object
-Activity,rdf:type,crm:E7Activity
+Activity,rdf:type,crm:E7_Activity
 Activity,owl:sameAs,https://dbpedia.org/page/Grand_Tour
 Activity,crm:P102_has_title,Grand Tour
 Activity,schema:agent,Young upper-class men

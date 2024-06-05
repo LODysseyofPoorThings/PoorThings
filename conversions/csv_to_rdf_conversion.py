@@ -1,6 +1,6 @@
 import rdflib
 from rdflib import Namespace, URIRef, Literal
-from rdflib.namespace import RDF, OWL, DC, DCTERMS, XSD, FOAF
+from rdflib.namespace import RDF, OWL, DC, DCTERMS, XSD, FOAF, SKOS
 import pandas as pd
 
 #Namespaces
@@ -10,6 +10,7 @@ CRM = Namespace("https://www.cidoc-crm.org/")
 MO = Namespace("http://musicontology.com/")
 DBO = Namespace("https://dbpedia.org/ontology/")
 DBP = Namespace("https://dbpedia.org/page/DBP/")
+FABIO = Namespace("https://sparontologies.github.io/fabio/current/fabio.html")
 
 #creating a rdf graph
 g = rdflib.Graph()
@@ -37,6 +38,7 @@ g.bind("crm", CRM)
 g.bind("mo", MO)
 g.bind("dbo", DBO)
 g.bind("dbp", DBP)
+g.bind("fabio", FABIO)
 
 #list of csv files
 files_csv = ["csv files/poor_things_movie.csv", "csv files/bio_ent_person.csv", "csv files/movie.csv", "csv files/painting.csv", "csv files/monument.csv", "csv files/article.csv", "csv files/portrait.csv", "csv files/bio_ent_char.csv", "csv files/activity.csv", "csv files/book.csv", "csv files/soundtrack.csv"]
@@ -207,7 +209,43 @@ for file in files_csv:
             predicate_uri = MO.published_as                
 
         #specify if objects are uris or litterals and add uris to uris_dict
-        if predicate_uri == RDF.type or predicate_uri == OWL.sameAs:
+        if predicate_uri == RDF.type:
+            if object == "crm:E7_Activity":
+                obj = CRM.E7_Activity
+            elif object == "crm:E21_Person":
+                obj = CRM.E21_Person  
+            elif object == "crm:E53_Place":
+                obj = CRM.E53_Place
+            elif object == "crm:E4_Period":
+                obj = CRM.E4_Period
+            elif object == "crm:E52_Time-Span":
+                obj = CRM.E52_Time_Span
+            elif object == "crm:E74_Group":
+                obj = CRM.E74_Group  
+            elif object == "crm:E28_Conceptual_Object":
+                obj = CRM.E28_Conceptual_Object
+            elif object == "crm:E79_Curated_Holding":
+                obj = CRM.E79_Curated_Holding   
+            elif object == "schema:Movie":
+                obj = SCHEMA.Movie       
+            elif object == "foaf:Group":
+                obj = FOAF.Group
+            elif object == "skos:Concept":
+                obj = SKOS.Concept
+            elif object == "mo:soundtrack":
+                obj = MO.soundtrack
+            elif object == "mo:track":
+                obj = MO.track
+            elif object == "fabio:journalarticle":
+                obj = FABIO.journalarticle
+            elif object == "dbo:Artwork":
+                obj = DBO.Artwork    
+            elif object == "dbo:Monument":
+                obj = DBO.Monument 
+            elif object == "dcterms:BibliographicResource":
+                obj = DCTERMS.BibliographicResource 
+
+        elif predicate_uri == OWL.sameAs:
             obj = URIRef(object)
         
         elif predicate_uri == DCTERMS.references or predicate_uri == DCTERMS.isReferencedBy or predicate_uri == SCHEMA.character or predicate_uri == SCHEMA.isBasedOn or predicate_uri == DCTERMS.hasPart:
