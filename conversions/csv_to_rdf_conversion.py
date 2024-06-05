@@ -41,7 +41,7 @@ g.bind("dbp", DBP)
 g.bind("fabio", FABIO)
 
 #list of csv files
-files_csv = ["csv files/poor_things_movie.csv", "csv files/bio_ent_person.csv", "csv files/movie.csv", "csv files/painting.csv", "csv files/monument.csv", "csv files/article.csv", "csv files/portrait.csv", "csv files/bio_ent_char.csv", "csv files/activity.csv", "csv files/book.csv", "csv files/soundtrack.csv"]
+files_csv = ["csv files/poor_things_movie.csv", "csv files/movie.csv", "csv files/monument.csv", "csv files/book.csv", "csv files/soundtrack.csv"]
 
 #for loop that iterates all the csv files and add data to the same graph
 for file in files_csv:
@@ -399,6 +399,6 @@ for file in files_csv:
 turtle_str = g.serialize(format="turtle", base=pt, encoding="utf-8")
 
 #write the Turtle string to a file
-with open("output_csv_rdf.ttl", "wb") as f:
+with open("output_rdf_visualization.ttl", "wb") as f:
     f.write(turtle_str)
   
