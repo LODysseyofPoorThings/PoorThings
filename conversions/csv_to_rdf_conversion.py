@@ -397,6 +397,6 @@ for file in files_csv:
 turtle_str = g.serialize(format="turtle", base=pt, encoding="utf-8")
 
 #write the Turtle string to a file
-with open("output.ttl", "wb") as f:
+with open("output_csv_rdf.ttl", "wb") as f:
     f.write(turtle_str)
   
