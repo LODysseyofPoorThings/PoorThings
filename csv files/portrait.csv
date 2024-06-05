@@ -13,7 +13,7 @@ Portrait,dcterms:isReferencedBy,Article
 Egon Schiele,rdf:type,crm:E21_Person
 Egon Schiele,owl:sameAs,https://viaf.org/viaf/41850463
 Egon Schiele,cdwa:Style,Expressionism
-Columbia University,rdf:type,crm:E78_Curated_Holding
+Columbia University,rdf:type,crm:E79_Curated_Holding
 Columbia University,owl:sameAs,https://www.wikidata.org/wiki/Q49088
 Columbia University,schema:containedInPlace,New York City
 New York City,rdf:type,crm:E53_Place

@@ -169,7 +169,7 @@
 <place/Athens> a crm:E53_Place ;
     owl:sameAs <https://www.geonames.org/264371/athens.html> .
 
-<place/Columbia_University> a "Expressionism"^^xsd:string ;
+<place/Columbia_University> a crm:E79_Curated_Holding ;
     owl:sameAs <https://www.wikidata.org/wiki/Q49088> ;
     schema:containedInPlace <place/New_York_City> .
 
