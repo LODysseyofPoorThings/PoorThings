@@ -208,7 +208,7 @@ for file in files_csv:
         elif predicate == "mo:published_as":
             predicate_uri = MO.published_as                
 
-        #specify if objects are uris or litterals and add uris to uris_dict
+        #specify if objects are uris or litterals
         if predicate_uri == RDF.type:
             if object == "crm:E7_Activity":
                 obj = CRM.E7_Activity
