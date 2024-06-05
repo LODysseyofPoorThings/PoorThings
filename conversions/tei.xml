@@ -10,7 +10,7 @@
             <title type="sub">Episodes from the Early Life of Archibald Mccandless M.d. Scottish Public Health Officer.</title>
             <author>Gray, Alasdair (1934-2019)</author>
             <respStmt>
-               <resp>Encoded by </resp>
+               <resp>Encoded by</resp>
                <persName>EB</persName>
             </respStmt>
          </titleStmt>
@@ -35,8 +35,8 @@
          <sourceDesc>
             <biblStruct xml:lang="en">
                <monogr>
-                  <title level="a">Poor Things</title>
-                  <title>Episodes from the Early Life of Archibald Mccandless M.d. Scottish Public Health Officer.</title>
+                  <title type="main">Poor Things</title>
+                  <title type="sub">Episodes from the Early Life of Archibald Mccandless M.d. Scottish Public Health Officer.</title>
                   <author>Alasdair Gray</author>
                   <imprint>
                      <date>1992</date>
@@ -54,7 +54,7 @@
          <editorialDecl>
             <quotation marks="none">
                <p>No quotation marks have been retained. Instead, the <att>rend</att> attribute on the <gi>q</gi> element is used to specify what kinds of quotation mark was used, according to the following list:
-                  <list type="gloss">
+                  <list>
                      <label>noQuotes</label>
                      <item>double quotes, open and close</item>
                      <label>beginQ</label>
