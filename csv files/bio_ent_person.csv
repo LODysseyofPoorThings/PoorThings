@@ -1,6 +1,6 @@
 Subject,Predicate,Object
 Biographic entity person,rdf:type,crm:E21_Person
-Biographic entity person,owl:sameAs,https://www.wikidata.org/wiki/Q975410
+Biographic entity person,owl:sameAs,https://viaf.org/viaf/121831339
 Biographic entity person,foaf:name,Yorgos Lanthimos
 Biographic entity person,schema:birthPlace,Athens
 Biographic entity person,schema:hasOccupation,Film director
@@ -8,6 +8,6 @@ Biographic entity person,schema:gender,Male
 Biographic entity person,schema:birthDate,1973
 Biographic entity person,foaf:member,Greek Weird Wave
 Athens,rdf:type,crm:E53_Place
-Athens,owl:sameAs,https://dbpedia.org/page/Athens
+Athens,owl:sameAs,https://www.geonames.org/264371/athens.html
 Greek Weird Wave,rdf:type,foaf:Group
 Greek Weird Wave,owl:sameAs,https://www.wikidata.org/wiki/Q62086465

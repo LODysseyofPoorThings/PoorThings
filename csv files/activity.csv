@@ -13,8 +13,12 @@ Activity,schema:agent,Biographic entity character
 Young upper-class men,rdf:type,foaf:Group
 Young upper-class men,foaf:member,Goethe
 Young upper-class men,foaf:member,Lord Byron
+Lord Byron,rdf:type,crm:E21_Person
+Lord Byron,owl:sameAs,https://viaf.org/viaf/95230688
+Goethe,rdf:type,crm:E21_Person
+Goethe,owl:sameAs,https://viaf.org/viaf/24602065
 Europe,rdf:type,crm:E53_Place
-Europe,owl:sameAs,https://dbpedia.org/page/Europe
+Europe,owl:sameAs,https://www.geonames.org/6255148/europe.html
 Europe,schema:containsPlace,Lisbon
 Europe,schema:containsPlace,Paris
 Mediterranean Area,rdf:type,crm:E53_Place

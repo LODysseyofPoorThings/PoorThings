@@ -10,9 +10,9 @@ Soundtrack,schema:copyrightHolder,Searchlight Pictures
 Soundtrack,mo:published_as,Song Bella
 Soundtrack,mo:published_as,Song Alexandria
 Carminho,rdf:type,crm:E21_Person
-Carminho,owl:sameAs,https://www.wikidata.org/wiki/Q468766
+Carminho,owl:sameAs,https://viaf.org/viaf/269173321
 Jerskin Fendrix,rdf:type,crm:E21_Person
-Jerskin Fendrix,owl:sameAs,https://www.wikidata.org/wiki/Q120896583
+Jerskin Fendrix,owl:sameAs,http://viaf.org/viaf/9944171594733003380004
 Jerskin Fendrix,schema:award,Film Festival Gent:Best original music
 Searchlight Pictures,rdf:type,schema:Organization
 Searchlight Pictures,owl:sameAs,https://dbpedia.org/page/Searchlight_Pictures

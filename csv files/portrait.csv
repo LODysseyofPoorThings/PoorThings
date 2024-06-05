@@ -11,11 +11,11 @@ Portrait,cdwa:DimensionDescription,56.5 x 35 cm
 Portrait,dc:subject,Young woman with long hair
 Portrait,dcterms:isReferencedBy,Article 
 Egon Schiele,rdf:type,crm:E21_Person
-Egon Schiele,owl:sameAs,https://www.wikidata.org/wiki/Q44032
+Egon Schiele,owl:sameAs,https://viaf.org/viaf/41850463
 Egon Schiele,cdwa:Style,Expressionism
 Columbia University,rdf:type,crm:E78_Curated_Holding
 Columbia University,owl:sameAs,https://www.wikidata.org/wiki/Q49088
 Columbia University,schema:containedInPlace,New York City
 New York City,rdf:type,crm:E53_Place
-New York City,owl:sameAs,https://dbpedia.org/page/New_York_City
+New York City,owl:sameAs,https://www.geonames.org/5128581/new-york-city.html
 New York City,schema:containedInPlace,USA

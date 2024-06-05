@@ -10,16 +10,16 @@ Monument,cdwa:DimensionDescription,103-118 meter
 Monument,dbp:yeardeactivated,1303
 Monument,dcterms:isPartOf,Seven Wonders of the Ancient World
 Ptolemy I Soter,rdf:type,crm:E21_Person
-Ptolemy I Soter,owl:sameAs,https://dbpedia.org/page/Ptolemy_I_Soter
+Ptolemy I Soter,owl:sameAs,https://viaf.org/viaf/21347488
 Ptolemy I Soter,foaf:member,Ptolemaic dinasty
 284-246 BC,rdf:type,crm:E52_Time-Span
 284-246 BC,crm:P82a_begin_of_the_begin,"-284"
 284-246 BC,crm:P82b_end_of_the_end,"-246"
 Pharos,rdf:type,crm:E53_Place
-Pharos,owl:sameAs,https://www.wikidata.org/wiki/Q2696558
+Pharos,owl:sameAs,https://pleiades.stoa.org/places/727197
 Pharos,schema:containedInPlace,Alexandria
 Alexandria,rdf:type,crm:E53_Place
-Alexandria,owl:sameAs,https://dbpedia.org/page/Alexandria
+Alexandria,owl:sameAs,https://pleiades.stoa.org/places/876562
 Alexandria,schema:containedInPlace,Egypt
 Seven Wonders of the Ancient World,rdf:type,crm:E74_Group
 Seven Wonders of the Ancient World,owl:sameAs,https://www.wikidata.org/wiki/Q489772

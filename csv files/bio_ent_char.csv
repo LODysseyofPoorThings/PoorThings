@@ -9,6 +9,6 @@ Biographic entity character,dcterms:references,Portrait
 Biographic entity character,dcterms:isReferencedBy,Article
 Biographic entity character,schema:parent,Dr Godwin Baxter
 Emma Stone,rdf:type,crm:E21_Person
-Emma Stone,owl:sameAs,https://dbpedia.org/page/Emma_Stone
+Emma Stone,owl:sameAs,https://viaf.org/viaf/161765799
 Emma Stone,schema:award,96th Academy Award: Best Actress
 Dr Godwin Baxter,rdf:type,crm:E28_Conceptual_Object

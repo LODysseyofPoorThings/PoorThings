@@ -8,6 +8,6 @@ Article,crm:P129_is_about,Costumes in Poor Things
 Article,dc:publisher,The New York Times Company 
 Article,crm:P129_is_about,Poor Things Movie
 Melena Ryzik,rdf:type,crm:E21_Person
-Melena Ryzik,owl:sameAs,https://commons.wikimedia.org/wiki/Category:Melena_Ryzik
+Melena Ryzik,owl:sameAs,https://viaf.org/viaf/26510116
 Costumes in Poor Things,rdf:type,crm:E24_Physical_Human-Made_Thing
 Costumes in Poor Things,dcterms:creator,Holly Washington

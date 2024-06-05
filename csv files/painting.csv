@@ -10,7 +10,7 @@ Painting,crm:P2_has_type,triptych
 Painting,cdwa:MaterialTechniqueDescription,oil on oak panel
 Painting,cdwa:DimensionDescription,384.9 cm x 205.5 cm
 Hieronymus Bosch,rdf:type,crm:E21_Person
-Hieronymus Bosch,owl:sameAs,https://dbpedia.org/page/Hieronymus_Bosch
+Hieronymus Bosch,owl:sameAs,https://viaf.org/viaf/76401424
 Hieronymus Bosch,cdwa:Style,Northern Renaissance
 1490-1500,rdf:type,crm:E52_Time-Span
 1490-1500,crm:P82a_begin_of_the_begin,1490
@@ -19,5 +19,5 @@ Museo del Prado,rdf:type,crm:E79_Curated_Holding
 Museo del Prado,owl:sameAs,https://dbpedia.org/page/Museo_del_Prado
 Museo del Prado,schema:containedInPlace,Madrid
 Madrid,rdf:type,crm:E53_Place
-Madrid,owl:sameAs,https://dbpedia.org/page/Madrid
+Madrid,owl:sameAs,https://www.geonames.org/3117735/madrid.html
 Madrid,schema:containedInPlace,Spain

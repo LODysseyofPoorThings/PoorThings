@@ -10,7 +10,7 @@ Movie,dcterms:issued,1927
 Movie,dcterms:extent,02:33:00
 Movie,crm:P2_has_type,black and white
 Fritz Lang,rdf:type,crm:E21_Person
-Fritz Lang,owl:sameAs,https://dbpedia.org/page/Fritz_Lang
+Fritz Lang,owl:sameAs,https://viaf.org/viaf/14802583
 Fritz Lang,schema:hasOccupation,film director
 Thea Van Harbou,rdf:type,crm:E21_Person
-Thea Van Harbou,owl:sameAs,https://dbpedia.org/page/Thea_von_Harbou
+Thea Van Harbou,owl:sameAs,https://viaf.org/viaf/19884182

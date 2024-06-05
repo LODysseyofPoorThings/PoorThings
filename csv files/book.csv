@@ -12,7 +12,7 @@ Book,crm:P2_has_type,Novel
 Book,crm:P129_is_about,Feminism
 Book,schema:character,Biographic entity character
 Alasdair Gray,rdf:type,crm:E21_Person
-Alasdair Gray,owl:sameAs,https://www.wikidata.org/wiki/Q729121
+Alasdair Gray,owl:sameAs,https://viaf.org/viaf/114328115
 19th Century,rdf:type,crm:E4_Period
 19th Century,owl:sameAs,https://www.wikidata.org/wiki/Q6955
 Harcourt Brace Jovanovich,rdf:type,schema:Organization
